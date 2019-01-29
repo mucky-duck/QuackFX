@@ -2715,23 +2715,6 @@
                 <onclick condition="Skin.String(SplashScreen)">Skin.Reset(SplashScreen)</onclick>
                 <selected>Skin.String(SplashScreen)</selected>
             </control>
-            <control type="radiobutton" id="8021">
-                <!-- enable snow on home -->
-                <description/>
-                <include>SkinSettings_Button</include>
-                <label>31644</label>
-                <onclick>Skin.ToggleSetting(enablesnow)</onclick>
-                <selected>Skin.HasSetting(enablesnow)</selected>
-            </control>
-            <control type="radiobutton" id="8022">
-                <!-- expand snow effect to other areas of the skin -->
-                <description/>
-                <include>SkinSettings_Button</include>
-                <label>     ----- $LOCALIZE[31645]</label>
-                <onclick>Skin.ToggleSetting(expandsnow)</onclick>
-                <selected>Skin.HasSetting(expandsnow)</selected>
-                <visible>Skin.HasSetting(enablesnow) + !Skin.String(general_header,disable) + !Skin.HasSetting(AlwaysShowWeather)</visible>
-            </control>
             <control type="radiobutton" id="8023">
                 <!-- prefer clearart over landscapes -->
                 <description/>
