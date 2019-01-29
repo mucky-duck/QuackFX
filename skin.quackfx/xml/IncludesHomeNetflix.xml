@@ -1096,7 +1096,7 @@
                         <onright>77777</onright>
                         <textcolor>$INFO[Skin.String(MainMenuTextColor)]</textcolor>
                         <focusedcolor>$INFO[Skin.String(MainMenuFocusTextColor)]</focusedcolor>
-                        <texturefocus colordiffuse="$INFO[Skin.String(MainMenuSecondaryFocusButtonColor)]">colors/color_white.png</texturefocus>
+                        <texturefocus colordiffuse="$INFO[Skin.String(HomeViewDetailsFocusColor)]">colors/color_white.png</texturefocus>
                         <texturenofocus/>
                         <onclick>ClearProperty(ShowViewSubMenu, Home)</onclick>
                         <onclick>System.LogOff</onclick>
