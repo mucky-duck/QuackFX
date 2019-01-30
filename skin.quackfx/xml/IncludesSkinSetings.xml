@@ -23,12 +23,6 @@
                 <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
             </control>
             <!-- homemenu layout-->
-            <control type="button" id="423003">
-                <include>SkinSettings_Button</include>
-                <label>31121</label>
-                <label2>$INFO[Skin.String(HomeLayout.label)]</label2>
-                <onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=HomeLayout,header=$LOCALIZE[31124])</onclick>
-            </control>
             <!-- height of the tiles-->
             <control type="button" id="31770">
                 <include>SkinSettings_Button</include>
