@@ -53,7 +53,7 @@
     <include file="IncludesSkinSetings.xml" />
     <include file="IncludesContextMenu.xml" />
 	<include file="IncludesHomeEnhanced.xml" />
-	<include file="IncludesHomeNetflix.xml" />
+	<include file="IncludesHome.xml" />
     <include file="IncludesHomeWin10.xml" />
 	<include file="IncludesTouchSupport.xml" />
 	<include file="IncludesDefaultSkinSettings.xml" />
