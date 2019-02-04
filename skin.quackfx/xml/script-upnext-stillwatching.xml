@@ -11,7 +11,7 @@
 			<posy>0</posy>
 			<width>100%</width>
 			<height>100%</height>
-			<texture border="5">special://home/addons/resource.images.backgroundoverlays.basic/resources/Grey.png</texture>
+			<texture border="5">overlay/Grey.png</texture>
 			<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
 		</control>
 		<!-- Still watching dialog -->

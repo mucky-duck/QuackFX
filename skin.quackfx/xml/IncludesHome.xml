@@ -1,101 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--QuackFX-->
 <includes>
-   <!-- HOME NETFLIX 1 -->
-    <include name="HomeNetflix">
-
-        <!--NowPlaying-->
-        <include condition="Skin.HasTheme(classic)">NowPlayingMusicClassic</include>
-        <include condition="Skin.HasTheme(classic)">NowPlayingVideoClassic</include>
-        <include condition="!Skin.HasTheme(classic)">NowPlayingModern</include>
-
-        <control type="group" id="9000">
-            <animation time="300" effect="fade" start="100" end="20" reversible="true" easing="inout" condition="[ControlGroup(9001).HasFocus() + window.isactive(home)] | ControlGroup(300).HasFocus() | String.IsEqual(Window(Home).Property(ShowViewSubMenu),show) | Control.HasFocus(300)">Conditional</animation>
-
-            <!-- spotlight -->
-            <include condition="!Skin.HasSetting(NetflixHomeDisableFirstRow)">NetFlixHomeSpotLightWidget</include>
-
-            <!-- all widgets -->
-            <control type="grouplist" id="77777">
-                <include condition="Skin.HasSetting(NetflixHomeDisableFirstRow)">NetFlixHome_AltHeight_NoSpotLight</include>
-                <left>50</left>
-                <right>50</right>
-                <bottom>0</bottom>
-                <top>660</top>
-                <ondown>77777</ondown>
-                <onfocus>ClearProperty(ShowViewSubMenu, Home)</onfocus>
-                <onleft condition="!Skin.HasSetting(EnhancedHome_Circular)">300</onleft>
-                <onup condition="!Skin.HasSetting(NetflixHomeDisableFirstRow)">505</onup>
-                <onback>300</onback>
-                <itemgap>0</itemgap>
-                <pagecontrol>317</pagecontrol>
-                <include name="WidgetsAutoRotate" content="WidgetsAutoRotate" condition="Skin.String(widgets_rotate_delay) + !Skin.String(widgets_rotate,disabled)">
-                    <param name="interval" value="$INFO[Skin.String(widgets_rotate_delay)]" />
-                </include>
-                <include>skinshortcuts-template-Widgets</include>
-            </control>
-
-            <control type="scrollbar" id="317">
-                <include condition="Skin.HasSetting(NetflixHomeDisableFirstRow)">NetFlixHome_AltHeight_NoSpotLight</include>
-                <right>50</right>
-                <top>140</top>
-                <bottom>0</bottom>
-                <onleft>77777</onleft>
-                <onright>300</onright>
-                <showonepage>false</showonepage>
-                <visible>[Skin.HasSetting(EnableTouchSupport) | Skin.HasSetting(alwaysShowScrollbars)]</visible>
-            </control>
-
-            <!-- Header -->
-            <include>Header</include>
-
-        </control>
-        <!--Sub Menu Tab Left-->
-        <control type="group">
-            <animation type="Conditional" condition="ControlGroup(300).HasFocus()">
-                <effect type="fade" start="100" end="0" time="100" />
-            </animation>
-            <animation type="Conditional" condition="!ControlGroup(300).HasFocus()">
-                <effect type="fade" start="0" end="100" time="400" delay="600" />
-            </animation>
-            <control type="button" id="99001">
-                <posx>0</posx>
-                <posy>470</posy>
-                <width>32</width>
-                <height>140</height>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>[UPPERCASE]$LOCALIZE[33061][/UPPERCASE]</label>
-                <textoffsetx>0</textoffsetx>
-                <textoffsety>23</textoffsety>
-                <angle>90</angle>
-                <textwidth>140</textwidth>
-                <font>Reg20</font>
-                <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
-                <texturefocus colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">colors/color_white.png</texturefocus>
-                <texturenofocus colordiffuse="$INFO[Skin.String(GeneralPanelsColor)]">colors/color_white.png</texturenofocus>
-                <onclick condition="!String.IsEqual(Window(Home).Property(ShowViewSubMenu),show)">SetProperty(ShowViewSubMenu, show, Home)</onclick>
-                <onclick condition="String.IsEqual(Window(Home).Property(ShowViewSubMenu),show)">ClearProperty(ShowViewSubMenu, Home)</onclick>
-                <animation effect="fade" start="100" end="80" time="0" condition="!Control.HasFocus(99001)">Conditional</animation>
-            </control>
-        </control>
-
-        <!--Side Menu BIG-->
-        <control type="group">
-            <top>0</top>
-            <left>0</left>
-            <include condition="Skin.HasSetting(NetFlixHome_LargeMenu)">HomeBigVertical</include>
-            <animation type="Conditional" condition="![ControlGroup(300).HasFocus() | String.IsEqual(Window(Home).Property(ShowViewSubMenu),show) | Control.HasFocus(300)]">
-                <effect type="slide" start="0" end="-660" time="300" delay="0" tween="cubic" easing="inout" />
-            </animation>
-        </control>
-        <!-- Side Menu Small -->
-        <include condition="!Skin.HasSetting(NetFlixHome_LargeMenu)">NetflixSideBladeMainMenu</include>
-    </include>
-
-    <!-- HOME NETFLIX 2 -->
-    <include name="HomeNetflix2">
-        <!-- base BG -->
+	
+	<include name="HomeQuackFX">
+		
         <control type="image">
             <width>100%</width>
             <height>100%</height>
@@ -141,7 +49,7 @@
                 <width>100%</width>
                 <height>100%</height>
                 <colordiffuse>$VAR[Netflix2_PanelColor]</colordiffuse>
-                <texture border="15">special://home/addons/resource.images.backgroundoverlays.basic/resources/Vignette.png</texture>
+                <texture border="15">overlay/Vignette.png</texture>
             </control>
 
             <!-- MPAA flag while spotlight playing -->
@@ -205,7 +113,7 @@
                 <visible>!Skin.HasSetting(NetflixHomeShowLargeThumb)</visible>
                 <width>100%</width>
                 <height>100%</height>
-                <texture colordiffuse="$VAR[Netflix2_PanelColor]">special://home/addons/resource.images.backgroundoverlays.basic/resources/Side by Side.png</texture>
+                <texture colordiffuse="$VAR[Netflix2_PanelColor]">overlay/Side_by_Side.png</texture>
                 <animation effect="fade" start="100" end="95" delay="0" time="0"  condition="true">Conditional</animation>
                 <animation effect="fade" start="95" end="30" delay="0" time="6000" condition="Control.IsVisible(5633399)">Conditional</animation>
             </control>
@@ -340,10 +248,10 @@
                     <visible>Skin.HasSetting(NetflixHomeShowLargeThumb) + !ControlGroup(505).HasFocus() + !Player.HasVideo</visible>
                     <right>0</right>
                     <top>0</top>
-                    <texture background="true" diffuse="special://home/addons/resource.images.backgroundoverlays.basic/resources/Right Corner.png">$INFO[Control.GetLabel(99004)]</texture>
+                    <texture background="true" diffuse="overlay/Right_Corner.png">$INFO[Control.GetLabel(99004)]</texture>
                     <fadetime>550</fadetime>
-                    <width>1400</width>
-                    <height>787</height>
+                    <width>1300</width>
+                    <height>700</height>
                     <aspectratio>scale</aspectratio>
                     <aspectratio scalediffuse="true" aligny="top">scale</aspectratio>
                     <animation effect="fade" end="0" time="600">Hidden</animation>
@@ -380,14 +288,14 @@
                         <visible>String.IsEmpty(Control.GetLabel(29475)) | Skin.HasSetting(NoClearLogoNetflix)</visible>
                         <top>55</top>
                         <height max="175">auto</height>
-                        <width max="815">auto</width>
+                        <width max="650">auto</width>
                         <font>Reg48</font>
                         <align>left</align>
                         <aligny>center</aligny>
                         <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
                         <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
                         <label>$VAR[HomeMenuWidgetInfoLabel]</label>
-                        <animation effect="fade" time="200">Visible</animation>
+						<animation effect="fade" time="200">Visible</animation>
                         <!-- adjust for spotlight -->
                         <animation effect="slide" start="0" end="0,155" time="0" condition="ControlGroup(505).HasFocus()">Conditional</animation>
                     </control>
@@ -405,7 +313,7 @@
                     <control type="label" id="823">
                         <visible>!String.IsEqual(Window(Home).Property(ListItem.dbtype),episode) + !String.IsEmpty(Control.GetLabel(823))</visible>
                         <height>30</height>
-                        <width>800</width>
+                        <width>650</width>
                         <font>Reg28</font>
                         <align>left</align>
                         <aligny>center</aligny>
@@ -497,7 +405,7 @@
                     <!-- additional info -->
                     <control type="group">
                         <height>30</height>
-                        <width>800</width>
+                        <width>650</width>
                         <visible>!String.IsEmpty(Control.GetLabel(84)) + !Control.IsVisible(588688) + ![ControlGroup(505).HasFocus() | [!Skin.HasSetting(NetflixHomeShowLargeThumb) + Control.IsVisible(5633399)]]</visible>
                         <include>Default_Fade</include>
                         <control type="image">
@@ -510,7 +418,7 @@
                         <control type="label" id="84">
                             <left>40</left>
                             <height>30</height>
-                            <width>800</width>
+                            <width>650</width>
                             <label>$VAR[NetflixMoreDetails]</label>
                             <textcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</textcolor>
                             <align>left</align>
@@ -692,7 +600,7 @@
         </control>
 
         <!-- Side Menu Small -->
-        <include condition="!Skin.HasSetting(NetFlixHome_LargeMenu)">NetflixSideBladeMainMenu</include>
+        <include condition="!Skin.HasSetting(NetFlixHome_LargeMenu)">SideBladeMainMenu</include>
     </include>
 
     <!-- Netflix2 Panel Color -->
@@ -717,203 +625,6 @@
     <include name="NetflixHome_AltHeight_NoSpotlight">
         <top>0</top>
         <height>100%</height>
-    </include>
-
-    <!-- Netflix 1 Spotlight Widget -->
-    <include name="NetFlixHomeSpotLightWidget">
-        <control type="group">
-            <left>50</left>
-            <width>1820</width>
-            <height>500</height>
-            <top>140</top>
-            <!-- background panel -->
-            <control type="image">
-                <texture border="15">diffuse/bgpanel.png</texture>
-                <colordiffuse>$VAR[ViewDetailsPanelColor]</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-                <visible>!Skin.HasSetting(HideWidgetPanelBackground)</visible>
-            </control>
-
-            <control type="grouplist">
-                <width>47%</width>
-                <left>10</left>
-                <posy>10</posy>
-                <bottom>10</bottom>
-                <orientation>vertical</orientation>
-                <control type="label">
-                    <height>60</height>
-                    <width>99%</width>
-                    <font>Reg36</font>
-                    <align>left</align>
-                    <aligny>top</aligny>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
-                    <label>$VAR[HomeMenuWidgetInfoLabel]</label>
-                </control>
-                <control type="textbox">
-                    <height>240</height>
-                    <width>99%</width>
-                    <label>$VAR[HomeMenuWidgetInfoPlotAlt]</label>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
-                    <align>justify</align>
-                    <font>Light28</font>
-                    <visible>Control.IsVisible(505)</visible>
-                </control>
-                <control type="textbox">
-                    <height>329</height>
-                    <width>99%</width>
-                    <label>$VAR[HomeMenuWidgetInfoPlotAlt]</label>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
-                    <align>justify</align>
-                    <font>Light28</font>
-                    <visible>!Control.IsVisible(505)</visible>
-                </control>
-                <control type="label">
-                    <height>45</height>
-                    <label/>
-                </control>
-                <control type="group">
-                    <height>100</height>
-                    <width>99%</width>
-                    <left>5</left>
-                    <include>mediaflags</include>
-                    <visible>Control.IsVisible(505) | [!Control.IsVisible(505) + !String.IsEmpty(Window(Home).Property(ListItem.VideoCodec))]</visible>
-                </control>
-            </control>
-            <control type="grouplist" id="505">
-                <width>800</width>
-                <bottom>10</bottom>
-                <left>10</left>
-                <height>55</height>
-                <orientation>horizontal</orientation>
-                <onleft>300</onleft>
-                <visible allowhiddenfocus="true">ControlGroup(505).HasFocus() + Integer.IsGreater(Container(1508).NumItems,0)</visible>
-                <control type="button" id="51">
-                    <description>Play</description>
-                    <width>320</width>
-                    <height>100%</height>
-                    <label>208</label>
-                    <onright>52</onright>
-                    <onleft>300</onleft>
-                    <ondown>77777</ondown>
-                    <onup>77777</onup>
-                    <include name="WidgetsAutoRotate" content="WidgetsAutoRotate" condition="Skin.String(widgets_rotate_delay) + !Skin.String(widgets_rotate,disabled)">
-                        <param name="interval" value="$INFO[Skin.String(widgets_rotate_delay)]" />
-                    </include>
-                    <onfocus>Setproperty(SkinHelper.WidgetContainer,1508)</onfocus>
-                    <onclick>PlayMedia($ESCINFO[Container(1508).ListItem.FileNameAndPath])</onclick>
-                </control>
-                <control type="button" id="52">
-                    <description>Info</description>
-                    <width>320</width>
-                    <height>100%</height>
-                    <label>19033</label>
-                    <onleft>51</onleft>
-                    <onright>53</onright>
-                    <ondown>77777</ondown>
-                    <onup>77777</onup>
-                    <include name="WidgetsAutoRotate" content="WidgetsAutoRotate" condition="Skin.String(widgets_rotate_delay) + !Skin.String(widgets_rotate,disabled)">
-                        <param name="interval" value="$INFO[Skin.String(widgets_rotate_delay)]" />
-                    </include>
-                    <onclick>RunScript(script.skin.helper.service,action=showinfo)</onclick>
-                    <onfocus>Setproperty(SkinHelper.WidgetContainer,1508)</onfocus>
-                </control>
-                <control type="radiobutton" id="53">
-                    <label/>
-                    <height>100%</height>
-                    <width>60</width>
-                    <height>60</height>
-                    <textureradiofocus colordiffuse="$INFO[Skin.String(ButtonFocusTextColor)]">dialogs/keyboard/left.png</textureradiofocus>
-                    <textureradionofocus colordiffuse="$INFO[Skin.String(ButtonTextColor)]">dialogs/keyboard/left.png</textureradionofocus>
-                    <radiowidth>40</radiowidth>
-                    <radioheight>40</radioheight>
-                    <radioposx>0</radioposx>
-                    <onright>54</onright>
-                    <onleft>52</onleft>
-                    <ondown>77777</ondown>
-                    <onclick>Control.Move(1508,-1)</onclick>
-                    <selected>Control.HasFocus(53)</selected>
-                </control>
-                <control type="radiobutton" id="54">
-                    <label/>
-                    <height>100%</height>
-                    <width>60</width>
-                    <height>60</height>
-                    <onleft>53</onleft>
-                    <ondown>77777</ondown>
-                    <textureradiofocus colordiffuse="$INFO[Skin.String(ButtonFocusTextColor)]">dialogs/keyboard/right.png</textureradiofocus>
-                    <textureradionofocus colordiffuse="$INFO[Skin.String(ButtonTextColor)]">dialogs/keyboard/right.png</textureradionofocus>
-                    <radiowidth>40</radiowidth>
-                    <radioheight>40</radioheight>
-                    <radioposx>0</radioposx>
-                    <onclick>Control.Move(1508,1)</onclick>
-                    <selected>Control.HasFocus(54)</selected>
-                </control>
-            </control>
-
-            <!-- spotlight widget -->
-            <control type="panel" id="1508">
-                <right>60</right>
-                <top>10</top>
-                <width>960</width>
-                <height>555</height>
-                <orientation>horizontal</orientation>
-                <focusposition>2</focusposition>
-                <onup>51</onup>
-                <ondown>51</ondown>
-                <onfocus>51</onfocus>
-                <scrolltime tween="cubic" easing="inout">500</scrolltime>
-                <itemlayout width="960" height="555">
-                </itemlayout>
-                <focusedlayout width="960" height="555">
-                    <include name="HiddenWidgetButton" content="HiddenWidgetButton">
-                        <param name="widgetstyle" value="spotlight" />
-                        <param name="widgetId" value="1508" />
-                    </include>
-                </focusedlayout>
-                <content target="videos">$VAR[NetFlixHomeSpotLightWidgetContent]</content>
-            </control>
-
-            <!-- spotlight image  -->
-            <control type="group">
-                <right>10</right>
-                <top>10</top>
-                <width>50%</width>
-                <bottom>10</bottom>
-                <control type="image">
-                    <bordersize>5</bordersize>
-                    <texture background="true" diffuse="diffuse/wide.png">$VAR[EnhancedHomeSpotLightWidgetImage]</texture>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
-                    <fadetime>350</fadetime>
-                </control>
-                <control type="image">
-                    <bottom>8</bottom>
-                    <right>8</right>
-                    <width>50%</width>
-                    <height>50%</height>
-                    <bordersize>5</bordersize>
-                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    <texture background="true">$VAR[HomeMenuWidgetInfoclearlogo]</texture>
-                </control>
-            </control>
-
-            <!-- busy image while widget loading -->
-            <control type="multiimage">
-                <left>50</left>
-                <top>50</top>
-                <width>100</width>
-                <height>100</height>
-                <aspectratio>keep</aspectratio>
-                <imagepath>$INFO[Skin.String(SkinHelper.SpinnerTexture.Path)]</imagepath>
-                <timeperimage>100</timeperimage>
-                <colordiffuse>$INFO[Skin.String(SpinnerTexture.Color)]</colordiffuse>
-                <fadetime>0</fadetime>
-                <visible>!Skin.String(SkinHelper.SpinnerTexture.Path,None)</visible>
-                <visible>Control.IsVisible(1508) + Container(1508).IsUpdating</visible>
-            </control>
-        </control>
     </include>
 
     <!-- netflix2 spotlight widget -->
@@ -986,8 +697,7 @@
         <value>$VAR[NetFlixHomeSpotLightWidgetContent]</value>
     </variable>
 
-    <!-- netflix sideblade -->
-    <include name="NetflixSideBladeMainMenu">
+    <include name="SideBladeMainMenu">
         <control type="group" id="9001">
             <posx>-640</posx>
             <posy>0</posy>
@@ -999,69 +709,43 @@
             <!-- panel -->
             <control type="grouplist">
                 <orientation>horizontal</orientation>
-                <posy>-5%</posy>
-                <posx>-20</posx>
-                <width>405</width>
-                <height>110%</height>
+                <posy>2%</posy>
+                <width>425</width>
+                <height>98%</height>
                 <itemgap>0</itemgap>
-                <!-- bg -->
+				<control type="image">
+					<width>425</width>
+                    <height>98%</height>
+                    <texture border="100">common/side-blade.png</texture>
+                </control>
+                <!-- bg 
                 <control type="image">
                     <width>404</width>
                     <height>110%</height>
                     <texture>colors/color_white.png</texture>
                     <colordiffuse>$INFO[Skin.String(MainMenuPanelColor)]</colordiffuse>
                     <aspectratio>stretch</aspectratio>
-                </control>
-                <!-- panel border -->
-                <control type="image">
-                    <width>1</width>
-                    <height>110%</height>
-                    <texture>colors/color_white.png</texture>
-                    <colordiffuse>$INFO[Skin.String(MainMenuTextColor)]</colordiffuse>
-                    <aspectratio>stretch</aspectratio>
-                </control>
+                </control> -->
             </control>
-
-            <!-- Touch Menu Buttons -->
-            <control type="button" id="1">
-                <visible>Skin.HasSetting(EnableTouchSupport)</visible>
-                <visible>!Window.IsActive(notification) + !Window.IsActive(extendedprogressdialog) + !Control.IsVisible(88888)</visible>
-                <label/>
-                <posx>50</posx>
-                <top>20</top>
-                <include>animation_fade_visible_hidden</include>
-                <width>50</width>
-                <height>50</height>
-                <font/>
-                <onright>40002</onright>
-                <ondown>300</ondown>
-                <onleft>77777</onleft>
-                <onback>77777</onback>
-                <onup>300</onup>
-                <texturefocus colordiffuse="$INFO[Skin.String(MainMenuFocusTextColor)]">common/menu.png</texturefocus>
-                <texturenofocus colordiffuse="$INFO[Skin.String(MainMenuTextColor)]">common/menu.png</texturenofocus>
-                <onclick>ClearProperty(ShowViewSubMenu, Home)</onclick>
-                <onclick>SetFocus(9000)</onclick>
-            </control>
-
-            <!-- logo / user profile button -->
+			
+			<!-- logo / user profile button -->
             <control type="group" id="40000">
                 <visible>!Window.IsActive(notification) + !Window.IsActive(extendedprogressdialog) + !Control.IsVisible(88888)</visible>
-                <top>30</top>
-                <width>385</width>
+				<posy>10%</posy>
+                <width>200</width>
                 <height>80</height>
                 <animation effect="slide" end="0,60" condition="Control.IsVisible(1)">Conditional</animation>
                 <include>animation_fade_visible_hidden</include>
                 <!-- logo -->
                 <control type="group" id="40000">
                     <visible>!Control.IsVisible(40001)</visible>
-                    <height>275</height>
-                    <width>275</width>
-                    <left>50</left>
+					<height>200</height>
+                    <width>200</width>
+                    <left>40%</left>
                     <!-- default Logo image -->
                     <control type="image">
-                        <height>275</height>
-                        <width>275</width>
+                        <height>200</height>
+                        <width>200</width>
                         <aspectratio align="left">keep</aspectratio>
                         <colordiffuse>$INFO[Skin.String(HeaderTextColor)]</colordiffuse>
                         <texture background="true">special://skin/resources/icon.png</texture>
@@ -1113,11 +797,11 @@
 
             <!--main menu 300-->
             <control type="list" id="300">
-                <posy>25%</posy>
-                <width>385</width>
-                <height>52%</height>
+                <posy>30%</posy>
+				<width>385</width>
+                <height>53%</height>
                 <itemgap>0</itemgap>
-                <onfocus condition="System.HasAlarm(focus_delay)">CancelAlarm(focus_delay,true)</onfocus>
+				<onfocus condition="System.HasAlarm(focus_delay)">CancelAlarm(focus_delay,true)</onfocus>
                 <onright condition="Integer.IsGreater(Container(4445).NumItems,0)">4444</onright>
                 <onright condition="!Integer.IsGreater(Container(4445).NumItems,0)">77777</onright>
                 <onright condition="!Integer.IsGreater(Container(4445).NumItems,0)">ClearProperty(ShowViewSubMenu, Home)</onright>
@@ -1140,10 +824,10 @@
                         <visible>!Skin.HasSetting(DisableIconsMainMenu)</visible>
                         <left>50</left>
                         <height>100%</height>
-                        <top>20</top>
+                        <top>10</top>
                         <control type="image">
-                            <width>35</width>
-                            <height>35</height>
+                            <width>55</width>
+                            <height>55</height>
                             <texture background="true" fallback="$INFO[ListItem.Icon]">$INFO[ListItem.ActualIcon]</texture>
                             <colordiffuse>$INFO[Skin.String(MainMenuTextColor)]</colordiffuse>
                             <animation end="70" effect="fade" time="0" delay="0" condition="true">Conditional</animation>
@@ -1161,7 +845,7 @@
                         <animation effect="slide" end="-50" time="0" delay="0" condition="Skin.HasSetting(DisableIconsMainMenu)">Conditional</animation>
                     </control>
                 </itemlayout>
-                <focusedlayout height="80" width="385" condition="Control.HasFocus(300) | Control.HasFocus(4444)">
+                <focusedlayout height="55" width="375" condition="Control.HasFocus(300) | Control.HasFocus(4444)">
                     <!-- button focus color -->
                     <control type="image">
                         <texture>colors/color_white.png</texture>
@@ -1172,10 +856,9 @@
                         <visible>!Skin.HasSetting(DisableIconsMainMenu)</visible>
                         <left>50</left>
                         <height>100%</height>
-                        <top>20</top>
                         <control type="image">
-                            <width>35</width>
-                            <height>35</height>
+                            <width>55</width>
+                            <height>55</height>
                             <texture background="true" fallback="$INFO[ListItem.Icon]">$INFO[ListItem.ActualIcon]</texture>
                             <colordiffuse>$INFO[Skin.String(MainMenuFocusTextColor)]</colordiffuse>
                             <animation end="70" effect="fade" time="0" delay="0" condition="true">Conditional</animation>
@@ -1193,15 +876,7 @@
                         <label>[B]$INFO[ListItem.Label][/B]</label>
                         <animation effect="slide" end="-50" time="0" delay="0" condition="Skin.HasSetting(DisableIconsMainMenu)">Conditional</animation>
                     </control>
-                    <!-- button border focus color -->
-                    <control type="image">
-                        <left>380</left>
-                        <width>5</width>
-                        <height>100%</height>
-                        <texture>colors/color_white.png</texture>
-                        <colordiffuse>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</colordiffuse>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
+                    
                     <!-- home behavior onfocus -->
                     <include>HiddenHomeMenuButton</include>
                 </focusedlayout>
@@ -1236,48 +911,27 @@
                 </focusedlayout>
                 <include condition="Window.IsActive(Home) | Window.IsActive(3020) | Window.IsActive(3021) | Window.IsActive(3018) | Window.IsActive(3017)">MainMenuContent</include>
             </control>
-
-            <!-- settings & exit buttons -->
+			
+			<!-- exit button -->
             <control type="grouplist" id="40003">
                 <orientation>vertical</orientation>
-                <posy>85%</posy>
-                <width>384</width>
+                <posy>86%</posy>
+				<width>300</width>
                 <height>115</height>
-                <onup>300</onup>
+				<left>150</left>
+				<onup>300</onup>
                 <onright>ClearProperty(ShowViewSubMenu, Home)</onright>
                 <onright>77777</onright>
                 <onback>ClearProperty(ShowViewSubMenu, Home)</onback>
                 <onback>77777</onback>
-                <!-- settings button -->
-                <control type="button" id="40004">
-                    <width>384</width>
-                    <height>55</height>
-                    <textoffsetx>50</textoffsetx>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>Light22</font>
-                    <textcolor>$INFO[Skin.String(MainMenuTextColor)]</textcolor>
-                    <focusedcolor>$INFO[Skin.String(MainMenuFocusTextColor)]</focusedcolor>
-                    <label>5</label>
-                    <texturefocus colordiffuse="$INFO[Skin.String(MainMenuFocusButtonColor)]">colors/color_white.png</texturefocus>
-                    <texturenofocus/>
-                    <onclick>ClearProperty(ShowViewSubMenu, Home)</onclick>
-                    <onclick>ActivateWindow(Settings)</onclick>
-                </control>
                 <!-- exit button -->
                 <control type="button" id="40005">
-                    <width>384</width>
-                    <height>55</height>
-                    <textoffsetx>50</textoffsetx>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>Light22</font>
-                    <textcolor>$INFO[Skin.String(MainMenuTextColor)]</textcolor>
-                    <focusedcolor>$INFO[Skin.String(MainMenuFocusTextColor)]</focusedcolor>
-                    <texturefocus colordiffuse="$INFO[Skin.String(MainMenuFocusButtonColor)]">colors/color_white.png</texturefocus>
-                    <texturenofocus/>
-                    <label>13012</label>
-                    <onclick>quit</onclick>
+					<description>powerbutton</description>
+                    <width>50</width>
+                    <height>50</height>
+					<texturefocus colordiffuse="$INFO[Skin.String(HomeViewDetailsFocusColor)]">common/shutdown2.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(MainMenuTextColor)]">common/shutdown2.png</texturenofocus>
+					<onclick>quit</onclick>
                 </control>
             </control>
         </control>
@@ -1287,8 +941,8 @@
     <include name="SideBladeSubMenu">
         <!-- submenu -->
         <control type="group">
-            <posx>420</posx>
-            <posy>170</posy>
+            <posx>425</posx>
+            <posy>25%</posy>
             <animation type="Conditional" condition="Control.IsVisible(4444)">
                 <effect type="fade" start="0" end="80" time="250" delay="0" />
                 <effect type="slide" start="-10" end="0" time="200" delay="0" tween="cubic" easing="inout"/>
@@ -1320,16 +974,14 @@
 
             <!--Panel-->
             <control type="image">
-                <posx>-20</posx>
-                <width>360</width>
-                <height>250</height>
-                <texture border="5">diffuse/panel.png</texture>
-                <colordiffuse>$INFO[Skin.String(MainMenuPanelColor)]</colordiffuse>
-                <visible>Skin.String(MainMenuPanelColor) + !Skin.String(MainMenuPanelColor,None)</visible>
-                <aspectratio>stretch</aspectratio>
+				<posx>-35</posx>
+                <posy>-80</posy>
+                <width>380</width>
+                <height>404</height>
+                <texture border="100">common/side-blade.png</texture>
             </control>
             <control type="list" id="4444">
-                <posx>-20</posx>
+                <posx>-34</posx>
                 <visible allowhiddenfocus="true">[String.IsEqual(Window(Home).Property(submenu),show) | Control.HasFocus(4444)] + Integer.IsGreater(Container(4445).NumItems,0) + !Control.IsVisible(4446)</visible>
                 <visible>!Skin.HasSetting(DisableAllSubmenus)</visible>
                 <width>360</width>
@@ -1357,7 +1009,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="360" height="50">
+                <focusedlayout width="328" height="55">
                     <!-- <control type="image">
                         <texture>colors/color_white.png</texture>
                         <colordiffuse>$INFO[Skin.String(MainMenuSecondaryFocusButtonColor)]</colordiffuse>

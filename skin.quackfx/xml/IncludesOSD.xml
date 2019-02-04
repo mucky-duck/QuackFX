@@ -2926,7 +2926,7 @@
 			<control type="image">
 				<width>100%</width>
 				<height>100%</height>
-				<texture border="15">special://home/addons/resource.images.backgroundoverlays.basic/resources/Vignette.png</texture>
+				<texture border="15">overlay/Vignette.png</texture>
 				<colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
 			</control>
 			<!--Video Cover-->

@@ -5,8 +5,8 @@
 	<shortcut>
 		<label>$LOCALIZE[32022]</label>
 		<label2>$LOCALIZE[32022]</label2>
-		<icon>shortcuts/antenna.png</icon>
-		<thumb>$INFO[Window(Home).Property(SkinHelper.PvrBackground)]</thumb>
+		<icon>icons/sideblade/Live.png</icon>
+		<thumb/>
 		<action>ActivateWindow(TVGuide)</action>
 	</shortcut>
 
@@ -14,7 +14,7 @@
 	<shortcut>
 		<label>$LOCALIZE[137]</label>
 		<label2>$LOCALIZE[137]</label2>
-		<icon>shortcuts/search.png</icon>
+		<icon>icons/sideblade/Search.png</icon>
 		<thumb/>
 		<action>RunAddOn(script.globalsearch)</action>
 		<visible>Skin.String(HomeLayout,netflix2)</visible>
@@ -24,7 +24,7 @@
 	<shortcut>
 		<label>$LOCALIZE[10000]</label>
 		<label2>$LOCALIZE[10000]</label2>
-		<icon>shortcuts/home.png</icon>
+		<icon>icons/sideblade/Home.png</icon>
 		<thumb />
 		<action>ActivateWindow(home,return)</action>
 		<visible>Skin.String(HomeLayout,netflix2)</visible>
@@ -34,8 +34,8 @@
 	<shortcut>
 		<label>$LOCALIZE[20343]</label>
 		<label2>$LOCALIZE[20343]</label2>
-		<icon>shortcuts/tv.png</icon>
-        <thumb>$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</thumb>
+		<icon>icons/sideblade/TVShows.png</icon>
+        <thumb />
 		<action>ActivateWindow(3017,return)</action>
 	</shortcut>
 
@@ -43,28 +43,36 @@
 	<shortcut>
 		<label>$LOCALIZE[342]</label>
 		<label2>$LOCALIZE[342]</label2>
-		<icon>shortcuts/clapperboard.png</icon>
-        <thumb>$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</thumb>
+		<icon>icons/sideblade/Movies.png</icon>
+        <thumb />
 		<action>ActivateWindow(3018,return)</action>
 	</shortcut>
 
-	<!-- my list hub -->
-    <shortcut>
-        <label>$LOCALIZE[31534]</label>
-        <label2>$LOCALIZE[31534]</label2>
-        <icon>shortcuts/mylist.png</icon>
-        <thumb />
-        <action>ActivateWindow(3021,return)</action>
-        <visible>Skin.String(HomeLayout,netflix2)</visible>
-    </shortcut>
-
-	<!-- new hub -->
+	<!-- music -->
 	<shortcut>
-		<label>New</label>
-		<label2>New</label2>
-		<icon>shortcuts/new.png</icon>
+		<label>$LOCALIZE[10502]</label>
+		<label2>$LOCALIZE[10502]</label2>
+		<icon>icons/sideblade/Music2.png</icon>
 		<thumb />
-		<action>ActivateWindow(3020,return)</action>
-        <visible>Skin.String(HomeLayout,netflix2)</visible>
+		<action>ActivateWindow(10502,return)</action>
+	</shortcut>
+	<!-- musicvideos tile -->
+
+	<!-- addons -->
+	<shortcut>
+		<label>$LOCALIZE[10040]</label>
+		<label2>$LOCALIZE[10040]</label2>
+		<icon>icons/sideblade/Addon.png</icon>
+		<thumb />
+		<action>ActivateWindow(Programs,Addons,return)</action>
+	</shortcut>
+	
+	<!-- settings -->
+	<shortcut>
+		<label>$LOCALIZE[10004]</label>
+		<label2>$LOCALIZE[10004]</label2>
+		<icon>icons/sideblade/Settings.png</icon>
+		<thumb />
+		<action>ActivateWindow(Settings)</action>
 	</shortcut>
 </shortcuts>

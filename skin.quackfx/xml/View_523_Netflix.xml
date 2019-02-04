@@ -71,7 +71,7 @@
             <control type="image">
                 <width>100%</width>
                 <height>100%</height>
-                <texture colordiffuse="$VAR[Netflix2_PanelColor]">special://home/addons/resource.images.backgroundoverlays.basic/resources/Side by Side.png</texture>
+                <texture colordiffuse="$VAR[Netflix2_PanelColor]">overlay/Side_by_Side.png</texture>
                 <animation effect="fade" start="100" end="95" delay="0" time="0"  condition="true">Conditional</animation>
                 <animation effect="fade" end="0" time="600">Hidden</animation>
                 <animation effect="fade" start="50" end="95" time="1400">Visible</animation>
@@ -88,7 +88,7 @@
                     <visible>!Control.IsVisible(523001) + Skin.HasSetting(View523_DetailsShowFanart)</visible>
                     <right>0</right>
                     <top>0</top>
-                    <texture background="true" diffuse="special://home/addons/resource.images.backgroundoverlays.basic/resources/Right Corner.png">$VAR[netflixThumb]</texture>
+                    <texture background="true" diffuse="overlay/Right_Corner.png">$VAR[netflixThumb]</texture>
                     <fadetime>550</fadetime>
                     <width>1400</width>
                     <height>787</height>
