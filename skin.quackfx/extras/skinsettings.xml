@@ -114,7 +114,7 @@
     <setting id="CustomBackgroundSetting" value="icons/sideblade/Favourite.png" icon="icons/sideblade/Favourite.png" label="Favourite" description="Default Favourite"/>
     <setting id="CustomBackgroundSetting" value="icons/sideblade/Games.png" icon="icons/sideblade/Games.png" label="Games" description="Default Games"/>
 	<setting id="CustomBackgroundSetting" value="icons/sideblade/Home.png" icon="icons/sideblade/Home.png" label="Home" description="Default Home"/>
-	<setting id="CustomBackgroundSetting" value="icons/sideblade/Live.png" icon="icons/sideblade/antenna.png" label="Live TV" description="Default Live TV"/>
+	<setting id="CustomBackgroundSetting" value="icons/sideblade/Live.png" icon="icons/sideblade/Live.png" label="Live TV" description="Default Live TV"/>
 	<setting id="CustomBackgroundSetting" value="icons/sideblade/Movies.png" icon="icons/sideblade/Movies.png" label="Movies" description="Default Movies"/>
     <setting id="CustomBackgroundSetting" value="icons/sideblade/Music.png" icon="icons/sideblade/Music.png" label="Music" description="Default Music"/>
 	<setting id="CustomBackgroundSetting" value="icons/sideblade/Music2.png" icon="icons/sideblade/Music2.png" label="Music2" description="Default Music2"/>
