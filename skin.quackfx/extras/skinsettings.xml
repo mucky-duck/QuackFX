@@ -110,7 +110,7 @@
     
 	<!-- temporary menu icons -->
 	<setting id="CustomBackgroundSetting" value="icons/sideblade/Addon.png" icon="icons/sideblade/Addon.png" label="Addon" description="Default Addon"/>
-    <setting id="CustomBackgroundSetting" value="icons/sideblade/Android.png" icon="icons/sideblade/Android" label="Android" description="Default Android"/>
+    <setting id="CustomBackgroundSetting" value="icons/sideblade/Android.png" icon="icons/sideblade/Android.png" label="Android" description="Default Android"/>
     <setting id="CustomBackgroundSetting" value="icons/sideblade/Favourite.png" icon="icons/sideblade/Favourite.png" label="Favourite" description="Default Favourite"/>
     <setting id="CustomBackgroundSetting" value="icons/sideblade/Games.png" icon="icons/sideblade/Games.png" label="Games" description="Default Games"/>
 	<setting id="CustomBackgroundSetting" value="icons/sideblade/Home.png" icon="icons/sideblade/Home.png" label="Home" description="Default Home"/>
@@ -123,7 +123,7 @@
     <setting id="CustomBackgroundSetting" value="icons/sideblade/Search.png" icon="icons/sideblade/Search.png" label="Search" description="Default Search"/>
     <setting id="CustomBackgroundSetting" value="icons/sideblade/Settings.png" icon="icons/sideblade/Settings.png" label="Settings" description="Default Settings"/>
 	<setting id="CustomBackgroundSetting" value="icons/sideblade/TVShows.png" icon="icons/sideblade/TVShows.png" label="TV Shows" description="Default TV Shows"/>
-    <setting id="CustomBackgroundSetting" value="icons/sideblade/Videos.png" icon="icons/sideblade/Videos" label="TV Shows" description="Default Videos"/>
+    <setting id="CustomBackgroundSetting" value="icons/sideblade/Videos.png" icon="icons/sideblade/Videos.png" label="TV Shows" description="Default Videos"/>
 	<setting id="CustomBackgroundSetting" value="icons/sideblade/Weather.png" icon="icons/sideblade/Weather.png" label="Weather" description="Default Weather"/>
     <setting id="CustomBackgroundSetting" value="icons/sideblade/Years.png" icon="icons/sideblade/Years.png" label="Years" description="Default Years"/>
 

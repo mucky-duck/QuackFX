@@ -66,7 +66,7 @@
 	
 		<!-- Home Screen -->
         <include condition="Skin.String(HomeLayout, enhanced)">EnhancedHome</include>
-        <include condition="Skin.String(HomeLayout, netflix2)">HomeNetflix2</include>
+        <include condition="Skin.String(HomeLayout, netflix2)">HomeQuackFX</include>
         <include condition="Skin.String(HomeLayout, win10)">HomeWin10</include>
 		
         <include condition="Skin.HasSetting(DebugGrid) | Skin.HasSetting(DebugInfo)">DebugInfo</include>

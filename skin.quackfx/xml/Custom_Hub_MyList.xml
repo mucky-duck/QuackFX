@@ -16,6 +16,6 @@
         <include>NowPlayingInfoBar</include>
         <!-- hidden submenu for count calculations -->
         <include condition="!Skin.HasSetting(DisableAllSubmenus)">hiddenSubmenu</include>
-        <include>HomeNetflix2</include>
+        <include>HomeQuackFX</include>
 	</controls>
 </window>
