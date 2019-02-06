@@ -56,12 +56,20 @@
 		<thumb />
 		<action>ActivateWindow(10502,return)</action>
 	</shortcut>
-	<!-- musicvideos tile -->
-
+	
+	<!-- games -->
+	<shortcut>
+		<label>$LOCALIZE[10821]</label>
+		<label2>$LOCALIZE[10821]</label2>
+		<icon>icons/sideblade/Games.png</icon>
+		<thumb />
+		<action>ActivateWindow(Games,return)</action>
+	</shortcut>
+	
 	<!-- addons -->
 	<shortcut>
-		<label>$LOCALIZE[10040]</label>
-		<label2>$LOCALIZE[10040]</label2>
+		<label>$LOCALIZE[24001]</label>
+		<label2>$LOCALIZE[24001]</label2>
 		<icon>icons/sideblade/Addon.png</icon>
 		<thumb />
 		<action>ActivateWindow(Programs,Addons,return)</action>
