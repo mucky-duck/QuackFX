@@ -1687,7 +1687,7 @@
 				<font/>
 				<texturefocus>osd/classic/SubtitlesFO.png</texturefocus>
 				<texturenofocus>osd/classic/SubtitlesNF.png</texturenofocus>
-				<onclick>ActivateWindow(SubtitleSearch)</onclick>
+				<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
 				<visible>!VideoPlayer.Content(livetv)</visible>
 			</control>
 			<control type="button" id="105">
@@ -2229,7 +2229,7 @@
 				<onup>Control.SetFocus(1401)</onup>
 				<texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">$PARAM[iconspath]Subtitles.png</texturefocus>
 				<texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">$PARAM[iconspath]Subtitles.png</texturenofocus>
-				<onclick condition="!VideoPlayer.HasSubtitles">ActivateWindow(SubtitleSearch)</onclick>
+				<onclick condition="!VideoPlayer.HasSubtitles">ActivateWindow(osdsubtitlesettings)</onclick>
 				<onclick condition="!String.IsEqual(Window(Home).Property(subtitlemenu), show) + VideoPlayer.HasSubtitles">SetProperty(subtitlemenu,show,Home)</onclick>
 				<onclick condition="String.IsEqual(Window(Home).Property(subtitlemenu), show)">ClearProperty(subtitlemenu,Home)</onclick>
 				<onback condition="String.IsEqual(Window(Home).Property(subtitlemenu), show)">ClearProperty(subtitlemenu,Home)</onback>
