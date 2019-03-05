@@ -1,7 +1,7 @@
 # Kodi Media Center language file
-# Addon Name: Titan
-# Addon id: skin.titan
-# Addon Provider: marcelveldt,mgonzales
+# Addon Name: QuackFX
+# Addon id: skin.quackfx
+# Addon Provider: Mucky Duck
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"

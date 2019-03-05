@@ -2205,7 +2205,6 @@
 			</control>
 			<control type="button" id="102">
 				<description>Video Settings</description>
-				<description>Video Settings</description>
 				<width>$PARAM[size]</width>
 				<height>$PARAM[size]</height>
 				<label>13395</label>
@@ -2215,27 +2214,17 @@
 				<texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">$PARAM[iconspath]Video.png</texturenofocus>
 				<onclick>ActivateWindow(123)</onclick>
 				<visible>Player.HasVideo</visible>
-				<onfocus condition="String.IsEqual(Window(Home).Property(subtitlemenu), show)">ClearProperty(subtitlemenu,home)</onfocus>
 			</control>
 			<control type="button" id="104">
-				<description>Subtitles</description>
 				<description>Subtitles</description>
 			    <width>$PARAM[size]</width>
 				<height>$PARAM[size]</height>
 				<label>287</label>
 				<font/>
-				<onup>SetProperty(subtitlemenu,show,Home)</onup>
-				<onup>Control.SetFocus(1401)</onup>
-				<onup>Control.SetFocus(1401)</onup>
 				<texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">$PARAM[iconspath]Subtitles.png</texturefocus>
 				<texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">$PARAM[iconspath]Subtitles.png</texturenofocus>
-				<onclick condition="!VideoPlayer.HasSubtitles">ActivateWindow(osdsubtitlesettings)</onclick>
-				<onclick condition="!String.IsEqual(Window(Home).Property(subtitlemenu), show) + VideoPlayer.HasSubtitles">SetProperty(subtitlemenu,show,Home)</onclick>
-				<onclick condition="String.IsEqual(Window(Home).Property(subtitlemenu), show)">ClearProperty(subtitlemenu,Home)</onclick>
-				<onback condition="String.IsEqual(Window(Home).Property(subtitlemenu), show)">ClearProperty(subtitlemenu,Home)</onback>
-				<onclick condition="!String.IsEqual(Window(Home).Property(subtitlemenu), show) + VideoPlayer.HasSubtitles">Control.SetFocus(1401)</onclick>
-				<visible>!VideoPlayer.Content(livetv)</visible>
-				<visible>Player.HasVideo</visible>
+				<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
+				<visible>!VideoPlayer.Content(livetv)| VideoPlayer.HasSubtitles</visible>
 			</control>
 			<control type="button" id="105">
 				<description>teletext</description>
