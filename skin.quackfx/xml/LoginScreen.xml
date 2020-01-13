@@ -69,7 +69,7 @@
                                 <width>316</width>
                                 <height>316</height>
                                 <aspectratio>keep</aspectratio>
-                                <bordertexture colordiffuse="d9ffffff">colors/color_white.png</bordertexture>
+                                <bordertexture colordiffuse="$INFO[Skin.String(HomeViewDetailsFocusColor)]">colors/color_white.png</bordertexture>
                                 <bordersize>8</bordersize>
                                 <texture background="true" fallback="common/profil/avatar.png">$INFO[Listitem.Icon]</texture>
                             </control>
@@ -100,7 +100,7 @@
                 <ondown>52</ondown>
                 <onright>52</onright>
                 <onleft>52</onleft>
-                <texturefocus colordiffuse="$INFO[Skin.String(MainMenuFocusTextColor)]">common/shutdown2.png</texturefocus>
+                <texturefocus colordiffuse="$INFO[Skin.String(HomeViewDetailsFocusColor)]">common/shutdown2.png</texturefocus>
                 <texturenofocus colordiffuse="$INFO[Skin.String(MainMenuTextColor)]">common/shutdown2.png</texturenofocus>
                 <onclick condition="System.CanPowerDown">ActivateWindow(shutdownmenu)</onclick>
                 <onclick condition="!System.CanPowerDown">Quit()</onclick>

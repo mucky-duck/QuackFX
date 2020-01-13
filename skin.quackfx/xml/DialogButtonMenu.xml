@@ -128,7 +128,7 @@
 					<width>64</width>
 					<height>64</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<colordiffuse>$INFO[Skin.String(GeneralTextColor)]</colordiffuse>
+					<colordiffuse>$INFO[Skin.String(HomeViewDetailsFocusColor)]</colordiffuse>
 				</control>
 			</focusedlayout>
 			<content>

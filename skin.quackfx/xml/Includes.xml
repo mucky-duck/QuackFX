@@ -5,8 +5,7 @@
     <include file="IncludesVariables.xml" />
     <include file="IncludesModVariables.xml" />
     <include file="IncludesHomeWidgets.xml" />
-	<include file="IncludesHomeTitanTilesSubMenu.xml" />
-    <include file="IncludesNowPlaying.xml" />
+	<include file="IncludesNowPlaying.xml" />
     <include file="View_10_SimplePVR.xml" />
     <include file="View_50_List.xml" />
 	<include file="View_51_BigList.xml" />
@@ -52,10 +51,8 @@
     <include file="IncludesOSD.xml" />
     <include file="IncludesSkinSetings.xml" />
     <include file="IncludesContextMenu.xml" />
-	<include file="IncludesHomeEnhanced.xml" />
 	<include file="IncludesHome.xml" />
-    <include file="IncludesHomeWin10.xml" />
-	<include file="IncludesTouchSupport.xml" />
+    <include file="IncludesTouchSupport.xml" />
 	<include file="IncludesDefaultSkinSettings.xml" />
 	<include file="IncludesBackgroundBuilding.xml" />
 	<include file="IncludesAnimations.xml" />
