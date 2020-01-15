@@ -90,8 +90,8 @@
                     <top>0</top>
                     <texture background="true" diffuse="overlay/Right_Corner.png">$VAR[netflixThumb]</texture>
                     <fadetime>550</fadetime>
-                    <width>1400</width>
-                    <height>787</height>
+                    <width>1300</width>
+                    <height>700</height>
                     <aspectratio>scale</aspectratio>
                     <aspectratio scalediffuse="true" aligny="top">scale</aspectratio>
                     <animation effect="fade" end="0" time="600">Hidden</animation>
@@ -100,10 +100,10 @@
 
                 <!-- netflix details -->
                 <control type="grouplist">
-                    <width>1500</width>
-                    <posx>65</posx>
+                    <width>680</width>
+                    <posx>40</posx>
                     <posy>10</posy>
-                    <height>525</height>
+                    <height>680</height>
                     <orientation>vertical</orientation>
                     <usecontrolcoords>true</usecontrolcoords>
                     <itemgap>10</itemgap>
@@ -115,7 +115,7 @@
                     <control type="image" id="29475">
                         <visible>!Skin.HasSetting(NoClearLogoNetflix) + !String.IsEmpty(Control.GetLabel(29475))</visible>
                         <height>230</height>
-                        <width>593</width>
+                        <width>680</width>
                         <align>left</align>
                         <aspectratio align="left" aligny="center">keep</aspectratio>
                         <texture background="true">$VAR[ListItemClearLogo]</texture>
@@ -125,7 +125,7 @@
                         <visible>String.IsEmpty(Control.GetLabel(29475)) | Skin.HasSetting(NoClearLogoNetflix)</visible>
                         <top>55</top>
                         <height max="175">auto</height>
-                        <width max="815">auto</width>
+                        <width max="650">auto</width>
                         <font>Reg48</font>
                         <align>left</align>
                         <aligny>center</aligny>
@@ -137,7 +137,7 @@
 
                     <!-- spotlight row details -->
                     <control type="group">
-                        <width>1000</width>
+                        <width>650</width>
                         <height>40</height>
                         <include>Default_Fade</include>
                         <include>SpotlightRowDetails</include>
@@ -147,7 +147,7 @@
                     <control type="label" id="823">
                         <visible>!String.IsEqual(Window(Home).Property(ListItem.dbtype),episode) + !String.IsEmpty(Control.GetLabel(823))</visible>
                         <height>30</height>
-                        <width>800</width>
+                        <width>650</width>
                         <font>Reg28</font>
                         <align>left</align>
                         <aligny>center</aligny>
@@ -161,12 +161,12 @@
                         <visible>Container.Content(seasons) | Container.Content(episodes)</visible>
                         <orientation>vertical</orientation>
                         <height>125</height>
-                        <width>1000</width>
+                        <width>650</width>
                         <include>Default_Fade</include>
                         <!-- season x episode x & title -->
                         <control type="label">
                             <height>85</height>
-                            <width>1000</width>
+                            <width>650</width>
                             <font>Reg40</font>
                             <align>left</align>
                             <aligny>center</aligny>
@@ -177,7 +177,7 @@
                         <!-- progress bar & continue label -->
                         <control type="group">
                             <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
-                            <width>1000</width>
+                            <width>650</width>
                             <height>40</height>
                             <aligny>center</aligny>
                             <!-- Progress bar -->
@@ -207,7 +207,7 @@
                     <!-- plot -->
                     <control type="textbox" id="5444322">
                         <visible>!Container.Content(seasons)</visible>
-                        <height min="50" max="138">auto</height>
+                        <height min="50" max="250">auto</height>
                         <width>650</width>
                         <textcolor>$VAR[NetflixPlotTextColor]</textcolor>
                         <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
@@ -220,7 +220,7 @@
                     <!-- additional info -->
                     <control type="group">
                         <height>30</height>
-                        <width>800</width>
+                        <width>650</width>
                         <visible>!String.IsEmpty(Control.GetLabel(84)) + !Control.IsVisible(588688)</visible>
                         <include>Default_Fade</include>
                         <control type="image">
@@ -233,7 +233,7 @@
                         <control type="label" id="84">
                             <left>40</left>
                             <height>30</height>
-                            <width>800</width>
+                            <width>650</width>
                             <label>$VAR[NetflixMoreDetails]</label>
                             <textcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</textcolor>
                             <align>left</align>
@@ -243,20 +243,20 @@
                     </control>
                 </control>
 
-                <!-- media flags -->
+                <!-- media flags
                 <control type="group">
                     <visible>!Skin.HasSetting(NoFooterBar)</visible>
-                    <top>580</top>
-                    <posx>65</posx>
+                    <top>600</top>
+                    <posx>900</posx>
                     <height>50</height>
                     <include>mediaflags</include>
-                </control>
+                </control> -->
 
                 <!-- ratings & studio -->
                 <control type="group">
                     <visible>!Skin.HasSetting(NoFooterBar)</visible>
                     <right>30</right>
-                    <top>550</top>
+                    <top>570</top>
                     <height>50</height>
                     <width>1000</width>
                     <include condition="Skin.HasSetting(EnableWhiteRatingInFooter)">AltRatingWhiteHome</include>

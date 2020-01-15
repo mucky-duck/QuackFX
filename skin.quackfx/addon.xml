@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon id="skin.quackfx" version="18.0.0.6" name="QuackFX" provider-name="Mucky Duck">
+<addon id="skin.quackfx" version="18.0.0.7" name="QuackFX" provider-name="Mucky Duck">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="plugin.program.autocompletion" version="1.0.0"/>
@@ -16,7 +16,7 @@
         <import addon="script.skin.helper.widgets" version="1.0.0"/>
         <import addon="script.skin.helper.backgrounds" version="1.0.0"/>
 		<import addon="script.user.rating" version="1.0.0"/>
-		<import addon="script.artwork.beef" version="1.0.0"/>
+		<import addon="script.artwork.beef" version="0.25.0"/>
 		<import addon="script.extendedinfo" version="1.0.0"/>
 		<import addon="weather.yahoo" version="1.0.0"/>
         
