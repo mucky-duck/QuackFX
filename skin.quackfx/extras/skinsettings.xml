@@ -73,10 +73,10 @@
     <setting id="mediaflagsstyle" value="large" label="Large Icons" condition="!Skin.HasTheme(classic)" icon="special://skin/extras/viewthumbs/flags_large.jpg" description="">
         <onselect condition="Window.IsActive(MyVideoNav.xml)">ReloadSkin</onselect>
     </setting>
-    <setting id="mediaflagsstyle" value="large_color" label="Large Icons Color" condition="!Skin.HasTheme(classic)" icon="special://skin/extras/viewthumbs/flags_large_color.jpg" description="">
+    <setting id="mediaflagsstyle" value="large_color" label="Large Icons Color" condition="!Skin.HasTheme(classic)" icon="special://skin/extras/viewthumbs/flags_large_color.jpg" description="" default="true">
         <onselect condition="Window.IsActive(MyVideoNav.xml)">ReloadSkin</onselect>
     </setting>
-    <setting id="mediaflagsstyle" value="disabled" label="Disabled" condition="" icon="" description="" default="true">
+    <setting id="mediaflagsstyle" value="disabled" label="Disabled" condition="" icon="" description="">
         <onselect condition="Window.IsActive(MyVideoNav.xml)">ReloadSkin</onselect>
     </setting>
 
@@ -85,8 +85,8 @@
     <setting id="osdmediaflagsstyle" value="boxed" label="Boxed Info" condition="" icon="special://skin/extras/viewthumbs/flags_boxed.jpg" description=""/>
     <setting id="osdmediaflagsstyle" value="textbased - full info" label="Textbased - Full Info" condition="" icon="special://skin/extras/viewthumbs/flags_text.jpg" description=""/>
     <setting id="osdmediaflagsstyle" value="large" label="Large Icons" condition="" icon="special://skin/extras/viewthumbs/flags_large.jpg" description=""/>
-    <setting id="osdmediaflagsstyle" value="large_color" label="Large Icons Color" condition="" icon="special://skin/extras/viewthumbs/flags_large_color.jpg" description=""/>
-    <setting id="osdmediaflagsstyle" value="disabled" label="Disabled" condition="" icon="" description="" default="true"/>
+    <setting id="osdmediaflagsstyle" value="large_color" label="Large Icons Color" condition="" icon="special://skin/extras/viewthumbs/flags_large_color.jpg" description="" default="true"/>
+    <setting id="osdmediaflagsstyle" value="disabled" label="Disabled" condition="" icon="" description=""/>
 
     <!-- Guide rows -->
     <setting id="GuideRows" value="7" label="7 rows" condition="" icon="special://skin/extras/viewthumbs/guide_7.jpg" description="">
@@ -103,8 +103,8 @@
     </setting>
 
     <!-- Global Background -->
-    <setting id="CustomBackgroundSetting" value="colors/color_transparent.png" label="None" condition="" icon="colors/color_transparent.png" description="None" default="true"/>
-    <setting id="CustomBackgroundSetting" value="resource://resource.images.skinbackgrounds.titanium/global_blue.jpg" label="$LOCALIZE[31023]" condition="" icon="resource://resource.images.skinbackgrounds.titanium/global_blue.jpg" description="Default Titan background"/>  <!--removed default -->
+    <setting id="CustomBackgroundSetting" value="special://skin/resources/fanart.jpg" label="$LOCALIZE[31023]" condition="" icon="special://skin/resources/fanart.jpg" description="Default QuackFX background" default="true"/>
+    <setting id="CustomBackgroundSetting" value="colors/color_transparent.png" label="None" condition="" icon="colors/color_transparent.png" description="None"/>
     <setting id="CustomBackgroundSetting" value="$INFO[Skin.String(WeatherFanArtPack.path)]$INFO[Window(Weather).Property(Current.fanartCode)]$INFO[Skin.String(WeatherFanArtPack.ext)]" label="$LOCALIZE[31025]" condition="!String.IsEmpty(Window(Weather).Property(current.fanartCode)) + Skin.String(WeatherFanArtPack.path)" icon="$INFO[Skin.String(WeatherFanArtPack.path)]$INFO[Window(Weather).Property(Current.fanartCode)]$INFO[Skin.String(WeatherFanArtPack.ext)]" description=""/>
     <setting id="CustomBackgroundSetting" value="widgetfanart" label="$LOCALIZE[31612]" condition="!String.IsEmpty(Container(211).ListItem.Property(widget))" />
     
