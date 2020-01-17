@@ -23,7 +23,19 @@
         <!-- allow override
         <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(UseSectionBackground)</onload>
         -->
+		
+		
 		<!-- homescreen layout -->
+		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(NetflixHomeShowLargeThumb)</onload>
+        <!-- homescreen options -->
+		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(EnhancedHome_Circular)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(widgetszoomfocus)</onload>
+        
+		
+		<!-- background settings -->
+		<onload condition="!Skin.String(BackgroundOverlayTexture.label)">Skin.SetString(BackgroundOverlayTexture.label,Default)</onload>
+        <onload condition="!Skin.String(BackgroundOverlayTexture.label)">Skin.SetString(BackgroundOverlayTexture,overlay/Black.png)</onload>
+        
 		
 		<!-- media library views -->
         <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(ShowFanartBackground)</onload>
@@ -53,7 +65,21 @@
         <onload condition="!Skin.String(SkinHelper.ForcedViews.sets)">Skin.SetString(SkinHelper.ForcedViews.sets,50)</onload>
         <onload condition="!Skin.String(SkinHelper.ForcedViews.setmovies)">Skin.SetString(SkinHelper.ForcedViews.setmovies,50)</onload>
         
+		
 		<!-- playback & osd -->
+		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(EnableOSDInfo)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(EnableOSDInfoMediaFlags)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetString(SkinHelper.ShowInfoAtPlaybackStart, 6)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(OSDShowInfoOnPause)</onload>
+		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(OSDLargeSeekingLabel)</onload>
+		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(EnableBufferingProgressOSD)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetString(SkinHelper.AutoCloseVideoOSD, 4)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(OSDShowClearArt)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(OSDShowClearLogo)</onload>
+        <!-- music playback -->
+		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(enableArtistBio)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetString(SkinHelper.AutoCloseMusicOSD, 4)</onload>
+        <!-- now playing infobar/background -->
 		
 		<!-- general skin settings -->
 		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(useExtendedWeatherScreen)</onload>
@@ -75,6 +101,19 @@
         <onload condition="!Skin.String(SkinHelper.StudioLogos)">Skin.SetString(SkinHelper.StudioLogos, resource://resource.images.studios.coloured/)</onload>
         <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(SkinHelper.StudioLogos.multi)</onload>
         
+		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(preferclearartoverlandscape)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(SkinHelper.EnableExtendedArt)</onload>
+		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(autoyoutubetrailer)</onload>
+		<onload condition="!Skin.String(autoyoutubetrailer)">Skin.SetString(autoyoutubetrailer, true)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(ShowLabelsPosterEpisodes)</onload>
+        
+		
+		<!-- smart shortcuts -->
+		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(SmartShortcuts.emby)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(SmartShortcuts.plex)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(SmartShortcuts.netflix)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(SmartShortcuts.playlists)</onload>
+        
 		
 		<!-- view settings -->
 		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(DetailsShowFanart)</onload>
@@ -86,49 +125,27 @@
         <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(PanelViewShowInfo)</onload>
         <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(ShowlabelsLandscape)</onload>
         <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(AnimateDiscArt)</onload>
+		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(View523_DetailsShowFanart)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(View525_HidePanel)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(View59_DetailsShowFanart)</onload>
         
-		
-		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetString(SkinHelper.ShowInfoAtPlaybackStart, 6)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetString(SkinHelper.AutoCloseVideoOSD, 4)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetString(SkinHelper.AutoCloseMusicOSD, 4)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetString(GuideRows, 9)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(GuideShowInfo)</onload>
-
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(HideWatchedRecentlyAdded)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(IsQuackFXSkin)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(SmartShortcuts.playlists)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(OSDShowInfoOnPause)</onload>
-		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(widgetszoomfocus)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(PVRShowPreview)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(SmartShortcuts.emby)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(SmartShortcuts.plex)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(SmartShortcuts.netflix)</onload>
+        
+		<!-- pvr settings -->
+		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(PVRShowPreview)</onload>
         <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(PVRGuideBackSideblade)</onload>
         <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(SkinHelper.EnablePVRThumbs)</onload>
         <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(pvrGuideOnFullscreenVideo)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(enableArtistBio)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(ShowLabelsPosterEpisodes)</onload>
-        <onload condition="!Skin.String(BackgroundOverlayTexture.label)">Skin.SetString(BackgroundOverlayTexture.label,Default)</onload>
-        <onload condition="!Skin.String(BackgroundOverlayTexture.label)">Skin.SetString(BackgroundOverlayTexture,overlay/Black.png)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetString(GuideRows, 9)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(GuideShowInfo)</onload>
+		
         
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(NetflixHomeShowLargeThumb)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(View523_DetailsShowFanart)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(SkinHelper.EnableMusicArt)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(View525_HidePanel)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(View59_DetailsShowFanart)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(EnhancedHome_Circular)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(UseNetflixOSDPanel)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(EnableOSDInfo)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(EnableOSDInfoNetflix)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(DisableNowPlayingClock)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(DisableHeader)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(EnableBufferingProgressOSD)</onload>
+		
+		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(DisableNowPlayingClock)</onload>
         <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(ShowEpisodePlotInfoDialog)</onload>
-		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(preferclearartoverlandscape)</onload>
-        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(DialogYesNo_FocusNO)</onload>
-		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(SkinHelper.EnableExtendedArt)</onload>
-		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(autoyoutubetrailer)</onload>
-		<onload condition="!Skin.String(autoyoutubetrailer)">Skin.SetString(autoyoutubetrailer, true)</onload>
+		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(DisableHeader)</onload>
+		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(SkinHelper.EnableMusicArt)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(HideWatchedRecentlyAdded)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(IsQuackFXSkin)</onload>
         
 		
         <!--(QuackFX default theme)-->
@@ -171,7 +188,7 @@
         <onload condition="!Skin.String(GeneralTextColor.name)">Skin.SetString(GeneralTextColor.name,White)</onload>
         <onload condition="!Skin.String(GeneralHighlightTextColor)">Skin.SetString(GeneralHighlightTextColor,darkred)</onload>
         <onload condition="!Skin.String(GeneralHighlightTextColor.name)">Skin.SetString(GeneralHighlightTextColor.name,Dark Red)</onload>
-        <!-- new colors -->
+  
         <onload condition="!Skin.String(NetflixPrimaryTextColor)">Skin.SetString(NetflixPrimaryTextColor,dimgray)</onload>
         <onload condition="!Skin.String(NetflixPrimaryTextColor.name)">Skin.SetString(NetflixPrimaryTextColor.name,dimgray)</onload>
         <onload condition="!Skin.String(NetflixSecondaryTextColor)">Skin.SetString(NetflixSecondaryTextColor,gray)</onload>
@@ -184,7 +201,7 @@
         <onload condition="!Skin.String(NetflixDetailsFlagColor.name)">Skin.SetString(NetflixDetailsFlagColor.name,LightGray)</onload>
         <onload condition="!Skin.String(RatingsLogoColor)">Skin.SetString(RatingsLogoColor,white)</onload>
         <onload condition="!Skin.String(RatingsLogoColor.name)">Skin.SetString(RatingsLogoColor.name,White)</onload>
-        <!-- -->
+        
         <onload condition="!Skin.String(BackgroundOverlayColor)">Skin.SetString(BackgroundOverlayColor,None)</onload>
         <onload condition="!Skin.String(BackgroundOverlayColor.name)">Skin.SetString(BackgroundOverlayColor.name,None)</onload>
         <onload condition="!Skin.String(BackgroundOverlayColor.base)">Skin.SetString(BackgroundOverlayColor.base,None)</onload>

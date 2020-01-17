@@ -64,7 +64,7 @@
 			</animation>
 		<!--Panel-->
 		<control type="image">
-			<posy>-250</posy>
+			<posy>-300</posy>
 			<posx>-20</posx>
 			<width>520</width>
 			<height>1750</height>
