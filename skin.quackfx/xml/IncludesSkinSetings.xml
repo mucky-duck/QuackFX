@@ -684,13 +684,6 @@
                 <label2>$INFO[skin.string(SkinHelper.RandomFanartDelay.label)]</label2>
                 <onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=SkinHelper.RandomFanartDelay,header=$LOCALIZE[31449])</onclick>
             </control>
-            <!--background animation-->
-            <control type="radiobutton" id="13018">
-                <include>SkinSettings_Button</include>
-                <label>31266</label>
-                <onclick>Skin.ToggleSetting(BackgroundAnimation)</onclick>
-                <selected>Skin.HasSetting(BackgroundAnimation)</selected>
-            </control>
             <!--enable wall backgrounds-->
             <control type="radiobutton" id="31812">
                 <include>SkinSettings_Button</include>
