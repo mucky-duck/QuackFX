@@ -586,19 +586,8 @@
         <!-- Header -->
 		<include>Header</include>
         
-        <!--Side Menu BIG-->
-        <control type="group">
-            <top>0</top>
-            <left>0</left>
-            <include condition="Skin.HasSetting(NetFlixHome_LargeMenu)">HomeBigVertical_submenu</include>
-            <include condition="Skin.HasSetting(NetFlixHome_LargeMenu)">HomeBigVertical_mainmenu</include>
-            <animation type="Conditional" condition="![ControlGroup(300).HasFocus() | String.IsEqual(Window(Home).Property(ShowViewSubMenu),show) | Control.HasFocus(300)]">
-                <effect type="slide" start="0" end="-660" time="300" delay="0" tween="cubic" easing="inout" />
-            </animation>
-        </control>
-
-        <!-- Side Menu Small -->
-        <include condition="!Skin.HasSetting(NetFlixHome_LargeMenu)">SideBladeMainMenu</include>
+        <!-- Side Menu -->
+        <include>SideBladeMainMenu</include>
     </include>
 
     <!-- Netflix2 Panel Color -->
