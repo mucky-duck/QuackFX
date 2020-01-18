@@ -336,14 +336,6 @@
                 <visible>![Skin.HasSetting(UseSingleShortcut) + Skin.String(HomeLayout, simplehor)]</visible>
                 <visible>Skin.String(HomeLayout, enhanced) | Skin.String(HomeLayout, netflix2) | Skin.String(HomeLayout, win10) | Skin.String(HomeLayout, simplehor) | String.Contains(Skin.String(HomeLayout), lowhorizontal)</visible>
             </control>
-            <!--enable home menu animation-->
-            <control type="radiobutton" id="31620">
-                <include>SkinSettings_Button</include>
-                <label>31620</label>
-                <onclick>Skin.ToggleSetting(Vertical_Home_Animation)</onclick>
-                <selected>Skin.HasSetting(Vertical_Home_Animation)</selected>
-                <visible>[Skin.String(HomeLayout, simplever) | Skin.String(HomeLayout, simplever_tiles)]</visible>
-            </control>
             <!--enable widgets animation-->
             <control type="radiobutton" id="31621">
                 <include>SkinSettings_Button</include>
