@@ -24,41 +24,22 @@
     <setting id="SubmenuLayout" value="subpage" label="$LOCALIZE[31316]" condition="" icon="special://skin/extras/viewthumbs/submenulayout_subpage.jpg" description=""/>
 
 
-    <setting id="widgetstyle" value="None" label="$LOCALIZE[31641]" condition="!String.IsEmpty(Window.Property(widgetcontrols))+ !Skin.String(HomeLayout,win10)" icon="DefaultAddonNone.png" description="$INFO[Skin.String(widgetstyle)]"/>
+    <setting id="widgetstyle" value="None" label="$LOCALIZE[31641]" condition="!String.IsEmpty(Window.Property(widgetcontrols))" icon="DefaultAddonNone.png" description="$INFO[Skin.String(widgetstyle)]"/>
 
     <!-- widget style: horizontal -->
-    <setting id="widgetstyle" value="poster" label="Poster" condition="!String.Contains(Skin.String(HomeLayout),ver) + !Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_hor_poster.jpg" description=""/>
-    <setting id="widgetstyle" value="landscape" label="Landscape" condition="!String.Contains(Skin.String(HomeLayout),ver) + !Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_hor_landscape.jpg" description=""/>
-    <setting id="widgetstyle" value="landscapesmall" label="Landscape Small" condition="!String.Contains(Skin.String(HomeLayout),ver) + !Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_hor_landscape.jpg" description=""/>
-    <setting id="widgetstyle" value="singlebox" label="Single Box" condition="!String.Contains(Skin.String(HomeLayout),ver) + !Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_hor_singlebox.jpg" description=""/>
-    <setting id="widgetstyle" value="square" label="Square" condition="!String.Contains(Skin.String(HomeLayout),ver) + !Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_hor_square.jpg" description=""/>
-    <setting id="widgetstyle" value="minisquare" label="Mini Square" condition="!String.Contains(Skin.String(HomeLayout),ver) + !Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_hor_square.jpg" description=""/>
-    <setting id="widgetstyle" value="smallposter" label="Small Posters" condition="!String.Contains(Skin.String(HomeLayout),ver) + !Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_hor_smallposter.jpg" description=""/>
-    <setting id="widgetstyle" value="widebox" label="Wide Box" condition="!String.Contains(Skin.String(HomeLayout),ver) + !Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_hor_widebox.jpg" description=""/>
-    <setting id="widgetstyle" value="banner" label="Banner" condition="!String.Contains(Skin.String(HomeLayout),ver) + !Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_win10_banner.jpg" description=""/>
-
-    <!-- widget style: win10 -->
-    <setting id="widgetstyle" value="square" label="Square" condition="Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_win10_square.jpg" description=""/>
-    <setting id="widgetstyle" value="smallposter" label="Small Posters" condition="Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_win10_poster.jpg" description=""/>
-    <setting id="widgetstyle" value="landscape" label="Landscape" condition="Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_win10_landscape.jpg" description=""/>
-    <setting id="widgetstyle" value="banner" label="Banner" condition="Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_win10_banner.jpg" description=""/>
-
-    <!-- widget style: vertical -->
-    <setting id="widgetstyle" value="poster" label="Poster" condition="String.Contains(Skin.String(HomeLayout),ver)" icon="special://skin/extras/viewthumbs/widget_ver_poster.jpg" description=""/>
-    <setting id="widgetstyle" value="landscape" label="Landscape" condition="String.Contains(Skin.String(HomeLayout),ver)" icon="special://skin/extras/viewthumbs/widget_ver_landscape.jpg" description=""/>
-    <setting id="widgetstyle" value="landscapesmall" label="Landscape Small" condition="String.Contains(Skin.String(HomeLayout),ver)" icon="special://skin/extras/viewthumbs/widget_ver_landscape.jpg" description=""/>
-    <setting id="widgetstyle" value="singlebox" label="Single Box" condition="String.Contains(Skin.String(HomeLayout),ver)" icon="special://skin/extras/viewthumbs/widget_ver_singlebox.jpg" description=""/>
-    <setting id="widgetstyle" value="square" label="Square" condition="String.Contains(Skin.String(HomeLayout),ver)" icon="special://skin/extras/viewthumbs/widget_ver_square.jpg" description=""/>
-    <setting id="widgetstyle" value="minisquare" label="Mini Square" condition="String.Contains(Skin.String(HomeLayout),ver)" icon="special://skin/extras/viewthumbs/widget_ver_square.jpg" description=""/>
-    <setting id="widgetstyle" value="smallposter" label="Small Posters" condition="String.Contains(Skin.String(HomeLayout),ver)" icon="special://skin/extras/viewthumbs/widget_ver_smallposter.jpg" description=""/>
-    <setting id="widgetstyle" value="widebox" label="Wide Box" condition="String.Contains(Skin.String(HomeLayout),ver)" icon="special://skin/extras/viewthumbs/widget_ver_widebox.jpg" description=""/>
-    <setting id="widgetstyle" value="banner" label="Banner" condition="String.Contains(Skin.String(HomeLayout),ver)" icon="special://skin/extras/viewthumbs/widget_win10_banner.jpg" description=""/>
-
-    <!-- widgetstyle landscape netflix -->
-    <setting id="widgetstyle" value="landscapelarge" label="Landscape Large Netflix" condition="!Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_netflix_landscape.jpg" description=""/>
-    <setting id="widgetstyle" value="landscapedetails" label="Landscape Details" condition="!Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_landscapedetails.jpg" description=""/>
-    <setting id="widgetstyle" value="posterdetails" label="Poster Details" condition="!Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_posterdetails.jpg" description=""/>
-    <setting id="widgetstyle" value="landscapewidebox" label="Landscape Widebox" condition="!Skin.String(HomeLayout,win10)" icon="special://skin/extras/viewthumbs/widget_landscapewidebox.jpg" description=""/>
+    <setting id="widgetstyle" value="poster" label="Poster" condition="" icon="special://skin/extras/viewthumbs/widget_hor_poster.jpg" description=""/>
+    <setting id="widgetstyle" value="landscape" label="Landscape" condition="" icon="special://skin/extras/viewthumbs/widget_hor_landscape.jpg" description=""/>
+    <setting id="widgetstyle" value="landscapesmall" label="Landscape Small" condition="" icon="special://skin/extras/viewthumbs/widget_hor_landscape.jpg" description=""/>
+    <setting id="widgetstyle" value="singlebox" label="Single Box" condition="" icon="special://skin/extras/viewthumbs/widget_hor_singlebox.jpg" description=""/>
+    <setting id="widgetstyle" value="square" label="Square" condition="" icon="special://skin/extras/viewthumbs/widget_hor_square.jpg" description=""/>
+    <setting id="widgetstyle" value="minisquare" label="Mini Square" condition="" icon="special://skin/extras/viewthumbs/widget_hor_square.jpg" description=""/>
+    <setting id="widgetstyle" value="smallposter" label="Small Posters" condition="" icon="special://skin/extras/viewthumbs/widget_hor_smallposter.jpg" description=""/>
+    <setting id="widgetstyle" value="widebox" label="Wide Box" condition="" icon="special://skin/extras/viewthumbs/widget_hor_widebox.jpg" description=""/>
+    <setting id="widgetstyle" value="banner" label="Banner" condition="" icon="special://skin/extras/viewthumbs/widget_win10_banner.jpg" description=""/>
+	<setting id="widgetstyle" value="landscapelarge" label="Landscape Large" condition="" icon="special://skin/extras/viewthumbs/widget_netflix_landscape.jpg" description=""/>
+    <setting id="widgetstyle" value="landscapedetails" label="Landscape Details" condition="" icon="special://skin/extras/viewthumbs/widget_landscapedetails.jpg" description=""/>
+    <setting id="widgetstyle" value="posterdetails" label="Poster Details" condition="" icon="special://skin/extras/viewthumbs/widget_posterdetails.jpg" description=""/>
+    <setting id="widgetstyle" value="landscapewidebox" label="Landscape Widebox" condition="" icon="special://skin/extras/viewthumbs/widget_landscapewidebox.jpg" description=""/>
 
     <!-- media flags -->
     <setting id="mediaflagsstyle" value="classic" label="Classic" condition="" icon="special://skin/extras/viewthumbs/flags_classic.jpg" description="">
