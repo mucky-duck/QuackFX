@@ -336,22 +336,6 @@
                 <visible>![Skin.HasSetting(UseSingleShortcut) + Skin.String(HomeLayout, simplehor)]</visible>
                 <visible>Skin.String(HomeLayout, enhanced) | Skin.String(HomeLayout, netflix2) | Skin.String(HomeLayout, win10) | Skin.String(HomeLayout, simplehor) | String.Contains(Skin.String(HomeLayout), lowhorizontal)</visible>
             </control>
-            <!--use large mainmenu on netflix home-->
-            <control type="radiobutton" id="31805">
-                <include>SkinSettings_Button</include>
-                <label>31805</label>
-                <onclick>Skin.ToggleSetting(NetFlixHome_LargeMenu)</onclick>
-                <selected>Skin.HasSetting(NetFlixHome_LargeMenu)</selected>
-                <visible>String.Contains(Skin.String(HomeLayout), netflix)</visible>
-            </control>
-            <!--enable home menu animation-->
-            <control type="radiobutton" id="31620">
-                <include>SkinSettings_Button</include>
-                <label>31620</label>
-                <onclick>Skin.ToggleSetting(Vertical_Home_Animation)</onclick>
-                <selected>Skin.HasSetting(Vertical_Home_Animation)</selected>
-                <visible>[Skin.String(HomeLayout, simplever) | Skin.String(HomeLayout, simplever_tiles)]</visible>
-            </control>
             <!--enable widgets animation-->
             <control type="radiobutton" id="31621">
                 <include>SkinSettings_Button</include>
@@ -683,13 +667,6 @@
                 <label>31449</label>
                 <label2>$INFO[skin.string(SkinHelper.RandomFanartDelay.label)]</label2>
                 <onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=SkinHelper.RandomFanartDelay,header=$LOCALIZE[31449])</onclick>
-            </control>
-            <!--background animation-->
-            <control type="radiobutton" id="13018">
-                <include>SkinSettings_Button</include>
-                <label>31266</label>
-                <onclick>Skin.ToggleSetting(BackgroundAnimation)</onclick>
-                <selected>Skin.HasSetting(BackgroundAnimation)</selected>
             </control>
             <!--enable wall backgrounds-->
             <control type="radiobutton" id="31812">

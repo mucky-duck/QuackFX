@@ -51,8 +51,6 @@
                 <fadetime>350</fadetime>
                 <texture background="true">$VAR[backgroundVar]</texture>
                 <aspectratio aligny="top">scale</aspectratio>
-                <animation effect="zoom" start="110" end="130" center="auto" time="12000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(BackgroundAnimation)">Conditional</animation>
-                <animation effect="slide" start="-10,-10" end="10,10" time="8000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(BackgroundAnimation)">Conditional</animation>
                 <animation effect="fade" end="0" time="600">Hidden</animation>
                 <animation effect="fade" start="0" end="100" time="1400">Visible</animation>
                 <visible>!Skin.HasSetting(View523_DetailsShowFanart) + !Control.IsVisible(523001)</visible>
