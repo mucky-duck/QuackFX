@@ -503,19 +503,6 @@
             <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025],property=widgetName$PARAM[widgetprop])</onclick>
             <visible>!String.IsEmpty(Container(211).ListItem.Property(widget$PARAM[widgetprop]))</visible>
         </control>
-        <control type="button" id="900$PARAM[widgetpos]4">
-            <description>show infopanel (win10)</description>
-            <width>500</width>
-            <height>45</height>
-            <align>left</align>
-            <font>Reg22</font>
-            <textoffsetx>10</textoffsetx>
-            <label>$LOCALIZE[31185]:</label>
-            <label2>$VAR[widgetinfopanellabel$PARAM[widgetpos]]</label2>
-            <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,setting=widgetInfoPanel,header=$LOCALIZE[31185],property=widgetInfoPanel$PARAM[widgetprop])</onclick>
-            <visible>Skin.String(HomeLayout, win10)</visible>
-            <visible>!String.IsEmpty(Container(211).ListItem.Property(widget$PARAM[widgetprop]))</visible>
-        </control>
         <control type="button" id="900$PARAM[widgetpos]5">
             <description>widget tags</description>
             <width>500</width>
