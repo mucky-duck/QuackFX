@@ -58,12 +58,15 @@
         
         
 		<!-- forced views -->
-		<onload condition="!Skin.String(SkinHelper.ForcedViews.movies)">Skin.SetString(SkinHelper.ForcedViews.movies,59)</onload>
-        <onload condition="!Skin.String(SkinHelper.ForcedViews.tvshows)">Skin.SetString(SkinHelper.ForcedViews.tvshows,59)</onload>
-        <onload condition="!Skin.String(SkinHelper.ForcedViews.seasons)">Skin.SetString(SkinHelper.ForcedViews.seasons,525)</onload>
-        <onload condition="!Skin.String(SkinHelper.ForcedViews.episodes)">Skin.SetString(SkinHelper.ForcedViews.episodes,525)</onload>
+		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(skinhelper.forcedviews.enabled)</onload>
+		<onload condition="!Skin.String(SkinHelper.ForcedViews.movies)">Skin.SetString(SkinHelper.ForcedViews.movies,523)</onload>
+        <onload condition="!Skin.String(SkinHelper.ForcedViews.tvshows)">Skin.SetString(SkinHelper.ForcedViews.tvshows,523)</onload>
+        <onload condition="!Skin.String(SkinHelper.ForcedViews.seasons)">Skin.SetString(SkinHelper.ForcedViews.seasons,513)</onload>
+        <onload condition="!Skin.String(SkinHelper.ForcedViews.episodes)">Skin.SetString(SkinHelper.ForcedViews.episodes,506)</onload>
         <onload condition="!Skin.String(SkinHelper.ForcedViews.sets)">Skin.SetString(SkinHelper.ForcedViews.sets,50)</onload>
         <onload condition="!Skin.String(SkinHelper.ForcedViews.setmovies)">Skin.SetString(SkinHelper.ForcedViews.setmovies,50)</onload>
+        <onload condition="!Skin.String(SkinHelper.ForcedViews.addons)">Skin.SetString(SkinHelper.ForcedViews.addons,50)</onload>
+        <onload condition="!Skin.String(SkinHelper.ForcedViews.files.addons)">Skin.SetString(SkinHelper.ForcedViews.files.addons,50)</onload>
         
 		
 		<!-- playback & osd -->
@@ -126,6 +129,8 @@
         <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(ShowlabelsLandscape)</onload>
         <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(AnimateDiscArt)</onload>
 		<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(View523_DetailsShowFanart)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(view_523_horizontalnavigation)</onload>
+        <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(View523_EnableZoomEffect)</onload>
         <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(View525_HidePanel)</onload>
         <onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(View59_DetailsShowFanart)</onload>
         
