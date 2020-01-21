@@ -490,7 +490,7 @@
                 <animation effect="slide" end="0,210" time="600" condition="[ControlGroup(505).HasFocus() + Integer.IsGreater(Container(1508).NumItems,0)] | [!Skin.HasSetting(NetflixHomeShowLargeThumb) + Control.IsVisible(5633399)]">Conditional</animation>
                 <posx>0</posx>
                 <usecontrolcoords>true</usecontrolcoords>
-                <bottom>20</bottom>
+                <bottom>5</bottom>
                 <height>425</height>
                 <include condition="Skin.HasSetting(NetflixHomeDisableFirstRow)">NetflixHome_AltHeight_NoSpotlight</include>
                 <posy>680</posy>
