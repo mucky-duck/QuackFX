@@ -1672,7 +1672,7 @@
         <aspectratio align="right">keep</aspectratio>
     </include>
     <include name="widget_header_leftalign">
-        <left>65</left>
+        <left>10</left>
     </include>
     <include name="widget_header_enhancedhome">
         <font>Reg26</font>

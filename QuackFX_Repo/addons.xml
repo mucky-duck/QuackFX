@@ -621,7 +621,7 @@ v0.26.0-2 (2019-08-11 - 2019-09-14)
     </extension>
 </addon>
 
-<addon id="skin.quackfx" version="18.0.0.9" name="QuackFX" provider-name="Mucky Duck">
+<addon id="skin.quackfx" version="18.0.1.0" name="QuackFX" provider-name="Mucky Duck">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="plugin.program.autocompletion" version="1.0.0"/>

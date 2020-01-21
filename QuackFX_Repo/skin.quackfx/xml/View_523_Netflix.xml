@@ -88,8 +88,8 @@
                     <top>0</top>
                     <texture background="true" diffuse="overlay/Right_Corner.png">$VAR[netflixThumb]</texture>
                     <fadetime>550</fadetime>
-                    <width>1300</width>
-                    <height>700</height>
+                    <width>1315</width>
+                    <height>750</height>
                     <aspectratio>scale</aspectratio>
                     <aspectratio scalediffuse="true" aligny="top">scale</aspectratio>
                     <animation effect="fade" end="0" time="600">Hidden</animation>
@@ -241,16 +241,7 @@
                     </control>
                 </control>
 
-                <!-- media flags
-                <control type="group">
-                    <visible>!Skin.HasSetting(NoFooterBar)</visible>
-                    <top>600</top>
-                    <posx>900</posx>
-                    <height>50</height>
-                    <include>mediaflags</include>
-                </control> -->
-
-                <!-- ratings & studio -->
+				<!-- ratings & studio -->
                 <control type="group">
                     <visible>!Skin.HasSetting(NoFooterBar)</visible>
                     <right>30</right>
@@ -328,8 +319,8 @@
     <!-- panel layout decoration -->
     <include name="Panel_View523_Layout">
         <control type="panel" id="523">
-            <include condition="Skin.HasSetting(View523_SwapPoster)">View523_Layout_Poster</include>
-            <include condition="!Skin.HasSetting(View523_SwapPoster)">View523_Layout_Thumb</include>
+            <include condition="!Skin.HasSetting(View523_SwapPoster)">View523_Layout_Poster</include>
+            <include condition="Skin.HasSetting(View523_SwapPoster)">View523_Layout_Thumb</include>
         </control>
     </include>
 
