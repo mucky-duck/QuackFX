@@ -24,9 +24,9 @@
             <control type="group">
                 <visible>Skin.HasSetting(OSDShowInfoOnPause) | VideoPlayer.Content(livetv) | Window.IsActive(videoosd) | Player.ShowInfo</visible>
                 <visible>!Window.IsActive(sliderdialog) + !Window.IsActive(pvrosdchannels) + !Window.IsActive(DialogSettings.xml)</visible>
-                <animation effect="slide" start="0,400" end="0,0" time="200" condition="!Skin.HasSetting(LowPerformanceMode)">WindowOpen</animation>
-                <animation effect="slide" start="0,0" end="0,400" time="200" condition="!Skin.HasSetting(LowPerformanceMode)">WindowClose</animation>
-                <animation effect="slide" start="0,0" end="0,400" tween="cubic" easing="out" delay="300" time="250" reversible="false" condition="!Skin.HasSetting(LowPerformanceMode)">Hidden</animation>
+                <animation effect="slide" start="0,400" end="0,0" time="200" >WindowOpen</animation>
+                <animation effect="slide" start="0,0" end="0,400" time="200" >WindowClose</animation>
+                <animation effect="slide" start="0,0" end="0,400" tween="cubic" easing="out" delay="300" time="250" reversible="false">Hidden</animation>
                 <include condition="!Skin.HasTheme(classic) + !Skin.HasSetting(UseSlimOSDPanel) + !Skin.HasSetting(UseNetflixOSDPanel)">OSDPanelModern</include>
                 <include condition="!Skin.HasTheme(classic) + Skin.HasSetting(UseSlimOSDPanel)">OSDPanelModernSlim</include>
                 <include condition="!Skin.HasTheme(classic) + Skin.HasSetting(UseNetflixOSDPanel)">OSDPanelNetflix</include>
