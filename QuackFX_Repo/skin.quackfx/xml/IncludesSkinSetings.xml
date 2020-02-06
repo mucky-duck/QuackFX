@@ -2443,14 +2443,6 @@
                 <onclick>Skin.ToggleSetting(DisableScrollbars)</onclick>
                 <selected>Skin.HasSetting(DisableScrollbars)</selected>
             </control>
-            <control type="radiobutton" id="31720">
-                <description>rounded panels</description>
-                <include>SkinSettings_Button</include>
-                <label>31720</label>
-                <onclick>Skin.ToggleSetting(smallContextMenu)</onclick>
-                <selected>Skin.HasSetting(smallContextMenu)</selected>
-                <visible>!Skin.HasTheme(classic)</visible>
-            </control>
             <control type="radiobutton" id="5163">
                 <description>use extended weather screen</description>
                 <include>SkinSettings_Button</include>
@@ -2654,15 +2646,6 @@
                 <label>31826</label>
                 <label2>$INFO[Skin.String(LanguageFlags.name)]</label2>
                 <onclick>RunScript(script.skin.helper.service,action=setresourceaddon,skinstring=LanguageFlags,addontype=resource.images.languageflags)</onclick>
-            </control>
-            <control type="radiobutton" id="5160">
-                <description>Low performance systems</description>
-                <include>SkinSettings_Button</include>
-                <label>31326</label>
-                <onclick>Skin.ToggleSetting(LowPerformanceMode)</onclick>
-                <onclick>Skin.Reset(SkinHelper.EnableExtraFanart)</onclick>
-                <onclick>Skin.SetString(SkinHelper.ShowInfoAtPlaybackStart,0)</onclick>
-                <selected>Skin.HasSetting(LowPerformanceMode)</selected>
             </control>
             <control type="radiobutton" id="8025">
                 <include>SkinSettings_Button</include>
