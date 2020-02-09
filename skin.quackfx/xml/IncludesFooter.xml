@@ -765,8 +765,22 @@
         <control type="group">
             <!--Title-->
             <visible>!Window.IsActive(DialogVideoInfo.xml) + !Window.IsVisible(favourites)</visible>
+            <animation effect="slide" end="0,16" time="0" >Conditional</animation>
             <height>80</height>
             <bottom>20</bottom>
+            <control type="label">
+                <posx>560</posx>
+                <posy>0</posy>
+                <width>800</width>
+                <align>center</align>
+                <font>Bold30</font>
+                <textcolor>$INFO[Skin.String(FooterTextColor)]</textcolor>
+                <shadowcolor>$INFO[Skin.String(FooterTextShadowColor)]</shadowcolor>
+                <label>$INFO[ListItem.label]</label>
+                <visible>!Control.IsVisible(884)</visible>
+                <scroll>true</scroll>
+                <visible>![Window.IsActive(Videos) | Window.IsActive(videoplaylist)] | ListItem.IsCollection | String.IsEmpty(ListItem.VideoAspect) | Skin.String(mediaflagsstyle,disabled) | Skin.String(mediaflagsstyle,classic)</visible>
+            </control>
             <control type="label">
                 <visible>Container.Content(songs)</visible>
                 <visible>!Control.IsVisible(99123)</visible>
