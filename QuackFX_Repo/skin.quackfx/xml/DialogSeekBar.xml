@@ -27,15 +27,10 @@
                 <animation effect="slide" start="0,400" end="0,0" time="200" >WindowOpen</animation>
                 <animation effect="slide" start="0,0" end="0,400" time="200" >WindowClose</animation>
                 <animation effect="slide" start="0,0" end="0,400" tween="cubic" easing="out" delay="300" time="250" reversible="false">Hidden</animation>
-                <include condition="!Skin.HasTheme(classic) + !Skin.HasSetting(UseSlimOSDPanel) + !Skin.HasSetting(UseNetflixOSDPanel)">OSDPanelModern</include>
-                <include condition="!Skin.HasTheme(classic) + Skin.HasSetting(UseSlimOSDPanel)">OSDPanelModernSlim</include>
-                <include condition="!Skin.HasTheme(classic) + Skin.HasSetting(UseNetflixOSDPanel)">OSDPanelNetflix</include>
-                <include condition="Skin.HasTheme(classic)">OSDPanelClassic</include>
+                <include>OSDPanelModern</include>
                 
                 <!-- weather on OSD -->
-                <include condition="!Skin.HasTheme(classic) + !Skin.HasSetting(UseSlimOSDPanel) + !Skin.HasSetting(UseNetflixOSDPanel) + Skin.HasSetting(ShowWeatherVideoInfoOSD)">WeatherInfoOSD</include>
-                <include condition="!Skin.HasTheme(classic) + [Skin.HasSetting(UseSlimOSDPanel) | Skin.HasSetting(UseNetflixOSDPanel)] + Skin.HasSetting(ShowWeatherVideoInfoOSD)">WeatherInfoOSDSlim</include>
-                
+                <include condition="Skin.HasSetting(ShowWeatherVideoInfoOSD)">WeatherInfoOSD</include>
             </control>
             
             <!-- large forward and rewind labels -->
@@ -45,25 +40,15 @@
                 <height>100%</height>
                 <width>100%</width>
                 <aligny>center</aligny>
+				<align>center</align>
                 <font>Bold120</font>
                 <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
                 <label>$VAR[PlayerActionLabelLarge]</label>
-                <include condition="!Skin.HasSetting(EnableOSDInfoNetflix) | !Skin.HasSetting(UseNetflixOSDPanel)">align_center</include>
-                <include condition="Skin.HasSetting(EnableOSDInfoNetflix) + Skin.HasSetting(UseNetflixOSDPanel)">align_left</include>
                 <visible>Skin.HasSetting(OSDLargeSeekingLabel) + ![VideoPlayer.Content(livetv) + Player.Caching]</visible>
-                <visible>![Player.Paused + Skin.HasSetting(EnableOSDInfo) + Skin.HasSetting(EnableOSDInfoLarge)]</visible>
-                <animation end="60,300" time="0" effect="slide" condition="Skin.HasSetting(EnableOSDInfoNetflix) + Skin.HasSetting(UseNetflixOSDPanel)">Conditional</animation>
-                <animation end="0,282" time="0" effect="slide" condition="Skin.HasSetting(EnableOSDInfoNetflix) + !Skin.HasSetting(UseNetflixOSDPanel)">Conditional</animation>
+                <visible>![Player.Paused + Skin.HasSetting(EnableOSDInfo)]</visible>
                 <include>HideOsdConditions</include>
             </control>
             
-            <!-- small panel if OSD disabled on seek -->
-            <control type="group" id="662244">
-                <visible>!VideoPlayer.Content(livetv) + !Control.IsVisible(552233)</visible>
-                <visible>!Skin.HasSetting(OSDShowInfoOnPause) + !Window.IsActive(videoosd) + [Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding | [Player.Paused + Skin.HasSetting(SeekPanelOnPause)]]</visible>
-                <include condition="!Skin.HasSetting(OSDShowInfoOnPause)">Small_OSD_Seek_Panel</include>
-                <include>HideOsdConditions</include>
-            </control>
         </control>
         <include condition="Skin.HasSetting(DebugGrid) | Skin.HasSetting(DebugInfo)">DebugInfo</include>
 	</controls>

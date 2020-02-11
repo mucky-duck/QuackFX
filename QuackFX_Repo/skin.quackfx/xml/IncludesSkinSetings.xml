@@ -1432,21 +1432,6 @@
                 <label>478</label>
                 <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
             </control>
-            
-            <control type="radiobutton" id="13060">
-                <include>SkinSettings_Button</include>
-                <label>31476</label>
-                <onclick>Skin.ToggleSetting(UseSlimOSDPanel)</onclick>
-                <selected>Skin.HasSetting(UseSlimOSDPanel)</selected>
-                <visible>!Skin.HasTheme(classic) + !Skin.HasSetting(UseNetflixOSDPanel)</visible>
-            </control>
-            <control type="radiobutton" id="14273">
-                <include>SkinSettings_Button</include>
-                <label>Use Netflix OSD Panel</label>
-                <onclick>Skin.ToggleSetting(UseNetflixOSDPanel)</onclick>
-                <selected>Skin.HasSetting(UseNetflixOSDPanel)</selected>
-                <visible>!Skin.HasTheme(classic) + !Skin.HasSetting(UseSlimOSDPanel)</visible>
-            </control>
             <control type="button" id="31698">
                 <include>SkinSettings_Button</include>
                 <label>$LOCALIZE[31698]</label>
@@ -1455,7 +1440,7 @@
                 <visible>!skin.hastheme(classic)</visible>
             </control>
             
-            <!-- hide discart from osd - note: slim osd only has discart at music playback-->
+            <!-- hide discart from osd -->
             <control type="radiobutton" id="13062">
                 <include>SkinSettings_Button</include>
                 <label>31519</label>
@@ -1470,16 +1455,8 @@
                 <selected>Skin.HasSetting(osdgradientstyle)</selected>
                 <visible>!skin.hastheme(classic) + !Skin.HasSetting(UseNetflixOSDPanel)</visible>
             </control>
-            <!-- Volume Indicator Style -->
-            <control type="button" id="31809">
-                <include>SkinSettings_Button</include>
-                <label>$LOCALIZE[31809]</label>
-                <label2>$INFO[Skin.String(volumestyle.label)]</label2>
-                <onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=volumestyle,header=$LOCALIZE[31809])</onclick>
-				<visible>!Skin.HasSetting(LowPerformanceMode)</visible>
-            </control>
             
-            <!-- Video playback -->
+			<!-- Video playback -->
             <control type="label" id="13050">
                 <include>SkinSettings_Header</include>
                 <label>31745</label>
@@ -1493,24 +1470,6 @@
                 <onclick>Skin.ToggleSetting(EnableOSDInfo)</onclick>
                 <selected>Skin.HasSetting(EnableOSDInfo)</selected>
             </control>
-            <control type="radiobutton" id="45920">
-                <description>enable netflix info on osd</description>
-                <textoffsetx>100</textoffsetx>
-                <include>SkinSettings_Button</include>
-                <label>Use Netflix info OSD</label>
-                <onclick>Skin.ToggleSetting(EnableOSDInfoNetflix)</onclick>
-                <selected>Skin.HasSetting(EnableOSDInfoNetflix)</selected>
-                <visible>Skin.HasSetting(EnableOSDInfo) + !Skin.HasSetting(EnableOSDInfoLarge)</visible>
-            </control>
-            <control type="radiobutton" id="31701">
-                <description>enable large info on osd</description>
-                <textoffsetx>100</textoffsetx>
-                <include>SkinSettings_Button</include>
-                <label>31701</label>
-                <onclick>Skin.ToggleSetting(EnableOSDInfoLarge)</onclick>
-                <selected>Skin.HasSetting(EnableOSDInfoLarge)</selected>
-                <visible>Skin.HasSetting(EnableOSDInfo) + !Skin.HasSetting(EnableOSDInfoNetflix)</visible>
-            </control>
             <control type="radiobutton" id="31748">
                 <description>enable mediaglags on plot panel</description>
                 <textoffsetx>100</textoffsetx>
@@ -1518,13 +1477,12 @@
                 <label>31748</label>
                 <onclick>Skin.ToggleSetting(EnableOSDInfoMediaFlags)</onclick>
                 <selected>Skin.HasSetting(EnableOSDInfoMediaFlags)</selected>
-                <visible>Skin.HasSetting(EnableOSDInfo) + ![Skin.HasSetting(EnableOSDInfoLarge) | Skin.HasSetting(EnableOSDInfoNetflix)]</visible>
+                <visible>Skin.HasSetting(EnableOSDInfo)</visible>
             </control>
             <control type="button" id="13054">
                 <include>SkinSettings_Button</include>
                 <label>$LOCALIZE[31230]</label>
                 <label2>$INFO[skin.string(SkinHelper.ShowInfoAtPlaybackStart)] $LOCALIZE[31231]</label2>
-                <visible>!Skin.HasSetting(LowPerformanceMode)</visible>		
                 <onclick>Skin.SetNumeric(SkinHelper.ShowInfoAtPlaybackStart)</onclick>
             </control>
             <control type="radiobutton" id="13058">
