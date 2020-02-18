@@ -47,9 +47,9 @@
                         <height>100</height>
                         <font>Reg46</font>
                         <align>left</align>
-                        <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+                        <textcolor>HeaderTextColor</textcolor>
                         <label>$INFO[ListItem.TvShowTitle]</label>
-                        <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                        <shadowcolor>HeaderTextShadowColor</shadowcolor>
                     </control>
 
                 </control>
@@ -68,7 +68,7 @@
                         <width>160</width>
                         <height>35</height>
                         <aspectratio align="left" aligny="center">keep</aspectratio>
-                        <colordiffuse>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</colordiffuse>
+                        <colordiffuse>ViewDetailsHighlightTextColor</colordiffuse>
                         <texture background="true">$VAR[rating_value_texture]</texture>
                         <include>Default_Fade</include>
                     </control>
@@ -81,7 +81,7 @@
                         <width>auto</width>
                         <aligny>center</aligny>
                         <font>Reg22</font>
-                        <textcolor>$INFO[Skin.String(NetflixPrimaryTextColor)]</textcolor>
+                        <textcolor>NetflixPrimaryTextColor</textcolor>
                         <label>$VAR[GetYear]</label>
                         <include>Default_Fade</include>
                     </control>
@@ -95,13 +95,13 @@
                         <control type="image">
                             <height>100%</height>
                             <width>100%</width>
-                            <texture colordiffuse="$INFO[Skin.String(NetflixDetailsFlagColor)]">netflix/frame/square-rounded.png</texture>
+                            <texture colordiffuse="NetflixDetailsFlagColor">netflix/frame/square-rounded.png</texture>
                         </control>
                         <control type="label" id="6111121">
                             <height>100%</height>
                             <width>100%</width>
                             <font>Reg22</font>
-                            <textcolor>$INFO[Skin.String(NetflixPrimaryTextColor)]</textcolor>
+                            <textcolor>NetflixPrimaryTextColor</textcolor>
                             <align>center</align>
                             <aligny>center</aligny>
                             <scroll>false</scroll>
@@ -117,7 +117,7 @@
                         <label>$INFO[Window(Home).Property(SkinHelper.ListItem.Status)]</label>
                         <height>35</height>
                         <aligny>center</aligny>
-                        <textcolor>$INFO[Skin.String(NetflixPrimaryTextColor)]</textcolor>
+                        <textcolor>NetflixPrimaryTextColor</textcolor>
                         <font>Reg22</font>
                         <include>Default_Fade</include>
                     </control>
@@ -222,7 +222,7 @@
                                 <align>center</align>
                                 <height>63</height>
                                 <texture border="8">overlay/gradient_bottom.png</texture>
-                                <colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+                                <colordiffuse>OSDPanelColor</colordiffuse>
                             </control>
                             <control type="group">
                                 <top>9</top>
@@ -238,7 +238,7 @@
                                 <width>35%</width>
                                 <font>Reg26</font>
                                 <align>left</align>
-                                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                                <textcolor>ViewDetailsTextColor</textcolor>
                                 <label>[B][UPPERCASE]$INFO[ListItem.Season,S,]$INFO[ListItem.Episode,: E,][/UPPERCASE][/B]</label>
                                 <visible>String.IsEqual(Window(Home).Property(ListItem.dbtype),episode) | String.IsEqual(ListItem.dbtype,episode)</visible>
                             </control>
@@ -253,7 +253,7 @@
                                 <!-- hardcoded color on landscape -->
                                 <texturebg colordiffuse="white" border="2">colors/color_white.png</texturebg>
                                 <lefttexture/>
-                                <midtexture colordiffuse="$INFO[Skin.String(ViewDetailsHighlightTextColor)]" border="2">colors/color_white.png</midtexture>
+                                <midtexture colordiffuse="ViewDetailsHighlightTextColor" border="2">colors/color_white.png</midtexture>
                                 <righttexture/>
                                 <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
                                 <info>ListItem.PercentPlayed</info>
@@ -268,9 +268,9 @@
                                 <height>3%</height>
                                 <align>left</align>
                                 <!-- hardcoded color on landscape -->
-                                <texturebg colordiffuse="$INFO[Skin.String(ViewDetailsHighlightTextColor)]" border="2">colors/color_white.png</texturebg>
+                                <texturebg colordiffuse="ViewDetailsHighlightTextColor" border="2">colors/color_white.png</texturebg>
                                 <lefttexture/>
-                                <midtexture colordiffuse="$INFO[Skin.String(ViewDetailsHighlightTextColor)]" border="2">colors/color_white.png</midtexture>
+                                <midtexture colordiffuse="ViewDetailsHighlightTextColor" border="2">colors/color_white.png</midtexture>
                                 <righttexture/>
                                 <visible>[Integer.IsGreater(ListItem.PlayCount,0) + !ListItem.IsResumable]</visible>
                                 <info>ListItem.PercentPlayed</info>
@@ -283,8 +283,8 @@
                                 <height>38</height>
                                 <align>left</align>
                                 <font>Bold30</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextColor</selectedcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
@@ -295,8 +295,8 @@
                                 <height>30</height>
                                 <align>left</align>
                                 <font>Reg22</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextColor</selectedcolor>
                                 <label fallback="19055">$VAR[WideNetflixDetails]</label>
                             </control>
                             <control type="textbox">
@@ -306,8 +306,8 @@
                                 <height>125</height>
                                 <align>justify</align>
                                 <font>Reg26</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextFocusColor</selectedcolor>
                                 <label>$VAR[Plots]</label>
                                 <autoscroll delay="4000" time="4000" repeat="2000">true</autoscroll>
                             </control>
@@ -319,8 +319,8 @@
                                 <height>38</height>
                                 <align>left</align>
                                 <font>Reg26</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextFocusColor</selectedcolor>
                                 <label>$INFO[ListItem.Duration(mins),(,m)]</label>
                                 <visible>String.IsEqual(Window(Home).Property(ListItem.dbtype),episode) | String.IsEqual(ListItem.dbtype,episode)</visible>
                             </control>
@@ -365,7 +365,7 @@
                                 <align>center</align>
                                 <height>63</height>
                                 <texture border="8">overlay/gradient_bottom.png</texture>
-                                <colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+                                <colordiffuse>OSDPanelColor</colordiffuse>
                             </control>
                             <control type="group">
                                 <top>8</top>
@@ -381,7 +381,7 @@
                                 <width>35%</width>
                                 <font>Reg26</font>
                                 <align>left</align>
-                                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                                <textcolor>ViewDetailsTextColor</textcolor>
                                 <label>[B][UPPERCASE]$INFO[ListItem.Season,S,]$INFO[ListItem.Episode,: E,][/UPPERCASE][/B]</label>
                                 <visible>String.IsEqual(Window(Home).Property(ListItem.dbtype),episode) | String.IsEqual(ListItem.dbtype,episode)</visible>
                             </control>
@@ -395,7 +395,7 @@
                                 <align>left</align>
                                 <texturebg colordiffuse="white" border="2">colors/color_white.png</texturebg>
                                 <lefttexture/>
-                                <midtexture colordiffuse="$INFO[Skin.String(ViewDetailsHighlightTextColor)]" border="2">colors/color_white.png</midtexture>
+                                <midtexture colordiffuse="ViewDetailsHighlightTextColor" border="2">colors/color_white.png</midtexture>
                                 <righttexture/>
                                 <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
                                 <info>ListItem.PercentPlayed</info>
@@ -410,9 +410,9 @@
                                 <height>3%</height>
                                 <align>left</align>
                                 <!-- hardcoded color on landscape -->
-                                <texturebg colordiffuse="$INFO[Skin.String(ViewDetailsHighlightTextColor)]" border="2">colors/color_white.png</texturebg>
+                                <texturebg colordiffuse="ViewDetailsHighlightTextColor" border="2">colors/color_white.png</texturebg>
                                 <lefttexture/>
-                                <midtexture colordiffuse="$INFO[Skin.String(ViewDetailsHighlightTextColor)]" border="2">colors/color_white.png</midtexture>
+                                <midtexture colordiffuse="ViewDetailsHighlightTextColor" border="2">colors/color_white.png</midtexture>
                                 <righttexture/>
                                 <visible>[Integer.IsGreater(ListItem.PlayCount,0) + !ListItem.IsResumable]</visible>
                                 <info>ListItem.PercentPlayed</info>
@@ -425,8 +425,8 @@
                                 <height>38</height>
                                 <align>left</align>
                                 <font>Bold30</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextColor</selectedcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
@@ -437,8 +437,8 @@
                                 <height>30</height>
                                 <align>left</align>
                                 <font>Reg22</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextColor</selectedcolor>
                                 <label fallback="19055">$VAR[WideNetflixDetails]</label>
                             </control>
                             <control type="textbox">
@@ -448,8 +448,8 @@
                                 <height>125</height>
                                 <align>justify</align>
                                 <font>Reg26</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextFocusColor</selectedcolor>
                                 <label>$VAR[Plots]</label>
                                 <autoscroll delay="4000" time="4000" repeat="2000">true</autoscroll>
                             </control>
@@ -461,8 +461,8 @@
                                 <height>38</height>
                                 <align>left</align>
                                 <font>Reg26</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextFocusColor</selectedcolor>
                                 <label>$INFO[ListItem.Duration(mins),(,m)]</label>
                                 <visible>String.IsEqual(Window(Home).Property(ListItem.dbtype),episode) | String.IsEqual(ListItem.dbtype,episode)</visible>
                             </control>

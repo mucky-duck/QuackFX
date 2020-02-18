@@ -55,7 +55,7 @@
                     <align>left</align>
                     <textoffsetx>50</textoffsetx>
                     <font>Bold40</font>
-                    <textcolor>$INFO[Skin.String(GeneralHighlightTextColor)]</textcolor>
+                    <textcolor>GeneralHighlightTextColor</textcolor>
                     <label>$LOCALIZE[33061]:</label>
 					<visible>skin.hastheme(classic)</visible>
                 </control>
@@ -81,7 +81,7 @@
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
 					<include>SideBladeMenuButton</include>
-					<alttexturefocus border="5" colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">colors/color_white.png</alttexturefocus>
+					<alttexturefocus border="5" colordiffuse="ButtonFocusColor">colors/color_white.png</alttexturefocus>
 					<alttexturenofocus/>
 					<label>584</label>
 					<altlabel>585</altlabel>
@@ -111,7 +111,7 @@
 					<include>SideBladeMenuButton</include>
 					<label>653</label>
 					<altlabel>13353</altlabel>
-					<alttexturefocus border="5" colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">colors/color_white.png</alttexturefocus>
+					<alttexturefocus border="5" colordiffuse="ButtonFocusColor">colors/color_white.png</alttexturefocus>
 					<alttexturenofocus/>
 					<usealttexture>library.isscanningvideo</usealttexture>
 					<visible>!String.Contains(Container.FolderPath,plugin://plugin.video)</visible>
@@ -172,8 +172,8 @@
                 <width>1800</width>
                 <height>100</height>
                 <font>Bold55</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+                <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                <shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
                 <label>[UPPERCASE]$VAR[mediatitle][/UPPERCASE]</label>
                 <scroll>true</scroll>
             </control>
@@ -183,8 +183,8 @@
                 <width>1800</width>
                 <height>100</height>
                 <font>Reg50</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
+                <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                 <label>$VAR[Details]</label>
             </control>
             <control type="textbox">
@@ -194,8 +194,8 @@
                 <height>70%</height>
                 <font>Reg50</font>
                 <align>justify</align>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
+                <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                 <label>$VAR[Plots]</label>
                 <autoscroll delay="15000" time="6000" repeat="20000">Control.IsVisible(77999)</autoscroll>
             </control>

@@ -22,14 +22,14 @@
 			<posx>50</posx>
 			<width>1820</width>
 			<texture border="15">diffuse/bgpanel.png</texture>
-			<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+			<colordiffuse>GeneralPanelsColor</colordiffuse>
 		</control>
 		
 		<control type="image">
 			<posx>50</posx>
 			<width>520</width>
 			<texture border="15">diffuse/bgpanel.png</texture>
-			<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+			<colordiffuse>GeneralPanelsColor</colordiffuse>
 		</control>
 		
 		<control type="grouplist" id="3000">
@@ -84,7 +84,7 @@
         </control>
         <control type="label" id="14">
             <include>SkinSettings_Header</include>
-            <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+            <textcolor>GeneralTextColor</textcolor>
         </control>
         <control type="spincontrolex" id="9">
             <description>Default Spin Control</description>
@@ -127,7 +127,7 @@
                 <font>Reg28</font>
                 <font>Reg28</font>
                 <label>31071</label>
-                <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                <textcolor>GeneralTextColor</textcolor>
                 <align>left</align>
             </control>
             <control type="button" id="20">

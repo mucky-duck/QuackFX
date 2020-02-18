@@ -48,8 +48,8 @@
                                 <height>50</height>
                                 <align>left</align>
                                 <font>Bold28</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextColor</selectedcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="textbox">
@@ -59,8 +59,8 @@
                                 <height>185</height>
                                 <align>justify</align>
                                 <font>Reg26</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextColor</selectedcolor>
                                 <label>$INFO[ListItem.Plot]</label>
                                 <autoscroll>false</autoscroll>
                             </control>
@@ -72,8 +72,8 @@
                                 <height>38</height>
                                 <align>right</align>
                                 <font>Reg26</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextColor</selectedcolor>
                                 <label fallback="19055">$VAR[ListDetails]</label>
                             </control>
                             <control type="group">
@@ -110,8 +110,8 @@
                                 <height>50</height>
                                 <align>left</align>
                                 <font>Bold28</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextFocusColor</selectedcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="textbox">
@@ -121,8 +121,8 @@
                                 <height>188</height>
                                 <align>justify</align>
                                 <font>Reg26</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextFocusColor</selectedcolor>
                                 <label>$INFO[ListItem.Plot]</label>
                                 <autoscroll delay="4000" time="4000" repeat="2000">!Skin.HasSetting(DisablePlotAutoScroll)</autoscroll>
                             </control>
@@ -134,8 +134,8 @@
                                 <height>38</height>
                                 <align>right</align>
                                 <font>Reg26</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextFocusColor</selectedcolor>
                                 <label fallback="19055">$VAR[ListDetails]</label>
                             </control>
                             <control type="group">
@@ -173,8 +173,8 @@
                                 <height>50</height>
                                 <align>left</align>
                                 <font>Bold30</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextColor</selectedcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="textbox">
@@ -184,8 +184,8 @@
                                 <height>185</height>
                                 <align>justify</align>
                                 <font>Reg26</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextColor</selectedcolor>
                                 <label>$VAR[Plots]</label>
                                 <autoscroll>false</autoscroll>
                             </control>
@@ -197,8 +197,8 @@
                                 <height>38</height>
                                 <align>right</align>
                                 <font>Reg26</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextColor</selectedcolor>
                                 <label fallback="19055">$VAR[ListDetails]</label>
                             </control>
                             <control type="group">
@@ -235,8 +235,8 @@
                                 <height>50</height>
                                 <align>left</align>
                                 <font>Bold30</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextFocusColor</selectedcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="textbox">
@@ -246,8 +246,8 @@
                                 <height>188</height>
                                 <align>justify</align>
                                 <font>Reg26</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextFocusColor</selectedcolor>
                                 <label>$VAR[Plots]</label>
                                 <autoscroll delay="4000" time="4000" repeat="2000">!Skin.HasSetting(DisablePlotAutoScroll)</autoscroll>
                             </control>
@@ -259,8 +259,8 @@
                                 <height>38</height>
                                 <align>right</align>
                                 <font>Reg26</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextFocusColor</selectedcolor>
                                 <label fallback="19055">$VAR[ListDetails]</label>
                             </control>
                             <control type="group">

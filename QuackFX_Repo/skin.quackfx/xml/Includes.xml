@@ -72,7 +72,7 @@
             <width>1000</width>
             <align>right</align>
             <font>Light34</font>
-            <textcolor>$INFO[Skin.String(FooterTextColor)]</textcolor>
+            <textcolor>FooterTextColor</textcolor>
             <label>$INFO[Window(Home).Property(SkinHelper.skinTitle)]</label>
 			<animation type="Conditional" condition="skin.hastheme(classic)">
                 <effect type="slide" start="0,0" end="0,-30" time="0" tween="cubic" easing="inout" delay="0" />
@@ -113,62 +113,62 @@
     <include name="DialogHeader">
         <!--Dialog Header-->
         <font>Bold38</font>
-        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+        <textcolor>GeneralTextColor</textcolor>
     </include>
 	<include name="DialogHeader_Alt">
         <!--Dialog Header-->
         <font>Bold32</font>
-        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+        <textcolor>GeneralTextColor</textcolor>
     </include>
     <include name="DialogHeader2">
         <!--Dialog Header2 (Yes/No)-->
         <font>Reg36</font>
-        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+        <textcolor>GeneralTextColor</textcolor>
     </include>
     <include name="DialogButton">
         <!--Dialog Button-->
         <font>Reg28</font>
-        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
-        <focusedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</focusedcolor>
-        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
+        <textcolor>GeneralTextColor</textcolor>
+        <focusedcolor>ButtonFocusTextColor</focusedcolor>
+        <disabledcolor>GeneralTextColor</disabledcolor>
 		<texturenofocus>dialogs/default/separator.png</texturenofocus>
-		<texturefocus colordiffuse="$INFO[Skin.String(ButtonFocusColor)]" border="5">diffuse/panel.png</texturefocus>
+		<texturefocus colordiffuse="ButtonFocusColor" border="5">diffuse/panel.png</texturefocus>
     </include>
 
     <include name="DialogButtonBig">
         <!--Dialog Button Big-->
         <font>Reg30</font>
-        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
-        <focusedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</focusedcolor>
-        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
+        <textcolor>GeneralTextColor</textcolor>
+        <focusedcolor>ButtonFocusTextColor</focusedcolor>
+        <disabledcolor>GeneralTextColor</disabledcolor>
     </include>
     <include name="DialogButtonSmall">
         <!--Dialog Button Small-->
         <font>Reg26</font>
-        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
-        <focusedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</focusedcolor>
-        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
+        <textcolor>GeneralTextColor</textcolor>
+        <focusedcolor>ButtonFocusTextColor</focusedcolor>
+        <disabledcolor>GeneralTextColor</disabledcolor>
     </include>
     <include name="DialogListNF">
         <!--Dialog List NF-->
         <font>Reg28</font>
-        <textcolor fallback="white">$INFO[Skin.String(GeneralTextColor)]</textcolor>
-        <focusedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</focusedcolor>
-        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
+        <textcolor fallback="white">GeneralTextColor</textcolor>
+        <focusedcolor>ButtonFocusTextColor</focusedcolor>
+        <disabledcolor>GeneralTextColor</disabledcolor>
     </include>
 	
     <include name="DialogListFO">
         <!--Dialog List FO-->
         <font>Reg28</font>
-        <textcolor>$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
-        <selectedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</selectedcolor>
+        <textcolor>ButtonFocusTextColor</textcolor>
+        <selectedcolor>ButtonFocusTextColor</selectedcolor>
     </include>
 
     <include name="DialogLabel">
         <!--Dialog Label-->
         <font>Reg28</font>
-        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
-        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
+        <textcolor>GeneralTextColor</textcolor>
+        <disabledcolor>GeneralTextColor</disabledcolor>
     </include>
 
     <include name ="textcolorworkaround">
@@ -192,11 +192,11 @@
         <align>center</align>
         <textoffsetx>0</textoffsetx>
         <texturenofocus/>
-        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
-        <focusedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</focusedcolor>
-        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
+        <textcolor>GeneralTextColor</textcolor>
+        <focusedcolor>ButtonFocusTextColor</focusedcolor>
+        <disabledcolor>GeneralTextColor</disabledcolor>
         <pulseonselect>false</pulseonselect>
-        <texturefocus colordiffuse="$INFO[Skin.String(ButtonFocusColor)]" border="5">diffuse/panel.png</texturefocus>
+        <texturefocus colordiffuse="ButtonFocusColor" border="5">diffuse/panel.png</texturefocus>
     </include>
     <include name="KeyBoardKey">
         <height>70</height>
@@ -204,13 +204,13 @@
         <align>center</align>
         <font>Reg30</font>
         <textoffsetx>0</textoffsetx>
-        <selectedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</selectedcolor>
-        <textcolor>$INFO[Skin.String(ButtonTextColor)]</textcolor>
-        <focusedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</focusedcolor>
-        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
+        <selectedcolor>ButtonFocusTextColor</selectedcolor>
+        <textcolor>ButtonTextColor</textcolor>
+        <focusedcolor>ButtonFocusTextColor</focusedcolor>
+        <disabledcolor>GeneralTextColor</disabledcolor>
         <pulseonselect>false</pulseonselect>
-        <texturefocus colordiffuse="$INFO[Skin.String(ButtonFocusColor)]" border="15">dialogs/keyboard/key.png</texturefocus>
-        <texturenofocus colordiffuse="$INFO[Skin.String(ButtonColor)]" border="15">dialogs/keyboard/key.png</texturenofocus>
+        <texturefocus colordiffuse="ButtonFocusColor" border="15">dialogs/keyboard/key.png</texturefocus>
+        <texturenofocus colordiffuse="ButtonColor" border="15">dialogs/keyboard/key.png</texturenofocus>
      </include>
     <include name="KeyBoardKeyRadio">
         <align>left</align>
@@ -230,15 +230,15 @@
         <align>center</align>
         <font>Reg28</font>
         <textoffsetx>0</textoffsetx>
-        <selectedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</selectedcolor>
-        <textcolor>$INFO[Skin.String(ButtonTextColor)]</textcolor>
-        <focusedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</focusedcolor>
-        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
+        <selectedcolor>ButtonFocusTextColor</selectedcolor>
+        <textcolor>ButtonTextColor</textcolor>
+        <focusedcolor>ButtonFocusTextColor</focusedcolor>
+        <disabledcolor>GeneralTextColor</disabledcolor>
         <pulseonselect>false</pulseonselect>
-        <texturefocus colordiffuse="$INFO[Skin.String(ButtonFocusColor)]" border="20">dialogs/keyboard/key-nf.png</texturefocus>
-        <texturenofocus colordiffuse="$INFO[Skin.String(ButtonColor)]" border="20">dialogs/keyboard/key-nf.png</texturenofocus>
-        <alttexturefocus colordiffuse="$INFO[Skin.String(ButtonFocusColor)]" border="20">dialogs/keyboard/key-nf.png</alttexturefocus>
-        <alttexturenofocus colordiffuse="$INFO[Skin.String(ButtonColor)]" border="20">dialogs/keyboard/key-nf.png</alttexturenofocus>
+        <texturefocus colordiffuse="ButtonFocusColor" border="20">dialogs/keyboard/key-nf.png</texturefocus>
+        <texturenofocus colordiffuse="ButtonColor" border="20">dialogs/keyboard/key-nf.png</texturenofocus>
+        <alttexturefocus colordiffuse="ButtonFocusColor" border="20">dialogs/keyboard/key-nf.png</alttexturefocus>
+        <alttexturenofocus colordiffuse="ButtonColor" border="20">dialogs/keyboard/key-nf.png</alttexturenofocus>
     </include>
     <include name="SmallKey">
         <width>130</width>
@@ -264,8 +264,8 @@
         <include>Key</include>
     </include>
     <include name="DialogButtonBrowseAdd">
-        <textureradiofocus colordiffuse="$INFO[Skin.String(ButtonFocusTextColor)]">dialogs/keyboard/plus.png</textureradiofocus>
-        <textureradionofocus colordiffuse="$INFO[Skin.String(GeneralTextColor)]">dialogs/keyboard/plus.png</textureradionofocus>
+        <textureradiofocus colordiffuse="ButtonFocusTextColor">dialogs/keyboard/plus.png</textureradiofocus>
+        <textureradionofocus colordiffuse="GeneralTextColor">dialogs/keyboard/plus.png</textureradionofocus>
         <radiowidth>30</radiowidth>
         <radioheight>30</radioheight>
         <radioposx>10</radioposx>
@@ -275,8 +275,8 @@
         <include>DialogButton</include>
     </include>
     <include name="DialogButtonBrowseRemove">
-        <textureradiofocus colordiffuse="$INFO[Skin.String(ButtonFocusTextColor)]">dialogs/keyboard/remove.png</textureradiofocus>
-        <textureradionofocus colordiffuse="$INFO[Skin.String(GeneralTextColor)]">dialogs/keyboard/remove.png</textureradionofocus>
+        <textureradiofocus colordiffuse="ButtonFocusTextColor">dialogs/keyboard/remove.png</textureradiofocus>
+        <textureradionofocus colordiffuse="GeneralTextColor">dialogs/keyboard/remove.png</textureradionofocus>
         <radiowidth>30</radiowidth>
         <radioheight>30</radioheight>
         <radioposx>10</radioposx>
@@ -286,8 +286,8 @@
         <include>DialogButton</include>
     </include>
     <include name="DialogButtonBrowseEdit">
-        <textureradiofocus colordiffuse="$INFO[Skin.String(ButtonFocusTextColor)]">dialogs/keyboard/edit.png</textureradiofocus>
-        <textureradionofocus colordiffuse="$INFO[Skin.String(GeneralTextColor)]">dialogs/keyboard/edit.png</textureradionofocus>
+        <textureradiofocus colordiffuse="ButtonFocusTextColor">dialogs/keyboard/edit.png</textureradiofocus>
+        <textureradionofocus colordiffuse="GeneralTextColor">dialogs/keyboard/edit.png</textureradionofocus>
         <radiowidth>30</radiowidth>
         <radioheight>30</radioheight>
         <radioposx>10</radioposx>
@@ -297,8 +297,8 @@
         <include>DialogButton</include>
     </include>
     <include name="DialogButtonBrowse">
-        <textureradiofocus colordiffuse="$INFO[Skin.String(ButtonFocusTextColor)]">dialogs/mediasource/browse-nf.png</textureradiofocus>
-        <textureradionofocus colordiffuse="$INFO[Skin.String(GeneralTextColor)]">dialogs/mediasource/browse-nf.png</textureradionofocus>
+        <textureradiofocus colordiffuse="ButtonFocusTextColor">dialogs/mediasource/browse-nf.png</textureradiofocus>
+        <textureradionofocus colordiffuse="GeneralTextColor">dialogs/mediasource/browse-nf.png</textureradionofocus>
         <radiowidth>230</radiowidth>
         <radioheight>230</radioheight>
         <radioposx>-5</radioposx>
@@ -310,8 +310,8 @@
     <include name="KeyLeft">
         <width>130</width>
         <include>Key</include>
-        <textureradiofocus colordiffuse="$INFO[Skin.String(ButtonFocusTextColor)]">dialogs/keyboard/left.png</textureradiofocus>
-        <textureradionofocus colordiffuse="$INFO[Skin.String(ButtonTextColor)]">dialogs/keyboard/left.png</textureradionofocus>
+        <textureradiofocus colordiffuse="ButtonFocusTextColor">dialogs/keyboard/left.png</textureradiofocus>
+        <textureradionofocus colordiffuse="ButtonTextColor">dialogs/keyboard/left.png</textureradionofocus>
         <radiowidth>70</radiowidth>
         <radioheight>70</radioheight>
         <radioposx>30</radioposx>
@@ -319,8 +319,8 @@
     <include name="KeyRight">
         <width>130</width>
         <include>Key</include>
-        <textureradiofocus colordiffuse="$INFO[Skin.String(ButtonFocusTextColor)]">dialogs/keyboard/right.png</textureradiofocus>
-        <textureradionofocus colordiffuse="$INFO[Skin.String(ButtonTextColor)]">dialogs/keyboard/right.png</textureradionofocus>
+        <textureradiofocus colordiffuse="ButtonFocusTextColor">dialogs/keyboard/right.png</textureradiofocus>
+        <textureradionofocus colordiffuse="ButtonTextColor">dialogs/keyboard/right.png</textureradionofocus>
         <radiowidth>70</radiowidth>
         <radioheight>70</radioheight>
         <radioposx>30</radioposx>
@@ -328,8 +328,8 @@
     <include name="KeyBack">
         <width>130</width>
         <include>Key</include>
-        <textureradiofocus colordiffuse="$INFO[Skin.String(ButtonFocusTextColor)]">dialogs/keyboard/back.png</textureradiofocus>
-        <textureradionofocus colordiffuse="$INFO[Skin.String(ButtonTextColor)]">dialogs/keyboard/back.png</textureradionofocus>
+        <textureradiofocus colordiffuse="ButtonFocusTextColor">dialogs/keyboard/back.png</textureradiofocus>
+        <textureradionofocus colordiffuse="ButtonTextColor">dialogs/keyboard/back.png</textureradionofocus>
         <radiowidth>70</radiowidth>
         <radioheight>70</radioheight>
         <radioposx>30</radioposx>
@@ -337,8 +337,8 @@
     <include name="KeyDone">
         <width>130</width>
         <include>Key</include>
-        <textureradiofocus colordiffuse="$INFO[Skin.String(ButtonFocusTextColor)]">dialogs/keyboard/done.png</textureradiofocus>
-        <textureradionofocus colordiffuse="$INFO[Skin.String(ButtonTextColor)]">dialogs/keyboard/done.png</textureradionofocus>
+        <textureradiofocus colordiffuse="ButtonFocusTextColor">dialogs/keyboard/done.png</textureradiofocus>
+        <textureradionofocus colordiffuse="ButtonTextColor">dialogs/keyboard/done.png</textureradionofocus>
         <radiowidth>70</radiowidth>
         <radioheight>70</radioheight>
         <radioposx>30</radioposx>
@@ -357,12 +357,12 @@
         <width>580</width>
         <height>40</height>
         <align>left</align>
-        <disabledcolor fallback="white">$INFO[Skin.String(ViewDetailsTextColor)]</disabledcolor>
+        <disabledcolor fallback="white">ViewDetailsTextColor</disabledcolor>
         <texturefocus/>
         <texturenofocus>dialogs/default/separator.png</texturenofocus>
         <textoffsetx>0</textoffsetx>
-        <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-        <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+        <textcolor>ViewDetailsTextColor</textcolor>
+        <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
         <enable>false</enable>
     </include>
 
@@ -403,12 +403,12 @@
             <height>60</height>
             <control type="image">
                 <texture border="5">diffuse/panel.png</texture>
-                <colordiffuse>$INFO[Skin.String(ButtonColor)]</colordiffuse>
+                <colordiffuse>ButtonColor</colordiffuse>
                 <visible>!Control.HasFocus($PARAM[sliderid])</visible>
             </control>
             <control type="image">
                 <texture border="5">diffuse/panel.png</texture>
-                <colordiffuse>$INFO[Skin.String(ButtonFocusColor)]</colordiffuse>
+                <colordiffuse>ButtonFocusColor</colordiffuse>
                 <visible>Control.HasFocus($PARAM[sliderid])</visible>
             </control>
             <control type="slider" id="$PARAM[sliderid]">
@@ -424,7 +424,7 @@
                 <posx>20</posx>
                 <align>left</align>
                 <font>Light28</font>
-                <textcolor fallback="white">$INFO[Skin.String(ButtonTextColor)]</textcolor>
+                <textcolor fallback="white">ButtonTextColor</textcolor>
                 <visible>!Control.HasFocus($PARAM[sliderid])</visible>
             </control>
             <control type="label">
@@ -434,7 +434,7 @@
                 <width>100</width>
                 <align>center</align>
                 <font>Light28</font>
-                <textcolor fallback="white">$INFO[Skin.String(ButtonTextColor)]</textcolor>
+                <textcolor fallback="white">ButtonTextColor</textcolor>
                 <visible>!Control.HasFocus($PARAM[sliderid])</visible>
             </control>
             <control type="label">
@@ -443,7 +443,7 @@
                 <posx>20</posx>
                 <align>left</align>
                 <font>Light28</font>
-                <textcolor fallback="white">$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
+                <textcolor fallback="white">ButtonFocusTextColor</textcolor>
                 <visible>Control.HasFocus($PARAM[sliderid])</visible>
             </control>
             <control type="label">
@@ -453,7 +453,7 @@
                 <width>100</width>
                 <align>center</align>
                 <font>Light28</font>
-                <textcolor fallback="white">$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
+                <textcolor fallback="white">ButtonFocusTextColor</textcolor>
                 <visible>Control.HasFocus($PARAM[sliderid])</visible>
             </control>
         </control>

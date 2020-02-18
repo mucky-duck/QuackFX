@@ -24,14 +24,14 @@
                 <posx>50</posx>
                 <width>1820</width>
                 <texture border="15">diffuse/bgpanel.png</texture>
-            <colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+            <colordiffuse>GeneralPanelsColor</colordiffuse>
             </control>
             
             <control type="image">
                 <posx>50</posx>
                 <width>560</width>
                 <texture border="15">diffuse/bgpanel.png</texture>
-                <colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+                <colordiffuse>GeneralPanelsColor</colordiffuse>
             </control>
             
             <!--Picture	(Fanart)-->

@@ -309,7 +309,7 @@
 	
 	<variable name="LogoImage">
 		<value condition="Skin.String(CustomLogoImage)">$INFO[Skin.String(CustomLogoImage)]</value>
-        <value condition="Skin.String(BackgroundOverlayColor, white) + ![Skin.String(HomeLayout, simplever) | Skin.String(HomeLayout, simplever_tiles)]">home/kodi_logo_dark.png</value>
+        <value condition="Skin.String(BackgroundOverlayColor, white)">home/kodi_logo_dark.png</value>
         <value>home/kodi_logo_light.png</value>
     </variable>
 	
@@ -604,25 +604,24 @@
    </variable>
    
    <variable name="ViewDetailsFocusColor">
-        <value condition="Window.IsActive(home)">$INFO[Skin.String(HomeViewDetailsFocusColor)]</value>
-        <value>$INFO[Skin.String(ViewDetailsFocusColor)]</value>
+        <value condition="Window.IsActive(home)">HomeViewDetailsFocusColor</value>
+        <value>ViewDetailsFocusColor</value>
    </variable>
 
     <variable name="ViewDetailsBorderFocusColor">
-        <value condition="Window.IsActive(home)">$INFO[Skin.String(HomeViewDetailsBorderFocusColor)]</value>
-        <value>$INFO[Skin.String(ViewDetailsBorderFocusColor)]</value>
+        <value condition="Window.IsActive(home)">HomeViewDetailsBorderFocusColor</value>
+        <value>ViewDetailsBorderFocusColor</value>
     </variable>
    
    <variable name="ViewDetailsPanelColor">
-        <value condition="Window.IsActive(script-skin_helper_service-CustomInfo.xml)">$INFO[Skin.String(ViewDetailsPanelColor)]</value>
-        <value condition="Window.IsActive(home) + Skin.String(HomeWidgetsBorderColor)">$INFO[Skin.String(HomeWidgetsBorderColor)]</value>
-        <value condition="Window.IsActive(home)">$INFO[Skin.String(GeneralPanelsColor)]</value>
-        <value>$INFO[Skin.String(ViewDetailsPanelColor)]</value>
+        <value condition="Window.IsActive(script-skin_helper_service-CustomInfo.xml)">ViewDetailsPanelColor</value>
+        <value condition="Window.IsActive(home)">GeneralPanelsColor</value>
+        <value>ViewDetailsPanelColor</value>
    </variable>
    
    <variable name="ViewDetailsTextColor">
-        <value condition="Window.IsActive(home)">$INFO[Skin.String(GeneralTextColor)]</value>
-        <value>$INFO[Skin.String(ViewDetailsTextColor)]</value>
+        <value condition="Window.IsActive(home)">GeneralTextColor</value>
+        <value>ViewDetailsTextColor</value>
    </variable>
          
    <variable name="VideoPlayerClearArt">
@@ -706,14 +705,9 @@
 		<value>$LOCALIZE[19051]</value>
 	 </variable>
 	 
-	 <variable name="OSDProgressBarBackgroundColor">
-		<value condition="Skin.String(OSDProgressBarBackgroundColor,None)">00ffffff</value>
-		<value>$INFO[Skin.String(OSDProgressBarBackgroundColor)]</value>
-	 </variable>
-     
-     <variable name="PVRGuideListItemTextColor">
-		<value condition="Skin.HasSetting(ShowEpgGenreColors)">$INFO[Skin.String(ViewDetailsTextColor)]</value>
-		<value>$INFO[Skin.String(ButtonTextColor)]</value>
+	 <variable name="PVRGuideListItemTextColor">
+		<value condition="Skin.HasSetting(ShowEpgGenreColors)">ViewDetailsTextColor</value>
+		<value>ButtonTextColor</value>
 	 </variable>
      
      <variable name="WeatherIconsExtension">

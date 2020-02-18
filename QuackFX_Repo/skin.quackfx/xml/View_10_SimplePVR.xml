@@ -35,7 +35,7 @@
 					<width>1820</width>
 					<height>60</height>
 					<texture border="15">diffuse/bgpanel.png</texture>
-					<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+					<colordiffuse>GeneralPanelsColor</colordiffuse>
 				</control>
                 <control type="image">
 					<posx>50</posx>
@@ -43,7 +43,7 @@
 					<width>1820</width>
 					<height>60</height>
 					<texture border="15">diffuse/bgpanel.png</texture>
-					<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+					<colordiffuse>GeneralPanelsColor</colordiffuse>
 				</control>
 	
             </control>
@@ -86,8 +86,8 @@
                 <width>650</width>
                 <height>50</height>
                 <font>Bold38</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+                <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                <shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
                 <label>$VAR[ListTitlePVR]</label>
             </control>
             <control type="grouplist">
@@ -102,16 +102,16 @@
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>180</width>
-                        <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
-						<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                        <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
+						<textcolor>ViewDetailsTextColor</textcolor>
                         <label>$LOCALIZE[142]</label>
                     </control>
                     <control type="label">
                         <posx>160</posx>
                         <posy>0</posy>
                         <width>500</width>
-                        <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
-                        <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                        <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
+                        <textcolor>ViewDetailsTextColor</textcolor>
                         <label>$VAR[ListDateInfoPVR]</label>
                         <scroll>true</scroll>
                     </control>
@@ -124,16 +124,16 @@
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>180</width>
-                        <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
-                        <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                        <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
+                        <textcolor>ViewDetailsTextColor</textcolor>
                         <label>$LOCALIZE[180]:</label>
                     </control>
                     <control type="label">
                         <posx>160</posx>
                         <posy>0</posy>
                         <width>300</width>
-                        <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
-                        <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                        <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
+                        <textcolor>ViewDetailsTextColor</textcolor>
                         <label>$VAR[ListItemDuration]</label>
                     </control>
                 </control>
@@ -145,16 +145,16 @@
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>180</width>
-                        <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
-                        <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                        <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
+                        <textcolor>ViewDetailsTextColor</textcolor>
                         <label>$LOCALIZE[19148]:</label>
                     </control>
                     <control type="label">
                         <posx>160</posx>
                         <posy>0</posy>
                         <width>300</width>
-                        <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
-                        <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                        <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
+                        <textcolor>ViewDetailsTextColor</textcolor>
                         <label>$VAR[PVRChannelName]</label>
                     </control>
                 </control>
@@ -166,16 +166,16 @@
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>180</width>
-                        <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
-                        <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                        <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
+                        <textcolor>ViewDetailsTextColor</textcolor>
                         <label>$LOCALIZE[467]:</label>
                     </control>
                     <control type="label">
                         <posx>160</posx>
                         <posy>0</posy>
                         <width>500</width>
-                        <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
-                        <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                        <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
+                        <textcolor>ViewDetailsTextColor</textcolor>
                         <label>$INFO[ListItem.Timertype]</label>
                     </control>
                 </control>
@@ -186,8 +186,8 @@
                 <posy>190</posy>
                 <width>650</width>
                 <height>198</height>
-                <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <label fallback="195">$VAR[Plots]</label>
             </control>
             <control type="group">
@@ -202,7 +202,7 @@
                     <height>30</height>
                     <font>Reg30</font>
                     <textoffsetx>0</textoffsetx>
-                    <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                    <textcolor>GeneralTextColor</textcolor>
                     <label>19148</label>
                 </control>
                 <control type="label">
@@ -213,7 +213,7 @@
                     <height>30</height>
                     <font>Reg30</font>
                     <textoffsetx>0</textoffsetx>
-                    <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                    <textcolor>GeneralTextColor</textcolor>
                     <label>369</label>
                 </control>
                 <control type="label">
@@ -224,7 +224,7 @@
                     <height>30</height>
                     <font>Reg30</font>
                     <textoffsetx>0</textoffsetx>
-                    <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                    <textcolor>GeneralTextColor</textcolor>
                     <label>555</label>
                 </control>
 
@@ -253,7 +253,7 @@
                         <width>120</width>
                         <height>80</height>
                         <font>Reg28</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextColor</textcolor>
                         <label>$VAR[ListChannelNumberPVR]</label>
                     </control>
                     <control type="image">
@@ -262,7 +262,7 @@
                         <width>60</width>
                         <height>60</height>
                         <texture>common/folder.png</texture>
-                        <colordiffuse>$INFO[Skin.String(ViewDetailsListItemTextColor)]</colordiffuse>
+                        <colordiffuse>ViewDetailsListItemTextColor</colordiffuse>
                         <visible>ListItem.IsFolder</visible>
                     </control>
                     <control type="label">
@@ -273,7 +273,7 @@
                         <width>250</width>
                         <height>80</height>
                         <font>Reg28</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextColor</textcolor>
                         <label>$INFO[ListItem.ChannelName]</label>
                         <visible>!ListItem.IsFolder</visible>
                     </control>
@@ -284,7 +284,7 @@
                         <width>755</width>
                         <height>80</height>
                         <font>Reg28</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextColor</textcolor>
                         <label>$VAR[ListTitlePVR]</label>
                     </control>
                     <control type="label">
@@ -294,7 +294,7 @@
                         <width>500</width>
                         <height>80</height>
                         <font>Reg28</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextColor</textcolor>
                         <label>$VAR[ListDatePVR]</label>
                     </control>
                     <control type="image">
@@ -330,7 +330,7 @@
                         <width>120</width>
                         <height>80</height>
                         <font>Reg28</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
                         <label>$VAR[ListChannelNumberPVR]</label>
                     </control>
                     <control type="image">
@@ -339,7 +339,7 @@
                         <width>60</width>
                         <height>60</height>
                         <texture>common/folder.png</texture>
-                        <colordiffuse>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</colordiffuse>
+                        <colordiffuse>ViewDetailsListItemTextFocusColor</colordiffuse>
                         <visible>ListItem.IsFolder</visible>
                     </control>
 
@@ -350,7 +350,7 @@
                         <width>250</width>
                         <height>80</height>
                         <font>Reg28</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
                         <label>$INFO[ListItem.ChannelName]</label>
                         <visible>!ListItem.IsFolder</visible>
                     </control>
@@ -361,7 +361,7 @@
                         <width>755</width>
                         <height>80</height>
                         <font>Reg28</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
                         <label>$VAR[ListTitlePVR]</label>
                     </control>
                     <control type="label">
@@ -371,7 +371,7 @@
                         <width>500</width>
                         <height>80</height>
                         <font>Reg28</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
                         <label>$VAR[ListDatePVR]</label>
                     </control>
                     <control type="image">

@@ -41,7 +41,7 @@
 				<posy>0</posy>
 				<width>1820</width>
 				<texture border="15">diffuse/bgpanel.png</texture>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 			</control>
 			<!-- black bg panel - if not mainmenu window -->
 			<control type="image">
@@ -60,7 +60,7 @@
 					<width>620</width>
 					<height>770</height>
 					<texture border="15">diffuse/bgpanel.png</texture>
-					<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+					<colordiffuse>GeneralPanelsColor</colordiffuse>
 				</control>
 				<!--Current shortcuts -->
 				<control type="list" id="211">
@@ -93,7 +93,7 @@
 							<label>$INFO[ListItem.Label]</label>
 							<font>Reg26</font>
 							<scroll>false</scroll>
-							<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+							<textcolor>GeneralTextColor</textcolor>
 							<selectedcolor>FF00b8ff</selectedcolor>
 						</control>
 					</itemlayout>				
@@ -103,7 +103,7 @@
 							<top>-2</top>
 							<width>620</width>
 							<height>80</height>
-							<texture diffuse="diffuse/panel.png" border="5" aligny="centter" colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">colors/color_white.png</texture>
+							<texture diffuse="diffuse/panel.png" border="5" aligny="centter" colordiffuse="ButtonFocusColor">colors/color_white.png</texture>
 							<animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(211)">Conditional</animation>
 						</control>
 						<!-- thumb -->
@@ -120,7 +120,7 @@
 							<left>175</left>
 							<width>460</width>
 							<label>$INFO[ListItem.Label]</label>
-							<textcolor>$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
+							<textcolor>ButtonFocusTextColor</textcolor>
 							<font>Reg26</font>
 							<scroll>false</scroll>
 						</control>
@@ -135,7 +135,7 @@
 					<width>540</width>
 					<height>360</height>
 					<texture border="15">diffuse/bgpanel.png</texture>
-					<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+					<colordiffuse>GeneralPanelsColor</colordiffuse>
 				</control>
 				<control type="image">
 					<right>70</right>
@@ -143,7 +143,7 @@
 					<width>540</width>
 					<height>70</height>
 					<texture border="15">diffuse/bgpanel.png</texture>
-					<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+					<colordiffuse>GeneralPanelsColor</colordiffuse>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
 				</control>
 				<control type="image">
@@ -152,7 +152,7 @@
 					<width>540</width>
 					<height>320</height>
 					<texture border="15">diffuse/bgpanel.png</texture>
-					<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+					<colordiffuse>GeneralPanelsColor</colordiffuse>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
 				</control>
 				
@@ -166,7 +166,7 @@
 						<width>460</width>
                         <!-- localize -->
 						<label>[B]Widget Content:[/B]</label>
-						<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+						<textcolor>GeneralTextColor</textcolor>
 						<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
 						<font>Reg22</font>
 					</control>
@@ -178,8 +178,8 @@
                         <align>left</align>
                         <width>500</width>
                         <height>30</height>
-                        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <disabledcolor>GeneralTextColor</disabledcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                         <texturenofocus/>
                         <label>[B]$LOCALIZE[31185] $LOCALIZE[31499]:[/B]</label>
                         <label2 fallback="231">$INFO[Container(211).Listitem.Property(widgetName.99)]</label2>
@@ -196,8 +196,8 @@
                         <align>left</align>
                         <width>500</width>
                         <height>30</height>
-                        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <disabledcolor>GeneralTextColor</disabledcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                         <texturenofocus/>
                         <label>[B]$LOCALIZE[31499] 1:[/B]</label>
                         <label2 fallback="231">$INFO[Container(211).Listitem.Property(widgetName)]</label2>
@@ -214,8 +214,8 @@
                         <align>left</align>
                         <width>500</width>
                         <height>30</height>
-                        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <disabledcolor>GeneralTextColor</disabledcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                         <texturenofocus/>
                         <label>[B]$LOCALIZE[31499] 2:[/B]</label>
                         <label2 fallback="231">$INFO[Container(211).Listitem.Property(widgetName.1)]</label2>
@@ -232,8 +232,8 @@
                         <align>left</align>
                         <width>500</width>
                         <height>30</height>
-                        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <disabledcolor>GeneralTextColor</disabledcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                         <texturenofocus/>
                         <label>[B]$LOCALIZE[31499] 3:[/B]</label>
                         <label2 fallback="231">$INFO[Container(211).Listitem.Property(widgetName.2)]</label2>
@@ -249,8 +249,8 @@
                         <align>left</align>
                         <width>500</width>
                         <height>30</height>
-                        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <disabledcolor>GeneralTextColor</disabledcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                         <texturenofocus/>
                         <label>[B]$LOCALIZE[31499] 4:[/B]</label>
                         <label2 fallback="231">$INFO[Container(211).Listitem.Property(widgetName.3)]</label2>
@@ -266,8 +266,8 @@
                         <align>left</align>
                         <width>500</width>
                         <height>30</height>
-                        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <disabledcolor>GeneralTextColor</disabledcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                         <texturenofocus/>
                         <label>[B]$LOCALIZE[31499] 5:[/B]</label>
                         <label2 fallback="231">$INFO[Container(211).Listitem.Property(widgetName.4)]</label2>
@@ -284,8 +284,8 @@
                         <align>left</align>
                         <width>500</width>
                         <height>30</height>
-                        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <disabledcolor>GeneralTextColor</disabledcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                         <texturenofocus/>
                         <label>[B]$LOCALIZE[31499] 6:[/B]</label>
                         <label2 fallback="231">$INFO[Container(211).Listitem.Property(widgetName.5)]</label2>
@@ -302,8 +302,8 @@
                         <align>left</align>
                         <width>500</width>
                         <height>30</height>
-                        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <disabledcolor>GeneralTextColor</disabledcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                         <texturenofocus/>
                         <label>[B]$LOCALIZE[31499] 7:[/B]</label>
                         <label2 fallback="231">$INFO[Container(211).Listitem.Property(widgetName.6)]</label2>
@@ -320,8 +320,8 @@
                         <align>left</align>
                         <width>500</width>
                         <height>30</height>
-                        <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <disabledcolor>GeneralTextColor</disabledcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                         <texturenofocus/>
                         <label>[B]$LOCALIZE[31499] 8:[/B]</label>
                         <label2 fallback="231">$INFO[Container(211).Listitem.Property(widgetName.7)]</label2>
@@ -348,7 +348,7 @@
                         <font>Reg24</font>
 						<scrollspeed>160</scrollspeed>
 						<orientation>horizontal</orientation>
-						<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+						<textcolor>GeneralTextColor</textcolor>
 					</control>
 					<control type="fadelabel">
 						<left>5</left>
@@ -361,7 +361,7 @@
 						<scrollspeed>50</scrollspeed>
 						<pauseatend>2500</pauseatend>
 						<orientation>horizontal</orientation>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <textcolor>GeneralTextColor</textcolor>
 					</control>
 					<!--blank label-->
 					<control type="label">
@@ -378,7 +378,7 @@
                         <!-- localize -->
 						<label>[B]Background Image:[/B][CR]$INFO[Container(211).Listitem.Property(backgroundName), • ,]</label>
                         <font>Reg22</font>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <textcolor>GeneralTextColor</textcolor>
 						<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
 					</control>
 					<control type="image">

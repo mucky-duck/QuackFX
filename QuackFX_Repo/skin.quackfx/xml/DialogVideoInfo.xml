@@ -121,9 +121,9 @@
 					<height>100</height>
 					<font>Bold45</font>
 					<align>right</align>
-					<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+					<textcolor>HeaderTextColor</textcolor>
 					<label>$INFO[Window.Property(subtitle)]</label>
-					<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+					<shadowcolor>HeaderTextShadowColor</shadowcolor>
 				</control>
 
                 <!-- dialog info details -->
@@ -161,9 +161,9 @@
                         <font>Reg48</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+                        <textcolor>HeaderTextColor</textcolor>
                         <label>[B]$VAR[value_header][/B]</label>
-                        <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                        <shadowcolor>HeaderTextShadowColor</shadowcolor>
                     </control>
 
                     <!-- row details -->
@@ -186,7 +186,7 @@
                             <font>Reg28</font>
                             <align>left</align>
                             <aligny>center</aligny>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
                             <label>[B]$INFO[ListItem.TagLine][/B]</label>
                             <visible>!String.IsEmpty(ListItem.TagLine)</visible>
                         </control>
@@ -197,7 +197,7 @@
                             <font>Reg30</font>
                             <align>left</align>
                             <aligny>center</aligny>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
                             <label>$VAR[NetflixDialogEpisodeInfoLabel]</label>
                             <visible>[String.IsEqual(Window(Home).Property(ListItem.dbtype),episode) | String.IsEqual(ListItem.dbtype,episode)] | [Skin.HasSetting(ShowEpisodePlotInfoDialog) + Control.IsVisible(5050)]</visible>
                         </control>
@@ -243,7 +243,7 @@
                                 <align>left</align>
                                 <label>[CAPITALIZE]$LOCALIZE[206]: [/CAPITALIZE]$INFO[Window(Home).Property(SkinHelper.ListItem.CastListing)]</label>
                                 <textcolor>$VAR[NetflixInfoDialogDetailsTextColor]</textcolor>
-                                <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                                <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                                 <scroll>false</scroll>
                             </control>
                         </control>
@@ -268,7 +268,7 @@
                                 <align>left</align>
                                 <label>[CAPITALIZE]$LOCALIZE[20348]: [/CAPITALIZE]$INFO[ListItem.Director]</label>
                                 <textcolor>$VAR[NetflixInfoDialogDetailsTextColor]</textcolor>
-                                <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                                <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                                 <scroll>false</scroll>
                             </control>
                         </control>
@@ -293,7 +293,7 @@
                                 <align>left</align>
                                 <label>[CAPITALIZE]$LOCALIZE[20418]: [/CAPITALIZE]$INFO[ListItem.Writer]</label>
                                 <textcolor>$VAR[NetflixInfoDialogDetailsTextColor]</textcolor>
-                                <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                                <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                                 <scroll>false</scroll>
                             </control>
                         </control>
@@ -318,7 +318,7 @@
                                 <align>left</align>
                                 <label>$INFO[ListItem.Genre]</label>
                                 <textcolor>$VAR[NetflixInfoDialogDetailsTextColor]</textcolor>
-                                <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                                <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                                 <scroll>false</scroll>
                             </control>
                         </control>
@@ -343,7 +343,7 @@
                                 <align>left</align>
                                 <label>[CAPITALIZE]$LOCALIZE[287]: $INFO[Window(Home).Property(SkinHelper.ListItem.Subtitles)][/CAPITALIZE]</label>
                                 <textcolor>$VAR[NetflixInfoDialogDetailsTextColor]</textcolor>
-                                <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                                <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                                 <scroll>false</scroll>
                             </control>
                         </control>
@@ -368,7 +368,7 @@
                                 <align>left</align>
                                 <label>[CAPITALIZE]$LOCALIZE[21447]: $INFO[Window(home).Property(SkinHelper.ListItem.Languages)][/CAPITALIZE]</label>
                                 <textcolor>$VAR[NetflixInfoDialogDetailsTextColor]</textcolor>
-                                <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                                <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                                 <scroll>false</scroll>
                             </control>
                         </control>
@@ -393,7 +393,7 @@
                                 <align>left</align>
                                 <label>$INFO[Window(Home).Property(SkinHelper.ListItem.Awards)]</label>
                                 <textcolor>$VAR[NetflixInfoDialogDetailsTextColor]</textcolor>
-                                <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                                <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                                 <scroll>false</scroll>
                             </control>
                         </control>
@@ -419,7 +419,7 @@
                                 <aligny>top</aligny>
                                 <texturebg colordiffuse="cc515151" border="2">colors/color_white.png</texturebg>
                                 <lefttexture/>
-                                <midtexture colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]" border="2">colors/color_white.png</midtexture>
+                                <midtexture colordiffuse="OSDProgressBarColor" border="2">colors/color_white.png</midtexture>
                                 <righttexture/>
                                 <info>ListItem.PercentPlayed</info>
                             </control>
@@ -509,7 +509,7 @@
                                         <align>left</align>
                                         <aligny>center</aligny>
                                         <texture>play.png</texture>
-                                        <colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+                                        <colordiffuse>ViewDetailsTextColor</colordiffuse>
                                     </control>
                                     <!-- play/resume label -->
                                     <control type="label">
@@ -519,7 +519,7 @@
                                         <aligny>center</aligny>
                                         <align>left</align>
                                         <font>Reg30</font>
-                                        <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                                        <textcolor>ViewDetailsTextColor</textcolor>
                                         <label>$VAR[PlayOrResumeLabel]$INFO[ListItem.Season, S,]$INFO[ListItem.Episode,: Ep. ,]</label>
                                     </control>
                                     <!-- progress bar -->
@@ -534,7 +534,7 @@
                                         <aligny>top</aligny>
                                         <texturebg colordiffuse="cc515151" border="2">colors/color_white.png</texturebg>
                                         <lefttexture/>
-                                        <midtexture colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]" border="2">colors/color_white.png</midtexture>
+                                        <midtexture colordiffuse="OSDProgressBarColor" border="2">colors/color_white.png</midtexture>
                                         <righttexture/>
                                         <info>ListItem.PercentPlayed</info>
                                     </control>
@@ -553,12 +553,12 @@
                                 <textoffsetx>50</textoffsetx>
                                 <textoffsety>8</textoffsety>
                                 <textcolor>$VAR[NetflixInfoDialogButtonsTextColor]</textcolor>
-                                <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                                <focusedcolor>ViewDetailsTextColor</focusedcolor>
                                 <label>208</label>
-                                <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+                                <texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
                                 <texturenofocus/>
-                                <textureradioonfocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">play.png</textureradioonfocus>
-                                <textureradioofffocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">play.png</textureradioofffocus>
+                                <textureradioonfocus colordiffuse="ViewDetailsTextColor">play.png</textureradioonfocus>
+                                <textureradioofffocus colordiffuse="ViewDetailsTextColor">play.png</textureradioofffocus>
                                 <textureradioonnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">play.png</textureradioonnofocus>
                                 <textureradiooffnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">play.png</textureradiooffnofocus>
                                 <radioposx>15</radioposx>
@@ -581,12 +581,12 @@
                                 <textoffsety>8</textoffsety>
                                 <font>Reg30</font>
                                 <textcolor>$VAR[NetflixInfoDialogButtonsTextColor]</textcolor>
-                                <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                                <focusedcolor>ViewDetailsTextColor</focusedcolor>
                                 <label>13404</label>
-                                <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+                                <texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
                                 <texturenofocus/>
-                                <textureradioonfocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">play.png</textureradioonfocus>
-                                <textureradioofffocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">play.png</textureradioofffocus>
+                                <textureradioonfocus colordiffuse="ViewDetailsTextColor">play.png</textureradioonfocus>
+                                <textureradioofffocus colordiffuse="ViewDetailsTextColor">play.png</textureradioofffocus>
                                 <textureradioonnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">play.png</textureradioonnofocus>
                                 <textureradiooffnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">play.png</textureradiooffnofocus>
                                 <radioposx>15</radioposx>
@@ -607,13 +607,13 @@
                                 <textoffsetx>50</textoffsetx>
                                 <textoffsety>8</textoffsety>
                                 <textcolor>$VAR[NetflixInfoDialogButtonsTextColor]</textcolor>
-                                <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                                <focusedcolor>ViewDetailsTextColor</focusedcolor>
                                 <font>Reg30</font>
                                 <label>12021</label>
-                                <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+                                <texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
                                 <texturenofocus/>
-                                <textureradioonfocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">play_beginning.png</textureradioonfocus>
-                                <textureradioofffocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">play_beginning.png</textureradioofffocus>
+                                <textureradioonfocus colordiffuse="ViewDetailsTextColor">play_beginning.png</textureradioonfocus>
+                                <textureradioofffocus colordiffuse="ViewDetailsTextColor">play_beginning.png</textureradioofffocus>
                                 <textureradioonnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">play_beginning.png</textureradioonnofocus>
                                 <textureradiooffnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">play_beginning.png</textureradiooffnofocus>
                                 <radioposx>15</radioposx>
@@ -645,12 +645,12 @@
                                 <textoffsety>12</textoffsety>
                                 <font>Reg30</font>
                                 <textcolor>$VAR[NetflixInfoDialogButtonsTextColor]</textcolor>
-                                <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                                <focusedcolor>ViewDetailsTextColor</focusedcolor>
                                 <label>More episodes</label>
-                                <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+                                <texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
                                 <texturenofocus/>
-                                <textureradioonfocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">more_episodes.png</textureradioonfocus>
-                                <textureradioofffocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">more_episodes.png</textureradioofffocus>
+                                <textureradioonfocus colordiffuse="ViewDetailsTextColor">more_episodes.png</textureradioonfocus>
+                                <textureradioofffocus colordiffuse="ViewDetailsTextColor">more_episodes.png</textureradioofffocus>
                                 <textureradioonnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">more_episodes.png</textureradioonnofocus>
                                 <textureradiooffnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">more_episodes.png</textureradiooffnofocus>
                                 <radioposy>0</radioposy>
@@ -677,12 +677,12 @@
                                 <textoffsety>8</textoffsety>
                                 <font>Reg30</font>
                                 <textcolor>$VAR[NetflixInfoDialogButtonsTextColor]</textcolor>
-                                <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                                <focusedcolor>ViewDetailsTextColor</focusedcolor>
                                 <label>20410</label>
-                                <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+                                <texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
                                 <texturenofocus/>
-                                <textureradioonfocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">dialogs/videoinfo/tvstudio-icon.png</textureradioonfocus>
-                                <textureradioofffocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">dialogs/videoinfo/tvstudio-icon.png</textureradioofffocus>
+                                <textureradioonfocus colordiffuse="ViewDetailsTextColor">dialogs/videoinfo/tvstudio-icon.png</textureradioonfocus>
+                                <textureradioofffocus colordiffuse="ViewDetailsTextColor">dialogs/videoinfo/tvstudio-icon.png</textureradioofffocus>
                                 <textureradioonnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">dialogs/videoinfo/tvstudio-icon.png</textureradioonnofocus>
                                 <textureradiooffnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">dialogs/videoinfo/tvstudio-icon.png</textureradiooffnofocus>
                                 <radioposx>5</radioposx>
@@ -708,12 +708,12 @@
                                 <textoffsety>8</textoffsety>
                                 <font>Reg30</font>
                                 <textcolor>$VAR[NetflixInfoDialogButtonsTextColor]</textcolor>
-                                <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                                <focusedcolor>ViewDetailsTextColor</focusedcolor>
                                 <label>35232</label>
-                                <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+                                <texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
                                 <texturenofocus/>
-                                <textureradioonfocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">dialogs/videoinfo/tvstudio-icon.png</textureradioonfocus>
-                                <textureradioofffocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">dialogs/videoinfo/tvstudio-icon.png</textureradioofffocus>
+                                <textureradioonfocus colordiffuse="ViewDetailsTextColor">dialogs/videoinfo/tvstudio-icon.png</textureradioonfocus>
+                                <textureradioofffocus colordiffuse="ViewDetailsTextColor">dialogs/videoinfo/tvstudio-icon.png</textureradioofffocus>
                                 <textureradioonnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">dialogs/videoinfo/tvstudio-icon.png</textureradioonnofocus>
                                 <textureradiooffnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">dialogs/videoinfo/tvstudio-icon.png</textureradiooffnofocus>
                                 <radioposx>7</radioposx>
@@ -740,12 +740,12 @@
                                 <textoffsety>8</textoffsety>
                                 <font>Reg30</font>
                                 <textcolor>$VAR[NetflixInfoDialogButtonsTextColor]</textcolor>
-                                <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                                <focusedcolor>ViewDetailsTextColor</focusedcolor>
                                 <label>Rate this title</label>
-                                <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+                                <texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
                                 <texturenofocus/>
-                                <textureradioonfocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">thumbs-up.png</textureradioonfocus>
-                                <textureradioofffocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">thumbs-up.png</textureradioofffocus>
+                                <textureradioonfocus colordiffuse="ViewDetailsTextColor">thumbs-up.png</textureradioonfocus>
+                                <textureradioofffocus colordiffuse="ViewDetailsTextColor">thumbs-up.png</textureradioofffocus>
                                 <textureradioonnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">thumbs-up.png</textureradioonnofocus>
                                 <textureradiooffnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">thumbs-up.png</textureradiooffnofocus>
                                 <radiowidth>24</radiowidth>
@@ -769,9 +769,9 @@
                                 <textoffsety>8</textoffsety>
                                 <font>Reg30</font>
                                 <textcolor>$VAR[NetflixInfoDialogButtonsTextColor]</textcolor>
-                                <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                                <focusedcolor>ViewDetailsTextColor</focusedcolor>
                                 <label>Change rating</label>
-                                <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+                                <texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
                                 <texturenofocus/>
                                 <include condition="Integer.IsLessOrEqual(ListItem.UserRating,5)">ChangeRatingThumbsDown</include>
                                 <include condition="Integer.IsGreaterOrEqual(ListItem.UserRating,5)">ChangeRatingThumbsUp</include>
@@ -795,12 +795,12 @@
                                 <textoffsety>8</textoffsety>
                                 <font>Reg30</font>
                                 <textcolor>$VAR[NetflixInfoDialogButtonsTextColor]</textcolor>
-                                <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                                <focusedcolor>ViewDetailsTextColor</focusedcolor>
                                 <label>$LOCALIZE[207] &amp; $LOCALIZE[31608]</label>
-                                <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+                                <texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
                                 <texturenofocus/>
-                                <textureradioonfocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">plus.png</textureradioonfocus>
-                                <textureradioofffocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">plus.png</textureradioofffocus>
+                                <textureradioonfocus colordiffuse="ViewDetailsTextColor">plus.png</textureradioonfocus>
+                                <textureradioofffocus colordiffuse="ViewDetailsTextColor">plus.png</textureradioofffocus>
                                 <textureradioonnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">plus.png</textureradioonnofocus>
                                 <textureradiooffnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">plus.png</textureradiooffnofocus>
                                 <radioposx>15</radioposx>
@@ -824,12 +824,12 @@
                                 <textoffsety>8</textoffsety>
                                 <font>Reg30</font>
                                 <textcolor>$VAR[NetflixInfoDialogButtonsTextColor]</textcolor>
-                                <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                                <focusedcolor>ViewDetailsTextColor</focusedcolor>
                                 <label>206</label>
-                                <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+                                <texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
                                 <texturenofocus/>
-                                <textureradioonfocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">plus.png</textureradioonfocus>
-                                <textureradioofffocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">plus.png</textureradioofffocus>
+                                <textureradioonfocus colordiffuse="ViewDetailsTextColor">plus.png</textureradioonfocus>
+                                <textureradioofffocus colordiffuse="ViewDetailsTextColor">plus.png</textureradioofffocus>
                                 <textureradioonnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">plus.png</textureradioonnofocus>
                                 <textureradiooffnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">plus.png</textureradiooffnofocus>
                                 <radioposx>15</radioposx>
@@ -853,12 +853,12 @@
                                 <textoffsety>5</textoffsety>
                                 <font>Reg30</font>
                                 <textcolor>$VAR[NetflixInfoDialogButtonsTextColor]</textcolor>
-                                <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                                <focusedcolor>ViewDetailsTextColor</focusedcolor>
                                 <label>31622</label>
-                                <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+                                <texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
                                 <texturenofocus/>
-                                <textureradioonfocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">plus.png</textureradioonfocus>
-                                <textureradioofffocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">plus.png</textureradioofffocus>
+                                <textureradioonfocus colordiffuse="ViewDetailsTextColor">plus.png</textureradioonfocus>
+                                <textureradioofffocus colordiffuse="ViewDetailsTextColor">plus.png</textureradioofffocus>
                                 <textureradioonnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">plus.png</textureradioonnofocus>
                                 <textureradiooffnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">plus.png</textureradiooffnofocus>
                                 <radioposx>15</radioposx>
@@ -881,12 +881,12 @@
                                 <textoffsety>8</textoffsety>
                                 <font>Reg30</font>
                                 <textcolor>$VAR[NetflixInfoDialogButtonsTextColor]</textcolor>
-                                <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                                <focusedcolor>ViewDetailsTextColor</focusedcolor>
                                 <label>More Info</label>
-                                <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+                                <texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
                                 <texturenofocus/>
-                                <textureradioonfocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">info.png</textureradioonfocus>
-                                <textureradioofffocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">info.png</textureradioofffocus>
+                                <textureradioonfocus colordiffuse="ViewDetailsTextColor">info.png</textureradioonfocus>
+                                <textureradioofffocus colordiffuse="ViewDetailsTextColor">info.png</textureradioofffocus>
                                 <textureradioonnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">info.png</textureradioonnofocus>
                                 <textureradiooffnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">info.png</textureradiooffnofocus>
                                 <radioposy>0</radioposy>
@@ -912,9 +912,9 @@
                                 <textoffsety>8</textoffsety>
                                 <font>Reg30</font>
                                 <textcolor>$VAR[NetflixInfoDialogButtonsTextColor]</textcolor>
-                                <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                                <focusedcolor>ViewDetailsTextColor</focusedcolor>
                                 <label>CinemaVision</label>
-                                <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+                                <texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
                                 <texturenofocus/>
                                 <radioposx>25</radioposx>
                                 <radiowidth>20</radiowidth>
@@ -937,9 +937,9 @@
                                 <textoffsety>8</textoffsety>
                                 <font>Reg30</font>
                                 <textcolor>$VAR[NetflixInfoDialogButtonsTextColor]</textcolor>
-                                <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                                <focusedcolor>ViewDetailsTextColor</focusedcolor>
                                 <label>$INFO[System.AddonTitle(script.cinema.experience)]</label>
-                                <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+                                <texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
                                 <texturenofocus/>
                                 <radioposx>25</radioposx>
                                 <radiowidth>20</radiowidth>
@@ -963,12 +963,12 @@
                                 <textoffsety>8</textoffsety>
                                 <font>Reg30</font>
                                 <textcolor>$VAR[NetflixInfoDialogButtonsTextColor]</textcolor>
-                                <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                                <focusedcolor>ViewDetailsTextColor</focusedcolor>
                                 <label>13511</label>
-                                <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+                                <texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
                                 <texturenofocus/>
-                                <textureradioonfocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">text-bg-color.png</textureradioonfocus>
-                                <textureradioofffocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">text-bg-color.png</textureradioofffocus>
+                                <textureradioonfocus colordiffuse="ViewDetailsTextColor">text-bg-color.png</textureradioonfocus>
+                                <textureradioofffocus colordiffuse="ViewDetailsTextColor">text-bg-color.png</textureradioofffocus>
                                 <textureradioonnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">text-bg-color.png</textureradioonnofocus>
                                 <textureradiooffnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">text-bg-color.png</textureradiooffnofocus>
                                 <radioposx>15</radioposx>
@@ -992,12 +992,12 @@
                                 <textoffsety>10</textoffsety>
                                 <font>Reg30</font>
                                 <textcolor>$VAR[NetflixInfoDialogButtonsTextColor]</textcolor>
-                                <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                                <focusedcolor>ViewDetailsTextColor</focusedcolor>
                                 <label>184</label>
-                                <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+                                <texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
                                 <texturenofocus/>
-                                <textureradioonfocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">sinchronize.png</textureradioonfocus>
-                                <textureradioofffocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">sinchronize.png</textureradioofffocus>
+                                <textureradioonfocus colordiffuse="ViewDetailsTextColor">sinchronize.png</textureradioonfocus>
+                                <textureradioofffocus colordiffuse="ViewDetailsTextColor">sinchronize.png</textureradioofffocus>
                                 <textureradioonnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">sinchronize.png</textureradioonnofocus>
                                 <textureradiooffnofocus colordiffuse="$VAR[NetflixInfoDialogButtonsTextColor]">sinchronize.png</textureradiooffnofocus>
                                 <radioposx>15</radioposx>
@@ -1031,8 +1031,8 @@
 						<width>1790</width>
 						<height min="170" max="357">auto</height>
 						<label>$INFO[ListItem.Plot]</label>
-						<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-						<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+						<textcolor>ViewDetailsTextColor</textcolor>
+						<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 						<align>justify</align>
 						<font>Reg42</font>
 					</control>
@@ -1152,7 +1152,7 @@
 						<aspectratio>keep</aspectratio>
 						<imagepath>$INFO[Skin.String(SkinHelper.SpinnerTexture.Path)]</imagepath>
 						<timeperimage>100</timeperimage>
-						<colordiffuse>$INFO[Skin.String(SpinnerTexture.Color)]</colordiffuse>
+						<colordiffuse>SpinnerTextureColor</colordiffuse>
 						<fadetime>0</fadetime>
 						<visible>!Skin.String(SkinHelper.SpinnerTexture.Path,None)</visible>
 						<visible>Control.IsVisible(351) + Container(351).IsUpdating</visible>
@@ -1175,7 +1175,7 @@
 							<height>120</height>
 							<bordersize>0</bordersize>
 							<texture diffuse="diffuse/poster.png">colors/color_white.png</texture>
-							<colordiffuse>$INFO[Skin.String(TagOverlaysPanelColor)]</colordiffuse>
+							<colordiffuse>TagOverlaysPanelColor</colordiffuse>
 						</control>
 						<control type="label">
 							<left>10</left>
@@ -1185,7 +1185,7 @@
 							<align>left</align>
 							<label>$INFO[Container(351).ListItem.Label2,[B],[/B][CR]]$INFO[Container(351).ListItem.Label]</label>
 							<font>Reg32</font>
-							<textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+							<textcolor>TagOverlaysTextColor</textcolor>
 						</control>
 					</control>
 				</control>
@@ -1245,7 +1245,7 @@
 							<height>120</height>
 							<bordersize>0</bordersize>
 							<texture diffuse="diffuse/poster.png">colors/color_white.png</texture>
-							<colordiffuse>$INFO[Skin.String(TagOverlaysPanelColor)]</colordiffuse>
+							<colordiffuse>TagOverlaysPanelColor</colordiffuse>
 						</control>
 						<control type="label">
 							<left>10</left>
@@ -1255,7 +1255,7 @@
 							<align>left</align>
 							<label>$INFO[Container(352).ListItem.Label2,[B],[/B][CR]]$INFO[Container(352).ListItem.Label]</label>
 							<font>Reg32</font>
-							<textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+							<textcolor>TagOverlaysTextColor</textcolor>
 						</control>
 					</control>
 				</control>

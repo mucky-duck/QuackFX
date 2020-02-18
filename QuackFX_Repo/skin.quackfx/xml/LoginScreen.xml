@@ -21,7 +21,7 @@
                 <posy>250</posy>
                 <align>center</align>
                 <font>Reg56</font>
-                <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                <textcolor>GeneralTextColor</textcolor>
                 <label>Who's watching?</label>
             </control>
             
@@ -53,7 +53,7 @@
                             <posy>320</posy>
                             <width>300</width>
                             <height>50</height>
-                            <textcolor fallback="white">$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                            <textcolor fallback="white">GeneralTextColor</textcolor>
                             <label>$INFO[ListItem.Label]</label>
                             <font>reg42</font>
                             <align>center</align>
@@ -69,7 +69,7 @@
                                 <width>316</width>
                                 <height>316</height>
                                 <aspectratio>keep</aspectratio>
-                                <bordertexture colordiffuse="$INFO[Skin.String(HomeViewDetailsFocusColor)]">colors/color_white.png</bordertexture>
+                                <bordertexture colordiffuse="HomeViewDetailsFocusColor">colors/color_white.png</bordertexture>
                                 <bordersize>8</bordersize>
                                 <texture background="true" fallback="common/profil/avatar.png">$INFO[Listitem.Icon]</texture>
                             </control>
@@ -78,7 +78,7 @@
                                 <posy>320</posy>
                                 <width>300</width>
                                 <height>50</height>
-                                <textcolor fallback="white">$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                                <textcolor fallback="white">GeneralTextColor</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                                 <font>reg42</font>
                                 <align>center</align>
@@ -100,8 +100,8 @@
                 <ondown>52</ondown>
                 <onright>52</onright>
                 <onleft>52</onleft>
-                <texturefocus colordiffuse="$INFO[Skin.String(HomeViewDetailsFocusColor)]">common/shutdown2.png</texturefocus>
-                <texturenofocus colordiffuse="$INFO[Skin.String(MainMenuTextColor)]">common/shutdown2.png</texturenofocus>
+                <texturefocus colordiffuse="HomeViewDetailsFocusColor">common/shutdown2.png</texturefocus>
+                <texturenofocus colordiffuse="MainMenuTextColor">common/shutdown2.png</texturenofocus>
                 <onclick condition="System.CanPowerDown">ActivateWindow(shutdownmenu)</onclick>
                 <onclick condition="!System.CanPowerDown">Quit()</onclick>
                 <visible>System.ShowExitButton</visible>

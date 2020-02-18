@@ -170,7 +170,7 @@
 			<align>left</align>
 			<width>80%</width>
 			<label>[B]$INFO[ListItem.Label][/B]</label>
-			<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+			<textcolor>ViewDetailsListItemTextColor</textcolor>
 			<font>Light30</font>
 		</control>		
 		
@@ -203,7 +203,7 @@
 			<align>left</align>
 			<width>65%</width>
 			<label>[B]$INFO[ListItem.Label][/B]</label>
-			<textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+			<textcolor>ViewDetailsListItemTextFocusColor</textcolor>
 			<font>Light30</font>
 			<scroll>true</scroll>
 		</control>

@@ -20,7 +20,7 @@
                 <width>100%</width>
                 <height>100%</height>
                 <texture>overlay/Surround.png</texture>
-                <colordiffuse>$INFO[Skin.String(LyricsOverlayColor)]</colordiffuse>
+                <colordiffuse>LyricsOverlayColor</colordiffuse>
             </control>
             <control type="image">
                 <posx>0</posx>
@@ -28,7 +28,7 @@
                 <width>100%</width>
                 <height>100%</height>
                 <texture>overlay/Spot.png</texture>
-                <colordiffuse>$INFO[Skin.String(LyricsOverlayColor)]</colordiffuse>
+                <colordiffuse>LyricsOverlayColor</colordiffuse>
             </control>
         </control>
 
@@ -51,7 +51,7 @@
                 <width>100%</width>
                 <height>60</height>
                 <texture border="5" flipy="true">$VAR[osdpanelimage]</texture>
-                <colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+                <colordiffuse>OSDPanelColor</colordiffuse>
             </control>
             <control type="fadelabel">
                 <bottom>17</bottom>
@@ -60,8 +60,8 @@
                 <height>20</height>
                 <scroll>true</scroll>
                 <scrollout>false</scrollout>
-                <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(OSDPrimaryTextShadowColor)]</shadowcolor>
+                <textcolor>OSDPrimaryTextColor</textcolor>
+                <shadowcolor>OSDPrimaryTextShadowColor</shadowcolor>
                 <font>Reg30</font>
                 <scrollspeed>80</scrollspeed>
                 <label>$INFO[Window(Home).Property(SkinHelper.Player.ExtendedPlot)]</label>

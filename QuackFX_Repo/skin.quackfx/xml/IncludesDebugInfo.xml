@@ -876,7 +876,7 @@
             <control type="label">
                 <width>780</width>
                 <height>60</height>
-                <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                <textcolor>GeneralTextColor</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <font>Reg26</font>
                 <align>left</align>

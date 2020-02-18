@@ -14,11 +14,11 @@
             <bottom>160</bottom>
             <control type="image">
                 <texture border="15">diffuse/bgpanel.png</texture>
-                <colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+                <colordiffuse>GeneralPanelsColor</colordiffuse>
             </control>
             <control type="image">
                 <texture border="15">diffuse/bgpanel.png</texture>
-                <colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+                <colordiffuse>GeneralPanelsColor</colordiffuse>
             </control>
         </control>
 
@@ -124,7 +124,7 @@
             <width>100%</width>
             <height>110</height>
             <texture border="5">diffuse/panel.png</texture>
-            <colordiffuse>$INFO[Skin.String(FooterPanelColor)]</colordiffuse>
+            <colordiffuse>FooterPanelColor</colordiffuse>
             <visible>!skin.hassetting(nofooterbar)</visible>
         </control>
 		
@@ -183,8 +183,8 @@
 					<align>left</align>
 					<onup>3110</onup>
 					<label>$ADDON[script.skin.helper.colorpicker 32049]:</label>
-                    <textcolor>$INFO[Skin.String(FooterTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(FooterTextShadowColor)]</shadowcolor>
+                    <textcolor>FooterTextColor</textcolor>
+                    <shadowcolor>FooterTextShadowColor</shadowcolor>
 				</control>
 				<control type="slider" id="3015">
 					<!-- opacity slider -->
@@ -205,8 +205,8 @@
 					<onup>3110</onup>
 					<onleft>3010</onleft>
 					<label>$INFO[Control.Getlabel(3015)]</label>
-                    <textcolor>$INFO[Skin.String(FooterTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(FooterTextShadowColor)]</shadowcolor>
+                    <textcolor>FooterTextColor</textcolor>
+                    <shadowcolor>FooterTextShadowColor</shadowcolor>
 				</control>
 			</control>
 		</control>		

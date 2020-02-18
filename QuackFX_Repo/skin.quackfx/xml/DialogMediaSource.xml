@@ -21,7 +21,7 @@
                 <width>1030</width>
                 <height>531</height>
                 <texture border="15">diffuse/bgpanel.png</texture>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 				
             </control>
 			<control type="image">
@@ -32,7 +32,7 @@
                 <height>531</height>
 				<texture border="15">diffuse/bgpanel.png</texture>
 				<bordersize>10</bordersize>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 				
             </control>
 			
@@ -113,7 +113,7 @@
                             <width>74</width>
                             <height>60</height>
                             <texture>dialogs/mediasource/rules-nf.png</texture>
-                            <colordiffuse>$INFO[Skin.String(GeneralTextColor)]</colordiffuse>
+                            <colordiffuse>GeneralTextColor</colordiffuse>
                         </control>
                     </itemlayout>
                     <focusedlayout height="60">
@@ -139,7 +139,7 @@
                                 <width>74</width>
                                 <height>60</height>
                                 <texture>dialogs/mediasource/rules-nf.png</texture>
-                                <colordiffuse>$INFO[Skin.String(GeneralTextColor)]</colordiffuse>
+                                <colordiffuse>GeneralTextColor</colordiffuse>
                                 <visible>!ListItem.IsSelected</visible>
                             </control>
                         </control>
@@ -149,7 +149,7 @@
                                 <width>690</width>
                                 <height>60</height>
                                 <texture border="5">diffuse/panel.png</texture>
-                                <colordiffuse>$INFO[Skin.String(ButtonFocusColor)]</colordiffuse>
+                                <colordiffuse>ButtonFocusColor</colordiffuse>
                             </control>
                             <control type="label">
                                 <posx>20</posx>
@@ -164,7 +164,7 @@
                                 <width>74</width>
                                 <height>60</height>
                                 <texture>dialogs/mediasource/rules-nf.png</texture>
-                                <colordiffuse>$INFO[Skin.String(ButtonFocusTextColor)]</colordiffuse>
+                                <colordiffuse>ButtonFocusTextColor</colordiffuse>
                                 <visible>!ListItem.IsSelected</visible>
                             </control>
                         </control>
@@ -174,7 +174,7 @@
                             <width>40</width>
                             <height>40</height>
                             <texture>common/checkbox.png</texture>
-							<colordiffuse>$INFO[Skin.String(GeneralTextColor)]</colordiffuse>
+							<colordiffuse>GeneralTextColor</colordiffuse>
                             <visible>ListItem.IsSelected</visible>
                         </control>
                     </focusedlayout>
@@ -270,7 +270,7 @@
                     <width>74</width>
                     <height>60</height>
                     <texture>dialogs/mediasource/keyboard-nf.png</texture>
-                        <colordiffuse>$INFO[Skin.String(GeneralTextColor)]</colordiffuse>
+                        <colordiffuse>GeneralTextColor</colordiffuse>
                     <visible>!Control.HasFocus(12)</visible>
                 </control>
                 <control type="image">
@@ -279,7 +279,7 @@
                     <width>74</width>
                     <height>60</height>
                     <texture>dialogs/mediasource/keyboard-nf.png</texture>
-                    <colordiffuse>$INFO[Skin.String(ButtonFocusTextColor)]</colordiffuse>
+                    <colordiffuse>ButtonFocusTextColor</colordiffuse>
                     <visible>Control.HasFocus(12)</visible>
                 </control>
             </control>

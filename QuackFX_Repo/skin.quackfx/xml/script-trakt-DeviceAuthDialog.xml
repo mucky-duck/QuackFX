@@ -14,7 +14,7 @@
 					<posy>-20</posy>
 					<width>1240</width>
 					<height>550</height>
-					<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+					<colordiffuse>GeneralPanelsColor</colordiffuse>
 					<texture border="5">diffuse/panel.png</texture>
 				</control>
 				<control type="image">
@@ -35,7 +35,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>Bold38</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="button">
@@ -119,8 +119,8 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$ADDON[script.trakt 32155]</label>
-					<textcolor fallback="white">$INFO[Skin.String(ButtonTextColor)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</focusedcolor>
+					<textcolor fallback="white">ButtonTextColor</textcolor>
+					<focusedcolor>ButtonFocusTextColor</focusedcolor>
 					<disabledcolor>aaffffff</disabledcolor>
 					<pulseonselect>false</pulseonselect>
 			        <textoffsetx>10</textoffsetx>
@@ -132,8 +132,8 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$ADDON[script.trakt 32156]</label>
-					<textcolor fallback="white">$INFO[Skin.String(ButtonTextColor)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</focusedcolor>
+					<textcolor fallback="white">ButtonTextColor</textcolor>
+					<focusedcolor>ButtonFocusTextColor</focusedcolor>
 					<disabledcolor>aaffffff</disabledcolor>
 					<pulseonselect>false</pulseonselect>
 			        <textoffsetx>10</textoffsetx>

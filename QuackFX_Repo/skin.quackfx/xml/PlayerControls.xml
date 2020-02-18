@@ -30,7 +30,7 @@
 				<top>0</top>
 				<width>745</width>
 				<height>395</height>
-				<colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+				<colordiffuse>OSDPanelColor</colordiffuse>
 				<texture border="5">diffuse/panel.png</texture>
 			</control>
 			
@@ -39,7 +39,7 @@
 				<top>+10</top>
 				<width>725</width>
 				<height>375</height>
-				<colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+				<colordiffuse>OSDPanelColor</colordiffuse>
 				<texture border="5">diffuse/panel.png</texture>
 			</control>
 
@@ -427,8 +427,8 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>Bold26</font>
-				<textcolor>$INFO[Skin.String(OSDSecondaryTextColor)]</textcolor>
-				<shadowcolor>$INFO[Skin.String(OSDSecondaryTextShadowColor)]</shadowcolor>
+				<textcolor>OSDSecondaryTextColor</textcolor>
+				<shadowcolor>OSDSecondaryTextShadowColor</shadowcolor>
 			</control>
 			<control type="fadelabel">
 				<description>Title label</description>
@@ -440,8 +440,8 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>Bold28</font>
-				<textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-				<shadowcolor>$INFO[Skin.String(OSDPrimaryTextShadowColor)]</shadowcolor>
+				<textcolor>OSDPrimaryTextColor</textcolor>
+				<shadowcolor>OSDPrimaryTextShadowColor</shadowcolor>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 			</control>
@@ -455,8 +455,8 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>Reg26</font>
-				<textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-				<shadowcolor>$INFO[Skin.String(OSDPrimaryTextShadowColor)]</shadowcolor>
+				<textcolor>OSDPrimaryTextColor</textcolor>
+				<shadowcolor>OSDPrimaryTextShadowColor</shadowcolor>
 			</control>
 			<control type="label">
 				<description>Time Label</description>
@@ -468,8 +468,8 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>Reg26</font>
-				<textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-				<shadowcolor>$INFO[Skin.String(OSDPrimaryTextShadowColor)]</shadowcolor>
+				<textcolor>OSDPrimaryTextColor</textcolor>
+				<shadowcolor>OSDPrimaryTextShadowColor</shadowcolor>
 			</control>
 			<control type="label">
 				<description>Next Label</description>
@@ -481,8 +481,8 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>Reg26</font>
-				<textcolor>$INFO[Skin.String(OSDSecondaryTextColor)]</textcolor>
-				<shadowcolor>$INFO[Skin.String(OSDSecondaryTextShadowColor)]</shadowcolor>
+				<textcolor>OSDSecondaryTextColor</textcolor>
+				<shadowcolor>OSDSecondaryTextShadowColor</shadowcolor>
 			</control>
 
 						

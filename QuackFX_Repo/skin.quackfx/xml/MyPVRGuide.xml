@@ -58,7 +58,7 @@
 					<width>1920</width>
 					<height>500</height>
 					<texture border="15">diffuse/bgpanel.png</texture>
-					<colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+					<colordiffuse>OSDPanelColor</colordiffuse>
 					<aspectratio>stretch</aspectratio>
 					<visible>!String.IsEmpty(Window(home).Property(pvrGuideOnFullscreenVideo))</visible>
 				</control>
@@ -177,7 +177,7 @@
 						<width>1460</width>
 						<height>20</height>
 						<font>Reg28</font>
-						<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
+						<textcolor>ViewDetailsHighlightTextColor</textcolor>
 						<label>[B]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)][/B]</label>
 						<aligny>top</aligny>
                         <wrapmultiline>false</wrapmultiline>
@@ -189,7 +189,7 @@
 						<width>1460</width>
 						<height>80</height>
 						<font>Reg26</font>
-						<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+						<textcolor>ViewDetailsTextColor</textcolor>
 						<label>$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ]$INFO[ListItem.Season, • $LOCALIZE[20373] ]$INFO[ListItem.Episode, • $LOCALIZE[20359] ]$INFO[ListItem.Genre, • ]</label>
 						<aligny>top</aligny>
 					</control>
@@ -200,7 +200,7 @@
 						<height>125</height>
 						<width>1460</width>
 						<font>Reg28</font>
-						<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+						<textcolor>ViewDetailsTextColor</textcolor>
 						<label fallback="161">$INFO[ListItem.Plot]</label>
 					</control>
 				</control>
@@ -240,7 +240,7 @@
                             <height>30</height>
                             <align>left</align>
                             <font>Reg24</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </rulerlayout>
@@ -253,7 +253,7 @@
                             <height>30</height>
                             <align>left</align>
                             <font>Reg28</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </rulerlayout>
@@ -261,39 +261,39 @@
                     <!-- guide 10 rows -->
                     <channellayout height="63" width="400" condition="skin.string(GuideRows, 10) + !Skin.HasSetting(HideChannelNamesInGuide)">
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorUnfocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorUnfocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorUnfocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorUnfocus" />
                             <param name="font" value="Reg26" />
                         </include>
                     </channellayout>
                     <focusedchannellayout height="63" width="400" condition="skin.string(GuideRows, 10) + !Skin.HasSetting(HideChannelNamesInGuide)">
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout" condition="!Skin.HasSetting(pvrGuideHighlightChannel)">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorUnfocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorUnfocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorUnfocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorUnfocus" />
                             <param name="font" value="Reg26" />
                         </include>
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout" condition="Skin.HasSetting(pvrGuideHighlightChannel)">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorFocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorFocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorFocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorFocus" />
                             <param name="font" value="Reg26" />
                         </include>
                     </focusedchannellayout>
                     <channellayout height="63" width="200" condition="skin.string(GuideRows, 10) + Skin.HasSetting(HideChannelNamesInGuide)">
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorUnfocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorUnfocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorUnfocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorUnfocus" />
                             <param name="font" value="Reg26" />
                         </include>
                     </channellayout>
                     <focusedchannellayout height="63" width="200" condition="skin.string(GuideRows, 10) + Skin.HasSetting(HideChannelNamesInGuide)">
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout" condition="!Skin.HasSetting(pvrGuideHighlightChannel)">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorUnfocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorUnfocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorUnfocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorUnfocus" />
                             <param name="font" value="Reg26" />
                         </include>
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout" condition="Skin.HasSetting(pvrGuideHighlightChannel)">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorFocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorFocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorFocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorFocus" />
                             <param name="font" value="Reg26" />
                         </include>
                     </focusedchannellayout>
@@ -307,39 +307,39 @@
                     <!-- guide 7 rows -->
                     <channellayout height="90" width="500" condition="skin.string(GuideRows, 7) + !Skin.HasSetting(HideChannelNamesInGuide)">
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorUnfocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorUnfocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorUnfocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorUnfocus" />
                             <param name="font" value="Reg31" />
                         </include>
                     </channellayout>
                     <focusedchannellayout height="90" width="500" condition="skin.string(GuideRows, 7) + !Skin.HasSetting(HideChannelNamesInGuide)">
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout" condition="!Skin.HasSetting(pvrGuideHighlightChannel)">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorUnfocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorUnfocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorUnfocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorUnfocus" />
                             <param name="font" value="Reg31" />
                         </include>
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout" condition="Skin.HasSetting(pvrGuideHighlightChannel)">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorFocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorFocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorFocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorFocus" />
                             <param name="font" value="Reg31" />
                         </include>
                     </focusedchannellayout>
                     <channellayout height="90" width="250" condition="skin.string(GuideRows, 7) + Skin.HasSetting(HideChannelNamesInGuide)">
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorUnfocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorUnfocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorUnfocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorUnfocus" />
                             <param name="font" value="Reg31" />
                         </include>
                     </channellayout>
                     <focusedchannellayout height="90" width="250" condition="skin.string(GuideRows, 7) + Skin.HasSetting(HideChannelNamesInGuide)">
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout" condition="!Skin.HasSetting(pvrGuideHighlightChannel)">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorUnfocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorUnfocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorUnfocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorUnfocus" />
                             <param name="font" value="Reg31" />
                         </include>
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout" condition="Skin.HasSetting(pvrGuideHighlightChannel)">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorFocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorFocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorFocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorFocus" />
                             <param name="font" value="Reg31" />
                         </include>
                     </focusedchannellayout>
@@ -353,39 +353,39 @@
                     <!-- guide 8 rows -->
                     <channellayout height="79" width="500" condition="skin.string(GuideRows, 8) + !Skin.HasSetting(HideChannelNamesInGuide)">
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorUnfocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorUnfocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorUnfocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorUnfocus" />
                             <param name="font" value="Reg26" />
                         </include>
                     </channellayout>
                     <focusedchannellayout height="79" width="500" condition="skin.string(GuideRows, 8) + !Skin.HasSetting(HideChannelNamesInGuide)">
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout" condition="!Skin.HasSetting(pvrGuideHighlightChannel)">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorUnfocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorUnfocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorUnfocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorUnfocus" />
                             <param name="font" value="Reg26" />
                         </include>
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout" condition="Skin.HasSetting(pvrGuideHighlightChannel)">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorFocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorFocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorFocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorFocus" />
                             <param name="font" value="Reg26" />
                         </include>
                     </focusedchannellayout>
                     <channellayout height="79" width="250" condition="skin.string(GuideRows, 8) + Skin.HasSetting(HideChannelNamesInGuide)">
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorUnfocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorUnfocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorUnfocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorUnfocus" />
                             <param name="font" value="Reg26" />
                         </include>
                     </channellayout>
                     <focusedchannellayout height="79" width="250" condition="skin.string(GuideRows, 8) + Skin.HasSetting(HideChannelNamesInGuide)">
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout" condition="!Skin.HasSetting(pvrGuideHighlightChannel)">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorUnfocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorUnfocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorUnfocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorUnfocus" />
                             <param name="font" value="Reg26" />
                         </include>
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout" condition="Skin.HasSetting(pvrGuideHighlightChannel)">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorFocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorFocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorFocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorFocus" />
                             <param name="font" value="Reg26" />
                         </include>
                     </focusedchannellayout>
@@ -399,39 +399,39 @@
                     <!-- guide 9 rows -->
                     <channellayout height="70" width="400" condition="skin.string(GuideRows, 9) + !Skin.HasSetting(HideChannelNamesInGuide)">
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorUnfocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorUnfocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorUnfocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorUnfocus" />
                             <param name="font" value="Reg26" />
                         </include>
                     </channellayout>
                     <focusedchannellayout height="70" width="400" condition="skin.string(GuideRows, 9) + !Skin.HasSetting(HideChannelNamesInGuide)">
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout" condition="!Skin.HasSetting(pvrGuideHighlightChannel)">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorUnfocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorUnfocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorUnfocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorUnfocus" />
                             <param name="font" value="Reg26" />
                         </include>
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout" condition="Skin.HasSetting(pvrGuideHighlightChannel)">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorFocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorFocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorFocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorFocus" />
                             <param name="font" value="Reg26" />
                         </include>
                     </focusedchannellayout>
                     <channellayout height="70" width="200" condition="skin.string(GuideRows, 9) + Skin.HasSetting(HideChannelNamesInGuide)">
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorUnfocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorUnfocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorUnfocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorUnfocus" />
                             <param name="font" value="Reg26" />
                         </include>
                     </channellayout>
                     <focusedchannellayout height="70" width="200" condition="skin.string(GuideRows, 9) + Skin.HasSetting(HideChannelNamesInGuide)">
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout" condition="!Skin.HasSetting(pvrGuideHighlightChannel)">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorUnfocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorUnfocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorUnfocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorUnfocus" />
                             <param name="font" value="Reg26" />
                         </include>
                         <include name="PVRGuideChannelItemLayout" content="PVRGuideChannelItemLayout" condition="Skin.HasSetting(pvrGuideHighlightChannel)">
-                            <param name="panelcolor" value="$INFO[Skin.String(PVRGuideItemColorFocus)]" />
-                            <param name="textcolor" value="$INFO[Skin.String(PVRGuideItemTextColorFocus)]" />
+                            <param name="panelcolor" value="PVRGuideItemColorFocus" />
+                            <param name="textcolor" value="PVRGuideItemTextColorFocus" />
                             <param name="font" value="Reg26" />
                         </include>
                     </focusedchannellayout>

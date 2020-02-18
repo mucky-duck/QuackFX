@@ -36,11 +36,11 @@
                     <aligny>center</aligny>
                     <align>center</align>
                     <font>Reg30</font>
-                    <textcolor>$INFO[Skin.String(NetflixPrimaryTextColor)]</textcolor>
-                    <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                    <textcolor>NetflixPrimaryTextColor</textcolor>
+                    <focusedcolor>ViewDetailsTextColor</focusedcolor>
                     <label>222</label>
-                    <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">netflix/slimframeFO.png</texturefocus>
-                    <texturenofocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">netflix/slimframeNF.png</texturenofocus>
+                    <texturefocus colordiffuse="ViewDetailsBorderFocusColor">netflix/slimframeFO.png</texturefocus>
+                    <texturenofocus colordiffuse="ViewDetailsBorderFocusColor">netflix/slimframeNF.png</texturenofocus>
                     <onclick>SendClick(3013)</onclick>
                 </control>
                 <control type="radiobutton" id="3097">
@@ -51,15 +51,15 @@
                     <align>left</align>
                     <textoffsetx>60</textoffsetx>
                     <font>Reg30</font>
-                    <textcolor>$INFO[Skin.String(NetflixPrimaryTextColor)]</textcolor>
-                    <focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
+                    <textcolor>NetflixPrimaryTextColor</textcolor>
+                    <focusedcolor>ViewDetailsTextColor</focusedcolor>
                     <label>Next Episode$INFO[Player.TimeRemaining(ss), in ,s]</label>
-                    <texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">netflix/slimframeFO.png</texturefocus>
-                    <texturenofocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">netflix/slimframeNF.png</texturenofocus>
-                    <textureradioonfocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">play.png</textureradioonfocus>
-                    <textureradioofffocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">play.png</textureradioofffocus>
-                    <textureradioonnofocus colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">play.png</textureradioonnofocus>
-                    <textureradiooffnofocus colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">play.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="ViewDetailsBorderFocusColor">netflix/slimframeFO.png</texturefocus>
+                    <texturenofocus colordiffuse="ViewDetailsBorderFocusColor">netflix/slimframeNF.png</texturenofocus>
+                    <textureradioonfocus colordiffuse="ViewDetailsTextColor">play.png</textureradioonfocus>
+                    <textureradioofffocus colordiffuse="ViewDetailsTextColor">play.png</textureradioofffocus>
+                    <textureradioonnofocus colordiffuse="NetflixPrimaryTextColor">play.png</textureradioonnofocus>
+                    <textureradiooffnofocus colordiffuse="NetflixPrimaryTextColor">play.png</textureradiooffnofocus>
                     <radioposx>25</radioposx>
                     <radiowidth>23</radiowidth>
                     <radioheight>23</radioheight>
@@ -77,7 +77,7 @@
                     <width>100%</width>
                     <height>820</height>
                     <texture border="5">diffuse/gradient.png</texture>
-                    <colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+                    <colordiffuse>OSDPanelColor</colordiffuse>
                 </control>
                 <!-- NextUp Info -->
                 <control type="grouplist">
@@ -126,7 +126,7 @@
                             <align>center</align>
                             <height>55</height>
                             <texture border="8">diffuse/gradient.png</texture>
-                            <colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+                            <colordiffuse>OSDPanelColor</colordiffuse>
                         </control>
                         <!-- Sxx: Exx -->
                         <control type="label">
@@ -176,7 +176,7 @@
                             <control type="image">
                                 <height>100%</height>
                                 <width>100%</width>
-                                <texture colordiffuse="$INFO[Skin.String(NetflixDetailsFlagColor)]">netflix/frame/square-rounded.png</texture>
+                                <texture colordiffuse="NetflixDetailsFlagColor">netflix/frame/square-rounded.png</texture>
                             </control>
                             <control type="label" id="30981">
                                 <height>100%</height>
@@ -198,7 +198,7 @@
                             <control type="image">
                                 <height>100%</height>
                                 <width>100%</width>
-                                <texture colordiffuse="$INFO[Skin.String(NetflixDetailsFlagColor)]">netflix/frame/frame.png</texture>
+                                <texture colordiffuse="NetflixDetailsFlagColor">netflix/frame/frame.png</texture>
                             </control>
                             <!-- currently not supported in up-next
                             <control type="label" id="3099">

@@ -30,7 +30,7 @@
                 <width>25</width>
                 <height>30</height>
                 <aspectratio align="left" aligny="center">keep</aspectratio>
-                <colordiffuse>$INFO[Skin.String(NetflixPrimaryTextColor)]</colordiffuse>
+                <colordiffuse>NetflixPrimaryTextColor</colordiffuse>
                 <texture background="true">thumbs-up.png</texture>
                 <include>Default_Fade</include>
             </control>
@@ -41,7 +41,7 @@
                 <width>25</width>
                 <height>30</height>
                 <aspectratio align="left" aligny="center">keep</aspectratio>
-                <colordiffuse>$INFO[Skin.String(NetflixPrimaryTextColor)]</colordiffuse>
+                <colordiffuse>NetflixPrimaryTextColor</colordiffuse>
                 <texture flipy="true" background="true">thumbs-up.png</texture>
                 <include>Default_Fade</include>
             </control>
@@ -53,7 +53,7 @@
 				<width>160</width>
 				<height>35</height>
 				<aspectratio align="left" aligny="center">keep</aspectratio>
-				<colordiffuse>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</colordiffuse>
+				<colordiffuse>ViewDetailsHighlightTextColor</colordiffuse>
 				<texture background="true">$VAR[rating_value_texture]</texture>
                 <include>Default_Fade</include>
 			</control>
@@ -67,7 +67,7 @@
 				<width>auto</width>
 				<aligny>center</aligny>
 				<font>Reg22</font>
-				<textcolor>$INFO[Skin.String(NetflixPrimaryTextColor)]</textcolor>
+				<textcolor>NetflixPrimaryTextColor</textcolor>
 				<label>$VAR[YearOrPremieredOrPVR]</label>
                 <include>Default_Fade</include>
 			</control>
@@ -81,13 +81,13 @@
 				<control type="image">
 					<height>100%</height>
 					<width>100%</width>
-					<texture colordiffuse="$INFO[Skin.String(NetflixDetailsFlagColor)]">netflix/frame/square-rounded.png</texture>
+					<texture colordiffuse="NetflixDetailsFlagColor">netflix/frame/square-rounded.png</texture>
 				</control>
 				<control type="label" id="6111121">
 					<height>100%</height>
 					<width>100%</width>
 					<font>Reg22</font>
-					<textcolor>$INFO[Skin.String(NetflixPrimaryTextColor)]</textcolor>
+					<textcolor>NetflixPrimaryTextColor</textcolor>
 					<align>center</align>
                     <aligny>center</aligny>
                     <scroll>false</scroll>
@@ -103,7 +103,7 @@
 				<label>$VAR[DurationOrTotalSECount]</label>
 				<height>35</height>
 				<aligny>center</aligny>
-				<textcolor>$INFO[Skin.String(NetflixPrimaryTextColor)]</textcolor>
+				<textcolor>NetflixPrimaryTextColor</textcolor>
 				<font>Reg22</font>
                 <include>Default_Fade</include>
 			</control>
@@ -117,14 +117,14 @@
 				<control type="image">
 					<height>100%</height>
 					<width>100%</width>
-					<texture colordiffuse="$INFO[Skin.String(NetflixDetailsFlagColor)]">netflix/frame/frame.png</texture>
+					<texture colordiffuse="NetflixDetailsFlagColor">netflix/frame/frame.png</texture>
 				</control>
 				<control type="label" id="6111141">
 					<width>100%</width>
 					<height>100%</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(NetflixPrimaryTextColor)]</textcolor>
+					<textcolor>NetflixPrimaryTextColor</textcolor>
 					<font>Reg22</font>
                     <scroll>false</scroll>
                     <label>$VAR[GetResolution]</label>
@@ -140,14 +140,14 @@
 				<control type="image">
 					<height>100%</height>
 					<width>100%</width>
-					<texture colordiffuse="$INFO[Skin.String(NetflixDetailsFlagColor)]">netflix/frame/frame.png</texture>
+					<texture colordiffuse="NetflixDetailsFlagColor">netflix/frame/frame.png</texture>
 				</control>
 				<control type="label" id="6111151">
 					<width>100%</width>
 					<height>100%</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(NetflixPrimaryTextColor)]</textcolor>
+					<textcolor>NetflixPrimaryTextColor</textcolor>
 					<font>Reg22</font>
                     <scroll>false</scroll>
                     <label>$VAR[GetAudioChannels]</label>
@@ -434,17 +434,17 @@
 
     <!-- texture flipy/not for 'rate this title' button in dialoginfo -->
     <include name="ChangeRatingThumbsDown">
-        <textureradioonfocus flipy="true" colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">thumbs-up.png</textureradioonfocus>
-        <textureradioofffocus flipy="true" colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">thumbs-up.png</textureradioofffocus>
-        <textureradioonnofocus flipy="true" colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">thumbs-up.png</textureradioonnofocus>
-        <textureradiooffnofocus flipy="true" colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">thumbs-up.png</textureradiooffnofocus>
+        <textureradioonfocus flipy="true" colordiffuse="ViewDetailsTextColor">thumbs-up.png</textureradioonfocus>
+        <textureradioofffocus flipy="true" colordiffuse="ViewDetailsTextColor">thumbs-up.png</textureradioofffocus>
+        <textureradioonnofocus flipy="true" colordiffuse="NetflixPrimaryTextColor">thumbs-up.png</textureradioonnofocus>
+        <textureradiooffnofocus flipy="true" colordiffuse="NetflixPrimaryTextColor">thumbs-up.png</textureradiooffnofocus>
         <radioposy>22</radioposy>
     </include>
     <include name="ChangeRatingThumbsUp">
-        <textureradioonfocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">thumbs-up.png</textureradioonfocus>
-        <textureradioofffocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">thumbs-up.png</textureradioofffocus>
-        <textureradioonnofocus colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">thumbs-up.png</textureradioonnofocus>
-        <textureradiooffnofocus colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">thumbs-up.png</textureradiooffnofocus>
+        <textureradioonfocus colordiffuse="ViewDetailsTextColor">thumbs-up.png</textureradioonfocus>
+        <textureradioofffocus colordiffuse="ViewDetailsTextColor">thumbs-up.png</textureradioofffocus>
+        <textureradioonnofocus colordiffuse="NetflixPrimaryTextColor">thumbs-up.png</textureradioonnofocus>
+        <textureradiooffnofocus colordiffuse="NetflixPrimaryTextColor">thumbs-up.png</textureradiooffnofocus>
         <radioposy>0</radioposy>
     </include>
 
@@ -536,17 +536,17 @@
 
     <variable name="NetflixInfoDialogDetailsTextColor">
         <value condition="!String.IsEmpty(Window(Home).Property(TrailerOnLoad)) + String.IsEqual(Window(Home).Property(TrailerPlaying),windowed)">white</value>
-        <value>$INFO[Skin.String(NetflixSecondaryTextColor)]</value>
+        <value>NetflixSecondaryTextColor</value>
     </variable>
 
     <variable name="NetflixInfoDialogButtonsTextColor">
         <value condition="!String.IsEmpty(Window(Home).Property(TrailerOnLoad)) + String.IsEqual(Window(Home).Property(TrailerPlaying),windowed)">white</value>
-        <value>$INFO[Skin.String(NetflixPrimaryTextColor)]</value>
+        <value>NetflixPrimaryTextColor</value>
     </variable>
 
     <variable name="NetflixInfoDialogPlotTextColor">
         <value condition="!String.IsEmpty(Window(Home).Property(TrailerOnLoad)) + String.IsEqual(Window(Home).Property(TrailerPlaying),windowed)">white</value>
-        <value>$INFO[Skin.String(NetflixPrimaryTextColor)]</value>
+        <value>NetflixPrimaryTextColor</value>
     </variable>
 
     <!-- TVShow title & fallback for skin widgets -->

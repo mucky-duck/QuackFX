@@ -42,8 +42,8 @@
 						<label>$INFO[ListItem.Label]</label>
 						<font>Reg24</font>
 						<scroll>false</scroll>
-						<textcolor>$INFO[Skin.String(ButtonTextColor)]</textcolor>
-						<selectedcolor>$INFO[Skin.String(ButtonTextColor)]</selectedcolor>
+						<textcolor>ButtonTextColor</textcolor>
+						<selectedcolor>ButtonTextColor</selectedcolor>
 						<disabledcolor>midgrey</disabledcolor>
 					</control>
 				</control>
@@ -63,7 +63,7 @@
 					<control type="image">
 						<width>348</width>
 						<height>60</height>
-						<texture diffuse="diffuse/panel.png" border="5" colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">colors/color_white.png</texture>
+						<texture diffuse="diffuse/panel.png" border="5" colordiffuse="ButtonFocusColor">colors/color_white.png</texture>
 						<visible>Control.HasFocus(4444)</visible>
 					</control>
 					<control type="label"> <!--label-->
@@ -72,8 +72,8 @@
 						<label>$INFO[ListItem.Label]</label>
 						<font>Reg24</font>
 						<scroll>false</scroll>
-						<textcolor>$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
-						<selectedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</selectedcolor>
+						<textcolor>ButtonFocusTextColor</textcolor>
+						<selectedcolor>ButtonFocusTextColor</selectedcolor>
 						<visible>Control.HasFocus(4444)</visible>
 					</control>
 					<control type="label"> <!--label-->
@@ -82,8 +82,8 @@
 						<label>$INFO[ListItem.Label]</label>
 						<font>Reg24</font>
 						<scroll>false</scroll>
-						<textcolor>$INFO[Skin.String(ButtonTextColor)]</textcolor>
-						<selectedcolor>$INFO[Skin.String(ButtonTextColor)]</selectedcolor>
+						<textcolor>ButtonTextColor</textcolor>
+						<selectedcolor>ButtonTextColor</selectedcolor>
 						<visible>!Control.HasFocus(4444)</visible>
 					</control>
                     <control type="button">
@@ -109,7 +109,7 @@
                 <width>100%</width>
                 <height>100%</height>
                 <texture border="5">diffuse/panel.png</texture>
-                <colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+                <colordiffuse>GeneralPanelsColor</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -118,7 +118,7 @@
                 <width>100%</width>
                 <height>100%</height>
                 <texture border="5">diffuse/panel.png</texture>
-                <colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+                <colordiffuse>GeneralPanelsColor</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!-- Heading -->

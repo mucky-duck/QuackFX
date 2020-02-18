@@ -26,7 +26,7 @@
 				<aspectratio>keep</aspectratio>
                 <imagepath>$INFO[Skin.String(SkinHelper.SpinnerTexture.Path)]</imagepath>
                 <timeperimage>100</timeperimage>
-                <colordiffuse>$INFO[Skin.String(SpinnerTexture.Color)]</colordiffuse>
+                <colordiffuse>SpinnerTextureColor</colordiffuse>
                 <fadetime>0</fadetime>
             </control>
         </control>

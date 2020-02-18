@@ -63,7 +63,7 @@
 						<height>50</height>
 						<font>Bold30</font>
 						<align>left</align>
-						<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+						<textcolor>ViewDetailsListItemTextColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -74,7 +74,7 @@
 						<font>Reg20</font>
 						<align>right</align>
 						<font>Reg24</font>
-						<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+						<textcolor>ViewDetailsListItemTextColor</textcolor>
 						<label>$INFO[ListItem.Property(count)]</label>
 					</control>
 					<control type="label">
@@ -85,14 +85,14 @@
 						<font>Reg20</font>
 						<align>left</align>
 						<font>Reg24</font>
-						<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+						<textcolor>ViewDetailsListItemTextColor</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="image">
 						 <width>100%</width>
 						 <height>1</height>
 						 <bottom>0</bottom>
-						 <texture colordiffuse="$INFO[Skin.String(ViewDetailsListItemTextColor)]">colors/color_white.png</texture>
+						 <texture colordiffuse="ViewDetailsListItemTextColor">colors/color_white.png</texture>
 					</control>
 				</itemlayout>
 				<focusedlayout height="90" width="400">
@@ -108,7 +108,7 @@
 						<height>50</height>
 						<font>Bold30</font>
 						<align>left</align>
-						<textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+						<textcolor>ViewDetailsListItemTextFocusColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -119,7 +119,7 @@
 						<font>Reg20</font>
 						<align>right</align>
 						<font>Reg24</font>
-						<textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+						<textcolor>ViewDetailsListItemTextFocusColor</textcolor>
 						<label>$INFO[ListItem.Property(count)]</label>
 					</control>
 					<control type="label">
@@ -129,7 +129,7 @@
 						<height>40</height>
 						<font>Reg20</font>
 						<align>left</align>
-						<textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+						<textcolor>ViewDetailsListItemTextFocusColor</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</focusedlayout>			
@@ -403,7 +403,7 @@
                     <align>left</align>
                     <textoffsetx>50</textoffsetx>
                     <font>Bold40</font>
-                    <textcolor>$INFO[Skin.String(GeneralHighlightTextColor)]</textcolor>
+                    <textcolor>GeneralHighlightTextColor</textcolor>
                     <label>$LOCALIZE[33061]:</label>
 					<visible>skin.hastheme(classic)</visible>
                 </control>

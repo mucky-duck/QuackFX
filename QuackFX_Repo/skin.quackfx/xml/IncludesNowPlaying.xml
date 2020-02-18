@@ -187,7 +187,7 @@
 				<width>100%</width>
 				<height>145</height>
 				<texture border="5">diffuse/panel.png</texture>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 			</control>
             <control type="label">
                 <!--Now Playing-->
@@ -196,7 +196,7 @@
                 <width>885</width>
                 <align>left</align>
                 <font>Reg28</font>
-                <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                <textcolor>GeneralTextColor</textcolor>
                 <label>$VAR[NowPlayingLabel]</label>
             </control>
             <control type="label">
@@ -206,7 +206,7 @@
                 <width>1150</width>
                 <align>left</align>
                 <font>Bold45</font>
-                <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                <textcolor>GeneralTextColor</textcolor>
                 <label>$VAR[NowPlayingTitle]</label>
                 <scroll>false</scroll>
             </control>
@@ -236,7 +236,7 @@
                     <fadetime>200</fadetime>
                     <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
                     <texture border="5">diffuse/music_cover_cd_medium.png</texture>
-                    <colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+                    <colordiffuse>GeneralPanelsColor</colordiffuse>
                 </control>
                 <control type="image" id="13333">
                     <!--music cover-->
@@ -340,7 +340,7 @@
                         <height>100</height>
                         <info>System.Time(hh:mm)</info>
                         <font>Bold55</font>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                     </control>
                     <control type="label">
                         <!--AM-->
@@ -349,7 +349,7 @@
                         <height>100</height>
                         <label>378</label>
                         <font>Bold55</font>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                     </control>
                     <control type="label">
                         <!--PM-->
@@ -358,7 +358,7 @@
                         <height>100</height>
                         <label>379</label>
                         <font>Bold55</font>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                     </control>
                 </control>
                 <control type="grouplist">
@@ -377,14 +377,14 @@
                         <height>50</height>
                         <info>System.Date(DDD)</info>
                         <font>Reg30</font>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                     </control>
                     <control type="label">
                         <width min="0" max="400">auto</width>
                         <height>50</height>
                         <label>, </label>
                         <font>Reg30</font>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                     </control>
                     <control type="label">
                         <!--Date-->
@@ -392,7 +392,7 @@
                         <height>50</height>
                         <info>System.Date(d)</info>
                         <font>Reg30</font>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                     </control>
                     <control type="label">
                         <visible>String.Contains(System.Language,German)</visible>
@@ -400,7 +400,7 @@
                         <height>50</height>
                         <label>. </label>
                         <font>Reg30</font>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                     </control>
                     <control type="label">
                         <label/>
@@ -408,7 +408,7 @@
                         <width min="0" max="400">auto</width>
                         <height>50</height>
                         <font>Reg30</font>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                     </control>
                     <control type="label">
                         <!--Month-->
@@ -416,7 +416,7 @@
                         <height>50</height>
                         <info>System.Date(MMM)</info>
                         <font>Reg30</font>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                     </control>
                 </control>
             </control>
@@ -438,11 +438,11 @@
                     <height>70</height>
                     <label>210</label>
                     <font/>
-                    <texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/PrevTrack.png</texturefocus>
-                    <texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/PrevTrack.png</texturenofocus>
+                    <texturefocus colordiffuse="OSDButtonsFocusColor">osd/rounded/PrevTrack.png</texturefocus>
+                    <texturenofocus colordiffuse="OSDButtonsColor">osd/rounded/PrevTrack.png</texturenofocus>
                     <usealttexture>VideoPlayer.Content(livetv)</usealttexture>
-                    <alttexturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/ChannelUP.png</alttexturefocus>
-                    <alttexturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/ChannelUP.png</alttexturenofocus>
+                    <alttexturefocus colordiffuse="OSDButtonsFocusColor">osd/rounded/ChannelUP.png</alttexturefocus>
+                    <alttexturenofocus colordiffuse="OSDButtonsColor">osd/rounded/ChannelUP.png</alttexturenofocus>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="togglebutton">
@@ -452,11 +452,11 @@
                     <width>70</width>
                     <height>70</height>
                     <font/>
-                    <texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/Pause.png</texturefocus>
-                    <texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/Pause.png</texturenofocus>
+                    <texturefocus colordiffuse="OSDButtonsFocusColor">osd/rounded/Pause.png</texturefocus>
+                    <texturenofocus colordiffuse="OSDButtonsColor">osd/rounded/Pause.png</texturenofocus>
                     <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-                    <alttexturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/Play.png</alttexturefocus>
-                    <alttexturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/Play.png</alttexturenofocus>
+                    <alttexturefocus colordiffuse="OSDButtonsFocusColor">osd/rounded/Play.png</alttexturefocus>
+                    <alttexturenofocus colordiffuse="OSDButtonsColor">osd/rounded/Play.png</alttexturenofocus>
                     <onclick>PlayerControl(Play)</onclick>
                 </control>
                 <control type="button">
@@ -466,8 +466,8 @@
                     <width>70</width>
                     <height>70</height>
                     <font/>
-                    <texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/Stop.png</texturefocus>
-                    <texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/Stop.png</texturenofocus>
+                    <texturefocus colordiffuse="OSDButtonsFocusColor">osd/rounded/Stop.png</texturefocus>
+                    <texturenofocus colordiffuse="OSDButtonsColor">osd/rounded/Stop.png</texturenofocus>
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
                 <control type="togglebutton">
@@ -477,11 +477,11 @@
                     <height>70</height>
                     <label>209</label>
                     <font/>
-                    <texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/NextTrack.png</texturefocus>
-                    <texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/NextTrack.png</texturenofocus>
+                    <texturefocus colordiffuse="OSDButtonsFocusColor">osd/rounded/NextTrack.png</texturefocus>
+                    <texturenofocus colordiffuse="OSDButtonsColor">osd/rounded/NextTrack.png</texturenofocus>
                     <usealttexture>VideoPlayer.Content(livetv)</usealttexture>
-                    <alttexturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/ChannelDown.png</alttexturefocus>
-                    <alttexturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/ChannelDown.png</alttexturenofocus>
+                    <alttexturefocus colordiffuse="OSDButtonsFocusColor">osd/rounded/ChannelDown.png</alttexturefocus>
+                    <alttexturenofocus colordiffuse="OSDButtonsColor">osd/rounded/ChannelDown.png</alttexturenofocus>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
             </control>

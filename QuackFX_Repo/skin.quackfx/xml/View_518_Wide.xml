@@ -57,8 +57,8 @@
                                 <aligny>center</aligny>
                                 <align>left</align>
                                 <font>Bold75</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextColor</selectedcolor>
                                 <label>$VAR[WideView_LargeEpisodeLabel]</label>
                                 <visible>Container.Content(episodes) + !String.IsEmpty(ListItem.episode)</visible>
                             </control>
@@ -69,8 +69,8 @@
                                 <height>50</height>
                                 <align>left</align>
                                 <font>Bold30</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextColor</selectedcolor>
                                 <label>$INFO[ListItem.Label]</label>
                                 <animation effect="slide" start="0" end="120" time="0" condition="Container.Content(episodes)">Conditional</animation>
                             </control>
@@ -82,8 +82,8 @@
                                 <height>38</height>
                                 <align>left</align>
                                 <font>Reg26</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextColor</selectedcolor>
                                 <label fallback="19055">$VAR[ListDetails]</label>
                                 <animation effect="slide" start="0" end="120" time="0" condition="Container.Content(episodes)">Conditional</animation>
                             </control>
@@ -123,8 +123,8 @@
                                 <aligny>center</aligny>
                                 <align>left</align>
                                 <font>Bold74</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextFocusColor</selectedcolor>
                                 <label>$VAR[WideView_LargeEpisodeLabel]</label>
                                 <visible>Container.Content(episodes) + !String.IsEmpty(ListItem.episode)</visible>
                             </control>
@@ -135,8 +135,8 @@
                                 <height>50</height>
                                 <align>left</align>
                                 <font>Bold30</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextFocusColor</selectedcolor>
                                 <label>$INFO[ListItem.Label]</label>
                                 <animation effect="slide" start="0" end="120" time="0" condition="Container.Content(episodes)">Conditional</animation>
                             </control>
@@ -148,8 +148,8 @@
                                 <height>38</height>
                                 <align>left</align>
                                 <font>Reg26</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextFocusColor</selectedcolor>
                                 <label fallback="19055">$VAR[ListDetails]</label>
                                 <animation effect="slide" start="0" end="120" time="0" condition="Container.Content(episodes)">Conditional</animation>
                             </control>
@@ -160,8 +160,8 @@
                                 <height>188</height>
                                 <align>justify</align>
                                 <font>Reg26</font>
-                                <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
-                                <selectedcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</selectedcolor>
+                                <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
+                                <selectedcolor>ViewDetailsListItemTextFocusColor</selectedcolor>
                                 <label>$VAR[Plots]</label>
                                 <autoscroll delay="4000" time="4000" repeat="2000">true</autoscroll>
                             </control>

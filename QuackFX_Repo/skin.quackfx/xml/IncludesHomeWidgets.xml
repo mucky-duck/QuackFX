@@ -67,8 +67,8 @@
                 <font>Bold45</font>
                 <align>left</align>
                 <aligny>top</aligny>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
+                <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                 <label>$VAR[HomeMenuWidgetInfoLabel]</label>
             </control>
             <control type="textbox">
@@ -77,8 +77,8 @@
                 <top>95</top>
                 <height>200</height>
                 <label>$VAR[HomeMenuWidgetInfoPlotAlt]</label>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
+                <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                 <align>justify</align>
                 <font>Light28</font>
             </control>
@@ -110,7 +110,7 @@
                 <height>100</height>
                 <font>Bold45</font>
                 <align>center</align>
-                <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                <textcolor>GeneralTextColor</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <label>$VAR[HomeMenuWidgetInfoLabel2]</label>
                 <scroll>true</scroll>
@@ -399,11 +399,11 @@
 
             <control type="image">
                 <texture border="5">diffuse/panel.png</texture>
-                <colordiffuse>$INFO[Skin.String(ViewDetailsPanelColor)]</colordiffuse>
+                <colordiffuse>ViewDetailsPanelColor</colordiffuse>
             </control>
             <control type="image">
                 <texture border="5">diffuse/thinborder.png</texture>
-                <colordiffuse>$INFO[Skin.String(ViewDetailsBorderFocusColor)]</colordiffuse>
+                <colordiffuse>ViewDetailsBorderFocusColor</colordiffuse>
             </control>
             <!-- poster image -->
             <control type="group">
@@ -418,7 +418,7 @@
                 <aligny>top</aligny>
                 <height>40</height>
                 <font>Reg30</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <label>$VAR[HomeMenuWidgetInfoLabel]</label>
             </control>
             <control type="textbox">
@@ -430,7 +430,7 @@
                 <align>justify</align>
                 <autoscroll delay="4000" time="3000" repeat="10000" condition="!Control.HasFocus(510) + !Skin.HasSetting(DisablePlotAutoScroll)" />
                 <autoscroll delay="4000" time="3000" repeat="10000" condition="Control.HasFocus(510) + !Skin.HasSetting(DisablePlotAutoScroll)" />
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <label>$VAR[HomeMenuWidgetInfoPlotAlt]</label>
             </control>
         </control>
@@ -938,11 +938,11 @@
         <control type="group">
             <control type="image">
                 <texture border="5">diffuse/panel.png</texture>
-                <colordiffuse>$INFO[Skin.String(ViewDetailsPanelColor)]</colordiffuse>
+                <colordiffuse>ViewDetailsPanelColor</colordiffuse>
             </control>
             <control type="image">
                 <texture border="5">diffuse/thinborder.png</texture>
-                <colordiffuse>$INFO[Skin.String(ViewDetailsBorderFocusColor)]</colordiffuse>
+                <colordiffuse>ViewDetailsBorderFocusColor</colordiffuse>
             </control>
             <!-- poster image -->
             <control type="group">
@@ -957,7 +957,7 @@
                 <aligny>top</aligny>
                 <height>80</height>
                 <font>Reg30</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <label>$VAR[HomeMenuWidgetInfoLabel]</label>
             </control>
             <control type="textbox">
@@ -970,7 +970,7 @@
                 <align>justify</align>
                 <autoscroll delay="4000" time="3000" repeat="10000" condition="!Control.HasFocus(510) + !Skin.HasSetting(DisablePlotAutoScroll)" />
                 <autoscroll delay="4000" time="3000" repeat="10000" condition="Control.HasFocus(510) + !Skin.HasSetting(DisablePlotAutoScroll)" />
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <label>$VAR[HomeMenuWidgetInfoPlotAlt]</label>
             </control>
         </control>
@@ -1016,7 +1016,7 @@
                 <animation effect="zoom" center="auto" start="100" end="105" time="160" tween="quadratic" condition="Skin.HasSetting(WidgetsZoomFocus)">Focus</animation>
                 <control type="image">
                     <texture border="5">diffuse/banner.png</texture>
-                    <colordiffuse>$INFO[Skin.String(HomeViewDetailsBorderFocusColor)]</colordiffuse>
+                    <colordiffuse>HomeViewDetailsBorderFocusColor</colordiffuse>
                     <aspectratio scalediffuse="false" align="left">stretch</aspectratio>
                     <include condition="Skin.String(thumbsborder_focused, 2)">thumbborder_2</include>
                     <include condition="Skin.String(thumbsborder_focused, 4)">thumbborder_4</include>
@@ -1046,7 +1046,7 @@
                 <animation effect="zoom" center="auto" start="100" end="105" time="160" tween="quadratic" condition="Skin.HasSetting(WidgetsZoomFocus)">Focus</animation>
                 <control type="image">
                     <texture border="5">diffuse/banner.png</texture>
-                    <colordiffuse>$INFO[Skin.String(HomeViewDetailsBorderFocusColor)]</colordiffuse>
+                    <colordiffuse>HomeViewDetailsBorderFocusColor</colordiffuse>
                     <aspectratio scalediffuse="false" align="left">stretch</aspectratio>
                     <include condition="Skin.String(thumbsborder_focused, 2)">thumbborder_2</include>
                     <include condition="Skin.String(thumbsborder_focused, 4)">thumbborder_4</include>
@@ -1329,7 +1329,7 @@
             <control type="image">
                 <bordersize>4</bordersize>
                 <texture border="15">diffuse/bgpanel.png</texture>
-                <colordiffuse>$INFO[Skin.String(ViewDetailsPanelColor)]</colordiffuse>
+                <colordiffuse>ViewDetailsPanelColor</colordiffuse>
             </control>
             <control type="image">
                 <texture border="5">diffuse/thinborder.png</texture>
@@ -1352,7 +1352,7 @@
                 <aligny>center</aligny>
                 <height>60</height>
                 <font>Reg30</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <label>$VAR[HomeMenuWidgetInfoLabel]</label>
             </control>
             <control type="textbox">
@@ -1366,7 +1366,7 @@
                 <align>justify</align>
                 <autoscroll delay="4000" time="3000" repeat="10000" condition="!Control.HasFocus($PARAM[widgetid]) + !Skin.HasSetting(DisablePlotAutoScroll)"/>
                 <autoscroll delay="4000" time="3000" repeat="10000" condition="Control.HasFocus($PARAM[widgetid]) + !Skin.HasSetting(DisablePlotAutoScroll)"/>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <label>$VAR[HomeMenuWidgetInfoPlotAlt]</label>
             </control>
             <control type="textbox">
@@ -1380,7 +1380,7 @@
                 <align>justify</align>
                 <autoscroll delay="4000" time="3000" repeat="10000" condition="!Control.HasFocus($PARAM[widgetid]) + !Skin.HasSetting(DisablePlotAutoScroll)"/>
                 <autoscroll delay="4000" time="3000" repeat="10000" condition="Control.HasFocus($PARAM[widgetid]) + !Skin.HasSetting(DisablePlotAutoScroll)"/>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <label>$VAR[HomeMenuWidgetInfoPlotAlt]</label>
             </control>
             <control type="group">
@@ -1393,7 +1393,7 @@
                     <height>30</height>
                     <visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
                     <label>$VAR[VideoFileTypeVar,, • ]$VAR[VideoCodecVar,, • ]$VAR[VideoAspectVar,, • ]$VAR[VideoResolutionVar,, • ]$VAR[AudioCodecVar,, • ]$VAR[AudioChannelsVar]$VAR[AudioLanguageVar, • ]</label>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
                 </control>
             </control>
             <control type="group">
@@ -1449,7 +1449,7 @@
             <control type="image">
                 <bordersize>4</bordersize>
                 <texture border="15">diffuse/bgpanel.png</texture>
-                <colordiffuse>$INFO[Skin.String(ViewDetailsPanelColor)]</colordiffuse>
+                <colordiffuse>ViewDetailsPanelColor</colordiffuse>
             </control>
             <control type="image">
                 <texture border="5">diffuse/thinborder.png</texture>
@@ -1472,7 +1472,7 @@
                 <aligny>top</aligny>
                 <height>80</height>
                 <font>Reg30</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <label>$VAR[HomeMenuWidgetInfoLabel]</label>
             </control>
             <control type="textbox">
@@ -1485,7 +1485,7 @@
                 <align>justify</align>
                 <autoscroll delay="4000" time="3000" repeat="10000" condition="!Control.HasFocus(510) + !Skin.HasSetting(DisablePlotAutoScroll)"/>
                 <autoscroll delay="4000" time="3000" repeat="10000" condition="Control.HasFocus(510) + !Skin.HasSetting(DisablePlotAutoScroll)"/>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <label>$VAR[HomeMenuWidgetInfoPlotAlt]</label>
             </control>
             <control type="group">
@@ -1525,7 +1525,7 @@
             <visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),$PARAM[submenuid]) | Skin.HasSetting(ShowAllWidgets)</visible>
             <control type="image">
                 <texture border="5">diffuse/panel.png</texture>
-                <colordiffuse>$INFO[Skin.String(ViewDetailsPanelColor)]</colordiffuse>
+                <colordiffuse>ViewDetailsPanelColor</colordiffuse>
                 <visible>!Skin.HasSetting(HideWidgetPanelBackground) + Skin.String(HomeLayout,netflix)</visible>
             </control>
             <control type="textbox">
@@ -1534,8 +1534,8 @@
                 <font>Reg28</font>
                 <include condition="Skin.HasSetting(WidgetAlignRight)">widget_header_rightalign</include>
                 <include condition="!Skin.HasSetting(WidgetAlignRight)">widget_header_leftalign</include>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
+                <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                 <label>[B]$PARAM[widgetName][/B]</label>
                 <animation effect="slide" end="50" time="0" condition="Container($PARAM[widgetid]).IsUpdating + !Skin.HasSetting(WidgetAlignRight)">Conditional</animation>
                 <animation effect="slide" end="-50" time="0" condition="Container($PARAM[widgetid]).IsUpdating + Skin.HasSetting(WidgetAlignRight)">Conditional</animation>
@@ -1547,8 +1547,8 @@
                 <font>Reg28</font>
                 <include condition="Skin.HasSetting(WidgetAlignRight)">widget_header_rightalign</include>
                 <include condition="!Skin.HasSetting(WidgetAlignRight)">widget_header_leftalign</include>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
+                <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                 <label>[B]$LOCALIZE[31543] $INFO[Container($PARAM[widgetid]).ListItem.Property(similartitle)][/B]</label>
                 <animation effect="slide" end="50" time="0" condition="Container($PARAM[widgetid]).IsUpdating + !Skin.HasSetting(WidgetAlignRight)">Conditional</animation>
                 <animation effect="slide" end="-50" time="0" condition="Container($PARAM[widgetid]).IsUpdating + Skin.HasSetting(WidgetAlignRight)">Conditional</animation>
@@ -1563,7 +1563,7 @@
                 <aspectratio align="left">keep</aspectratio>
                 <imagepath background="true">widgets/widgets-busy-loader/</imagepath>
                 <timeperimage>35</timeperimage>
-                <colordiffuse>$INFO[Skin.String(SpinnerTexture.Color)]</colordiffuse>
+                <colordiffuse>SpinnerTextureColor</colordiffuse>
                 <fadetime>0</fadetime>
                 <visible>Container($PARAM[widgetid]).IsUpdating</visible>
             </control>
@@ -1581,8 +1581,8 @@
             <font>Reg32</font>
             <textoffsetx>5</textoffsetx>
             <label>$VAR[widgetlabel-$PARAM[mainmenuid]]</label>
-            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-            <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+            <textcolor>ViewDetailsTextColor</textcolor>
+            <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
             <onfocus>SetProperty(ShowWidget,show)</onfocus>
             
             <onclick condition="Skin.String(widgetvalue-$PARAM[submenuid],0) + $PARAM[hasWidget1] + !Skin.String(CompareTxtDefault,$PARAM[widgetStyle2])">SetProperty(widgetstyle,$PARAM[widgetStyle2])</onclick>
@@ -1631,8 +1631,8 @@
             <radioheight>40</radioheight>
             <radioposx>0</radioposx>
             <radioposy>0</radioposy>
-            <textureradiofocus colordiffuse="$INFO[Skin.String(ButtonFocusTextColor)]">home/home_arrow_up.png</textureradiofocus>
-            <textureradionofocus colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">home/home_arrow_up.png</textureradionofocus>
+            <textureradiofocus colordiffuse="ButtonFocusTextColor">home/home_arrow_up.png</textureradiofocus>
+            <textureradionofocus colordiffuse="ViewDetailsTextColor">home/home_arrow_up.png</textureradionofocus>
             <selected>Control.HasFocus($PARAM[mainmenuid]505)</selected>
             <visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),$PARAM[submenuid]) | Skin.HasSetting(ShowAllWidgets)</visible>
         </control>
@@ -1650,7 +1650,7 @@
                 <aspectratio align="left">keep</aspectratio>
                 <imagepath background="true">widgets/widgets-busy-loader/</imagepath>
                 <timeperimage>35</timeperimage>
-                <colordiffuse>$INFO[Skin.String(SpinnerTexture.Color)]</colordiffuse>
+                <colordiffuse>SpinnerTextureColor</colordiffuse>
                 <fadetime>0</fadetime>
                 <visible>
                     [Skin.String(widgetvalue-$PARAM[submenuid],7) + Container($PARAM[mainmenuid]580).IsUpdating] | 
@@ -1745,7 +1745,7 @@
                 <font>Reg28</font>
                 <align>left</align>
                 <aligny>top</aligny>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+                <textcolor>HeaderTextColor</textcolor>
                 <label>$PARAM[widgetName]</label>
                 <visible>String.IsEmpty(Container($PARAM[widgetid]).ListItem.Property(similartitle))</visible>
             </control>
@@ -1755,7 +1755,7 @@
                 <font>Reg28</font>
                 <align>left</align>
                 <aligny>top</aligny>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+                <textcolor>HeaderTextColor</textcolor>
                 <label>$LOCALIZE[31543] $INFO[Container($PARAM[widgetid]).ListItem.Property(similartitle)]</label>
                 <visible>!String.IsEmpty(Container($PARAM[widgetid]).ListItem.Property(similartitle))</visible>
             </control>
@@ -1766,7 +1766,7 @@
                 <aspectratio align="center">keep</aspectratio>
                 <imagepath background="true">widgets/widgets-busy-loader/</imagepath>
                 <timeperimage>35</timeperimage>
-                <colordiffuse>$INFO[Skin.String(SpinnerTexture.Color)]</colordiffuse>
+                <colordiffuse>SpinnerTextureColor</colordiffuse>
                 <fadetime>0</fadetime>
                 <visible>Container($PARAM[widgetid]).IsUpdating</visible>
             </control>

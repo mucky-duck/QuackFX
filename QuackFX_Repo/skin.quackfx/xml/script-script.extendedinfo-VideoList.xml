@@ -17,9 +17,9 @@
 				<height>100</height>
 				<font>Bold45</font>
 				<align>left</align>
-				<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+				<textcolor>HeaderTextColor</textcolor>
 				<label>$INFO[Window.Property(Filter_Label)]</label>
-				<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+				<shadowcolor>HeaderTextShadowColor</shadowcolor>
 				<visible>!String.IsEmpty(Window.Property(Filter_Label))</visible>
 			</control>
 			<control type="label">
@@ -29,9 +29,9 @@
 				<height>100</height>
 				<font>Bold45</font>
 				<align>left</align>
-				<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+				<textcolor>HeaderTextColor</textcolor>
 				<label>$INFO[System.AddonTitle(script.extendedinfo)]</label>
-				<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+				<shadowcolor>HeaderTextShadowColor</shadowcolor>
 				<visible>String.IsEmpty(Window.Property(Filter_Label))</visible>
 			</control>
 			 <control type="label">
@@ -41,8 +41,8 @@
 				<height>50</height>
 				<label>$INFO[Window.Property(TotalItems),$ADDON[script.extendedinfo 32124]: ]$INFO[Window.Property(CurrentPage), - $ADDON[script.extendedinfo 32125]: ]$INFO[Window.Property(TotalPages), / ]</label>
 				<font>Reg30</font>
-				<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-				<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+				<textcolor>HeaderTextColor</textcolor>
+				<shadowcolor>HeaderTextShadowColor</shadowcolor>
 				<include>animation_fade_visible_hidden</include>
 			</control>
 			

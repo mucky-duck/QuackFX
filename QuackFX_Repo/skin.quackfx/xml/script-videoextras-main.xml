@@ -16,9 +16,9 @@
 				<height>100</height>
 				<font>Bold45</font>
 				<align>left</align>
-				<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+				<textcolor>HeaderTextColor</textcolor>
 				<label>$ADDON[script.videoextras 32001]</label>
-				<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+				<shadowcolor>HeaderTextShadowColor</shadowcolor>
 			</control>
 			 <control type="label">
 				<posy>85</posy>
@@ -27,8 +27,8 @@
 				<height>50</height>
 				<label>$INFO[ListItem.Title]</label>
 				<font>Reg30</font>
-				<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-				<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+				<textcolor>HeaderTextColor</textcolor>
+				<shadowcolor>HeaderTextShadowColor</shadowcolor>
 			</control>
 		</control>
 		
@@ -54,7 +54,7 @@
 				<width>100%</width>
 				<height>680</height>
 				<texture border="5">diffuse/panel.png</texture>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 				<visible>!skin.hastheme(classic)</visible>
 			</control>
 			
@@ -65,7 +65,7 @@
 				<height>680</height>
 				<texture border="5">diffuse/panel.png</texture>
 				<visible>!skin.hastheme(classic)</visible>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 			</control>
 
 			<control type="group">
@@ -92,8 +92,8 @@
 								<height>50</height>
 								<label>$INFO[ListItem.label] $INFO[ListItem.Label2,(,)]</label>
 								<font>Reg28</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<align>left</align>
 								<aligny>center</aligny>
 								<scroll>no</scroll>
@@ -114,7 +114,7 @@
 								<width>950</width>
 								<height>50</height>
 								<label>$INFO[ListItem.label] $INFO[ListItem.Label2,(,)]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
 								
 								<font>Reg28</font>
 								<align>left</align>

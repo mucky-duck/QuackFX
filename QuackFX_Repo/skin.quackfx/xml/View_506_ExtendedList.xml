@@ -75,7 +75,7 @@
 							<height>80</height>
 							<label>$INFO[ListItem.Genre,,[CR]]$VAR[ListDetails]</label>
 							<font>Reg24</font>
-							<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+							<textcolor>ViewDetailsListItemTextColor</textcolor>
 						</control>
 						
 						<control type="textbox">
@@ -86,7 +86,7 @@
 							<label>$VAR[View_Item_Header]</label>
 							<font>Bold32</font>
                             
-							<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
+							<textcolor>ViewDetailsHighlightTextColor</textcolor>
 							<aligny>top</aligny>
 						</control>
 						
@@ -98,7 +98,7 @@
 							<label>$VAR[Plots]</label>
 							<font>Reg24</font>
                             
-							<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+							<textcolor>ViewDetailsListItemTextColor</textcolor>
 							<aligny>top</aligny>
 							<autoscroll>false</autoscroll>
 						</control>
@@ -148,7 +148,7 @@
 							<label>$VAR[View_Item_Header]</label>
 							<font>Bold32</font>
                             
-							<textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+							<textcolor>ViewDetailsListItemTextFocusColor</textcolor>
 							<aligny>top</aligny>
 						</control>
 						
@@ -157,9 +157,9 @@
 							<posy>360</posy>
 							<width>400</width>
 							<height>80</height>
-							<label>[COLOR=$INFO[Skin.String(ViewDetailsHighlightTextColor)]]$INFO[ListItem.Genre,,[CR]][/COLOR]$VAR[ListDetails]</label>
+							<label>[COLOR=ViewDetailsHighlightTextColor]$INFO[ListItem.Genre,,[CR]][/COLOR]$VAR[ListDetails]</label>
 							<font>Reg24</font>
-							<textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+							<textcolor>ViewDetailsListItemTextFocusColor</textcolor>
 						</control>
 						
 						<control type="textbox">
@@ -170,7 +170,7 @@
 							<label>$VAR[Plots]</label>
 							<font>Reg24</font>
                             
-							<textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+							<textcolor>ViewDetailsListItemTextFocusColor</textcolor>
 							<aligny>top</aligny>
 						</control>
 					

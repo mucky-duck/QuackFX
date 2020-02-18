@@ -205,7 +205,7 @@
             <bordersize>8</bordersize>
             <texture diffuse="home/home_matte2.png">diffuse/home_overlay.png</texture>
             <include condition="!Window.IsActive(Home)">LandscapeTagOverlayVisibility</include>
-            <colordiffuse>$INFO[Skin.String(TagOverlaysPanelColor)]</colordiffuse>
+            <colordiffuse>TagOverlaysPanelColor</colordiffuse>
         </control>
         <control type="textbox">
             <!--Label-->
@@ -218,7 +218,7 @@
             <aligny>center</aligny>
             <label>$VAR[ThumbListDetails]</label>
             <font>Reg20</font>
-            <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+            <textcolor>TagOverlaysTextColor</textcolor>
             <include condition="!Window.IsActive(Home)">LandscapeTagOverlayVisibility</include>
         </control>
     </include>
@@ -228,7 +228,7 @@
             <bordersize>8</bordersize>
             <texture diffuse="home/home_matte2.png">diffuse/home_overlay.png</texture>
             <include condition="!Window.IsActive(Home)">LandscapeTagOverlayVisibility</include>
-            <colordiffuse>$INFO[Skin.String(TagOverlaysPanelColor)]</colordiffuse>
+            <colordiffuse>TagOverlaysPanelColor</colordiffuse>
         </control>
         <control type="textbox">
             <!--Label-->
@@ -241,7 +241,7 @@
             <aligny>center</aligny>
             <label>$VAR[ThumbListDetails]</label>
             <font>Reg16</font>
-            <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+            <textcolor>TagOverlaysTextColor</textcolor>
             <include condition="!Window.IsActive(Home)">LandscapeTagOverlayVisibility</include>
         </control>
     </include>
@@ -251,7 +251,7 @@
 			<bordersize>8</bordersize>
             <texture diffuse="home/home_matte2.png">diffuse/home_overlay.png</texture>
             <include condition="!Window.IsActive(Home)">LandscapeTagOverlayVisibility</include>
-            <colordiffuse>$INFO[Skin.String(TagOverlaysPanelColor)]</colordiffuse>
+            <colordiffuse>TagOverlaysPanelColor</colordiffuse>
         </control>
         <control type="textbox">
             <!--Label-->
@@ -264,7 +264,7 @@
             <aligny>center</aligny>
             <label>$VAR[ThumbListDetails]</label>
             <font>Reg38</font>
-            <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+            <textcolor>TagOverlaysTextColor</textcolor>
             <include condition="!Window.IsActive(Home)">LandscapeTagOverlayVisibility</include>
         </control>
     </include>

@@ -71,8 +71,8 @@
 							<label fallback="•••">$INFO[ListItem.Label]</label>
 							<font>Reg56</font>
 							<align>center</align>
-							<textcolor>$INFO[Skin.String(LyricsTextColor)]</textcolor>
-                            <shadowcolor>$INFO[Skin.String(LyricsTextShadowColor)]</shadowcolor>
+							<textcolor>LyricsTextColor</textcolor>
+                            <shadowcolor>LyricsTextShadowColor</shadowcolor>
 						</control>
 					</itemlayout>
 					<focusedlayout width="1920" height="85">
@@ -84,8 +84,8 @@
 							<label fallback="•••">$INFO[ListItem.Label,[B],[/B]]</label>
 							<font>Reg62</font>
 							<align>center</align>
-							<textcolor>$INFO[Skin.String(LyricsFocusTextColor)]</textcolor>
-                            <shadowcolor>$INFO[Skin.String(LyricsFocusTextShadowColor)]</shadowcolor>
+							<textcolor>LyricsFocusTextColor</textcolor>
+                            <shadowcolor>LyricsFocusTextShadowColor</shadowcolor>
                             <scroll>true</scroll>
 						</control>
 					</focusedlayout>
@@ -112,8 +112,8 @@
 							<label fallback="•••">$INFO[ListItem.Label]</label>
 							<font>Reg56</font>
 							<align>center</align>
-							<textcolor>$INFO[Skin.String(LyricsTextColor)]</textcolor>
-                            <shadowcolor>$INFO[Skin.String(LyricsTextShadowColor)]</shadowcolor>
+							<textcolor>LyricsTextColor</textcolor>
+                            <shadowcolor>LyricsTextShadowColor</shadowcolor>
 						</control>
 					</itemlayout>
 					<focusedlayout width="1920" height="85">
@@ -125,8 +125,8 @@
 							<label fallback="•••">$INFO[ListItem.Label,[B],[/B]]</label>
 							<font>Reg62</font>
 							<align>center</align>
-							<textcolor>$INFO[Skin.String(LyricsFocusTextColor)]</textcolor>
-                            <shadowcolor>$INFO[Skin.String(LyricsFocusTextShadowColor)]</shadowcolor>
+							<textcolor>LyricsFocusTextColor</textcolor>
+                            <shadowcolor>LyricsFocusTextShadowColor</shadowcolor>
                             <scroll>true</scroll>
 						</control>
 					</focusedlayout>

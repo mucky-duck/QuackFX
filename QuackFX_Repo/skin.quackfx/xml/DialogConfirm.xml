@@ -23,7 +23,7 @@
 				<height>410</height>
 				<texture border="5">diffuse/panel.png</texture>
 				
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 			</control>
 			
 			<control type="multiimage">
@@ -32,7 +32,7 @@
 				<posy>0</posy>
 				<width>200</width>
 				<height>200</height>
-				<colordiffuse>$INFO[Skin.String(SpinnerTexture.Color)]</colordiffuse>
+				<colordiffuse>SpinnerTextureColor</colordiffuse>
 				<imagepath>dialogs/extended_progress_bar</imagepath>
 				<aspectratio>keep</aspectratio>
 				<timeperimage>250</timeperimage>
@@ -46,7 +46,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>Reg36</font>
-				<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+				<textcolor>GeneralTextColor</textcolor>
 				<label>$INFO[System.Progressbar,,%]</label>
 			</control>
 

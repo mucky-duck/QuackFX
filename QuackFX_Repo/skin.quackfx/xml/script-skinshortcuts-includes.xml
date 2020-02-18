@@ -374,7 +374,7 @@
 			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>TV shows</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>resource://resource.images.skinicons.wide/defaultgenre.png</icon>
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
@@ -606,7 +606,7 @@
 			<thumb />
 			<property name="labelID">20126</property>
 			<property name="defaultID">20126</property>
-			<visible>[[[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon] + [System.HasLoginScreen]] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
+			<visible>[[[System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)] + System.Loggedon] + [System.HasLoginScreen]] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>System.LogOff</onclick>
 			<property name="path">System.LogOff</property>
@@ -926,7 +926,7 @@
 			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>TV shows</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>resource://resource.images.skinicons.wide/defaultgenre.png</icon>
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
@@ -994,7 +994,7 @@
 			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>TV shows</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>resource://resource.images.skinicons.wide/defaultgenre.png</icon>
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
@@ -1463,7 +1463,7 @@
 			<thumb />
 			<property name="labelID">20126</property>
 			<property name="defaultID">20126</property>
-			<visible>[[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon] + [System.HasLoginScreen]</visible>
+			<visible>[[System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)] + System.Loggedon] + [System.HasLoginScreen]</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>System.LogOff</onclick>
 			<property name="path">System.LogOff</property>
@@ -1552,7 +1552,7 @@
 			<thumb />
 			<property name="labelID">20126</property>
 			<property name="defaultID">20126</property>
-			<visible>[[[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon] + [System.HasLoginScreen]] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
+			<visible>[[[System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)] + System.Loggedon] + [System.HasLoginScreen]] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>System.LogOff</onclick>
 			<property name="path">System.LogOff</property>

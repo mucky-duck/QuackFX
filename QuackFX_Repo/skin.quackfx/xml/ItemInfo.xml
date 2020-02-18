@@ -24,7 +24,7 @@
             <height>64</height>
             <width>64</width>
             <aligny>center</aligny>
-            <colordiffuse>$INFO[Skin.String(HeaderTextShadowColor)]</colordiffuse>
+            <colordiffuse>HeaderTextShadowColor</colordiffuse>
             <texture>icons/icon_videos.png</texture>
         </control>
 		<control type="image">
@@ -35,7 +35,7 @@
             <height>64</height>
             <width>64</width>
             <aligny>center</aligny>
-            <colordiffuse>$INFO[Skin.String(HeaderTextColor)]</colordiffuse>
+            <colordiffuse>HeaderTextColor</colordiffuse>
             <texture>icons/icon_videos.png</texture>
         </control>
         <control type="label" id="3000">
@@ -47,8 +47,8 @@
             <font>Bold45</font>
 			<label/>
             <align>left</align>
-            <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-			<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+            <textcolor>HeaderTextColor</textcolor>
+			<shadowcolor>HeaderTextShadowColor</shadowcolor>
 			<animation effect="slide" end="80,15" time="0" condition="skin.hastheme(classic)">Conditional</animation>
         </control>
 		 <control type="label" id="3003">
@@ -59,8 +59,8 @@
 			<width min="0" max="1100">auto</width>
 			<height>50</height>
 			<font>Reg30</font>
-			<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-			<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+			<textcolor>HeaderTextColor</textcolor>
+			<shadowcolor>HeaderTextShadowColor</shadowcolor>
 			<include>animation_fade_visible_hidden</include>
 		</control>
 		<!--Time & Weather-->
@@ -97,7 +97,7 @@
 				<width>100%</width>
 				<height>680</height>
 				<texture border="5">diffuse/panel.png</texture>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 				<visible>!skin.hastheme(classic)</visible>
 			</control>
 			
@@ -109,7 +109,7 @@
 					<width>100%</width>
 					<height>110</height>
 					<texture border="5">diffuse/panel.png</texture>
-					<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+					<colordiffuse>GeneralPanelsColor</colordiffuse>
 				</control>
 				<control type="group">
 					<visible>!ControlGroup(9002).HasFocus</visible>
@@ -277,7 +277,7 @@
 							<width>300</width>
 							<label>$LOCALIZE[206]</label>
 							<font>Reg45</font>
-							<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+							<textcolor>GeneralTextColor</textcolor>
 							<align>right</align>
 							<scroll>false</scroll>
 						</control>
@@ -342,8 +342,8 @@
 							<width>1150</width>
 							<height>235</height>
 							<label>$INFO[ListItem.Plot]</label>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 							<align>justify</align>
 							<font>Light28</font>
 						</control>
@@ -369,9 +369,9 @@
 								<width>1150</width>
 								<font>Reg28</font>
 								<align>left</align>
-								<label>[COLOR=$INFO[Skin.String(ViewDetailsHighlightTextColor)]]$INFO[Container(3226).ListItem(0).Label][/COLOR] $INFO[Container(3226).ListItem(0).Label2]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<label>[COLOR=ViewDetailsHighlightTextColor]$INFO[Container(3226).ListItem(0).Label][/COLOR] $INFO[Container(3226).ListItem(0).Label2]</label>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<scroll>false</scroll>
 							</control>
 							<control type="label">
@@ -380,9 +380,9 @@
 								<width>400</width>
 								<font>Reg28</font>
 								<align>left</align>
-								<label>[COLOR=$INFO[Skin.String(ViewDetailsHighlightTextColor)]]$INFO[Container(3226).ListItem(1).Label][/COLOR] $INFO[Container(3226).ListItem(1).Label2]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<label>[COLOR=ViewDetailsHighlightTextColor]$INFO[Container(3226).ListItem(1).Label][/COLOR] $INFO[Container(3226).ListItem(1).Label2]</label>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<scroll>false</scroll>
 							</control>
 						</control>
@@ -396,9 +396,9 @@
 								<width>1150</width>
 								<font>Reg28</font>
 								<align>left</align>
-								<label>[COLOR=$INFO[Skin.String(ViewDetailsHighlightTextColor)]]$INFO[Container(3226).ListItem(2).Label][/COLOR] $INFO[Container(3226).ListItem(2).Label2]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<label>[COLOR=ViewDetailsHighlightTextColor]$INFO[Container(3226).ListItem(2).Label][/COLOR] $INFO[Container(3226).ListItem(2).Label2]</label>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<scroll>false</scroll>
 							</control>
 							<control type="label">
@@ -407,9 +407,9 @@
 								<width>400</width>
 								<font>Reg28</font>
 								<align>left</align>
-								<label>[COLOR=$INFO[Skin.String(ViewDetailsHighlightTextColor)]]$INFO[Container(3226).ListItem(3).Label][/COLOR] $INFO[Container(3226).ListItem(3).Label2]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<label>[COLOR=ViewDetailsHighlightTextColor]$INFO[Container(3226).ListItem(3).Label][/COLOR] $INFO[Container(3226).ListItem(3).Label2]</label>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<scroll>false</scroll>
 							</control>
 						</control>
@@ -423,9 +423,9 @@
 								<width>1150</width>
 								<font>Reg28</font>
 								<align>left</align>
-								<label>[COLOR=$INFO[Skin.String(ViewDetailsHighlightTextColor)]]$INFO[Container(3226).ListItem(4).Label][/COLOR] $INFO[Container(3226).ListItem(4).Label2]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<label>[COLOR=ViewDetailsHighlightTextColor]$INFO[Container(3226).ListItem(4).Label][/COLOR] $INFO[Container(3226).ListItem(4).Label2]</label>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<scroll>false</scroll>
 							</control>
 							<control type="label">
@@ -434,9 +434,9 @@
 								<width>400</width>
 								<font>Reg28</font>
 								<align>left</align>
-								<label>[COLOR=$INFO[Skin.String(ViewDetailsHighlightTextColor)]]$INFO[Container(3226).ListItem(6).Label][/COLOR] $INFO[Container(3226).ListItem(6).Label2]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<label>[COLOR=ViewDetailsHighlightTextColor]$INFO[Container(3226).ListItem(6).Label][/COLOR] $INFO[Container(3226).ListItem(6).Label2]</label>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<scroll>false</scroll>
 							</control>
 						</control>
@@ -450,9 +450,9 @@
 								<width>1150</width>
 								<font>Reg28</font>
 								<align>left</align>
-								<label>[COLOR=$INFO[Skin.String(ViewDetailsHighlightTextColor)]]$INFO[Container(3226).ListItem(5).Label][/COLOR] $INFO[Container(3226).ListItem(5).Label2]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<label>[COLOR=ViewDetailsHighlightTextColor]$INFO[Container(3226).ListItem(5).Label][/COLOR] $INFO[Container(3226).ListItem(5).Label2]</label>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<scroll>false</scroll>
 							</control>
 						</control>
@@ -470,8 +470,8 @@
 								<font>Reg28</font>
 								<align>left</align>
 								<label>$LOCALIZE[157]:</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<scroll>false</scroll>
 							</control>
 							<control type="label">
@@ -479,8 +479,8 @@
 								<font>Reg28</font>
 								<align>left</align>
 								<label>$INFO[Container(3220).ListItem(0).Label2]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<visible>String.Contains(Container(3220).ListItem(0).Label,video)</visible>
 							</control>
 						</control>
@@ -497,8 +497,8 @@
 								<font>Reg28</font>
 								<align>left</align>
 								<label>$LOCALIZE[292]:</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<scroll>false</scroll>
 							</control>
 							<control type="label">
@@ -506,8 +506,8 @@
 								<font>Reg28</font>
 								<align>left</align>
 								<label>$INFO[Container(3220).ListItem(1).Label2]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<visible>String.Contains(Container(3220).ListItem(1).Label,audio)</visible>
 							</control>
 							<control type="label">
@@ -515,8 +515,8 @@
 								<font>Reg28</font>
 								<align>left</align>
 								<label>, $INFO[Container(3220).ListItem(2).Label2]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<visible>String.Contains(Container(3220).ListItem(2).Label,audio)</visible>
 							</control>
 							<control type="label">
@@ -524,8 +524,8 @@
 								<font>Reg28</font>
 								<align>left</align>
 								<label>, $INFO[Container(3220).ListItem(3).Label2]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<visible>String.Contains(Container(3220).ListItem(3).Label,audio)</visible>
 							</control>
 							<control type="label">
@@ -533,8 +533,8 @@
 								<font>Reg28</font>
 								<align>left</align>
 								<label>, $INFO[Container(3220).ListItem(4).Label2]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<visible>String.Contains(Container(3220).ListItem(4).Label,audio)</visible>
 							</control>
 							<control type="label">
@@ -542,8 +542,8 @@
 								<font>Reg28</font>
 								<align>left</align>
 								<label>, $INFO[Container(3220).ListItem(5).Label2]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<visible>String.Contains(Container(3220).ListItem(5).Label,audio)</visible>
 							</control>
 							<control type="label">
@@ -551,8 +551,8 @@
 								<font>Reg28</font>
 								<align>left</align>
 								<label>, $INFO[Container(3220).ListItem(6).Label2]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<visible>String.Contains(Container(3220).ListItem(6).Label,audio)</visible>
 							</control>
 						</control>
@@ -569,8 +569,8 @@
 								<font>Reg28</font>
 								<align>left</align>
 								<label>$LOCALIZE[459]:</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<scroll>false</scroll>
 							</control>
 							<control type="label">
@@ -578,8 +578,8 @@
 								<font>Reg28</font>
 								<align>left</align>
 								<label>$INFO[Container(3220).ListItem(2).Label2, ,]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<visible>String.Contains(Container(3220).ListItem(2).Label,sub)</visible>
 							</control>
 							<control type="label">
@@ -587,8 +587,8 @@
 								<font>Reg28</font>
 								<align>left</align>
 								<label>$INFO[Container(3220).ListItem(3).Label2, ,]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<visible>String.Contains(Container(3220).ListItem(3).Label,sub)</visible>
 							</control>
 							<control type="label">
@@ -596,8 +596,8 @@
 								<font>Reg28</font>
 								<align>left</align>
 								<label>$INFO[Container(3220).ListItem(4).Label2, ,]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<visible>String.Contains(Container(3220).ListItem(4).Label,sub)</visible>
 							</control>
 							<control type="label">
@@ -605,8 +605,8 @@
 								<font>Reg28</font>
 								<align>left</align>
 								<label>$INFO[Container(3220).ListItem(5).Label2, ,]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<visible>String.Contains(Container(3220).ListItem(5).Label,sub)</visible>
 							</control>
 							<control type="label">
@@ -614,8 +614,8 @@
 								<font>Reg28</font>
 								<align>left</align>
 								<label>$INFO[Container(3220).ListItem(6).Label2, ,]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<visible>String.Contains(Container(3220).ListItem(6).Label,sub)</visible>
 							</control>
 						</control>
@@ -662,8 +662,8 @@
 								<height>50</height>
 								<label>[B]$INFO[ListItem.label][/B] $INFO[ListItem.label2]</label>
 								<font>Reg28</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<align>left</align>
 								<aligny>center</aligny>
 								<scroll>no</scroll>
@@ -676,7 +676,7 @@
 								<width>950</width>
 								<height>50</height>
 								<label>[B]$INFO[ListItem.label][/B] $INFO[ListItem.label2]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
 								
 								<font>Reg28</font>
 								<align>left</align>

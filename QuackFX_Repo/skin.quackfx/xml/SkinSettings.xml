@@ -25,7 +25,7 @@
 				<posy>0</posy>
 				<width>1820</width>
 				<texture border="15">diffuse/bgpanel.png</texture>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 			</control>
 			
 			<control type="image">
@@ -33,7 +33,7 @@
 				<posy>0</posy>
 				<width>500</width>
 				<texture border="15">diffuse/bgpanel.png</texture>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 			</control>
 			
 			<!--List 100 Left Area-->
@@ -61,10 +61,8 @@
                 <include>SkinSettings_OSD</include>
                 <include>SkinSettings_PVR</include>
                 <include>SkinSettings_SmartShortcuts</include>
-                <include>SkinSettings_ColorThemes</include>
                 <include>SkinSettings_General</include>
                 <include>SkinSettings_Backup</include>
-                <include>SkinSettings_CustomColors</include>
                 <include>SkinSettings_Addons</include>
 			</control>
         </control>

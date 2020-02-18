@@ -693,7 +693,7 @@ msgid "Use custom overlay"
 msgstr ""
 
 msgctxt "#31174"
-msgid "Focuscolor for home tiles and widgets"
+msgid ""
 msgstr ""
 
 msgctxt "#31175"
@@ -873,11 +873,11 @@ msgid "Do not show unwatched items count on posters"
 msgstr ""
 
 msgctxt "#31219"
-msgid "Textcolor for header"
+msgid ""
 msgstr ""
 
 msgctxt "#31220"
-msgid "Shadow color for header"
+msgid ""
 msgstr ""
 
 msgctxt "#31221"
@@ -885,11 +885,11 @@ msgid "Media library views"
 msgstr ""
 
 msgctxt "#31222"
-msgid "Media details general text color"
+msgid ""
 msgstr ""
 
 msgctxt "#31223"
-msgid "Media details general text shadow color"
+msgid ""
 msgstr ""
 
 msgctxt "#31224"
@@ -901,11 +901,11 @@ msgid "Show clearlogo in upper right instead of bottom"
 msgstr ""
 
 msgctxt "#31226"
-msgid "Media details header/highlights color"
+msgid ""
 msgstr ""
 
 msgctxt "#31227"
-msgid "Media details header/highlights shadow color"
+msgid ""
 msgstr ""
 
 msgctxt "#31228"
@@ -929,7 +929,7 @@ msgid "Do not hide OSD infopanel on fullscreen music playback"
 msgstr ""
 
 msgctxt "#31233"
-msgid "Focuscolor for buttons in the skin"
+msgid ""
 msgstr ""
 
 msgctxt "#31234"
@@ -1035,15 +1035,15 @@ msgid "Show OSD infopanel on pause and seek"
 msgstr ""
 
 msgctxt "#31260"
-msgid "General panels color"
+msgid ""
 msgstr ""
 
 msgctxt "#31261"
-msgid "Simple confluence-style homescreen horizontal"
+msgid ""
 msgstr ""
 
 msgctxt "#31262"
-msgid "Simple confluence-style homescreen vertical"
+msgid ""
 msgstr ""
 
 msgctxt "#31263"
@@ -1567,7 +1567,7 @@ msgid "Use TV-show banners"
 msgstr ""
 
 msgctxt "#31455"
-msgid "Textcolor for footer"
+msgid ""
 msgstr ""
 
 msgctxt "#31456"
@@ -1579,15 +1579,15 @@ msgid "Browse custom image for background overlay"
 msgstr ""
 
 msgctxt "#31458"
-msgid "Textcolor for buttons in the skin"
+msgid ""
 msgstr ""
 
 msgctxt "#31459"
-msgid "Focused textcolor for buttons in the skin"
+msgid ""
 msgstr ""
 
 msgctxt "#31460"
-msgid "General textcolor"
+msgid ""
 msgstr ""
 
 msgctxt "#31461"
@@ -1595,31 +1595,31 @@ msgid "Logos"
 msgstr ""
 
 msgctxt "#31462"
-msgid "Color themes"
+msgid ""
 msgstr ""
 
 msgctxt "#31463"
-msgid "Select a color theme"
+msgid ""
 msgstr ""
 
 msgctxt "#31464"
-msgid "This skin allows you to customize almost every color in the skin manually. You can also choose to save your customizations to a color theme or use one of the predefined color themes."
+msgid ""
 msgstr ""
 
 msgctxt "#31465"
-msgid "Save my color customizations to a color theme preset."
+msgid ""
 msgstr ""
 
 msgctxt "#31466"
-msgid "User defined color theme"
+msgid ""
 msgstr ""
 
 msgctxt "#31467"
-msgid "Enter a name for your color theme"
+msgid ""
 msgstr ""
 
 msgctxt "#31468"
-msgid "Screenshot of color theme (optional)"
+msgid ""
 msgstr ""
 
 msgctxt "#31469"
@@ -1631,15 +1631,15 @@ msgid "Background overlay texture"
 msgstr ""
 
 msgctxt "#31471"
-msgid "Footer panel color"
+msgid ""
 msgstr ""
 
 msgctxt "#31472"
-msgid "Media details panel color"
+msgid ""
 msgstr ""
 
 msgctxt "#31473"
-msgid "OSD panel color"
+msgid ""
 msgstr ""
 
 msgctxt "#31474"
@@ -1647,7 +1647,7 @@ msgid "Footer panel opacity"
 msgstr ""
 
 msgctxt "#31475"
-msgid "Color for buttons in the skin"
+msgid ""
 msgstr ""
 
 msgctxt "#31476"
@@ -1655,43 +1655,43 @@ msgid "Use slim OSD panel"
 msgstr ""
 
 msgctxt "#31477"
-msgid "Shadow color for footer"
+msgid ""
 msgstr ""
 
 msgctxt "#31478"
-msgid "OSD panel primary text color"
+msgid ""
 msgstr ""
 
 msgctxt "#31479"
-msgid "OSD panel primary text shadow color"
+msgid "Enable regional trailers (system language) in netflix info dialog"
 msgstr ""
 
 msgctxt "#31480"
-msgid "OSD panel secondary text color"
+msgid "Prefer locally stored trailers in netflix info dialog"
 msgstr ""
 
 msgctxt "#31481"
-msgid "OSD panel secondary text shadow color"
+msgid "Enable auto-hide details when trailer is playing"
 msgstr ""
 
 msgctxt "#31482"
-msgid "OSD progress bar background color"
+msgid "Show Current/Next Episode Plot in TVShow's InfoDialog"
 msgstr ""
 
 msgctxt "#31483"
-msgid "OSD progress bar color"
+msgid "Show TVdb and TMdb in footer"
 msgstr ""
 
 msgctxt "#31484"
-msgid "OSD buttons color"
+msgid "Enable white rating flags in footer"
 msgstr ""
 
 msgctxt "#31485"
-msgid "OSD buttons color focus"
+msgid "Maximum (inclusive) user rating to show thumbs down"
 msgstr ""
 
 msgctxt "#31486"
-msgid "General color settings"
+msgid "Minimum (inclusive) user rating to show thumbs up"
 msgstr ""
 
 msgctxt "#31487"
@@ -1727,15 +1727,15 @@ msgid "Do not show footer bar on home"
 msgstr ""
 
 msgctxt "#31495"
-msgid "Scrollbar background color"
+msgid ""
 msgstr ""
 
 msgctxt "#31496"
-msgid "Scrollbar unfocused color"
+msgid "Thumbs Down rate value"
 msgstr ""
 
 msgctxt "#31497"
-msgid "Scrollbar focused color"
+msgid "Thumbs Up rate value"
 msgstr ""
 
 msgctxt "#31498"
@@ -1767,7 +1767,7 @@ msgid "Busy animation image"
 msgstr ""
 
 msgctxt "#31505"
-msgid "Busy animation color diffuse"
+msgid ""
 msgstr ""
 
 msgctxt "#31506"
@@ -1815,7 +1815,7 @@ msgid "Enable indicator for unwatched episodes"
 msgstr ""
 
 msgctxt "#31517"
-msgid "color for indicator background (triangle)"
+msgid ""
 msgstr ""
 
 msgctxt "#31518"
@@ -1829,7 +1829,7 @@ msgstr ""
 #empty string with id 31520
 
 msgctxt "#31521"
-msgid "color for indicator image or text"
+msgid ""
 msgstr ""
 
 msgctxt "#31522"
@@ -1849,11 +1849,11 @@ msgid "Enable Poster case overlays with media quality"
 msgstr ""
 
 msgctxt "#31526"
-msgid "Case overlay color"
+msgid "Show plot for unwatched and in-progress episodes"
 msgstr ""
 
 msgctxt "#31527"
-msgid "Case overlay text/logo color"
+msgid "Disable Icons in Main Menu Items"
 msgstr ""
 
 msgctxt "#31528"
@@ -1933,7 +1933,7 @@ msgid "You might need to restart Kodi for the changes to take effect"
 msgstr ""
 
 msgctxt "#31547"
-msgid "OSD progress bar border color"
+msgid "Disable Logo on Main Menu"
 msgstr ""
 
 msgctxt "#31548"
@@ -1983,23 +1983,23 @@ msgid "Enable indicator for unwatched items"
 msgstr ""
 
 msgctxt "#31569"
-msgid "Media listitem text color (unfocused)"
+msgid ""
 msgstr ""
 
 msgctxt "#31570"
-msgid "Media listitem text color (focused)"
+msgid ""
 msgstr ""
 
 msgctxt "#31571"
-msgid "Media listitem focus color"
+msgid ""
 msgstr ""
 
 msgctxt "#31572"
-msgid "General text color for highlights and headers"
+msgid ""
 msgstr ""
 
 msgctxt "#31573"
-msgid "OSD progress bar buffer cache color"
+msgid ""
 msgstr ""
 
 msgctxt "#31574"
@@ -2041,19 +2041,19 @@ msgid "Forced view for Pictures"
 msgstr ""
 
 msgctxt "#31589"
-msgid "Enable day/night color themes"
+msgid ""
 msgstr ""
 
 msgctxt "#31590"
-msgid "You can configure the skin to automatically enable a different theme during day or night time"
+msgid ""
 msgstr ""
 
 msgctxt "#31591"
-msgid "Color theme during day time"
+msgid ""
 msgstr ""
 
 msgctxt "#31592"
-msgid "Color theme during night time"
+msgid ""
 msgstr ""
 
 #empty string with id 31593
@@ -2087,19 +2087,19 @@ msgid "Align labels on thumbs/tiles in center"
 msgstr ""
 
 msgctxt "#31601"
-msgid "Sideblade/options menu panel color"
+msgid "Disable clock in Now Playing info bar"
 msgstr ""
 
 msgctxt "#31602"
-msgid "Sideblade/options menu text color"
+msgid "Show just buttons for next-up notification osd"
 msgstr ""
 
 msgctxt "#31603"
-msgid "Label overlays on posters and thumbs panel color"
+msgid "Enable white rating flags in home"
 msgstr ""
 
 msgctxt "#31604"
-msgid "Label overlays on posters and thumbs text color"
+msgid "Disable studio logo in Home"
 msgstr ""
 
 msgctxt "#31605"
@@ -2235,7 +2235,7 @@ msgid "No active weather alerts"
 msgstr ""
 
 msgctxt "#31638"
-msgid "Allow transparent home tiles (alternate border)"
+msgid ""
 msgstr ""
 
 msgctxt "#31639"
@@ -2279,15 +2279,15 @@ msgid "Display tags/labels for episodes on posters"
 msgstr ""
 
 msgctxt "#31649"
-msgid "Titan tiles (1 row of small tiles)"
+msgid "Disable ratings in Home"
 msgstr ""
 
 msgctxt "#31650"
-msgid "Titan tiles (2 rows of small tiles)"
+msgid "Hide media flags and rating when playing trailer"
 msgstr ""
 
 msgctxt "#31651"
-msgid "Titan tiles (3 rows of small tiles)"
+msgid "Disable Spotlight Content"
 msgstr ""
 
 msgctxt "#31652"
@@ -2351,7 +2351,7 @@ msgid "Big Panel Wall"
 msgstr ""
 
 msgctxt "#31667"
-msgid "Custom color settings"
+msgid ""
 msgstr ""
 
 msgctxt "#31668"
@@ -2565,7 +2565,7 @@ msgid "Use small context/sidebar menu"
 msgstr ""
 
 msgctxt "#31721"
-msgid "Only show one shortcut at a time in the menu"
+msgid ""
 msgstr ""
 
 msgctxt "#31722"
@@ -2621,7 +2621,7 @@ msgid "Disable the Now Playing music background/visualization"
 msgstr ""
 
 msgctxt "#31735"
-msgid "Bordercolor for (unfocused) widgets/tiles on home"
+msgid ""
 msgstr ""
 
 msgctxt "#31736"
@@ -2649,15 +2649,15 @@ msgid "Use large widget details panel"
 msgstr ""
 
 msgctxt "#31742"
-msgid "Home mainmenu/submenu panel color"
+msgid ""
 msgstr ""
 
 msgctxt "#31743"
-msgid "Home mainmenu/submenu unfocused text color"
+msgid ""
 msgstr ""
 
 msgctxt "#31744"
-msgid "Home mainmenu/submenu focused text color"
+msgid ""
 msgstr ""
 
 msgctxt "#31745"
@@ -2749,15 +2749,15 @@ msgid "Do not display the IMDB rating icon and studio logo"
 msgstr ""
 
 msgctxt "#31767"
-msgid "Default Palette for Color Picker"
+msgid ""
 msgstr ""
 
 msgctxt "#31768"
-msgid "Select a Default Palette for Color Picker"
+msgid ""
 msgstr ""
 
 msgctxt "#31769"
-msgid "You can select which palette is displayed by default when the color picker is called by the skin."
+msgid ""
 msgstr ""
 
 msgctxt "#31770"
@@ -2777,7 +2777,7 @@ msgid "Submenu heading"
 msgstr ""
 
 msgctxt "#31774"
-msgid "Show submenu after widgets instead of before widgets"
+msgid ""
 msgstr ""
 
 msgctxt "#31775"
@@ -2789,19 +2789,19 @@ msgid "Highlight channel row in guide"
 msgstr ""
 
 msgctxt "#31777"
-msgid "PVR Guide unfocused item color"
+msgid ""
 msgstr ""
 
 msgctxt "#31778"
-msgid "PVR Guide focused item color"
+msgid ""
 msgstr ""
 
 msgctxt "#31779"
-msgid "PVR Guide unfocused item textcolor"
+msgid ""
 msgstr ""
 
 msgctxt "#31780"
-msgid "PVR Guide focused item textcolor"
+msgid "Lock Widgets in Hubs"
 msgstr ""
 
 msgctxt "#31781"
@@ -2833,7 +2833,7 @@ msgid "Software"
 msgstr ""
 
 msgctxt "#31788"
-msgid "Focused/active color for radiobuttons and spin controls"
+msgid ""
 msgstr ""
 
 msgctxt "#31789"
@@ -2845,7 +2845,7 @@ msgid "Color for play icon"
 msgstr ""
 
 msgctxt "#31791"
-msgid "Header panel color"
+msgid ""
 msgstr ""
 
 msgctxt "#31792"
@@ -2881,7 +2881,7 @@ msgid "Default widgets"
 msgstr ""
 
 msgctxt "#31800"
-msgid "Manage color themes"
+msgid ""
 msgstr ""
 
 msgctxt "#31801"
@@ -2933,23 +2933,23 @@ msgid "Enable automatic creation of wall backgrounds"
 msgstr ""
 
 msgctxt "#31813"
-msgid "Diffuse color for lyrics overlay"
+msgid ""
 msgstr ""
 
 msgctxt "#31814"
-msgid "Textcolor for unfocused lyrics"
+msgid ""
 msgstr ""
 
 msgctxt "#31815"
-msgid "Textcolor for focused lyrics"
+msgid ""
 msgstr ""
 
 msgctxt "#31816"
-msgid "Shadowcolor for unfocused lyrics text"
+msgid ""
 msgstr ""
 
 msgctxt "#31817"
-msgid "Shadowcolor for focused lyrics text"
+msgid ""
 msgstr ""
 
 msgctxt "#31818"
@@ -2993,33 +2993,33 @@ msgid "Wide Netflix"
 msgstr "Wide Netflix"
 
 msgctxt "#31828"
-msgid "Media listitem border focus color"
-msgstr "Media listitem border focus color"
+msgid ""
+msgstr ""
 
 msgctxt "#31829"
-msgid "Home border focus color"
-msgstr "Home border focus color"
+msgid ""
+msgstr ""
 
 msgctxt "#31830"
-msgid "Netflix primary text color"
-msgstr "Netflix primary text color"
+msgid ""
+msgstr ""
 
 msgctxt "#31831"
-msgid "Netflix secondary text color"
-msgstr "Netflix secondary text color"
+msgid ""
+msgstr ""
 
 msgctxt "#31832"
-msgid "Netflix flags color"
-msgstr "Netflix flags color"
+msgid ""
+msgstr ""
 
 msgctxt "#31833"
-msgid "Ratings Logo Color"
-msgstr "Ratings Logo Color"
+msgid ""
+msgstr ""
 
 msgctxt "#31834"
-msgid "Mainmenu Focus Button Color"
-msgstr "Mainmenu Focus Button Color"
+msgid ""
+msgstr ""
 
 msgctxt "#31835"
-msgid "Mainmenu Secondary Focus Button Color"
-msgstr "Mainmenu Secondary Focus Button Color"
+msgid ""
+msgstr ""

@@ -74,16 +74,16 @@
 						<height>33</height>
 						<width>1100</width>
 						<font>Bold30</font>
-						<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                        <shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+						<textcolor>ViewDetailsHighlightTextColor</textcolor>
+                        <shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
 						<label>[UPPERCASE]$VAR[mediatitle][/UPPERCASE]</label>
 					</control>
                     <control type="label">
 						  <height>40</height>
 						  <width>1100</width>
 						  <font>Reg31</font>
-						  <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-						  <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+						  <textcolor>ViewDetailsTextColor</textcolor>
+						  <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 						  <label>$VAR[Details]</label>
 					</control>
 					<control type="textbox">
@@ -92,8 +92,8 @@
 						<width>1770</width>
 						<height>135</height>
 						<label>$VAR[Plots]</label>
-						<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-						<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+						<textcolor>ViewDetailsTextColor</textcolor>
+						<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 						<align>justify</align>
 						<font>Light28</font>
 					</control>
@@ -118,7 +118,7 @@
 					<label/>
 					<pulseonselect>false</pulseonselect>
 					<texturefocus colordiffuse="white">home/basichome_left.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">home/basichome_left.png</texturenofocus>
+					<texturenofocus colordiffuse="ButtonFocusColor">home/basichome_left.png</texturenofocus>
 					<onclick>Control.Move(507,-1) </onclick>
 					<visible>Skin.HasSetting(EnableTouchSupport)</visible>
 				</control>
@@ -134,7 +134,7 @@
 					<label/>
 					<pulseonselect>false</pulseonselect>
 					<texturefocus colordiffuse="white">home/basichome_right.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">home/basichome_right.png</texturenofocus>
+					<texturenofocus colordiffuse="ButtonFocusColor">home/basichome_right.png</texturenofocus>
 					<onclick>Control.Move(507,1) </onclick>
 					<visible>Skin.HasSetting(EnableTouchSupport)</visible>
 				</control>

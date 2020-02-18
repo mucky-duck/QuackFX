@@ -166,7 +166,7 @@
                 <height>80</height>
                 <bordersize>8</bordersize>
                 <texture border="1">diffuse/poster_tag.png</texture>
-                <colordiffuse>$INFO[Skin.String(TagOverlaysPanelColor)]</colordiffuse>
+                <colordiffuse>TagOverlaysPanelColor</colordiffuse>
             </control>
             <control type="textbox">
                 <left>15</left>
@@ -179,7 +179,7 @@
                 <label>$VAR[ThumbListDetailsPoster]</label>
                 <font>Reg22</font>
                 <autoscroll delay="2000" time="2000" repeat="500">false</autoscroll>
-                <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+                <textcolor>TagOverlaysTextColor</textcolor>
                 <visible>!String.IsEqual(System.CurrentControl,ListItem.Label)</visible>
             </control>
             <control type="textbox">
@@ -193,7 +193,7 @@
                 <label>$VAR[ThumbListDetailsPoster]</label>
                 <font>Reg22</font>
                 <autoscroll delay="2000" time="2000" repeat="500">true</autoscroll>
-                <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+                <textcolor>TagOverlaysTextColor</textcolor>
                 <visible>String.IsEqual(System.CurrentControl,ListItem.Label)</visible>
             </control>
         </control>
@@ -207,7 +207,7 @@
                 <height>80</height>
                 <bordersize>8</bordersize>
                 <texture border="1">diffuse/poster_tag.png</texture>
-                <colordiffuse>$INFO[Skin.String(TagOverlaysPanelColor)]</colordiffuse>
+                <colordiffuse>TagOverlaysPanelColor</colordiffuse>
             </control>
             <control type="textbox">
                 <left>15</left>
@@ -220,7 +220,7 @@
                 <label>$VAR[ThumbListDetailsPoster]</label>
                 <font>Reg18</font>
                 <autoscroll delay="2000" time="2000" repeat="500">false</autoscroll>
-                <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+                <textcolor>TagOverlaysTextColor</textcolor>
                 <visible>!String.IsEqual(System.CurrentControl,ListItem.Label)</visible>
             </control>
             <control type="textbox">
@@ -234,7 +234,7 @@
                 <label>$VAR[ThumbListDetailsPoster]</label>
                 <font>Reg18</font>
                 <autoscroll delay="2000" time="2000" repeat="500">true</autoscroll>
-                <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+                <textcolor>TagOverlaysTextColor</textcolor>
                 <visible>String.IsEqual(System.CurrentControl,ListItem.Label)</visible>
             </control>
         </control>
@@ -256,7 +256,7 @@
                 <texture border="1" diffuse="diffuse/poster.png">cases/default_top2.png</texture>
                 <!-- border left,top,right,bottom  -->
                 <bordersize>7</bordersize>
-                <colordiffuse>$INFO[Skin.String(CaseOverlays.Color)]</colordiffuse>
+                <colordiffuse>CaseOverlaysColor</colordiffuse>
             </control>
             <control type="image">
                 <texture background="true">$VAR[PosterCaseOverlayVar]</texture>
@@ -267,7 +267,7 @@
                 <aspectratio aligny="top" align="center">keep</aspectratio>
                 <!-- border left,top,right,bottom  -->
                 <bordersize>0</bordersize>
-                <colordiffuse>$INFO[Skin.String(CaseOverlays.TextColor)]</colordiffuse>
+                <colordiffuse>CaseOverlaysTextColor</colordiffuse>
             </control>
         </control>
     </include>
@@ -286,7 +286,7 @@
                 <texture border="1" diffuse="diffuse/poster.png">cases/default_top2.png</texture>
                 <!-- border left,top,right,bottom  -->
                 <bordersize>-2</bordersize>
-                <colordiffuse>$INFO[Skin.String(ViewDetailsBorderFocusColor)]</colordiffuse>
+                <colordiffuse>ViewDetailsBorderFocusColor</colordiffuse>
             </control>
             <control type="image">
                 <texture background="true">$VAR[PosterCaseOverlayVar]</texture>
@@ -297,7 +297,7 @@
                 <aspectratio aligny="top" align="center">keep</aspectratio>
                 <!-- border left,top,right,bottom  -->
                 <bordersize>0</bordersize>
-                <colordiffuse>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</colordiffuse>
+                <colordiffuse>ViewDetailsListItemTextFocusColor</colordiffuse>
             </control>
         </control>
     </include>
