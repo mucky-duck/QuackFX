@@ -20,7 +20,7 @@
                     <height>860</height>
 					<texture border="15">diffuse/bgpanel.png</texture>
 					
-					<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+					<colordiffuse>GeneralPanelsColor</colordiffuse>
 				</control>
 				<control type="image">
 					<!--Panel-->
@@ -31,7 +31,7 @@
 					<bordersize>10</bordersize>
 					<texture border="15">diffuse/bgpanel.png</texture>
 					
-					<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+					<colordiffuse>GeneralPanelsColor</colordiffuse>
 				</control>
 
                 <!-- Header-->
@@ -116,7 +116,7 @@
                                     <width>40</width>
                                     <height>40</height>
                                     <texture>common/checkbox.png</texture>
-									<colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+									<colordiffuse>ViewDetailsTextColor</colordiffuse>
                                 </control>
                             </control>
                             <control type="group">
@@ -126,7 +126,7 @@
                                     <posy>0</posy>
                                     <width>400</width>
                                     <height>60</height>
-                                    <texture border="5">diffuse/panel.png</texture><colordiffuse>$INFO[Skin.String(ButtonFocusColor)]</colordiffuse>
+                                    <texture border="5">diffuse/panel.png</texture><colordiffuse>ButtonFocusColor</colordiffuse>
                                 </control>
                                 <control type="label">
                                     <posx>20</posx>
@@ -252,7 +252,7 @@
                                     <width>40</width>
                                     <height>40</height>
                                     <texture>common/checkbox.png</texture>
-							<colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+							<colordiffuse>ViewDetailsTextColor</colordiffuse>
                                 </control>
                             </control>
                             <control type="group">
@@ -262,7 +262,7 @@
                                     <posy>0</posy>
                                     <width>400</width>
                                     <height>60</height>
-                                    <texture border="5">diffuse/panel.png</texture><colordiffuse>$INFO[Skin.String(ButtonFocusColor)]</colordiffuse>
+                                    <texture border="5">diffuse/panel.png</texture><colordiffuse>ButtonFocusColor</colordiffuse>
                                 </control>
                                 <control type="label">
                                     <posx>70</posx>
@@ -395,7 +395,7 @@
                                     <width>40</width>
                                     <height>40</height>
                                     <texture>common/checkbox.png</texture>
-									<colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+									<colordiffuse>ViewDetailsTextColor</colordiffuse>
                                 </control>
                             </control>
                             <control type="group">
@@ -405,7 +405,7 @@
                                     <posy>0</posy>
                                     <width>400</width>
                                     <height>60</height>
-                                    <texture border="5">diffuse/panel.png</texture><colordiffuse>$INFO[Skin.String(ButtonFocusColor)]</colordiffuse>
+                                    <texture border="5">diffuse/panel.png</texture><colordiffuse>ButtonFocusColor</colordiffuse>
                                 </control>
                                 <control type="label">
                                     <posx>70</posx>

@@ -88,8 +88,8 @@
                     <top>0</top>
                     <texture background="true" diffuse="overlay/Right_Corner.png">$VAR[netflixThumb]</texture>
                     <fadetime>550</fadetime>
-                    <width>1315</width>
-                    <height>750</height>
+                    <width>1250</width>
+                    <height>800</height>
                     <aspectratio>scale</aspectratio>
                     <aspectratio scalediffuse="true" aligny="top">scale</aspectratio>
                     <animation effect="fade" end="0" time="600">Hidden</animation>
@@ -127,8 +127,8 @@
                         <font>Reg48</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
-                        <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                        <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
+                        <textcolor>ViewDetailsTextColor</textcolor>
                         <label>$VAR[View523_FallbackTitle]</label>
                         <animation effect="fade" time="200">Visible</animation>
                     </control>
@@ -149,7 +149,7 @@
                         <font>Reg28</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                        <textcolor>ViewDetailsTextColor</textcolor>
                         <label>$VAR[NetflixSublabel]</label>
                         <include>Default_Fade</include>
                     </control>
@@ -168,7 +168,7 @@
                             <font>Reg40</font>
                             <align>left</align>
                             <aligny>center</aligny>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
                             <label>$VAR[View523_EpisodeInfoLabel]</label>
                             <animation effect="zoom" end="115" condition="Container.Content(seasons)">Conditional</animation>
                         </control>
@@ -187,7 +187,7 @@
                                 <align>left</align>
                                 <texturebg colordiffuse="cc515151" border="2">colors/color_white.png</texturebg>
                                 <lefttexture/>
-                                <midtexture colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]" border="2">colors/color_white.png</midtexture>
+                                <midtexture colordiffuse="OSDProgressBarColor" border="2">colors/color_white.png</midtexture>
                                 <righttexture/>
                                 <info>ListItem.PercentPlayed</info>
                             </control>
@@ -196,7 +196,7 @@
                                 <left>175</left>
                                 <height>30</height>
                                 <width>600</width>
-                                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                                <textcolor>ViewDetailsTextColor</textcolor>
                                 <label>[CAPITALIZE]$LOCALIZE[31535][/CAPITALIZE]</label>
                             </control>
                         </control>
@@ -205,10 +205,10 @@
                     <!-- plot -->
                     <control type="textbox" id="5444322">
                         <visible>!Container.Content(seasons)</visible>
-                        <height min="50" max="250">auto</height>
+                        <height min="50" max="280">auto</height>
                         <width>650</width>
                         <textcolor>$VAR[NetflixPlotTextColor]</textcolor>
-                        <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                        <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                         <align>justify</align>
                         <font>Reg28</font>
                         <label>$VAR[NetflixInfoDialogPlot]</label>
@@ -226,14 +226,14 @@
                             <height>30</height>
                             <aligny>center</aligny>
                             <texture>fact.png</texture>
-                            <colordiffuse>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</colordiffuse>
+                            <colordiffuse>ViewDetailsHighlightTextColor</colordiffuse>
                         </control>
                         <control type="label" id="84">
                             <left>40</left>
                             <height>30</height>
                             <width>650</width>
                             <label>$VAR[NetflixMoreDetails]</label>
-                            <textcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</textcolor>
+                            <textcolor>NetflixSecondaryTextColor</textcolor>
                             <align>left</align>
                             <aligny>center</aligny>
                             <font>Reg24</font>
@@ -244,8 +244,8 @@
 				<!-- ratings & studio -->
                 <control type="group">
                     <visible>!Skin.HasSetting(NoFooterBar)</visible>
-                    <right>30</right>
-                    <top>570</top>
+                    <right>20</right>
+                    <top>590</top>
                     <height>50</height>
                     <width>1000</width>
                     <include condition="Skin.HasSetting(EnableWhiteRatingInFooter)">AltRatingWhiteHome</include>
@@ -265,7 +265,7 @@
                 <texturefocus/>
                 <texturenofocus/>
                 <textureradiofocus colordiffuse="$INFO[Skin.String(ButtonTextFocusColor)]">touchcontrols/icon_back.png</textureradiofocus>
-                <textureradionofocus colordiffuse="$INFO[Skin.String(ButtonTextColor)]">touchcontrols/icon_back.png</textureradionofocus>
+                <textureradionofocus colordiffuse="ButtonTextColor">touchcontrols/icon_back.png</textureradionofocus>
                 <radiowidth>60</radiowidth>
                 <radioheight>60</radioheight>
                 <onclick>Close</onclick>
@@ -295,7 +295,7 @@
 			<control type="group">
 				<control type="scrollbar" id="60">
 					<visible>Control.IsVisible(523) + Integer.IsGreater(Container.Numitems,0) + Skin.HasSetting(View_523_HorizontalNavigation)</visible>
-                    <left>60</left>
+                    <left>5</left>
                     <width>1800</width>
 					<height>15</height>
                     <bottom>2</bottom>
@@ -442,10 +442,9 @@
     <include name="View523_Layout_Poster">
         <focusedposition>0</focusedposition>
             <viewtype label="31018">icons</viewtype>
-            <bottom>0</bottom>
-            <top>660</top>
+            <bottom>10</bottom>
             <height>380</height>
-            <width>1842</width>
+            <width>100%</width>
             <itemgap>0</itemgap>
             <include condition="Skin.HasSetting(View_523_HorizontalNavigation)">navigation_horizontal</include>
             <orientation>vertical</orientation>

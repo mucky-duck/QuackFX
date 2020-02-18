@@ -46,7 +46,7 @@
                         <right>5</right>
                         <width>100%</width>
                         <font>Reg28</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextColor</textcolor>
                         <label>$VAR[ListTitle]</label>
                     </control>
                     <control type="image">
@@ -77,7 +77,7 @@
                         <height>55</height>
                         <font>Reg36</font>
 						<scroll>true</scroll>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
                         <label>$VAR[ListTitle]</label>
                     </control>
                     <control type="label">
@@ -89,7 +89,7 @@
                         <height>30</height>
                         <font>Light30</font>
 						<scroll>true</scroll>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
                         <label>$VAR[ListDetails]</label>
                         <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     </control>

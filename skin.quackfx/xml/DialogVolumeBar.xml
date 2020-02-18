@@ -19,7 +19,7 @@
 				<top>-30</top>
 				<width>200</width>
 				<height>200</height>
-                <texture colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">dialogs/volume/passthrough.png</texture>
+                <texture colordiffuse="OSDButtonsColor">dialogs/volume/passthrough.png</texture>
             </control>
 			
 			<control type="image">
@@ -41,7 +41,7 @@
 						<top>-30</top>
 						<width>200</width>
 						<height>200</height>
-						<texture colordiffuse="$INFO[Skin.String(OSDPanelColor)]">dialogs/volume/modern/bottom-panel.png</texture>
+						<texture colordiffuse="OSDPanelColor">dialogs/volume/modern/bottom-panel.png</texture>
 						<animation effect="fade" end="35" time="0" condition="true">Conditional</animation>
 					</control>
 					
@@ -50,7 +50,7 @@
 						<top>-30</top>
 						<width>200</width>
 						<height>200</height>
-						<texture colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">dialogs/volume/modern/icon.png</texture>
+						<texture colordiffuse="OSDButtonsColor">dialogs/volume/modern/icon.png</texture>
 						<animation effect="fade" end="40" time="0" condition="true">Conditional</animation>
 					</control>
 
@@ -59,7 +59,7 @@
 						<top>-30</top>
 						<width>200</width>
 						<height>200</height>
-						<texture colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">dialogs/volume/modern/icon.png</texture>
+						<texture colordiffuse="OSDButtonsFocusColor">dialogs/volume/modern/icon.png</texture>
 						<animation effect="fade" end="20" time="0" condition="true">Conditional</animation>
 					</control>
 					
@@ -77,7 +77,7 @@
 						<top>-30</top>
 						<width>200</width>
 						<height>200</height>
-						<texture colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
+						<texture colordiffuse="OSDButtonsFocusColor">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
 						<visible>Integer.IsGreater(Player.Volume,90)</visible>
 						<include>Fade100</include>
 					</control>
@@ -87,7 +87,7 @@
 						<top>-30</top>
 						<width>200</width>
 						<height>200</height>
-						<texture colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
+						<texture colordiffuse="OSDButtonsFocusColor">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
 						<visible>Integer.IsGreater(Player.Volume,80) + !Integer.IsGreater(Player.Volume,90)</visible>
 						<include>Fade90</include>
 					</control>
@@ -97,7 +97,7 @@
 						<top>-30</top>
 						<width>200</width>
 						<height>200</height>
-						<texture colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
+						<texture colordiffuse="OSDButtonsFocusColor">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
 						<visible>Integer.IsGreater(Player.Volume,70) + !Integer.IsGreater(Player.Volume,80)</visible>
 						<include>Fade80</include>
 					</control>
@@ -107,7 +107,7 @@
 						<top>-30</top>
 						<width>200</width>
 						<height>200</height>
-						<texture colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
+						<texture colordiffuse="OSDButtonsFocusColor">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
 						<visible>Integer.IsGreater(Player.Volume,60) + !Integer.IsGreater(Player.Volume,70)</visible>
 						<include>Fade70</include>
 					</control>
@@ -117,7 +117,7 @@
 						<top>-30</top>
 						<width>200</width>
 						<height>200</height>
-						<texture colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
+						<texture colordiffuse="OSDButtonsFocusColor">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
 						<visible>Integer.IsGreater(Player.Volume,50) + !Integer.IsGreater(Player.Volume,60)</visible>
 						<include>Fade60</include>
 					</control>
@@ -127,7 +127,7 @@
 						<top>-30</top>
 						<width>200</width>
 						<height>200</height>
-						<texture colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
+						<texture colordiffuse="OSDButtonsFocusColor">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
 						<visible>Integer.IsGreater(Player.Volume,40) + !Integer.IsGreater(Player.Volume,50)</visible>
 						<include>Fade50</include>
 					</control>
@@ -137,7 +137,7 @@
 						<top>-30</top>
 						<width>200</width>
 						<height>200</height>
-						<texture colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
+						<texture colordiffuse="OSDButtonsFocusColor">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
 						<visible>Integer.IsGreater(Player.Volume,30) + !Integer.IsGreater(Player.Volume,40)</visible>
 						<include>Fade40</include>
 					</control>
@@ -147,7 +147,7 @@
 						<top>-30</top>
 						<width>200</width>
 						<height>200</height>
-						<texture colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
+						<texture colordiffuse="OSDButtonsFocusColor">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
 						<visible>Integer.IsGreater(Player.Volume,20) + !Integer.IsGreater(Player.Volume,30)</visible>
 						<include>Fade30</include>
 					</control>
@@ -157,7 +157,7 @@
 						<top>-30</top>
 						<width>200</width>
 						<height>200</height>
-						<texture colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
+						<texture colordiffuse="OSDButtonsFocusColor">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
 						<visible>Integer.IsGreater(Player.Volume,10) + !Integer.IsGreater(Player.Volume,20)</visible>
 						<include>Fade20</include>
 					</control>
@@ -167,7 +167,7 @@
 						<top>-30</top>
 						<width>200</width>
 						<height>200</height>
-						<texture colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
+						<texture colordiffuse="OSDButtonsFocusColor">dialogs/volume/modern/p$INFO[Control.GetLabel(1)].png</texture>
 						<visible>!Integer.IsGreater(Player.Volume,10)</visible>
 						<include>Fade10</include>
 					</control>
@@ -182,8 +182,8 @@
 						<font>Bold40</font>
 						<label>$INFO[Control.GetLabel(1)]</label>
 						<visible>!Integer.IsGreater(player.volume,99)</visible>
-						<textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-						<shadowcolor>$INFO[Skin.String(OSDPrimaryTextShadowColor)]</shadowcolor>
+						<textcolor>OSDPrimaryTextColor</textcolor>
+						<shadowcolor>OSDPrimaryTextShadowColor</shadowcolor>
 					</control>
 					
 					<control type="label">
@@ -196,8 +196,8 @@
 						<font>Bold40</font>
 						<label>$INFO[Control.GetLabel(1)]</label>
 						<visible>Integer.IsGreater(player.volume,99)</visible>
-						<textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-						<shadowcolor>$INFO[Skin.String(OSDPrimaryTextShadowColor)]</shadowcolor>
+						<textcolor>OSDPrimaryTextColor</textcolor>
+						<shadowcolor>OSDPrimaryTextShadowColor</shadowcolor>
 					</control>
 				</control>
 

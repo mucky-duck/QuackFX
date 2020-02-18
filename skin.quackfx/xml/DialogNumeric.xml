@@ -19,13 +19,13 @@
 			<control type="image">
                 <!--Panel-->
                 <texture border="5">diffuse/panel.png</texture>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
             </control>
 			<control type="image">
                 <!--Panel-->
 				<bordersize>5</bordersize>
                 <texture border="5">diffuse/panel.png</texture>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
             </control>
 			
             <control type="label" id="1">

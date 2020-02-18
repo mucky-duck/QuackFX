@@ -19,9 +19,9 @@
 				<height>100</height>
 				<font>Bold45</font>
 				<align>left</align>
-				<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+				<textcolor>HeaderTextColor</textcolor>
 				<label>$INFO[Window.Property(Title)]</label>
-				<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+				<shadowcolor>HeaderTextShadowColor</shadowcolor>
 				<visible>!Window.IsActive(notification) + !Window.IsActive(extendedprogressdialog) + !Control.IsVisible(88888)</visible>
 			</control>
 			 <control type="label">
@@ -31,8 +31,8 @@
 				<height>50</height>
 				<label>$INFO[Window.Property(TagLine)]</label>
 				<font>Reg30</font>
-				<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-				<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+				<textcolor>HeaderTextColor</textcolor>
+				<shadowcolor>HeaderTextShadowColor</shadowcolor>
 				<include>animation_fade_visible_hidden</include>
 				<visible>!Window.IsActive(notification) + !Window.IsActive(extendedprogressdialog) + !Control.IsVisible(88888)</visible>
 			</control>
@@ -58,7 +58,7 @@
 					<width>100%</width>
 					<height>110</height>
 					<texture border="5">diffuse/panel.png</texture>
-					<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+					<colordiffuse>GeneralPanelsColor</colordiffuse>
 				</control>
 
 				<!--Butons 9000-->			
@@ -236,7 +236,7 @@
 								<posy>0</posy>
 								<width>1560</width>
 								<height>1</height>
-								<colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+								<colordiffuse>ViewDetailsTextColor</colordiffuse>
 								<texture>info/infopanel_line.png</texture>
 							</control>
 							<control type="image">
@@ -244,7 +244,7 @@
 								<posy>82</posy>
 								<width>1560</width>
 								<height>1</height>
-								<colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+								<colordiffuse>ViewDetailsTextColor</colordiffuse>
 								<texture>info/infopanel_line.png</texture>
 							</control>
 							<control type="grouplist">
@@ -262,7 +262,7 @@
 										<posx>0</posx>
 										<height>79</height>
 										<width>2</width>
-										<colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+										<colordiffuse>ViewDetailsTextColor</colordiffuse>
 										<texture>info/upright.png</texture>
 									</control>
 									<control type="label">
@@ -272,8 +272,8 @@
 										<height>38</height>
 										<align>center</align>
 										<label fallback="?">$INFO[Window.Property(Rating)]</label>
-										<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-										<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+										<textcolor>ViewDetailsTextColor</textcolor>
+										<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 										<font>Bold30</font>
 									</control>
 									<control type="label">
@@ -284,8 +284,8 @@
 										<align>center</align>
 										<aligny>center</aligny>
 										<label fallback="Rating">$INFO[Window.Property(Votes),, Votes]</label>
-										<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-										<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+										<textcolor>ViewDetailsTextColor</textcolor>
+										<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 										<font>Reg24</font>
 									</control>
 								</control>
@@ -295,7 +295,7 @@
 									<height>79</height>
 									<width>2</width>
 									<texture>info/upright.png</texture>
-									<colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+									<colordiffuse>ViewDetailsTextColor</colordiffuse>
 								</control>
 								<control type="group">
 									<width>220</width>
@@ -307,8 +307,8 @@
 										<height>38</height>
 										<align>center</align>
 										<label fallback="?">$INFO[Window.Property(ReleaseDate)]</label>
-										<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-										<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+										<textcolor>ViewDetailsTextColor</textcolor>
+										<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 										<font>Bold32</font>
 									</control>
 									<control type="label">
@@ -319,8 +319,8 @@
 										<align>center</align>
 										<aligny>center</aligny>
 										<label fallback="Release Date">$INFO[Window.Property(Status)]</label>
-										<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-										<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+										<textcolor>ViewDetailsTextColor</textcolor>
+										<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 										<font>Reg24</font>
 									</control>
 								</control>
@@ -334,7 +334,7 @@
 										<height>79</height>
 										<width>2</width>
 										<texture>info/upright.png</texture>
-										<colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+										<colordiffuse>ViewDetailsTextColor</colordiffuse>
 									</control>
 									<control type="label">
 										<posx>0</posx>
@@ -343,8 +343,8 @@
 										<height>38</height>
 										<align>center</align>
 										<label>$INFO[Window.Property(Budget),$]</label>
-										<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-										<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+										<textcolor>ViewDetailsTextColor</textcolor>
+										<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 										<font>Bold32</font>
 									</control>
 									<control type="label">
@@ -356,8 +356,8 @@
 										<aligny>center</aligny>
 										<label>Budget</label>
 										<font>Reg24</font>
-										<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-										<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+										<textcolor>ViewDetailsTextColor</textcolor>
+										<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 									</control>
 								</control>
 								<control type="group" id="3300">
@@ -370,7 +370,7 @@
 										<height>79</height>
 										<width>2</width>
 										<texture>info/upright.png</texture>
-										<colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+										<colordiffuse>ViewDetailsTextColor</colordiffuse>
 									</control>
 									<control type="label">
 										<posx>0</posx>
@@ -379,8 +379,8 @@
 										<height>38</height>
 										<align>center</align>
 										<label fallback="?">$INFO[Window.Property(Revenue),$]</label>
-										<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-										<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+										<textcolor>ViewDetailsTextColor</textcolor>
+										<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 										<font>Bold32</font>
 									</control>
 									<control type="label">
@@ -392,8 +392,8 @@
 										<aligny>center</aligny>
 										<label>Revenue</label>
 										<font>Reg24</font>
-										<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-										<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+										<textcolor>ViewDetailsTextColor</textcolor>
+										<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 									</control>
 								</control>
 								<control type="image">
@@ -402,7 +402,7 @@
 									<height>79</height>
 									<width>2</width>
 									<texture>info/upright.png</texture>
-									<colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+									<colordiffuse>ViewDetailsTextColor</colordiffuse>
 								</control>
 								<control type="group">
 									<width>20</width>
@@ -415,8 +415,8 @@
 									<aligny>center</aligny>
 									<wrapmultiline>true</wrapmultiline>
 									<label>$INFO[Window.Property(omdb.Awards),,[CR]]$INFO[Window.Property(omdb.tomatoConsensus),,[CR] ]</label>
-									<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-									<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+									<textcolor>ViewDetailsTextColor</textcolor>
+									<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 									<font>Reg22</font>
 								</control>
 							
@@ -437,8 +437,8 @@
 							<width>1370</width>
 							<height>25</height>
 							<label>$INFO[Window.Property(movie.File),[B]$LOCALIZE[21800]: [/B]]</label>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                             <visible>!String.IsEmpty(Window.Property(movie.File)) + !Skin.HasSetting(DialogVideoInfo_HideFileName)</visible>
 							<align>left</align>
 							<font>Reg20</font>
@@ -449,8 +449,8 @@
 							<width>1370</width>
 							<height>230</height>
 							<label>$INFO[Window.Property(Plot)]</label>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 							<align>justify</align>
 							<font>Reg26</font>
 						</control>
@@ -488,8 +488,8 @@
                             <height>25</height>
                             <aligny>center</aligny>
                             <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
+							<shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
                             <label>$LOCALIZE[206]$INFO[Container(1000).NumItems, (,)]</label>
                         </control>
 						<control type="image">
@@ -554,10 +554,10 @@
                             <height>25</height>
                             <aligny>center</aligny>
                           <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                             <label>$ADDON[script.extendedinfo 32115]$INFO[Container(750).NumItems, (,)]</label>
                         </control>
 						<control type="image">
@@ -607,10 +607,10 @@
                             <height>25</height>
                             <aligny>center</aligny>
                           <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                             <label>$ADDON[script.extendedinfo 32116]$INFO[Container(150).NumItems, (,)]</label>
                         </control>
                         <control type="image">
@@ -660,10 +660,10 @@
                             <height>25</height>
                             <aligny>center</aligny>
                           <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                             <label>$INFO[Window.Property(set.label)]$INFO[Container(250).NumItems, (,)]</label>
 							<visible>!Integer.IsGreater(Container(250).NumItems,0)</visible>
                         </control>
@@ -674,10 +674,10 @@
                             <height>25</height>
                             <aligny>center</aligny>
                           <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                             <label>$LOCALIZE[33054] $INFO[Container(250).NumItems, (,)]</label>
 							<visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
                         </control>
@@ -727,10 +727,10 @@
                             <height>25</height>
                             <aligny>center</aligny>
                           <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                             <label>$ADDON[script.extendedinfo 32117]</label>
                         </control>
                          <control type="image">
@@ -782,10 +782,10 @@
                             <height>25</height>
                             <aligny>center</aligny>
                           <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                             <label>$ADDON[script.extendedinfo 32118]</label>
                         </control>
                         <control type="image">
@@ -838,10 +838,10 @@
                             <height>25</height>
                             <aligny>center</aligny>
                           <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                             <label>$LOCALIZE[20388]</label>
                         </control>
                        <control type="image">
@@ -896,7 +896,7 @@
 										<left>10</left>
 										<width>322</width>
 										<height>60</height>
-										<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+										<textcolor>ViewDetailsListItemTextColor</textcolor>
 										<font>Reg20</font>
 										<label>$INFO[ListItem.Label]</label>
 									</control>
@@ -909,7 +909,7 @@
                                         <posy>0</posy>
                                         <width>340</width>
                                         <height>200</height>
-                                        <texture border="5" colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">diffuse/panel.png</texture>
+                                        <texture border="5" colordiffuse="ButtonFocusColor">diffuse/panel.png</texture>
                                     </control>
                                     <control type="image">
                                         <posy>5</posy>
@@ -931,7 +931,7 @@
 										<left>10</left>
 										<width>322</width>
 										<height>60</height>
-										<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+										<textcolor>ViewDetailsListItemTextColor</textcolor>
 										<font>Reg20</font>
 										<label>$INFO[ListItem.Label]</label>
 									</control>
@@ -950,10 +950,10 @@
                             <height>25</height>
                             <aligny>center</aligny>
                           <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                             <label>$ADDON[script.extendedinfo 32152]</label>
                         </control>
                         <control type="image">
@@ -1008,7 +1008,7 @@
 										<left>10</left>
 										<width>322</width>
 										<height>60</height>
-										<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+										<textcolor>ViewDetailsListItemTextColor</textcolor>
 										<font>Reg20</font>
 										<label>$INFO[ListItem.Label]</label>
 									</control>
@@ -1021,7 +1021,7 @@
                                         <posy>0</posy>
                                         <width>340</width>
                                         <height>200</height>
-                                        <texture border="5" colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">diffuse/panel.png</texture>
+                                        <texture border="5" colordiffuse="ButtonFocusColor">diffuse/panel.png</texture>
                                     </control>
                                     <control type="image">
                                         <posy>5</posy>
@@ -1043,7 +1043,7 @@
 										<left>10</left>
 										<width>322</width>
 										<height>60</height>
-										<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+										<textcolor>ViewDetailsListItemTextColor</textcolor>
 										<font>Reg20</font>
 										<label>$INFO[ListItem.Label]</label>
 									</control>
@@ -1062,10 +1062,10 @@
                             <height>25</height>
                             <aligny>center</aligny>
                           <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                             <label>$ADDON[script.extendedinfo 32168]</label>
                         </control>
                         <control type="image">
@@ -1082,7 +1082,7 @@
                             <width>1795</width>
                             <height>120</height>
                             <font>Reg20</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
                             <label>$INFO[Container(650).ListItem.Property(meaning)]</label>
                         </control>
                         <control type="panel" id="650">
@@ -1129,7 +1129,7 @@
 										<left>10</left>
 										<width>322</width>
 										<height>60</height>
-										<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+										<textcolor>ViewDetailsListItemTextColor</textcolor>
 										<font>Reg20</font>
 										<label>$INFO[ListItem.Property(release_date)][CR]$INFO[ListItem.Property(certification)]</label>
 									</control>
@@ -1142,7 +1142,7 @@
                                         <posy>0</posy>
                                         <width>340</width>
                                         <height>200</height>
-                                        <texture border="5" colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">diffuse/panel.png</texture>
+                                        <texture border="5" colordiffuse="ButtonFocusColor">diffuse/panel.png</texture>
                                     </control>
                                     <control type="image">
                                         <posy>5</posy>
@@ -1164,7 +1164,7 @@
 										<left>10</left>
 										<width>322</width>
 										<height>60</height>
-										<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+										<textcolor>ViewDetailsListItemTextColor</textcolor>
 										<font>Reg20</font>
 										<label>$INFO[ListItem.Property(release_date)][CR]$INFO[ListItem.Property(certification)]</label>
 									</control>
@@ -1184,10 +1184,10 @@
                             <height>25</height>
                             <aligny>center</aligny>
                           <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                             <label>Genres</label>
                         </control>
                         <control type="panel" id="850">
@@ -1225,7 +1225,7 @@
 										<height>90</height>
 										<align>center</align>
 										<aligny>center</aligny>
-										<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+										<textcolor>ViewDetailsListItemTextColor</textcolor>
 										<font>Reg28</font>
 										<label>$INFO[ListItem.Label]</label>
 									</control>
@@ -1238,7 +1238,7 @@
                                         <posy>0</posy>
                                         <width>340</width>
                                         <height>100</height>
-                                        <texture border="5" colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">diffuse/panel.png</texture>
+                                        <texture border="5" colordiffuse="ButtonFocusColor">diffuse/panel.png</texture>
                                     </control>
                                     <control type="image">
                                         <posy>5</posy>
@@ -1253,7 +1253,7 @@
 										<height>90</height>
 										<align>center</align>
 										<aligny>center</aligny>
-										<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+										<textcolor>ViewDetailsListItemTextColor</textcolor>
 										<font>Reg28</font>
 										<label>$INFO[ListItem.Label]</label>
 									</control>
@@ -1272,7 +1272,7 @@
                             <height>25</height>
                             <aligny>center</aligny>
                             <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
                             <label>$ADDON[script.extendedinfo 32167]</label>
                         </control>
 						<control type="image">
@@ -1317,7 +1317,7 @@
 										<height>260</height>
 										<align>justify</align>
 										
-										<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+										<textcolor>ViewDetailsListItemTextColor</textcolor>
 										<font>Reg26</font>
 										<label>$INFO[ListItem.Property(Author),[B],[/B][CR]]$INFO[ListItem.Property(Content)]</label>
 									</control>
@@ -1327,7 +1327,7 @@
                                 <control type="group">
                                     <control type="image">
 										<width>880</width>
-                                        <texture border="5" colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">diffuse/panel.png</texture>
+                                        <texture border="5" colordiffuse="ButtonFocusColor">diffuse/panel.png</texture>
                                     </control>
                                     <control type="image">
 										<width>880</width>
@@ -1341,7 +1341,7 @@
 										<height>260</height>
 										<align>justify</align>
 										
-										<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+										<textcolor>ViewDetailsListItemTextColor</textcolor>
 										<font>Reg26</font>
 										<label>$INFO[ListItem.Property(Author),[B],[/B][CR]]$INFO[ListItem.Property(Content)]</label>
 									</control>
@@ -1360,7 +1360,7 @@
                             <height>25</height>
                             <aligny>center</aligny>
                           <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
                             <label>Keywords</label>
                         </control>
 						<control type="image">
@@ -1408,7 +1408,7 @@
 										<height>90</height>
 										<align>center</align>
 										<aligny>center</aligny>
-										<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+										<textcolor>ViewDetailsListItemTextColor</textcolor>
 										<font>Reg28</font>
 										<label>$INFO[ListItem.Label]</label>
 									</control>
@@ -1421,7 +1421,7 @@
                                         <posy>0</posy>
                                         <width>340</width>
                                         <height>100</height>
-                                        <texture border="5" colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">diffuse/panel.png</texture>
+                                        <texture border="5" colordiffuse="ButtonFocusColor">diffuse/panel.png</texture>
                                     </control>
                                     <control type="image">
                                         <posy>5</posy>
@@ -1436,7 +1436,7 @@
 										<height>90</height>
 										<align>center</align>
 										<aligny>center</aligny>
-										<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+										<textcolor>ViewDetailsListItemTextColor</textcolor>
 										<font>Reg28</font>
 										<label>$INFO[ListItem.Label]</label>
 									</control>
@@ -1454,10 +1454,10 @@
                             <height>25</height>
                             <aligny>center</aligny>
                           <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                             <label>$ADDON[script.extendedinfo 32119]</label>
                         </control>
 						<control type="image">
@@ -1530,10 +1530,10 @@
                             <height>25</height>
                             <aligny>center</aligny>
                           <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                             <label>$LOCALIZE[20445]</label>
                         </control>
 						<control type="image">
@@ -1601,10 +1601,10 @@
                             <height>25</height>
                             <aligny>center</aligny>
                           <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                             <label>Related TMDB Lists$INFO[Container(450).NumItems, (,)]</label>
                         </control>
                         <control type="image">
@@ -1658,7 +1658,7 @@
 										<left>10</left>
 										<width>156</width>
 										<height>75</height>
-										<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+										<textcolor>ViewDetailsListItemTextColor</textcolor>
 										<font>Reg20</font>
 										<label>$INFO[ListItem.Label]$INFO[ListItem.Property(Description),[CR] ]</label>
 									</control>
@@ -1694,7 +1694,7 @@
 										<left>10</left>
 										<width>156</width>
 										<height>75</height>
-										<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+										<textcolor>ViewDetailsListItemTextColor</textcolor>
 										<font>Reg20</font>
 										<label>$INFO[ListItem.Label]$INFO[ListItem.Property(Description),[CR] ]</label>
 									</control>
@@ -1713,10 +1713,10 @@
                             <height>25</height>
                             <aligny>center</aligny>
                           <font>Bold32</font>
-                            <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-							<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                            <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                            <textcolor>ViewDetailsTextColor</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
+							<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                             <label>Episode Index</label>
                         </control>
 						 <control type="image">
@@ -1772,7 +1772,7 @@
 										<left>15</left>
 										<width>305</width>
 										<height>60</height>
-										<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+										<textcolor>ViewDetailsListItemTextColor</textcolor>
 										<font>Reg20</font>
 										<label>$INFO[ListItem.Episode,[B],[/B]]$INFO[ListItem.Label,[B]:[/B] ]</label>
 									</control>
@@ -1808,7 +1808,7 @@
 										<left>15</left>
 										<width>305</width>
 										<height>60</height>
-										<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+										<textcolor>ViewDetailsListItemTextColor</textcolor>
 										<font>Reg20</font>
 										<label>$INFO[ListItem.Episode,[B],[/B]]$INFO[ListItem.Label,[B]:[/B] ]</label>
 									</control>

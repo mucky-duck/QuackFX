@@ -11,7 +11,7 @@
             <width>100%</width>
             <height>380</height>
 			<control type="image">
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 				<texture border="5">diffuse/panel.png</texture>
 			</control>
 			<control type="group">
@@ -28,7 +28,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Bold26</font>
-					<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+					<textcolor>HeaderTextColor</textcolor>
 				</control>
 				<control type="label">
 					<description>Backend</description>
@@ -51,7 +51,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 				</control>
 				<control type="label">
@@ -75,7 +75,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 				</control>
 				<control type="label">
@@ -99,7 +99,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 				</control>
 				<control type="label">
@@ -131,7 +131,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 				</control>
 				<control type="label">
 					<description>SNR</description>
@@ -163,7 +163,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 				</control>
 				<control type="label">
 					<description>BER</description>
@@ -186,7 +186,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 				</control>
 				<control type="label">
@@ -210,7 +210,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 				</control>
 				<control type="label">
@@ -234,7 +234,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 				</control>
 				<control type="label">
@@ -258,7 +258,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 				</control>
 				<control type="label">
@@ -282,7 +282,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 				</control>
 				<control type="label">
@@ -306,7 +306,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 				</control>
 			</control>
@@ -324,7 +324,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Bold26</font>
-					<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+					<textcolor>HeaderTextColor</textcolor>
 				</control>
 				<control type="label">
 					<description>Hardware decoding</description>
@@ -347,7 +347,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 					<visible>Player.Process(videohwdecoder)</visible>
 				</control>
@@ -361,7 +361,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 					<visible>!Player.Process(videohwdecoder)</visible>
 				</control>
@@ -386,7 +386,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 				</control>
 				<control type="label">
@@ -410,7 +410,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 				</control>
 				<control type="label">
@@ -434,7 +434,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 				</control>
 				<control type="label">
@@ -447,7 +447,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Bold26</font>
-					<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+					<textcolor>HeaderTextColor</textcolor>
 				</control>
 				<control type="label">
 					<description>Decoder</description>
@@ -470,7 +470,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 				</control>
 				<control type="label">
@@ -494,7 +494,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 				</control>
 				<control type="label">
@@ -507,7 +507,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Bold26</font>
-					<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+					<textcolor>HeaderTextColor</textcolor>
 				</control>
 				<control type="label">
 					<description>CPU</description>
@@ -538,7 +538,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<scroll>yes</scroll>
 				</control>
 				<control type="label">
@@ -570,7 +570,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 				</control>
 				<control type="label">
 					<description>CacheLevel</description>
@@ -601,7 +601,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Reg26</font>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 				</control>
 			</control>
 			<control type="grouplist" id="5550">

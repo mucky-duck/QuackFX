@@ -51,7 +51,7 @@
                     <align>left</align>
                     <textoffsetx>50</textoffsetx>
                     <font>Bold40</font>
-                    <textcolor>$INFO[Skin.String(GeneralHighlightTextColor)]</textcolor>
+                    <textcolor>GeneralHighlightTextColor</textcolor>
                     <label>$LOCALIZE[33061]:</label>
 					<visible>skin.hastheme(classic)</visible>
                 </control>
@@ -72,7 +72,7 @@
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
 					<include>SideBladeMenuButton</include>
-					<alttexturefocus border="5" colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">colors/color_white.png</alttexturefocus>
+					<alttexturefocus border="5" colordiffuse="ButtonFocusColor">colors/color_white.png</alttexturefocus>
 					<alttexturenofocus/>
 					<label>585</label>
 					<altlabel>584</altlabel>

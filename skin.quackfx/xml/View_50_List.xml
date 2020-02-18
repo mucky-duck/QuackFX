@@ -69,8 +69,8 @@
                     <width>550</width>
                     <height>40</height>
                     <font>Reg32</font>
-                    <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                    <shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
                     <label>[B][UPPERCASE]$INFO[ListItem.Title][/UPPERCASE][/B]</label>
                 </control>
                 <control type="label">
@@ -78,8 +78,8 @@
                     <posy>0</posy>
                     <width>550</width>
                     <height>40</height>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
+                    <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                     <label>[B]$VAR[value_ground1_label][/B] $VAR[value_ground1_value]</label>
                     <visible>!String.IsEmpty(Control.GetLabel(5301))</visible>
                 </control>
@@ -88,8 +88,8 @@
                     <posy>0</posy>
                     <width>550</width>
                     <height>40</height>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
+                    <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                     <label>[B]$VAR[value_ground2_label][/B] $VAR[value_ground2_value]</label>
                     <visible>!String.IsEmpty(Control.GetLabel(5302))</visible>
                 </control>
@@ -98,8 +98,8 @@
                     <posy>0</posy>
                     <width>550</width>
                     <height>40</height>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
+                    <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                     <label>[B]$VAR[value_ground3_label][/B] $VAR[value_ground3_value]</label>
                     <visible>!String.IsEmpty(Control.GetLabel(5303))</visible>
                 </control>
@@ -108,8 +108,8 @@
                     <posy>0</posy>
                     <width>550</width>
                     <height>40</height>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
+                    <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                     <label>[B]$VAR[value_ground4_label][/B] $VAR[value_ground4_value]</label>
                     <visible>!String.IsEmpty(Control.GetLabel(5304))</visible>
                 </control>
@@ -129,8 +129,8 @@
                     <posy>0</posy>
                     <width>500</width>
                     <height>40</height>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
+                    <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                     <label>[B]$VAR[value_ground1_label][/B] $VAR[value_ground1_value]</label>
                     <visible>!String.IsEmpty(Control.GetLabel(5301))</visible>
                 </control>
@@ -139,8 +139,8 @@
                     <posy>0</posy>
                     <width>500</width>
                     <height>40</height>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
+                    <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                     <label>[B]$VAR[value_ground2_label][/B] $VAR[value_ground2_value]</label>
                     <visible>!String.IsEmpty(Control.GetLabel(5302))</visible>
                 </control>
@@ -149,8 +149,8 @@
                     <posy>0</posy>
                     <width>500</width>
                     <height>40</height>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
+                    <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                     <label>[B]$VAR[value_ground3_label][/B] $VAR[value_ground3_value]</label>
                     <visible>!String.IsEmpty(Control.GetLabel(5303))</visible>
                 </control>
@@ -159,8 +159,8 @@
                     <posy>0</posy>
                     <width>500</width>
                     <height>40</height>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
+                    <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                     <label>[B]$VAR[value_ground4_label][/B] $VAR[value_ground4_value]</label>
                     <visible>!String.IsEmpty(Control.GetLabel(5304))</visible>
                 </control>
@@ -179,9 +179,9 @@
                     <width>870</width>
                     <font>Reg36</font>
                     <height>50</height>
-                    <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
-                    <disabledcolor fallback="white">$INFO[Skin.String(ViewDetailsHighlightTextColor)]</disabledcolor>
+                    <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                    <shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
+                    <disabledcolor fallback="white">ViewDetailsHighlightTextColor</disabledcolor>
                     <label>$VAR[ListTitlePVR]</label>
                     <include>ListDetailsBtn</include>
                 </control>
@@ -238,8 +238,8 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <label>$VAR[Plots]</label>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
+                    <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                     <align>justify</align>
                     <font>Light28</font>
                 </control>
@@ -255,8 +255,8 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <label>$VAR[Plots]</label>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
+                    <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                     <align>justify</align>
                     <font>Light28</font>
                 </control>
@@ -269,8 +269,8 @@
                 <width>560</width>
                 <height>400</height>
                 <font>Light28</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
+                <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                 <label>$VAR[Plots]</label>
             </control>
             <!--Control Tags-->
@@ -334,7 +334,7 @@
                         <posx>630</posx>
                         <width>1100</width>
                         <font>Reg28</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextColor</textcolor>
                         <label>$VAR[ListTitle]</label>
                     </control>
                     <control type="group">
@@ -370,7 +370,7 @@
                         <height>55</height>
                         <font>Reg36</font>
 						<scroll>true</scroll>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
                         <label>$VAR[ListTitle]</label>
                     </control>
                     <control type="group">
@@ -386,7 +386,7 @@
                         <height>30</height>
                         <font>Light30</font>
 						<scroll>true</scroll>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
                         <label>$VAR[ListDetails]</label>
                         <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     </control>
@@ -409,7 +409,7 @@
                         <posx>1150</posx>
                         <width>600</width>
                         <font>Reg28</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextColor</textcolor>
                         <label>$VAR[ListTitle]</label>
                     </control>
 					<control type="group">
@@ -458,7 +458,7 @@
                         <height>55</height>
                         <font>Reg36</font>
 						<scroll>true</scroll>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
                         <label>$VAR[ListTitle]</label>
                     </control>
                     <control type="label">
@@ -469,7 +469,7 @@
                         <height>30</height>
                         <font>Light28</font>
 						<scroll>true</scroll>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
                         <label>$VAR[ListDetails]</label>
                         <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     </control>
@@ -526,7 +526,7 @@
                         <posx>990</posx>
                         <width>650</width>
                         <font>Reg28</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextColor</textcolor>
                         <label>$VAR[ListTitle]</label>
                     </control>
                                  <control type="group">
@@ -562,7 +562,7 @@
                         <height>55</height>
                         <font>Reg36</font>
 						<scroll>true</scroll>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
                         <label>$VAR[ListTitle]</label>
                     </control>
                     <control type="label">
@@ -573,7 +573,7 @@
                         <height>30</height>
                         <font>Light28</font>
 						<scroll>true</scroll>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
                         <label>$VAR[ListDetails]</label>
                         <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     </control>
@@ -602,7 +602,7 @@
                         <width>100</width>
                         <height>50</height>
                         <font>Reg29</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextColor</textcolor>
                         <align>left</align>
                         <info>ListItem.ChannelNumberLabel</info>
                     </control>
@@ -644,7 +644,7 @@
                         <width>545</width>
                         <height>55</height>
                         <font>Reg29</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextColor</textcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -676,7 +676,7 @@
                         <width>80</width>
                         <height>80</height>
                         <font>Reg29</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
                         <info>ListItem.ChannelNumberLabel</info>
                     </control>
                     <control type="image">
@@ -717,7 +717,7 @@
                         <width>545</width>
                         <height>55</height>
                         <font>Reg29</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -727,7 +727,7 @@
                         <width>545</width>
                         <height>33</height>
                         <font>Light28</font>
-                        <textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+                        <textcolor>ViewDetailsListItemTextFocusColor</textcolor>
                         <label>[B]$INFO[ListItem.Title][/B]</label>
                     </control>
                     <control type="image">

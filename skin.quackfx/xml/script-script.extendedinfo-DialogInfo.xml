@@ -19,9 +19,9 @@
 				<height>100</height>
 				<font>Bold45</font>
 				<align>left</align>
-				<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+				<textcolor>HeaderTextColor</textcolor>
 				<label>$INFO[Window.Property(Title)]</label>
-				<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+				<shadowcolor>HeaderTextShadowColor</shadowcolor>
 			 </control>
 			 <control type="label">
                 <!-- actor name -->
@@ -32,9 +32,9 @@
 				<height>100</height>
 				<font>Bold45</font>
 				<align>left</align>
-				<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+				<textcolor>HeaderTextColor</textcolor>
 				<label>$INFO[Window.Property(label)]</label>
-				<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+				<shadowcolor>HeaderTextShadowColor</shadowcolor>
 				<visible>String.IsEmpty(Window.Property(Title))</visible>
 			 </control>
 			 <control type="label">
@@ -45,8 +45,8 @@
 				<height>50</height>
 				<label>$INFO[Window.Property(AlsoKnownAs)]</label>
 				<font>Reg30</font>
-				<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-				<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+				<textcolor>HeaderTextColor</textcolor>
+				<shadowcolor>HeaderTextShadowColor</shadowcolor>
 				<include>animation_fade_visible_hidden</include>
 			</control>
             <control type="label">
@@ -58,9 +58,9 @@
 				<height>100</height>
 				<font>Bold45</font>
 				<align>right</align>
-				<textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+				<textcolor>HeaderTextColor</textcolor>
 				<label>$INFO[Window.Property(subtitle)]</label>
-				<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+				<shadowcolor>HeaderTextShadowColor</shadowcolor>
                 <visible>!String.IsEmpty(Window.Property(AdditionalInfo))</visible>
 			</control>
 				
@@ -87,7 +87,7 @@
 						<width>100%</width>
 						<height>110</height>
 						<texture border="5">diffuse/panel.png</texture>
-						<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+						<colordiffuse>GeneralPanelsColor</colordiffuse>
 					</control>
 					
 					<control type="scrollbar" id="60">
@@ -298,8 +298,8 @@
 								<width>1200</width>
 								<height>500</height>
 								<label fallback="19055">$INFO[Window.Property(Biography)]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 								<align>justify</align>
 								<font>Reg26</font>
 							</control>
@@ -324,7 +324,7 @@
 									<posy>3</posy>
 									<width>49</width>
 									<height>49</height>
-                                    <colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+                                    <colordiffuse>ViewDetailsTextColor</colordiffuse>
 									<texture>dialogs/videoinfo/premiered-icon.png</texture>
 								</control>
 								<control type="label">
@@ -334,8 +334,8 @@
 									<font>Reg26</font>
 									<align>left</align>
 									<label>$INFO[Window.Property(Birthday)] $INFO[Window.Property(Age),($ADDON[script.extendedinfo 32020]: ,)]</label>
-									<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-									<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+									<textcolor>ViewDetailsTextColor</textcolor>
+									<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 									<scroll>false</scroll>
                                     <visible>String.IsEmpty(Window.Property(Deathday))</visible>
 								</control>
@@ -346,8 +346,8 @@
 									<font>Reg26</font>
 									<align>left</align>
 									<label fallback="19055">$INFO[Window.Property(Birthday)]$INFO[Window.Property(Deathday), - ]</label>
-									<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-									<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+									<textcolor>ViewDetailsTextColor</textcolor>
+									<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 									<scroll>false</scroll>
                                     <visible>!String.IsEmpty(Window.Property(Deathday))</visible>
 								</control>
@@ -356,7 +356,7 @@
 									<posy>3</posy>
 									<width>49</width>
 									<height>49</height>
-                                    <colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+                                    <colordiffuse>ViewDetailsTextColor</colordiffuse>
 									<texture>dialogs/videoinfo/location.png</texture>
                                     <bordersize>8</bordersize>
 								</control>
@@ -367,8 +367,8 @@
 									<font>Reg26</font>
 									<align>left</align>
 									<label fallback="19055">$INFO[Window.Property(PlaceOfBirth)]</label>
-									<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-									<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+									<textcolor>ViewDetailsTextColor</textcolor>
+									<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 									<scroll>false</scroll>
 								</control>
 							</control>
@@ -381,7 +381,7 @@
 									<posy>5</posy>
 									<width>49</width>
 									<height>49</height>
-                                    <colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+                                    <colordiffuse>ViewDetailsTextColor</colordiffuse>
 									<texture>dialogs/videoinfo/tvstudio-icon.png</texture>
 								</control>
 								<control type="label">
@@ -391,8 +391,8 @@
 									<font>Reg26</font>
 									<align>left</align>
 									<label fallback="19055">$INFO[Container(150).NumItems] $INFO[Window.Property(DBMovies),(, $ADDON[script.extendedinfo 32021])]</label>
-									<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-									<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+									<textcolor>ViewDetailsTextColor</textcolor>
+									<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 									<scroll>false</scroll>
 								</control>
 								<control type="image">
@@ -400,7 +400,7 @@
 									<posy>2</posy>
 									<width>49</width>
 									<height>49</height>
-                                    <colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+                                    <colordiffuse>ViewDetailsTextColor</colordiffuse>
 									<texture>dialogs/videoinfo/home.png</texture>
                                     <bordersize>8</bordersize>
 								</control>
@@ -411,8 +411,8 @@
 									<font>Reg26</font>
 									<align>left</align>
 									<label fallback="19055">$INFO[Window.Property(Homepage)]</label>
-									<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-									<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+									<textcolor>ViewDetailsTextColor</textcolor>
+									<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 									<scroll>false</scroll>
 								</control>
 							</control>

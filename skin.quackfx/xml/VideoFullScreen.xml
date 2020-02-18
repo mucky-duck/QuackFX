@@ -14,7 +14,7 @@
 			<width>100%</width>
 			<height>275</height>
 			<texture border="5">diffuse/panel.png</texture>
-			<colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+			<colordiffuse>OSDPanelColor</colordiffuse>
 		</control>
 
 	<!-- Aspect Ratio / Zoom Info Overlay -->
@@ -74,7 +74,7 @@
 				<width>500</width>
 				<height>110</height>
 				<texture border="5">diffuse/panel.png</texture>
-				<colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+				<colordiffuse>OSDPanelColor</colordiffuse>
 			</control>
 			<control type="label" id="1">
 				<left>75</left>
@@ -83,8 +83,8 @@
 				<height>50</height>
 				<label>$INFO[Player.SeekNumeric(hh:mm:ss)]</label>
 				<font>Bold30</font>
-                <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(OSDPrimaryTextShadowColor)]</shadowcolor>
+                <textcolor>OSDPrimaryTextColor</textcolor>
+                <shadowcolor>OSDPrimaryTextShadowColor</shadowcolor>
 				<aligny>center</aligny>
 				<align>center</align>
 				<visible>!String.IsEmpty(Player.SeekNumeric)</visible>
@@ -128,7 +128,7 @@
 				<width>150</width>
 				<height>150</height>
 				<animation effect="fade" end="35" time="0" condition="true">Conditional</animation>
-				<colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+				<colordiffuse>OSDPanelColor</colordiffuse>
 				<texture>dialogs/buffer-progress/bottom-panel.png</texture>
 			</control>
 			<control type="image" id="23">
@@ -144,7 +144,7 @@
 				<top>710</top>
 				<width>150</width>
 				<height>150</height>
-				<colordiffuse>$INFO[Skin.String(OSDBufferingSpinnerColor)]</colordiffuse>
+				<colordiffuse>OSDBufferingSpinnerColor</colordiffuse>
 				<texture>dialogs/buffer-progress/p$INFO[Player.CacheLevel].png</texture>
 			</control>
 			<control type="label" id="25">
@@ -157,8 +157,8 @@
 				<aligny>center</aligny>
 				<align>center</align>
 				<font>Bold30</font>
-				<textcolor>$INFO[Skin.String(OSDSecondaryTextColor)]</textcolor>
-				<shadowcolor>$INFO[Skin.String(OSDSecondaryTextShadowColor)]</shadowcolor>
+				<textcolor>OSDSecondaryTextColor</textcolor>
+				<shadowcolor>OSDSecondaryTextShadowColor</shadowcolor>
 			</control>
 			<control type="label" id="26">
 				<description>buffering label</description>

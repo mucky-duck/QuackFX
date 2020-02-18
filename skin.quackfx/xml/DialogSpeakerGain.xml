@@ -12,12 +12,12 @@
             <!-- background panel -->
 			<control type="image">
 				<texture border="15">diffuse/bgpanel.png</texture>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 			</control>
 			<control type="image">
 				<texture border="15">diffuse/bgpanel.png</texture>
 				<bordersize>10</bordersize>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 			</control>
             <control type="image">
                 <posx>48</posx>

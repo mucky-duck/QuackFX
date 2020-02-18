@@ -50,7 +50,7 @@
                     <align>left</align>
                     <textoffsetx>50</textoffsetx>
                     <font>Bold40</font>
-                    <textcolor>$INFO[Skin.String(GeneralHighlightTextColor)]</textcolor>
+                    <textcolor>GeneralHighlightTextColor</textcolor>
                     <label>$LOCALIZE[33061]:</label>
 					<visible>skin.hastheme(classic)</visible>
                 </control>
@@ -85,7 +85,7 @@
                     <focusedcolor/>
                     <disabledcolor/>
                     <pulseonselect>false</pulseonselect>
-                    <texturefocus colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">colors/color_white.png</texturefocus>
+                    <texturefocus colordiffuse="ButtonFocusColor">colors/color_white.png</texturefocus>
                     <texturenofocus/>
 					<textoffsety>50</textoffsety>
                 </control>
@@ -151,7 +151,7 @@
                 <posx>21</posx>
                 <posy>315</posy>
                 <width>400</width>
-                <textcolor>$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
+                <textcolor>ButtonFocusTextColor</textcolor>
 				<font>Reg26</font>
                 <label>$INFO[Control.GetLabel(3)]</label>
                 <textoffsetx>40</textoffsetx>

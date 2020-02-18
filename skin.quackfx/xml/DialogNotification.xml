@@ -18,7 +18,7 @@
 				<width>100%</width>
 				<height>130</height>
 				<texture border="5">diffuse/panel.png</texture>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 			</control>
 
             <control type="group">
@@ -40,7 +40,7 @@
                     <width>1500</width>
                     <height>50</height>
                     <font>Bold38</font>
-					<textcolor>$INFO[Skin.String(GeneralHighlightTextColor)]</textcolor>
+					<textcolor>GeneralHighlightTextColor</textcolor>
                     <scroll>false</scroll>
                 </control>
                 <control type="label" id="402">
@@ -50,7 +50,7 @@
                     <width>1500</width>
                     <height>50</height>
                     <font>Reg30</font>
-                    <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                    <textcolor>GeneralTextColor</textcolor>
 					<shadowcolor>black</shadowcolor>
                     <scroll>false</scroll>
                 </control>

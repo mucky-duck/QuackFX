@@ -33,7 +33,7 @@
 				<posy>985</posy>
 				<width>225</width>
 				<height>65</height>
-				<texture colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">netflix/slimframeFO.png</texture>
+				<texture colordiffuse="ViewDetailsBorderFocusColor">netflix/slimframeFO.png</texture>
 				<animation effect="fade" time="200">WindowOpen</animation>
 				<animation effect="fade" time="400">WindowClose</animation>
 			</control>
@@ -43,7 +43,7 @@
 				<posy>985</posy>
 				<width>225</width>
 				<height>65</height>
-				<texture colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">netflix/slimframeNF.png</texture>
+				<texture colordiffuse="ViewDetailsBorderFocusColor">netflix/slimframeNF.png</texture>
 				<animation effect="fade" time="300">WindowOpen</animation>
 				<animation effect="fade" time="400">WindowClose</animation>
 			</control>
@@ -55,7 +55,7 @@
 				<posy>985</posy>
 				<width>225</width>
 				<height>65</height>
-				<texture colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">netflix/slimframeFO.png</texture>
+				<texture colordiffuse="ViewDetailsBorderFocusColor">netflix/slimframeFO.png</texture>
 				<animation effect="fade" time="200">WindowOpen</animation>
 				<animation effect="fade" time="400">WindowClose</animation>
 			</control>
@@ -65,7 +65,7 @@
 				<posy>985</posy>
 				<width>225</width>
 				<height>65</height>
-				<texture colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">netflix/slimframeNF.png</texture>
+				<texture colordiffuse="ViewDetailsBorderFocusColor">netflix/slimframeNF.png</texture>
 				<animation effect="fade" time="300">WindowOpen</animation>
 				<animation effect="fade" time="400">WindowClose</animation>
 			</control>

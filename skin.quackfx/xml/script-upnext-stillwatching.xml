@@ -12,7 +12,7 @@
 			<width>100%</width>
 			<height>100%</height>
 			<texture border="5">overlay/Grey.png</texture>
-			<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+			<colordiffuse>GeneralPanelsColor</colordiffuse>
 		</control>
 		<!-- Still watching dialog -->
 		<control type="group">
@@ -47,9 +47,9 @@
 						<label>[CAPITALIZE]$LOCALIZE[31535][/CAPITALIZE]</label>
 						<aligny>center</aligny>
 						<font>Reg34</font>
-						<textcolor>$INFO[Skin.String(NetflixPrimaryTextColor)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
-						<texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+						<textcolor>NetflixPrimaryTextColor</textcolor>
+						<focusedcolor>ViewDetailsTextColor</focusedcolor>
+						<texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
 						<texturenofocus/>
 					</control>
 					<!-- Cancel -->
@@ -61,9 +61,9 @@
 						<onleft>3012</onleft>
 						<label>222</label>
 						<font>Reg34</font>
-						<textcolor>$INFO[Skin.String(NetflixPrimaryTextColor)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</focusedcolor>
-						<texturefocus colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">border_netflix.png</texturefocus>
+						<textcolor>NetflixPrimaryTextColor</textcolor>
+						<focusedcolor>ViewDetailsTextColor</focusedcolor>
+						<texturefocus colordiffuse="ViewDetailsBorderFocusColor">border_netflix.png</texturefocus>
 						<texturenofocus/>
 					</control>
 				</control>

@@ -19,7 +19,7 @@
                 <width>555</width>
                 <height>100%</height>
                 <texture border="5">diffuse/panel.png</texture>
-                <colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+                <colordiffuse>OSDPanelColor</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -28,7 +28,7 @@
                 <width>550</width>
                 <height>100%</height>
                 <texture border="5">diffuse/panel.png</texture>
-                <colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+                <colordiffuse>OSDPanelColor</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
 
@@ -40,7 +40,7 @@
                 <height>100</height>
                 <font>Bold45</font>
                 <align>left</align>
-                <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
+                <textcolor>OSDPrimaryTextColor</textcolor>
                 <label>$INFO[VideoPlayer.ChannelGroup]</label>
                 <visible>!Window.IsActive(notification) + !Window.IsActive(extendedprogressdialog)</visible>
                 <visible>!pvr.IsPlayingRadio</visible>
@@ -52,7 +52,7 @@
                 <height>100</height>
                 <font>Bold45</font>
                 <align>left</align>
-                <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
+                <textcolor>OSDPrimaryTextColor</textcolor>
                 <label>[UPPERCASE]$LOCALIZE[19024][/UPPERCASE]</label>
                 <visible>!Window.IsActive(notification) + !Window.IsActive(extendedprogressdialog)</visible>
                 <visible>pvr.IsPlayingRadio</visible>
@@ -65,7 +65,7 @@
                 <width>600</width>
                 <height>50</height>
                 <font>Reg28</font>
-                <textcolor>$INFO[Skin.String(OSDSecondaryTextColor)]</textcolor>
+                <textcolor>OSDSecondaryTextColor</textcolor>
                 <label>$INFO[System.Date(DDD)], $INFO[System.Date(d)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)] | $INFO[System.Time]</label>
             </control>
             
@@ -112,8 +112,8 @@
                         <width>100</width>
                         <height>100</height>
                         <font>Reg40</font>
-                        <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                        <selectedcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</selectedcolor>
+                        <textcolor>OSDPrimaryTextColor</textcolor>
+                        <selectedcolor>OSDPrimaryTextColor</selectedcolor>
                         <align>center</align>
                         <info>ListItem.ChannelNumberLabel</info>
                         <visible>String.IsEmpty(ListItem.Icon)</visible>
@@ -154,8 +154,8 @@
                         <width>450</width>
                         <height>25</height>
                         <font>Reg28</font>
-                        <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                        <selectedcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</selectedcolor>
+                        <textcolor>OSDPrimaryTextColor</textcolor>
+                        <selectedcolor>OSDPrimaryTextColor</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -167,8 +167,8 @@
                         <width>630</width>
                         <height>20</height>
                         <font>Reg25</font>
-                        <textcolor>$INFO[Skin.String(OSDSecondaryTextColor)]</textcolor>
-                        <selectedcolor>$INFO[Skin.String(OSDSecondaryTextColor)]</selectedcolor>
+                        <textcolor>OSDSecondaryTextColor</textcolor>
+                        <selectedcolor>OSDSecondaryTextColor</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Title]</label>
@@ -180,8 +180,8 @@
                         <width>110</width>
                         <height>20</height>
                         <font>Reg18</font>
-                        <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                        <selectedcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</selectedcolor>
+                        <textcolor>OSDPrimaryTextColor</textcolor>
+                        <selectedcolor>OSDPrimaryTextColor</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.StartTime]</label>
@@ -193,9 +193,9 @@
                         <top>80</top>
                         <width>200</width>
                         <height>10</height>
-                        <texturebg border="5" colordiffuse="$VAR[OSDProgressBarBackgroundColor]">diffuse/panel_trans.png</texturebg>
+                        <texturebg border="5" colordiffuse="OSDProgressBarBackgroundColor">diffuse/panel_trans.png</texturebg>
                         <lefttexture/>
-                        <midtexture border="5" colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">diffuse/panel.png</midtexture>
+                        <midtexture border="5" colordiffuse="OSDProgressBarColor">diffuse/panel.png</midtexture>
                         <righttexture/>
                         <overlaytexture/>
                         <info>ListItem.Progress</info>
@@ -208,8 +208,8 @@
                         <width>130</width>
                         <height>20</height>
                         <font>Reg18</font>
-                        <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                        <selectedcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</selectedcolor>
+                        <textcolor>OSDPrimaryTextColor</textcolor>
+                        <selectedcolor>OSDPrimaryTextColor</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.EndTime]</label>
@@ -222,8 +222,8 @@
                         <width>630</width>
                         <height>20</height>
                         <font>Reg18</font>
-                        <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                        <selectedcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</selectedcolor>
+                        <textcolor>OSDPrimaryTextColor</textcolor>
+                        <selectedcolor>OSDPrimaryTextColor</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$LOCALIZE[19031]: $INFO[ListItem.NextTitle]</label>
@@ -247,7 +247,7 @@
                         <width>970</width>
                         <height>125</height>
                         <texture border="5">diffuse/panel.png</texture>
-                        <colordiffuse>$INFO[Skin.String(ButtonFocusColor)]</colordiffuse>
+                        <colordiffuse>ButtonFocusColor</colordiffuse>
                     </control>
                     <control type="label">
                         <!--Channel Number-->
@@ -256,8 +256,8 @@
                         <width>100</width>
                         <height>100</height>
                         <font>Reg40</font>
-                        <textcolor>$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
-                        <selectedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</selectedcolor>
+                        <textcolor>ButtonFocusTextColor</textcolor>
+                        <selectedcolor>ButtonFocusTextColor</selectedcolor>
                         <align>center</align>
                         <info>ListItem.ChannelNumberLabel</info>
                         <visible>String.IsEmpty(ListItem.Icon)</visible>
@@ -298,7 +298,7 @@
                         <width>450</width>
                         <height>25</height>
                         <font>Reg28</font>
-                        <textcolor>$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
+                        <textcolor>ButtonFocusTextColor</textcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -310,7 +310,7 @@
                         <width>630</width>
                         <height>20</height>
                         <font>Reg25</font>
-                        <textcolor>$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
+                        <textcolor>ButtonFocusTextColor</textcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <scroll>true</scroll>
@@ -323,7 +323,7 @@
                         <width>110</width>
                         <height>20</height>
                         <font>Reg18</font>
-                        <textcolor>$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
+                        <textcolor>ButtonFocusTextColor</textcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.StartTime]</label>
@@ -337,9 +337,9 @@
                         <height>10</height>
                         <info>ListItem.Progress</info>
                         <visible>ListItem.HasEpg</visible>
-                        <texturebg border="5" colordiffuse="$VAR[OSDProgressBarBackgroundColor]">diffuse/panel_trans.png</texturebg>
+                        <texturebg border="5" colordiffuse="OSDProgressBarBackgroundColor">diffuse/panel_trans.png</texturebg>
                         <lefttexture/>
-                        <midtexture border="5" colordiffuse="$INFO[Skin.String(ButtonFocusTextColor)]">diffuse/panel.png</midtexture>
+                        <midtexture border="5" colordiffuse="ButtonFocusTextColor">diffuse/panel.png</midtexture>
                         <righttexture/>
                         <overlaytexture/>
                     </control>
@@ -350,7 +350,7 @@
                         <width>110</width>
                         <height>20</height>
                         <font>Reg18</font>
-                        <textcolor>$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
+                        <textcolor>ButtonFocusTextColor</textcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.EndTime]</label>
@@ -363,8 +363,8 @@
                         <width>630</width>
                         <height>20</height>
                         <font>Reg18</font>
-                        <textcolor>$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
-                        <selectedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</selectedcolor>
+                        <textcolor>ButtonFocusTextColor</textcolor>
+                        <selectedcolor>ButtonFocusTextColor</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$LOCALIZE[19031]: $INFO[ListItem.NextTitle]</label>
@@ -396,19 +396,19 @@
             <!-- background panel -->
             <control type="image">
                 <texture border="5">diffuse/panel.png</texture>
-                <colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+                <colordiffuse>OSDPanelColor</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
                 <texture border="5">diffuse/panel.png</texture>
-                <colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+                <colordiffuse>OSDPanelColor</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             
             <!-- header -->
             <control type="image">
                 <texture border="5">diffuse/panel.png</texture>
-                <colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+                <colordiffuse>OSDPanelColor</colordiffuse>
                 <aspectratio>stretch</aspectratio>
                 <top>0</top>
                 <height>60</height>
@@ -427,8 +427,8 @@
 				<textoffsetx>90</textoffsetx>
 				<label>$LOCALIZE[19023] - $INFO[VideoPlayer.ChannelGroup]</label>
                 <altlabel>$LOCALIZE[19024] - $INFO[MusicPlayer.ChannelGroup]</altlabel>
-                <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(OSDPrimaryTextShadowColor)]</shadowcolor>
+                <textcolor>OSDPrimaryTextColor</textcolor>
+                <shadowcolor>OSDPrimaryTextShadowColor</shadowcolor>
                 <onclick>PreviousChannelGroup</onclick>
                 <texturenofocus/>
                 <usealttexture>pvr.IsPlayingRadio</usealttexture>
@@ -438,10 +438,10 @@
                 <left>35</left>
 				<width>30</width>
 				<height>30</height>
-				<texture colordiffuse="$INFO[Skin.String(ViewDetailsTextColor)]">home/home_arrow_up.png</texture>
+				<texture colordiffuse="ViewDetailsTextColor">home/home_arrow_up.png</texture>
 			</control>
             <control type="image">
-				<colordiffuse>$INFO[Skin.String(OSDPrimaryTextColor)]</colordiffuse>
+				<colordiffuse>OSDPrimaryTextColor</colordiffuse>
 				<texture>dialogs/default/separator.png</texture>
                 <height>45</height>
                 <top>15</top>
@@ -452,8 +452,8 @@
                 <width>1200</width>
                 <height>30</height>
                 <font>Reg26</font>
-                <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</selectedcolor>
+                <textcolor>OSDPrimaryTextColor</textcolor>
+                <selectedcolor>OSDPrimaryTextColor</selectedcolor>
                 <align>right</align>
                 <aligny>bottom</aligny>
                 <label>$INFO[System.Date(DDD)], $INFO[System.Date(d)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)] • $INFO[System.Time]</label>
@@ -473,13 +473,13 @@
             <!-- footer -->
             <control type="image">
                 <texture border="5">diffuse/panel.png</texture>
-                <colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+                <colordiffuse>OSDPanelColor</colordiffuse>
                 <aspectratio>stretch</aspectratio>
                 <bottom>0</bottom>
                 <height>45</height>
             </control>
             <control type="image">
-				<colordiffuse>$INFO[Skin.String(OSDPrimaryTextColor)]</colordiffuse>
+				<colordiffuse>OSDPrimaryTextColor</colordiffuse>
 				<texture>dialogs/default/separator.png</texture>
                 <height>45</height>
                 <bottom>45</bottom>
@@ -490,8 +490,8 @@
                 <width>1200</width>
                 <height>30</height>
                 <font>Reg22</font>
-                <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</selectedcolor>
+                <textcolor>OSDPrimaryTextColor</textcolor>
+                <selectedcolor>OSDPrimaryTextColor</selectedcolor>
                 <align>left</align>
                 <aligny>center</aligny>
                 <label>$INFO[Container(11).NumItems] $LOCALIZE[19019] - $INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages]</label>
@@ -517,8 +517,8 @@
                         <width>90</width>
                         <height>100%</height>
                         <font>Reg24</font>
-                        <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                        <selectedcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</selectedcolor>
+                        <textcolor>OSDPrimaryTextColor</textcolor>
+                        <selectedcolor>OSDPrimaryTextColor</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <info>ListItem.ChannelNumberLabel</info>
@@ -534,7 +534,7 @@
                         <info>ListItem.Progress</info>
                         <texturebg border="5" colordiffuse="00ffffff">diffuse/panel.png</texturebg>
                         <lefttexture/>
-                        <midtexture border="5" colordiffuse="$INFO[Skin.String(OSDSecondaryTextColor)]">diffuse/panel.png</midtexture>
+                        <midtexture border="5" colordiffuse="OSDSecondaryTextColor">diffuse/panel.png</midtexture>
                         <righttexture/>
                         <overlaytexture/>
                     </control>
@@ -544,7 +544,7 @@
                         <top>20</top>
                         <width>70</width>
                         <height>20</height>
-                        <texture border="5" colordiffuse="$INFO[Skin.String(OSDSecondaryTextColor)]">diffuse/thinborder.png</texture>
+                        <texture border="5" colordiffuse="OSDSecondaryTextColor">diffuse/thinborder.png</texture>
                     </control>
                     
                     <!--Channel Name + Program Title-->
@@ -553,8 +553,8 @@
                         <width>800</width>
                         <height>100%</height>
                         <font>Reg24</font>
-                        <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                        <selectedcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</selectedcolor>
+                        <textcolor>OSDPrimaryTextColor</textcolor>
+                        <selectedcolor>OSDPrimaryTextColor</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>[B]$INFO[ListItem.Label]: [/B]$INFO[ListItem.Title]</label>
@@ -587,7 +587,7 @@
                 <focusedlayout height="60" width="1100">
                     <control type="image">
                         <texture border="5">diffuse/panel.png</texture>
-                        <colordiffuse>$INFO[Skin.String(ButtonFocusColor)]</colordiffuse>
+                        <colordiffuse>ButtonFocusColor</colordiffuse>
                     </control>
                     
                     <!--Channel Number-->
@@ -595,8 +595,8 @@
                         <width>90</width>
                         <height>100%</height>
                         <font>Reg24</font>
-                        <textcolor>$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
-                        <selectedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</selectedcolor>
+                        <textcolor>ButtonFocusTextColor</textcolor>
+                        <selectedcolor>ButtonFocusTextColor</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
                         <info>ListItem.ChannelNumberLabel</info>
@@ -612,7 +612,7 @@
                         <info>ListItem.Progress</info>
                         <texturebg border="5" colordiffuse="00ffffff">diffuse/panel.png</texturebg>
                         <lefttexture/>
-                        <midtexture border="5" colordiffuse="$INFO[Skin.String(ButtonFocusTextColor)]">diffuse/panel.png</midtexture>
+                        <midtexture border="5" colordiffuse="ButtonFocusTextColor">diffuse/panel.png</midtexture>
                         <righttexture/>
                         <overlaytexture/>
                     </control>
@@ -622,7 +622,7 @@
                         <top>20</top>
                         <width>70</width>
                         <height>20</height>
-                        <texture border="5" colordiffuse="$INFO[Skin.String(ButtonFocusTextColor)]">diffuse/thinborder.png</texture>
+                        <texture border="5" colordiffuse="ButtonFocusTextColor">diffuse/thinborder.png</texture>
                     </control>
                     
                     <!--Channel Name + Program Title-->
@@ -631,8 +631,8 @@
                         <width>800</width>
                         <height>100%</height>
                         <font>Reg24</font>
-                        <textcolor>$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
-                        <selectedcolor>$INFO[Skin.String(ButtonFocusTextColor)]</selectedcolor>
+                        <textcolor>ButtonFocusTextColor</textcolor>
+                        <selectedcolor>ButtonFocusTextColor</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>[B]$INFO[ListItem.Label]: [/B]$INFO[ListItem.Title]</label>
@@ -674,8 +674,8 @@
                 <width>625</width>
                 <height>60</height>
                 <font>Reg34</font>
-                <textcolor>$INFO[Skin.String(OSDSecondaryTextColor)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(OSDSecondaryTextColor)]</selectedcolor>
+                <textcolor>OSDSecondaryTextColor</textcolor>
+                <selectedcolor>OSDSecondaryTextColor</selectedcolor>
                 <align>left</align>
                 <aligny>top</aligny>
                 <label>$INFO[Window(Home).Property(SkinHelper.Player.Title)]</label>
@@ -702,7 +702,7 @@
                 <info>Container(11).ListItem.Progress</info>
                 <texturebg border="5" colordiffuse="00ffffff">diffuse/panel.png</texturebg>
                 <lefttexture/>
-                <midtexture border="5" colordiffuse="$INFO[Skin.String(OSDPrimaryTextColor)]">diffuse/panel.png</midtexture>
+                <midtexture border="5" colordiffuse="OSDPrimaryTextColor">diffuse/panel.png</midtexture>
                 <righttexture/>
                 <overlaytexture/>
             </control>
@@ -712,7 +712,7 @@
                 <top>135</top>
                 <width>460</width>
                 <height>20</height>
-                <texture border="5" colordiffuse="$INFO[Skin.String(OSDPrimaryTextColor)]">diffuse/thinborder.png</texture>
+                <texture border="5" colordiffuse="OSDPrimaryTextColor">diffuse/thinborder.png</texture>
             </control>
             <control type="label">
                 <left>1305</left>
@@ -720,8 +720,8 @@
                 <width>460</width>
                 <height>20</height>
                 <font>Reg26</font>
-                <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</selectedcolor>
+                <textcolor>OSDPrimaryTextColor</textcolor>
+                <selectedcolor>OSDPrimaryTextColor</selectedcolor>
                 <align>left</align>
                 <aligny>center</aligny>
                 <label>$INFO[Container(11).ListItem.StartTime]</label>
@@ -732,8 +732,8 @@
                 <width>460</width>
                 <height>20</height>
                 <font>Reg26</font>
-                <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</selectedcolor>
+                <textcolor>OSDPrimaryTextColor</textcolor>
+                <selectedcolor>OSDPrimaryTextColor</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <label>$INFO[Container(11).ListItem.EndTime]</label>
@@ -746,8 +746,8 @@
                 <width>625</width>
                 <height>60</height>
                 <font>Reg34</font>
-                <textcolor>$INFO[Skin.String(OSDSecondaryTextColor)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(OSDSecondaryTextColor)]</selectedcolor>
+                <textcolor>OSDSecondaryTextColor</textcolor>
+                <selectedcolor>OSDSecondaryTextColor</selectedcolor>
                 <align>left</align>
                 <aligny>center</aligny>
                 <label>$INFO[Container(11).ListItem.Title]</label>
@@ -760,8 +760,8 @@
                 <width>625</width>
                 <height>430</height>
                 <font>Reg26</font>
-                <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</selectedcolor>
+                <textcolor>OSDPrimaryTextColor</textcolor>
+                <selectedcolor>OSDPrimaryTextColor</selectedcolor>
                 <align>justify</align>
                 <aligny>top</aligny>
                 <label>$INFO[Container(11).ListItem.Plot]</label>
@@ -773,11 +773,11 @@
                 <width>625</width>
                 <height>30</height>
                 <font>Reg26</font>
-                <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</selectedcolor>
+                <textcolor>OSDPrimaryTextColor</textcolor>
+                <selectedcolor>OSDPrimaryTextColor</selectedcolor>
                 <align>left</align>
                 <aligny>bottom</aligny>
-                <label>[COLOR=$INFO[Skin.String(OSDSecondaryTextColor)]]$LOCALIZE[515]: [/COLOR]$INFO[Container(11).ListItem.Genre]</label>
+                <label>[COLOR=OSDSecondaryTextColor]$LOCALIZE[515]: [/COLOR]$INFO[Container(11).ListItem.Genre]</label>
                 <visible>!String.IsEmpty(Container(11).ListItem.Genre)</visible>
             </control>
             
@@ -788,11 +788,11 @@
                 <width>625</width>
                 <height>30</height>
                 <font>Reg26</font>
-                <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</selectedcolor>
+                <textcolor>OSDPrimaryTextColor</textcolor>
+                <selectedcolor>OSDPrimaryTextColor</selectedcolor>
                 <align>left</align>
                 <aligny>bottom</aligny>
-                <label>[COLOR=$INFO[Skin.String(OSDSecondaryTextColor)]]$LOCALIZE[19031]: [/COLOR]$INFO[Container(11).ListItem.NextTitle]</label>
+                <label>[COLOR=OSDSecondaryTextColor]$LOCALIZE[19031]: [/COLOR]$INFO[Container(11).ListItem.NextTitle]</label>
                 <visible>!String.IsEmpty(Container(11).ListItem.NextTitle)</visible>
             </control>
             

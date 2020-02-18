@@ -20,7 +20,7 @@
 				<width>100%</width>
 				<height>145</height>
 				<texture border="5">diffuse/panel.png</texture>
-				<colordiffuse>$INFO[Skin.String(HeaderPanelColor)]</colordiffuse>
+				<colordiffuse>HeaderPanelColor</colordiffuse>
                 <include condition="!Skin.HasSetting(LowPerformanceMode)">animation_fade_visible</include>
                 <animation effect="slide" end="434" time="0" tween="cubic" easing="inout" delay="0" condition="Window.IsActive(Home) + Skin.String(HomeLayout,verticalbig)">Conditional</animation>
                 <visible>![Window.IsActive(Home) + Skin.String(HomeLayout,netflix2)]</visible>
@@ -106,7 +106,7 @@
 				<width>100%</width>
 				<height>110</height>
 				<texture border="5">diffuse/panel.png</texture>
-				<colordiffuse>$INFO[Skin.String(HeaderPanelColor)]</colordiffuse>
+				<colordiffuse>HeaderPanelColor</colordiffuse>
                 <visible>Skin.String(HeaderPanelColor) + !Skin.String(HeaderPanelColor,none)</visible>
                 <visible>![Window.IsActive(Home) + Skin.String(HomeLayout,netflix2)]</visible>
 			</control>
@@ -158,8 +158,8 @@
                         <width>800</width>
                         <label>$VAR[value_header]</label>
                         <font>Bold30</font>
-                        <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-                        <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                        <textcolor>HeaderTextColor</textcolor>
+                        <shadowcolor>HeaderTextShadowColor</shadowcolor>
                     </control>
                     <control type="label">
                         <top>15</top>
@@ -167,8 +167,8 @@
                         <width>800</width>
                         <label>$VAR[value_subheader]</label>
                         <font>Reg26</font>
-                        <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-                        <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                        <textcolor>HeaderTextColor</textcolor>
+                        <shadowcolor>HeaderTextShadowColor</shadowcolor>
                     </control>
                 </control>
                 <!--infoline win10 home-->
@@ -181,8 +181,8 @@
                     <font>Light28</font>
                     <align>center</align>
                     <label>$VAR[infolinevar]</label>
-                    <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                    <textcolor>HeaderTextColor</textcolor>
+                    <shadowcolor>HeaderTextShadowColor</shadowcolor>
                     <visible>Window.IsActive(Home) + Skin.String(HomeLayout,win10)</visible>
                 </control>
             </control>
@@ -219,8 +219,8 @@
             <selected>Control.HasFocus(99223)</selected>
             <texturefocus/>
             <texturenofocus/>
-            <textureradiofocus colordiffuse="$INFO[Skin.String(HomeViewDetailsFocusColor)]">common/menu.png</textureradiofocus>
-            <textureradionofocus colordiffuse="$INFO[Skin.String(HeaderTextColor)]">common/menu.png</textureradionofocus>
+            <textureradiofocus colordiffuse="HomeViewDetailsFocusColor">common/menu.png</textureradiofocus>
+            <textureradionofocus colordiffuse="HeaderTextColor">common/menu.png</textureradionofocus>
             <radiowidth>60</radiowidth>
             <radioheight>60</radioheight>
             <onclick condition="!String.IsEqual(Window(Home).Property(ShowViewSubMenu),show) + [Skin.String(HomeLayout,win10) | Skin.String(HomeLayout,netflix)]">SetProperty(ShowViewSubMenu, show, Home)</onclick>
@@ -236,8 +236,8 @@
             <selected>Control.HasFocus(99227)</selected>
             <texturefocus/>
             <texturenofocus/>
-            <textureradiofocus colordiffuse="$INFO[Skin.String(HomeViewDetailsFocusColor)]">touchcontrols/widget.png</textureradiofocus>
-            <textureradionofocus colordiffuse="$INFO[Skin.String(HeaderTextColor)]">touchcontrols/widget.png</textureradionofocus>
+            <textureradiofocus colordiffuse="HomeViewDetailsFocusColor">touchcontrols/widget.png</textureradiofocus>
+            <textureradionofocus colordiffuse="HeaderTextColor">touchcontrols/widget.png</textureradionofocus>
             <radiowidth>50</radiowidth>
             <radioheight>50</radioheight>
             <onclick condition="String.IsEqual(Window(Home).Property(ShowWidget),show)">Control.SetFocus(300)</onclick>
@@ -253,8 +253,8 @@
             <selected>Control.HasFocus(99224)</selected>
             <texturefocus/>
             <texturenofocus/>
-            <textureradiofocus colordiffuse="$INFO[Skin.String(HomeViewDetailsFocusColor)]">common/shutdown2.png</textureradiofocus>
-            <textureradionofocus colordiffuse="$INFO[Skin.String(HeaderTextColor)]">common/shutdown2.png</textureradionofocus>
+            <textureradiofocus colordiffuse="HomeViewDetailsFocusColor">common/shutdown2.png</textureradiofocus>
+            <textureradionofocus colordiffuse="HeaderTextColor">common/shutdown2.png</textureradionofocus>
             <radiowidth>50</radiowidth>
             <radioheight>50</radioheight>
             <onclick>ActivateWindow(111)</onclick>
@@ -268,8 +268,8 @@
             <selected>Control.HasFocus(99225)</selected>
             <texturefocus/>
             <texturenofocus/>
-            <textureradiofocus colordiffuse="$INFO[Skin.String(HomeViewDetailsFocusColor)]">touchcontrols/back.png</textureradiofocus>
-            <textureradionofocus colordiffuse="$INFO[Skin.String(HeaderTextColor)]">touchcontrols/back.png</textureradionofocus>
+            <textureradiofocus colordiffuse="HomeViewDetailsFocusColor">touchcontrols/back.png</textureradiofocus>
+            <textureradionofocus colordiffuse="HeaderTextColor">touchcontrols/back.png</textureradionofocus>
             <radiowidth>50</radiowidth>
             <radioheight>50</radioheight>
             <onclick>Back</onclick>
@@ -284,8 +284,8 @@
             <selected>Control.HasFocus(99226)</selected>
             <texturefocus/>
             <texturenofocus/>
-            <textureradiofocus colordiffuse="$INFO[Skin.String(HomeViewDetailsFocusColor)]">touchcontrols/home.png</textureradiofocus>
-            <textureradionofocus colordiffuse="$INFO[Skin.String(HeaderTextColor)]">touchcontrols/home.png</textureradionofocus>
+            <textureradiofocus colordiffuse="HomeViewDetailsFocusColor">touchcontrols/home.png</textureradiofocus>
+            <textureradionofocus colordiffuse="HeaderTextColor">touchcontrols/home.png</textureradionofocus>
             <radiowidth>50</radiowidth>
             <radioheight>50</radioheight>
             <onclick>ActivateWindow(Home)</onclick>
@@ -303,7 +303,7 @@
                 <height>64</height>
                 <width>64</width>
                 <aligny>center</aligny>
-                <colordiffuse>$INFO[Skin.String(HeaderTextShadowColor)]</colordiffuse>
+                <colordiffuse>HeaderTextShadowColor</colordiffuse>
                 <texture background="true">$VAR[value_header_icon]</texture>
             </control>
             <control type="image">
@@ -313,7 +313,7 @@
                 <height>64</height>
                 <width>64</width>
                 <aligny>center</aligny>
-                <colordiffuse>$INFO[Skin.String(HeaderTextColor)]</colordiffuse>
+                <colordiffuse>HeaderTextColor</colordiffuse>
                 <texture background="true">$VAR[value_header_icon]</texture>
             </control>
             <control type="label">
@@ -323,9 +323,9 @@
                 <height>100</height>
                 <font>Bold45</font>
                 <align>left</align>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+                <textcolor>HeaderTextColor</textcolor>
                 <label>$VAR[value_header]</label>
-                <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                <shadowcolor>HeaderTextShadowColor</shadowcolor>
                 <animation effect="slide" end="80,15" time="0" condition="skin.hastheme(classic)">Conditional</animation>
             </control>
              <control type="label">
@@ -336,8 +336,8 @@
                 <height>50</height>
                 <label>$VAR[value_subheader]</label>
                 <font>Reg28</font>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                <textcolor>HeaderTextColor</textcolor>
+                <shadowcolor>HeaderTextShadowColor</shadowcolor>
             </control>
         </control>
 
@@ -435,8 +435,8 @@
                 <align>right</align>
                 <info>System.Time()</info>
                 <font>Bold55</font>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                <textcolor>HeaderTextColor</textcolor>
+                <shadowcolor>HeaderTextShadowColor</shadowcolor>
             </control>
             <!--Date-->
             <control type="label">
@@ -447,8 +447,8 @@
                 <height>50</height>
                 <info>System.Date()</info>
                 <font>Reg30</font>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                <textcolor>HeaderTextColor</textcolor>
+                <shadowcolor>HeaderTextShadowColor</shadowcolor>
             </control>
         </control>
 	</include>
@@ -463,8 +463,8 @@
             <align>right</align>
             <info>Container(4446).ListItem.Label</info>
             <font>Bold55</font>
-            <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-            <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+            <textcolor>HeaderTextColor</textcolor>
+            <shadowcolor>HeaderTextShadowColor</shadowcolor>
             <visible>!String.IsEmpty(Control.GetLabel(14446)) + Control.HasFocus(4446)</visible>
             <include condition="!Skin.HasSetting(LowPerformanceMode)">animation_fade_visible</include>
         </control>
@@ -479,8 +479,8 @@
             <align>right</align>
             <info>Container(4446).ListItem.Label</info>
             <font>Bold30</font>
-            <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-            <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+            <textcolor>HeaderTextColor</textcolor>
+            <shadowcolor>HeaderTextShadowColor</shadowcolor>
             <visible>!String.IsEmpty(Control.GetLabel(14446)) + Control.HasFocus(4446)</visible>
             <include condition="!Skin.HasSetting(LowPerformanceMode)">animation_fade_visible</include>
         </control>
@@ -495,8 +495,8 @@
                 <width>300</width>
                 <info>System.Time</info>
                 <font>Bold30</font>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                <textcolor>HeaderTextColor</textcolor>
+                <shadowcolor>HeaderTextShadowColor</shadowcolor>
             </control>
             <control type="label">
                 <right>50</right>
@@ -505,8 +505,8 @@
                 <width>500</width>
                 <info>System.Date</info>
                 <font>Reg26</font>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                <textcolor>HeaderTextColor</textcolor>
+                <shadowcolor>HeaderTextShadowColor</shadowcolor>
             </control>
         </control>
     </include>
@@ -521,12 +521,12 @@
 			<height>80</height>
 			<control type="image">
 				<texture diffuse="home/home_matte2.png">colors/color_white.png</texture>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 				<visible>!Control.HasFocus(890)</visible>	
 			</control>
 			<control type="image">
 				<texture diffuse="home/home_matte2.png">colors/color_white.png</texture>
-				<colordiffuse>$INFO[Skin.String(ButtonFocusColor)]</colordiffuse>
+				<colordiffuse>ButtonFocusColor</colordiffuse>
 				<visible>Control.HasFocus(890)</visible>	
 			</control>
 			<control type="image" id="888">	
@@ -561,7 +561,7 @@
 				<align>center</align>
                 <aligny>center</aligny>
 				<font>Reg22</font>
-				<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+				<textcolor>GeneralTextColor</textcolor>
 			</control>
 		</control>
 	</include>
@@ -580,10 +580,10 @@
             <aligny>center</aligny>
             <font>Reg26</font>
             <label>$VAR[ProfileLabel]</label>
-            <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-            <focusedcolor>$INFO[Skin.String(HomeViewDetailsFocusColor)]</focusedcolor>
-            <textureradiofocus colordiffuse="$INFO[Skin.String(HomeViewDetailsFocusColor)]">common/profil/avatar.png</textureradiofocus>
-            <textureradionofocus colordiffuse="$INFO[Skin.String(HeaderTextColor)]">common/profil/avatar.png</textureradionofocus>
+            <textcolor>HeaderTextColor</textcolor>
+            <focusedcolor>HomeViewDetailsFocusColor</focusedcolor>
+            <textureradiofocus colordiffuse="HomeViewDetailsFocusColor">common/profil/avatar.png</textureradiofocus>
+            <textureradionofocus colordiffuse="HeaderTextColor">common/profil/avatar.png</textureradionofocus>
             <textoffsetx>70</textoffsetx>
             <radioposx>0</radioposx>
             <pulseonselect>false</pulseonselect>
@@ -626,10 +626,10 @@
                 <posx>140</posx>
                 <posy>25</posy>
                 <font>Bold38</font>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+                <textcolor>HeaderTextColor</textcolor>
                 <align>left</align>
                 <label>$INFO[Window(Weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</label>
-				<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+				<shadowcolor>HeaderTextShadowColor</shadowcolor>
             </control>
             <control type="label">
                 <!--Temp-->
@@ -638,8 +638,8 @@
                 <posx>140</posx>
                 <posy>70</posy>
                 <font>Reg28</font>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-				<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                <textcolor>HeaderTextColor</textcolor>
+				<shadowcolor>HeaderTextShadowColor</shadowcolor>
                 <align>left</align>
                 <label>$INFO[Window(Weather).Property(Current.Condition)]</label>
             </control>
@@ -681,10 +681,10 @@
                 <right>140</right>
                 <posy>25</posy>
                 <font>Bold38</font>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
+                <textcolor>HeaderTextColor</textcolor>
                 <align>right</align>
                 <label>$INFO[Window(Weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</label>
-				<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+				<shadowcolor>HeaderTextShadowColor</shadowcolor>
             </control>
             <control type="label">
                 <!--Temp-->
@@ -693,8 +693,8 @@
                 <right>140</right>
                 <posy>70</posy>
                 <font>Reg28</font>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-				<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                <textcolor>HeaderTextColor</textcolor>
+				<shadowcolor>HeaderTextShadowColor</shadowcolor>
                 <align>right</align>
                 <label>$INFO[Window(Weather).Property(Current.Condition)]</label>
             </control>
@@ -731,8 +731,8 @@
                 <width>500</width>
                 <label>[B]$INFO[Window(Weather).Property(Current.Temperature)]  $INFO[System.TemperatureUnits][/B]</label>
                 <font>Reg26</font>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                <textcolor>HeaderTextColor</textcolor>
+                <shadowcolor>HeaderTextShadowColor</shadowcolor>
             </control>
             <!-- weather conditions -->
             <control type="label">
@@ -742,8 +742,8 @@
                 <width>400</width>
                 <label>$INFO[Window(Weather).Property(Current.Condition)]</label>
                 <font>Reg26</font>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                <textcolor>HeaderTextColor</textcolor>
+                <shadowcolor>HeaderTextShadowColor</shadowcolor>
             </control>
         </control>
     </include>
@@ -776,8 +776,8 @@
                 <width>550</width>
                 <label>[B]$INFO[System.Time][/B]</label>
                 <font>Reg26</font>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                <textcolor>HeaderTextColor</textcolor>
+                <shadowcolor>HeaderTextShadowColor</shadowcolor>
             </control>
             <!-- weather conditions -->
             <control type="label">
@@ -787,8 +787,8 @@
                 <width>600</width>
                 <label>$INFO[Window(Weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits], $INFO[Window(Weather).Property(Current.Condition)]</label>
                 <font>Reg26</font>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                <textcolor>HeaderTextColor</textcolor>
+                <shadowcolor>HeaderTextShadowColor</shadowcolor>
             </control>
         </control>
     </include>
@@ -811,8 +811,8 @@
                     <height>100</height>
                     <info>System.Time(hh:mm)</info>
                     <font>Bold55</font>
-                    <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-					<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                    <textcolor>HeaderTextColor</textcolor>
+					<shadowcolor>HeaderTextShadowColor</shadowcolor>
                 </control>
                 <control type="label">
                     <!--AM-->
@@ -821,8 +821,8 @@
                     <height>100</height>
                     <label>378</label>
                     <font>Bold55</font>
-                    <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-					<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                    <textcolor>HeaderTextColor</textcolor>
+					<shadowcolor>HeaderTextShadowColor</shadowcolor>
                 </control>
                 <control type="label">
                     <!--PM-->
@@ -831,8 +831,8 @@
                     <height>100</height>
                     <label>379</label>
                     <font>Bold55</font>
-                    <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-					<shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                    <textcolor>HeaderTextColor</textcolor>
+					<shadowcolor>HeaderTextShadowColor</shadowcolor>
                 </control>
             </control>
             <control type="label">
@@ -844,8 +844,8 @@
                 <align>right</align>
                 <label>$INFO[Window(Weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits] $INFO[Window(Weather).Property(Current.Condition)]</label>
                 <font>Reg30</font>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                <textcolor>HeaderTextColor</textcolor>
+                <shadowcolor>HeaderTextShadowColor</shadowcolor>
             </control>
         </control>
         <!--Weather Today-->
@@ -891,7 +891,7 @@
             <height>110</height>
             <width>375</width>
             <aspectratio align="left">keep</aspectratio>
-            <colordiffuse>$INFO[Skin.String(HeaderTextColor)]</colordiffuse>
+            <colordiffuse>HeaderTextColor</colordiffuse>
             <texture>home/kodi_logo_light.png</texture>
             <visible>!Skin.String(CustomLogoImage) + String.IsEmpty(Control.GetLabel(198754))</visible>
             <visible>![Window.IsActive(Home) + String.Contains(Skin.String(HomeLayout),simplever)]</visible>
@@ -921,7 +921,7 @@
             <include condition="!Skin.String(CustomLogoImage) + Skin.HasSetting(SimpleVerHomeLeftAlign)">ImageAlignLeft</include>
             <aspectratio align="right">keep</aspectratio>
             <texture background="true">$VAR[LogoImage]</texture>
-            <colordiffuse>$INFO[Skin.String(ViewDetailsListItemTextColor)]</colordiffuse>
+            <colordiffuse>ViewDetailsListItemTextColor</colordiffuse>
             <visible>Window.IsActive(Home) + String.Contains(Skin.String(HomeLayout),simplever) + String.IsEmpty(Control.GetLabel(198754))</visible>
         </control>
     </include>
@@ -934,7 +934,7 @@
             <height>32</height>
             <visible>Pvr.IsRecording</visible>
             <control type="image">
-                <texture colordiffuse="$INFO[Skin.String(GeneralPanelsColor)]" border="15">diffuse/bgpanel_halftop.png</texture>
+                <texture colordiffuse="GeneralPanelsColor" border="15">diffuse/bgpanel_halftop.png</texture>
             </control>
             <control type="image">
                 <posx>45</posx>

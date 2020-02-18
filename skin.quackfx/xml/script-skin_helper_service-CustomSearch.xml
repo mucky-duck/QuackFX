@@ -24,8 +24,8 @@
                 <font>Bold45</font>
                 <label>19140</label>
                 <align>left</align>
-                <textcolor>$INFO[Skin.String(HeaderTextColor)]</textcolor>
-                <shadowcolor>$INFO[Skin.String(HeaderTextShadowColor)]</shadowcolor>
+                <textcolor>HeaderTextColor</textcolor>
+                <shadowcolor>HeaderTextShadowColor</shadowcolor>
                 <animation effect="slide" end="80,15" time="0" condition="skin.hastheme(classic)">Conditional</animation>
             </control>
             <include condition="!skin.hassetting(nofooterbar)">Footer</include>
@@ -46,7 +46,7 @@
                     <animation effect="fade" reversible="false" end="40" time="0" condition="String.IsEqual(Skin.String(GeneralPanelsOpacity),40)">Conditional</animation>
                     <animation effect="fade" reversible="false" end="20" time="0" condition="String.IsEqual(Skin.String(GeneralPanelsOpacity),20)">Conditional</animation>
                     <animation effect="fade" reversible="false" end="0" time="0" condition="String.IsEqual(Skin.String(GeneralPanelsOpacity),0)">Conditional</animation>
-                    <colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+                    <colordiffuse>GeneralPanelsColor</colordiffuse>
                 </control>
                 <control type="label">
                     <left>64</left>
@@ -68,10 +68,10 @@
                     <onright>2900</onright>
                     <textcolor>white</textcolor>
                     <focusedcolor>black</focusedcolor>
-                    <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
+                    <disabledcolor>GeneralTextColor</disabledcolor>
                     <pulseonselect>false</pulseonselect>
-                    <texturefocus colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">colors/color_white.png</texturefocus>
-                    <texturenofocus colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">colors/color_90%trans_white.png</texturenofocus>
+                    <texturefocus colordiffuse="ButtonFocusColor">colors/color_white.png</texturefocus>
+                    <texturenofocus colordiffuse="ButtonFocusColor">colors/color_90%trans_white.png</texturenofocus>
                 </control>
                 <control type="grouplist">
                     <orientation>vertical</orientation>
@@ -487,7 +487,7 @@
                     <animation effect="fade" reversible="false" end="40" time="0" condition="String.IsEqual(Skin.String(GeneralPanelsOpacity),40)">Conditional</animation>
                     <animation effect="fade" reversible="false" end="20" time="0" condition="String.IsEqual(Skin.String(GeneralPanelsOpacity),20)">Conditional</animation>
                     <animation effect="fade" reversible="false" end="0" time="0" condition="String.IsEqual(Skin.String(GeneralPanelsOpacity),0)">Conditional</animation>
-                    <colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+                    <colordiffuse>GeneralPanelsColor</colordiffuse>
                 </control>
                 
                 <!-- Movies-->
@@ -596,7 +596,7 @@
                                 <height>80</height>
                                 <bordersize>8</bordersize>
                                 <texture diffuse="diffuse/poster.png">colors/color_white.png</texture>
-                                <colordiffuse>$INFO[Skin.String(TagOverlaysPanelColor)]</colordiffuse>
+                                <colordiffuse>TagOverlaysPanelColor</colordiffuse>
                             </control>
                             <control type="textbox">
                                 <left>6%</left>
@@ -608,7 +608,7 @@
                                 <label>$VAR[ThumbListDetailsPoster]</label>
                                 <font>Reg18</font>
                                 <autoscroll delay="2000" time="2000" repeat="500">false</autoscroll>
-                                <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+                                <textcolor>TagOverlaysTextColor</textcolor>
                                 <visible>!String.IsEqual(System.CurrentControl,ListItem.Label)</visible>
                             </control>
                             <control type="textbox">
@@ -622,7 +622,7 @@
                                 <label>$VAR[ThumbListDetailsPoster]</label>
                                 <font>Reg18</font>
                                 <autoscroll delay="2000" time="2000" repeat="500">true</autoscroll>
-                                <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+                                <textcolor>TagOverlaysTextColor</textcolor>
                                 <visible>String.IsEqual(System.CurrentControl,ListItem.Label)</visible>
                             </control>
                         </control>
@@ -638,7 +638,7 @@
                                 <height>80</height>
                                 <bordersize>8</bordersize>
                                 <texture diffuse="diffuse/poster.png">colors/color_white.png</texture>
-                                <colordiffuse>$INFO[Skin.String(TagOverlaysPanelColor)]</colordiffuse>
+                                <colordiffuse>TagOverlaysPanelColor</colordiffuse>
                             </control>
                             <control type="textbox">
                                 <left>6%</left>
@@ -650,7 +650,7 @@
                                 <label>$VAR[ThumbListDetailsPoster]</label>
                                 <font>Reg18</font>
                                 <autoscroll delay="2000" time="2000" repeat="500">false</autoscroll>
-                                <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+                                <textcolor>TagOverlaysTextColor</textcolor>
                                 <visible>!String.IsEqual(System.CurrentControl,ListItem.Label)</visible>
                             </control>
                             <control type="textbox">
@@ -664,7 +664,7 @@
                                 <label>$VAR[ThumbListDetailsPoster]</label>
                                 <font>Reg18</font>
                                 <autoscroll delay="2000" time="2000" repeat="500">true</autoscroll>
-                                <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+                                <textcolor>TagOverlaysTextColor</textcolor>
                                 <visible>String.IsEqual(System.CurrentControl,ListItem.Label)</visible>
                             </control>
                         </control>

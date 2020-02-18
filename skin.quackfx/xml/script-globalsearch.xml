@@ -52,7 +52,7 @@
 					<top>1</top>
 					<width>118</width>
 					<height>118</height>
-					<texture colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">globalsearch-roundbutton.png</texture>
+					<texture colordiffuse="ButtonFocusColor">globalsearch-roundbutton.png</texture>
 					<visible>Control.HasFocus(990)</visible>
 				</control>
 				<control type="image">
@@ -68,7 +68,7 @@
 					<top>40</top>
 					<width>40</width>
 					<height>40</height>
-					<texture colordiffuse="$INFO[Skin.String(NetflixSecondaryTextColor)]">globalsearch-search.png</texture>
+					<texture colordiffuse="NetflixSecondaryTextColor">globalsearch-search.png</texture>
 					<visible>Control.HasFocus(990)</visible>
 				</control>
 				<control type="grouplist">
@@ -158,7 +158,7 @@
 							<top>0</top>
 							<width>462</width>
 							<height>95</height>
-							<texture colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">globalsearch-focus.png</texture>
+							<texture colordiffuse="NetflixPrimaryTextColor">globalsearch-focus.png</texture>
 							<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
 						</control>
 						<control type="image">
@@ -250,14 +250,14 @@
 							<width>36</width>
 							<height>36</height>
 							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">globalsearch-list-circle.png</texture>
+							<texture colordiffuse="NetflixPrimaryTextColor">globalsearch-list-circle.png</texture>
 						</control>
 						<control type="label">
 							<top>6</top>
 							<align>center</align>
 							<width>50</width>
 							<height>32</height>
-							<textcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</textcolor>
+							<textcolor>NetflixSecondaryTextColor</textcolor>
 							<font>font20_title</font>
 							<label>$INFO[ListItem.UserRating]</label>
 						</control>
@@ -292,7 +292,7 @@
 						<font>font10</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+						<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 						<label>[B]$INFO[ListItem.TvShowTitle][/B]</label>
 						<visible>Container.Content(episodes)</visible>
 					</control>
@@ -304,7 +304,7 @@
 						<font>font10</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+						<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 						<label>[B]$INFO[ListItem.Artist][/B]</label>
 						<visible>Container.Content(musicvideos)</visible>
 					</control>
@@ -316,7 +316,7 @@
 						<font>font10</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+						<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="group">
@@ -329,14 +329,14 @@
 							<width>36</width>
 							<height>36</height>
 							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">globalsearch-list-circle.png</texture>
+							<texture colordiffuse="NetflixPrimaryTextColor">globalsearch-list-circle.png</texture>
 						</control>
 						<control type="label">
 							<top>6</top>
 							<align>center</align>
 							<width>50</width>
 							<height>32</height>
-							<textcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</textcolor>
+							<textcolor>NetflixSecondaryTextColor</textcolor>
 							<font>font20_title</font>
 							<label>$INFO[ListItem.UserRating]</label>
 						</control>
@@ -371,7 +371,7 @@
 						<font>font10</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+						<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>Container.Content(artists)</visible>
 					</control>
@@ -383,7 +383,7 @@
 						<font>font10</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+						<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 						<label>[B]$INFO[ListItem.Artist][/B]</label>
 						<visible>Container.Content(albums) | Container.Content(songs)</visible>
 					</control>
@@ -395,7 +395,7 @@
 						<font>font10</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+						<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 						<label>[B]$INFO[ListItem.Property(ChannelName)][/B]</label>
 						<visible>Container.Content(livetv)</visible>
 					</control>
@@ -407,7 +407,7 @@
 						<font>font10</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+						<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>!Container.Content(artists)</visible>
 					</control>
@@ -421,14 +421,14 @@
 							<width>36</width>
 							<height>36</height>
 							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">globalsearch-list-circle.png</texture>
+							<texture colordiffuse="NetflixPrimaryTextColor">globalsearch-list-circle.png</texture>
 						</control>
 						<control type="label">
 							<top>6</top>
 							<align>center</align>
 							<width>50</width>
 							<height>32</height>
-							<textcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</textcolor>
+							<textcolor>NetflixSecondaryTextColor</textcolor>
 							<font>font20_title</font>
 							<label>$INFO[ListItem.UserRating]</label>
 						</control>
@@ -475,14 +475,14 @@
 								<width>36</width>
 								<height>36</height>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">globalsearch-list-circle.png</texture>
+								<texture colordiffuse="NetflixPrimaryTextColor">globalsearch-list-circle.png</texture>
 							</control>
 							<control type="label">
 								<top>6</top>
 								<align>center</align>
 								<width>50</width>
 								<height>32</height>
-								<textcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</textcolor>
+								<textcolor>NetflixSecondaryTextColor</textcolor>
 								<font>font20_title</font>
 								<label>$INFO[ListItem.UserRating]</label>
 							</control>
@@ -499,7 +499,7 @@
 							<left>1</left>
 							<width>220</width>
 							<height>330</height>
-							<texture border="8" colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">globalsearch-thumbnail-focus.png</texture>
+							<texture border="8" colordiffuse="ViewDetailsBorderFocusColor">globalsearch-thumbnail-focus.png</texture>
 						</control>
 					</control>
 					<control type="image">
@@ -508,7 +508,7 @@
 						<width>70</width>
 						<height>330</height>
 						<fadetime>500</fadetime>
-						<texture colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">globalsearch-white.png</texture>
+						<texture colordiffuse="NetflixPrimaryTextColor">globalsearch-white.png</texture>
 						<animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
 						<animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
 					</control>
@@ -535,7 +535,7 @@
 								<height>32</height>
 								<align>center</align>
 								<font>font25_narrow</font>
-								<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+								<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 								<label fallback="-">$INFO[ListItem.Rating]</label>
 							</control>
 						</control>
@@ -558,7 +558,7 @@
 								<height>32</height>
 								<align>center</align>
 								<font>font25_narrow</font>
-								<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+								<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 								<label fallback="-">$INFO[ListItem.Year]</label>
 							</control>
 						</control>
@@ -581,7 +581,7 @@
 								<height>32</height>
 								<align>center</align>
 								<font>font25_narrow</font>
-								<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+								<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 								<label fallback="-">$INFO[ListItem.Episode]</label>
 							</control>
 						</control>
@@ -638,7 +638,7 @@
 							<font>font10</font>
 							<align>center</align>
 							<aligny>center</aligny>
-							<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+							<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 							<label>[B]$INFO[ListItem.TvShowTitle][/B]</label>
 							<visible>Container.Content(episodes)</visible>
 						</control>
@@ -650,7 +650,7 @@
 							<font>font10</font>
 							<align>center</align>
 							<aligny>center</aligny>
-							<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+							<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 							<label>[B]$INFO[ListItem.Artist][/B]</label>
 							<visible>Container.Content(musicvideos)</visible>
 						</control>
@@ -662,7 +662,7 @@
 							<font>font10</font>
 							<align>center</align>
 							<aligny>center</aligny>
-							<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+							<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="group">
@@ -675,14 +675,14 @@
 								<width>36</width>
 								<height>36</height>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">globalsearch-list-circle.png</texture>
+								<texture colordiffuse="NetflixPrimaryTextColor">globalsearch-list-circle.png</texture>
 							</control>
 							<control type="label">
 								<top>6</top>
 								<align>center</align>
 								<width>50</width>
 								<height>32</height>
-								<textcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</textcolor>
+								<textcolor>NetflixSecondaryTextColor</textcolor>
 								<font>font20_title</font>
 								<label>$INFO[ListItem.UserRating]</label>
 							</control>
@@ -692,7 +692,7 @@
 							<top>11</top>
 							<width>380</width>
 							<height>333</height>
-							<texture border="8" colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">globalsearch-thumbnail-focus.png</texture>
+							<texture border="8" colordiffuse="ViewDetailsBorderFocusColor">globalsearch-thumbnail-focus.png</texture>
 						</control>
 					</control>
 					<control type="image">
@@ -701,7 +701,7 @@
 						<width>70</width>
 						<height>330</height>
 						<fadetime>500</fadetime>
-						<texture colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">globalsearch-white.png</texture>
+						<texture colordiffuse="NetflixPrimaryTextColor">globalsearch-white.png</texture>
 						<animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
 						<animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
 					</control>
@@ -728,7 +728,7 @@
 								<height>32</height>
 								<align>center</align>
 								<font>font25_narrow</font>
-								<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+								<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 								<label fallback="-">$INFO[ListItem.Rating]</label>
 							</control>
 						</control>
@@ -751,7 +751,7 @@
 								<height>32</height>
 								<align>center</align>
 								<font>font25_narrow</font>
-								<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+								<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 								<label fallback="-">$INFO[ListItem.Season]</label>
 							</control>
 						</control>
@@ -774,7 +774,7 @@
 								<height>32</height>
 								<align>center</align>
 								<font>font25_narrow</font>
-								<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+								<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 								<label fallback="-">$INFO[ListItem.Year]</label>
 							</control>
 						</control>
@@ -831,7 +831,7 @@
 							<font>font10</font>
 							<align>center</align>
 							<aligny>center</aligny>
-							<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+							<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>Container.Content(artists)</visible>
 						</control>
@@ -843,7 +843,7 @@
 							<font>font10</font>
 							<align>center</align>
 							<aligny>center</aligny>
-							<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+							<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 							<label>[B]$INFO[ListItem.Artist][/B]</label>
 							<visible>Container.Content(albums) | Container.Content(songs)</visible>
 						</control>
@@ -855,7 +855,7 @@
 							<font>font10</font>
 							<align>center</align>
 							<aligny>center</aligny>
-							<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+							<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 							<label>[B]$INFO[ListItem.Property(ChannelName)][/B]</label>
 							<visible>Container.Content(livetv)</visible>
 						</control>
@@ -867,7 +867,7 @@
 							<font>font10</font>
 							<align>center</align>
 							<aligny>center</aligny>
-							<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+							<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Container.Content(artists)</visible>
 						</control>
@@ -881,14 +881,14 @@
 								<width>36</width>
 								<height>36</height>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">globalsearch-list-circle.png</texture>
+								<texture colordiffuse="NetflixPrimaryTextColor">globalsearch-list-circle.png</texture>
 							</control>
 							<control type="label">
 								<top>6</top>
 								<align>center</align>
 								<width>50</width>
 								<height>32</height>
-								<textcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</textcolor>
+								<textcolor>NetflixSecondaryTextColor</textcolor>
 								<font>font20_title</font>
 								<label>$INFO[ListItem.UserRating]</label>
 							</control>
@@ -898,7 +898,7 @@
 							<top>11</top>
 							<width>300</width>
 							<height>300</height>
-							<texture border="8" colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">globalsearch-thumbnail-focus.png</texture>
+							<texture border="8" colordiffuse="NetflixPrimaryTextColor">globalsearch-thumbnail-focus.png</texture>
 						</control>
 					</control>
 					<control type="image">
@@ -907,7 +907,7 @@
 						<width>70</width>
 						<height>300</height>
 						<fadetime>500</fadetime>
-						<texture colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">globalsearch-white.png</texture>
+						<texture colordiffuse="NetflixPrimaryTextColor">globalsearch-white.png</texture>
 						<animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
 						<animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
 					</control>
@@ -935,7 +935,7 @@
 								<height>32</height>
 								<align>center</align>
 								<font>font25_narrow</font>
-								<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+								<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 								<label fallback="-">$INFO[ListItem.Property(Artist_Formed)]</label>
 							</control>
 						</control>
@@ -958,7 +958,7 @@
 								<height>32</height>
 								<align>center</align>
 								<font>font25_narrow</font>
-								<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+								<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 								<label fallback="-">$INFO[ListItem.Property(Artist_Disbanded)]</label>
 							</control>
 						</control>
@@ -981,7 +981,7 @@
 								<height>32</height>
 								<align>center</align>
 								<font>font25_narrow</font>
-								<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+								<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 								<label fallback="-">$INFO[ListItem.Rating]</label>
 							</control>
 						</control>
@@ -1004,7 +1004,7 @@
 								<height>32</height>
 								<align>center</align>
 								<font>font25_narrow</font>
-								<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+								<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 								<label fallback="-">$INFO[ListItem.Year]</label>
 							</control>
 						</control>
@@ -1047,7 +1047,7 @@
 								<height>32</height>
 								<align>center</align>
 								<font>font25_narrow</font>
-								<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+								<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 								<label fallback="-">$INFO[ListItem.Property(Duration)]</label>
 							</control>
 						</control>
@@ -1070,7 +1070,7 @@
 								<height>32</height>
 								<align>center</align>
 								<font>font25_narrow</font>
-								<selectedcolor>$INFO[Skin.String(NetflixSecondaryTextColor)]</selectedcolor>
+								<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
 								<label fallback="-">$INFO[ListItem.Label2]</label>
 							</control>
 						</control>
@@ -1165,8 +1165,8 @@
 				<top>154</top>
 				<width>48</width>
 				<height>24</height>
-				<texturefocus colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]" flipy="true">globalsearch-arrowdown.png</texturefocus>
-				<texturenofocus colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]" flipy="true">globalsearch-arrowdown.png</texturenofocus>
+				<texturefocus colordiffuse="NetflixPrimaryTextColor" flipy="true">globalsearch-arrowdown.png</texturefocus>
+				<texturenofocus colordiffuse="NetflixPrimaryTextColor" flipy="true">globalsearch-arrowdown.png</texturenofocus>
 				<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
 				<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 				<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
@@ -1181,8 +1181,8 @@
 				<top>930</top>
 				<width>48</width>
 				<height>24</height>
-				<texturefocus colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">globalsearch-arrowdown.png</texturefocus>
-				<texturenofocus colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">globalsearch-arrowdown.png</texturenofocus>
+				<texturefocus colordiffuse="NetflixPrimaryTextColor">globalsearch-arrowdown.png</texturefocus>
+				<texturenofocus colordiffuse="NetflixPrimaryTextColor">globalsearch-arrowdown.png</texturenofocus>
 				<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
 				<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 				<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
@@ -1268,7 +1268,7 @@
 				<height>275</height>
 				<width>275</width>
 				<aspectratio align="left">keep</aspectratio>
-				<colordiffuse>$INFO[Skin.String(HeaderTextColor)]</colordiffuse>
+				<colordiffuse>HeaderTextColor</colordiffuse>
 				<texture background="true">special://skin/resources/icon.png</texture>
 				<visible>!Skin.String(CustomLogoImage)</visible>
 			</control>
@@ -1311,7 +1311,7 @@
 				<width>54</width>
 				<height>44</height>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(NetflixPrimaryTextColor)]">globalsearch-itemcount.png</texture>
+				<texture colordiffuse="NetflixPrimaryTextColor">globalsearch-itemcount.png</texture>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<visible>!String.IsEmpty(Container.NumItems)</visible>
 			</control>

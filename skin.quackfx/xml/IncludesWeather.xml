@@ -16,7 +16,7 @@
             <width>480</width>
             <height>112</height>
             <texture background="true">$INFO[Window.Property(WeatherProviderLogo)]</texture>
-            <colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+            <colordiffuse>ViewDetailsTextColor</colordiffuse>
             <fadetime>1000</fadetime>
             <aspectratio>stretch</aspectratio>
             <include>animation_fade_visible_hidden</include>
@@ -87,7 +87,7 @@
                 <width>300</width>
                 <height>80</height>
                 <font>Bold38</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <align>center</align>
                 <label>[B]$INFO[Window(Weather).Property(Day0.HighTemp)] $INFO[System.TemperatureUnits][/B] / $INFO[Window(Weather).Property(Day0.LowTemp)] $INFO[System.TemperatureUnits] </label>
                 <visible>Weather.IsFetched</visible>
@@ -104,8 +104,8 @@
                     <width>400</width>
                     <height>50</height>
                     <font>Light35</font>
-                    <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
-                    <shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsHighlightTextColor</textcolor>
+                    <shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
                     <align>left</align>
                 </control>
                 <control type="label">
@@ -114,7 +114,7 @@
                     <width>400</width>
                     <height>50</height>
                     <font>Light35</font>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
                     <align>left</align>
                     <label>$INFO[Window(Weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</label>
                     <visible>Weather.IsFetched</visible>
@@ -127,7 +127,7 @@
                     <width>400</width>
                     <height>50</height>
                     <font>Light28</font>
-                    <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
                     <align>left</align>
                 </control>
                 <control type="label">
@@ -138,7 +138,7 @@
                     <width>400</width>
                     <height>50</height>
                     <font>Light28</font>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
                     <align>left</align>
                 </control>
                 <!-- Current Condition -->
@@ -149,7 +149,7 @@
                     <width>400</width>
                     <height>50</height>
                     <font>Light29</font>
-                    <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
                     <align>left</align>
                 </control>
                 <control type="label">
@@ -158,7 +158,7 @@
                     <width>400</width>
                     <height>50</height>
                     <font>Light29</font>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
                     <align>left</align>
                     <info>Window.Property(Current.Condition)</info>
                     <visible>Weather.IsFetched</visible>
@@ -171,7 +171,7 @@
                     <width>400</width>
                     <height>50</height>
                     <font>Light29</font>
-                    <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
                     <align>left</align>
                 </control>
                 <control type="label">
@@ -181,7 +181,7 @@
                     <width>400</width>
                     <height>50</height>
                     <font>Light29</font>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
                     <align>left</align>
                 </control>
                 <!-- Uv Index -->
@@ -192,7 +192,7 @@
                     <width>400</width>
                     <height>50</height>
                     <font>Light29</font>
-                    <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
                     <align>left</align>
                 </control>
                 <control type="label">
@@ -202,7 +202,7 @@
                     <width>400</width>
                     <height>50</height>
                     <font>Light29</font>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
                     <align>left</align>
                 </control>
                 <!-- Dew Point -->
@@ -213,7 +213,7 @@
                     <width>400</width>
                     <height>50</height>
                     <font>Light29</font>
-                    <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
                     <align>left</align>
                 </control>
                 <control type="label">
@@ -223,7 +223,7 @@
                     <width>400</width>
                     <height>50</height>
                     <font>Light29</font>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
                     <align>left</align>
                 </control>
                 <control type="label">
@@ -233,7 +233,7 @@
                     <width>400</width>
                     <height>50</height>
                     <font>Light29</font>
-                    <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+                    <textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
                     <align>left</align>
                 </control>
                 <control type="label">
@@ -243,7 +243,7 @@
                     <width>400</width>
                     <height>50</height>
                     <font>Light29</font>
-                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                    <textcolor>ViewDetailsTextColor</textcolor>
                     <align>left</align>
                 </control>
             </control>
@@ -263,7 +263,7 @@
                 <width>250</width>
                 <height>50</height>
                 <font>Light40</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+                <textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
                 <align>center</align>
                 <label>$INFO[Window(Weather).Property(Day1.Title)]</label>
                 <visible>Weather.IsFetched</visible>
@@ -275,7 +275,7 @@
                 <width>250</width>
                 <height>50</height>
                 <font>Light35</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <align>center</align>
                 <label>[B]$INFO[Window(Weather).Property(Day1.HighTemp)] $INFO[System.TemperatureUnits][/B] / $INFO[Window(Weather).Property(Day1.LowTemp)] $INFO[System.TemperatureUnits] </label>
                 <visible>Weather.IsFetched</visible>
@@ -287,7 +287,7 @@
                 <width>250</width>
                 <height>50</height>
                 <font>Light27</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <align>center</align>
                 <info>Window.Property(Day1.Outlook)</info>
                 <visible>Weather.IsFetched</visible>
@@ -307,7 +307,7 @@
                 <width>250</width>
                 <height>50</height>
                 <font>Light40</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+                <textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
                 <align>center</align>
                 <label>$INFO[Window(Weather).Property(Day2.Title)]</label>
                 <visible>Weather.IsFetched</visible>
@@ -319,7 +319,7 @@
                 <width>250</width>
                 <height>50</height>
                 <font>Light35</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <align>center</align>
                 <label>[B]$INFO[Window(Weather).Property(Day2.HighTemp)] $INFO[System.TemperatureUnits][/B] / $INFO[Window(Weather).Property(Day2.LowTemp)] $INFO[System.TemperatureUnits] </label>
                 <visible>Weather.IsFetched</visible>
@@ -331,7 +331,7 @@
                 <width>250</width>
                 <height>50</height>
                 <font>Light27</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <align>center</align>
                 <info>Window.Property(Day2.Outlook)</info>
                 <visible>Weather.IsFetched</visible>
@@ -351,7 +351,7 @@
                 <width>250</width>
                 <height>50</height>
                 <font>Light40</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+                <textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
                 <align>center</align>
                 <label>$INFO[Window(Weather).Property(Day3.Title)]</label>
                 <visible>Weather.IsFetched</visible>
@@ -363,7 +363,7 @@
                 <width>250</width>
                 <height>50</height>
                 <font>Light35</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <align>center</align>
                 <label>[B]$INFO[Window(Weather).Property(Day3.HighTemp)] $INFO[System.TemperatureUnits][/B] / $INFO[Window(Weather).Property(Day3.LowTemp)] $INFO[System.TemperatureUnits] </label>
                 <visible>Weather.IsFetched</visible>
@@ -375,7 +375,7 @@
                 <width>250</width>
                 <height>50</height>
                 <font>Light27</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <align>center</align>
                 <info>Window.Property(Day3.Outlook)</info>
                 <visible>Weather.IsFetched</visible>
@@ -395,7 +395,7 @@
                 <width>250</width>
                 <height>50</height>
                 <font>Light40</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+                <textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
                 <align>center</align>
                 <label>$INFO[Window(Weather).Property(Day4.Title)]</label>
                 <visible>Weather.IsFetched</visible>
@@ -407,7 +407,7 @@
                 <width>250</width>
                 <height>50</height>
                 <font>Light35</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <align>center</align>
                 <label>[B]$INFO[Window(Weather).Property(Day4.HighTemp)] $INFO[System.TemperatureUnits][/B] / $INFO[Window(Weather).Property(Day4.LowTemp)] $INFO[System.TemperatureUnits] </label>
                 <visible>Weather.IsFetched</visible>
@@ -419,7 +419,7 @@
                 <width>250</width>
                 <height>50</height>
                 <font>Light27</font>
-                <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                <textcolor>ViewDetailsTextColor</textcolor>
                 <align>center</align>
                 <info>Window.Property(Day4.Outlook)</info>
                 <visible>Weather.IsFetched</visible>
@@ -467,7 +467,7 @@
 						<height>90</height>
 						<font>Reg26</font>
 						<textoffsetx>20</textoffsetx>
-						<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+						<textcolor>ViewDetailsListItemTextColor</textcolor>
 						<selectedcolor>$VAR[ViewDetailsFocusColor]</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
@@ -492,7 +492,7 @@
 						<height>90</height>
 						<font>Reg26</font>
 						<textoffsetx>20</textoffsetx>
-						<textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+						<textcolor>ViewDetailsListItemTextFocusColor</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
@@ -580,7 +580,7 @@
 						<height>135</height>
 						<aspectratio align="left" aligny="top">keep</aspectratio>
 						<texture background="true">$INFO[Window.Property(WeatherProviderLogo)]</texture>
-                        <colordiffuse>$INFO[Skin.String(ViewDetailsTextColor)]</colordiffuse>
+                        <colordiffuse>ViewDetailsTextColor</colordiffuse>
 					</control>
 					<control type="multiimage">
 						<description>current weather icon</description>
@@ -610,7 +610,7 @@
 						<height>45</height>
 						<font>Reg24</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+						<textcolor>ViewDetailsTextColor</textcolor>
 						<label>$INFO[Window.Property(Updated),[B]$LOCALIZE[31293]: [/B]]</label>
 					</control>
 					<control type="label">
@@ -622,7 +622,7 @@
 						<font>Reg72</font>
 						<align>right</align>
 						<label>$INFO[Window.Property(Current.Temperature)]</label>
-						<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+						<textcolor>ViewDetailsTextColor</textcolor>
 					</control>
 					<control type="label">
 						<description>current temp Value Units</description>
@@ -632,7 +632,7 @@
 						<height>290</height>
 						<font>Reg36</font>
 						<label>$INFO[System.TemperatureUnits]</label>
-						<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+						<textcolor>ViewDetailsTextColor</textcolor>
 					</control>
 					<control type="label">
 						<description>current condition label</description>
@@ -643,7 +643,7 @@
 						<wrapmultiline>true</wrapmultiline>
 						<font>Reg60</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
+						<textcolor>ViewDetailsHighlightTextColor</textcolor>
 					</control>
 					<control type="image">
 						<description>separator image</description>
@@ -678,12 +678,12 @@
 						<control type="label">
 							<label>[B]$LOCALIZE[402]: [/B]$INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
 							<textoffsetx>15</textoffsetx>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
 						</control>
 						<control type="label">
 							<label>[B]$LOCALIZE[405]: [/B]$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label>
 							<textoffsetx>15</textoffsetx>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
 						</control>
 					</control>
 
@@ -695,12 +695,12 @@
 						<control type="label">
 							<label>[B]$LOCALIZE[406]: [/B]$INFO[Window.Property(Current.Humidity)]</label>
 							<textoffsetx>15</textoffsetx>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
 						</control>
 						<control type="label">
 							<label>[B]$LOCALIZE[403]: [/B]$INFO[Window.Property(Current.UVIndex)]</label>
 							<textoffsetx>15</textoffsetx>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
 						</control>
 					</control>
 
@@ -711,11 +711,11 @@
 						<itemgap>10</itemgap>
 						<control type="label">
 							<label>[B]$LOCALIZE[404]: [/B]$INFO[Window.Property(Current.Wind)]</label>
-							<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+							<textcolor>ViewDetailsTextColor</textcolor>
 						</control>
 						<control type="label">
 								<label>[B]$LOCALIZE[33027]: [/B]$INFO[Window.Property(Today.Sunrise)] • [B]$LOCALIZE[33028]: [/B]$INFO[Window.Property(Today.Sunset)]</label>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 							</control>
 					</control>
 					<control type="panel" id="300">
@@ -758,7 +758,7 @@
 								<height>60</height>
 								<font>Reg26</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
+								<textcolor>ViewDetailsHighlightTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Label]</label>
 								<textoffsetx>15</textoffsetx>
@@ -769,7 +769,7 @@
 								<height>60</height>
 								<font>Reg26</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Label2]</label>
 								<textoffsetx>15</textoffsetx>
@@ -780,7 +780,7 @@
 								<height>60</height>
 								<font>Reg26</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>[B]$INFO[ListItem.Property(HighTemp)][/B]$INFO[ListItem.Property(LowTemp), | ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -823,7 +823,7 @@
 								<height>60</height>
 								<font>Reg26</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
+								<textcolor>ViewDetailsHighlightTextColor</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 								<textoffsetx>15</textoffsetx>
 							</control>
@@ -833,7 +833,7 @@
 								<height>60</height>
 								<font>Reg26</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								<label>$INFO[ListItem.Label2]</label>
 								<textoffsetx>15</textoffsetx>
 							</control>
@@ -843,7 +843,7 @@
 								<height>60</height>
 								<font>Reg26</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								<label>[B]$INFO[ListItem.Property(HighTemp)][/B]$INFO[ListItem.Property(LowTemp), | ]</label>
 								<textoffsetx>15</textoffsetx>
 							</control>
@@ -945,7 +945,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
 								
 								<label>$INFO[ListItem.Label]</label>
 								<textoffsetx>15</textoffsetx>
@@ -956,7 +956,7 @@
 								<width>475</width>
 								<height>56</height>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Label2]</label>
 								<textoffsetx>15</textoffsetx>
@@ -968,7 +968,7 @@
 								<height>70</height>
 								<font>Reg26</font>
 								<align>right</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>[B]$INFO[ListItem.Property(HighTemperature)][/B]$INFO[ListItem.Property(LowTemperature), | ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -979,7 +979,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Property(WindSpeed),$LOCALIZE[383]: ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -990,7 +990,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								<align>right</align>
 								
 								<label>$INFO[ListItem.Property(WindDirection)]</label>
@@ -1018,7 +1018,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
 								
 								<label>$INFO[ListItem.Label]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1029,7 +1029,7 @@
 								<width>475</width>
 								<height>56</height>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Label2]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1041,7 +1041,7 @@
 								<height>70</height>
 								<font>Reg26</font>
 								<align>right</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>[B]$INFO[ListItem.Property(HighTemperature)][/B]$INFO[ListItem.Property(LowTemperature), | ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1052,7 +1052,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Property(WindSpeed),$LOCALIZE[383]: ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1063,7 +1063,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								<align>right</align>
 								
 								<label>$INFO[ListItem.Property(WindDirection)]</label>
@@ -1228,7 +1228,7 @@
 								<width>438</width>
 								<height>60</height>
 								<font>Reg36</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
+								<textcolor>ViewDetailsHighlightTextColor</textcolor>
 								<align>center</align>
 								
 								<label>$INFO[ListItem.Label]</label>
@@ -1241,7 +1241,7 @@
 								<height>342</height>
 								<align>center</align>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Label2][CR]$INFO[ListItem.Property(TemperatureHeading),,: ]$INFO[ListItem.Property(Temperature)][CR]$INFO[ListItem.Property(FeelsLike),$LOCALIZE[402]: ][CR]$INFO[ListItem.Property(Precipitation),$LOCALIZE[1448]: ][CR]$INFO[ListItem.Property(Wind),$LOCALIZE[404]: ][CR]$INFO[ListItem.Property(Humidity),$LOCALIZE[406]: ]</label>
 							</control>
@@ -1267,7 +1267,7 @@
 								<width>438</width>
 								<height>60</height>
 								<font>Reg36</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
+								<textcolor>ViewDetailsHighlightTextColor</textcolor>
 								<align>center</align>
 								
 								<label>$INFO[ListItem.Label]</label>
@@ -1280,7 +1280,7 @@
 								<height>342</height>
 								<align>center</align>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Label2][CR]$INFO[ListItem.Property(TemperatureHeading),,: ]$INFO[ListItem.Property(Temperature)][CR]$INFO[ListItem.Property(FeelsLike),$LOCALIZE[402]: ][CR]$INFO[ListItem.Property(Precipitation),$LOCALIZE[1448]: ][CR]$INFO[ListItem.Property(Wind),$LOCALIZE[404]: ][CR]$INFO[ListItem.Property(Humidity),$LOCALIZE[406]: ]</label>
 							</control>
@@ -1369,7 +1369,7 @@
 								<width>658</width>
 								<height>60</height>
 								<font>Reg36</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
+								<textcolor>ViewDetailsHighlightTextColor</textcolor>
 								<align>center</align>
 								
 								<label>$INFO[ListItem.Label]</label>
@@ -1381,7 +1381,7 @@
 								<height>60</height>
 								<font>Reg26</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Label2]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1392,7 +1392,7 @@
 								<height>60</height>
 								<font>Reg26</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>[B]$INFO[ListItem.Property(HighTemperature)][/B]$INFO[ListItem.Property(LowTemperature), | ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1403,7 +1403,7 @@
 								<height>60</height>
 								<font>Reg26</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Property(WindSpeed),$LOCALIZE[383]: ]$INFO[ListItem.Property(WindDirection),  ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1414,7 +1414,7 @@
 								<height>60</height>
 								<font>Reg26</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Property(Humidity),$LOCALIZE[406]: ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1425,7 +1425,7 @@
 								<height>60</height>
 								<font>Reg26</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Property(ChancePrecipitation),$LOCALIZE[31290]: ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1452,7 +1452,7 @@
 								<width>658</width>
 								<height>60</height>
 								<font>Reg36</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor>
+								<textcolor>ViewDetailsHighlightTextColor</textcolor>
 								<align>center</align>
 								
 								<label>$INFO[ListItem.Label]</label>
@@ -1464,7 +1464,7 @@
 								<height>60</height>
 								<font>Reg26</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Label2]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1475,7 +1475,7 @@
 								<height>60</height>
 								<font>Reg26</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>[B]$INFO[ListItem.Property(HighTemperature)][/B]$INFO[ListItem.Property(LowTemperature), | ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1486,7 +1486,7 @@
 								<height>60</height>
 								<font>Reg26</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Property(WindSpeed),$LOCALIZE[383]: ]$INFO[ListItem.Property(WindDirection),  ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1497,7 +1497,7 @@
 								<height>60</height>
 								<font>Reg26</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Property(Humidity),$LOCALIZE[406]: ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1508,7 +1508,7 @@
 								<height>60</height>
 								<font>Reg26</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Property(ChancePrecipitation),$LOCALIZE[31290]: ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1591,7 +1591,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+								<textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
 								
 								<label>$INFO[ListItem.Label]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1602,7 +1602,7 @@
 								<width>475</width>
 								<height>56</height>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Label2]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1613,7 +1613,7 @@
 								<height>70</height>
 								<font>Reg26</font>
 								<align>right</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Property(Temperature)]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1624,7 +1624,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								
 								<label>$INFO[ListItem.Property(FeelsLike),$LOCALIZE[402]: ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1635,7 +1635,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
 								<align>right</align>
 								
 								<label>$INFO[ListItem.Property(ChancePrecipitation)]</label>
@@ -1687,8 +1687,8 @@
 								<width>475</width>
 								<height>56</height>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<selectedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</selectedcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<selectedcolor>ViewDetailsTextColor</selectedcolor>
 								<label>$INFO[ListItem.Label2]</label>
 								<textoffsetx>15</textoffsetx>
 							</control>
@@ -1698,8 +1698,8 @@
 								<height>70</height>
 								<font>Reg26</font>
 								<align>right</align>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<selectedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</selectedcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<selectedcolor>ViewDetailsTextColor</selectedcolor>
 								<label>$INFO[ListItem.Property(Temperature)]</label>
 								<textoffsetx>15</textoffsetx>
 							</control>
@@ -1709,8 +1709,8 @@
 								<width>475</width>
 								<height>70</height>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<selectedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</selectedcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<selectedcolor>ViewDetailsTextColor</selectedcolor>
 								<label>$INFO[ListItem.Property(FeelsLike),$LOCALIZE[402]: ]</label>
 								<textoffsetx>15</textoffsetx>
 							</control>
@@ -1720,8 +1720,8 @@
 								<width>475</width>
 								<height>70</height>
 								<font>Reg26</font>
-								<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-								<selectedcolor>$INFO[Skin.String(ViewDetailsTextColor)]</selectedcolor>
+								<textcolor>ViewDetailsTextColor</textcolor>
+								<selectedcolor>ViewDetailsTextColor</selectedcolor>
 								<align>right</align>
 								<label>$INFO[ListItem.Property(ChancePrecipitation)]</label>
 								<textoffsetx>15</textoffsetx>

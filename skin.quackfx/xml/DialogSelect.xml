@@ -24,7 +24,7 @@
 				<width>1190</width>
 				<height>690</height>
 				<texture border="15">diffuse/bgpanel.png</texture>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 			</control>
 			<control type="image">
 				<posx>367</posx>
@@ -33,7 +33,7 @@
 				<height>690</height>
 				<texture border="15">diffuse/bgpanel.png</texture>
 				<bordersize>10</bordersize>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
 				
 			</control>
 			
@@ -108,7 +108,7 @@
                     <height>140</height>
                     <font>Reg22</font>
 					<label>$INFO[Container(6).ListItem.Label2,, ][CR]$INFO[Container(6).ListItem.Property(Addon.Version),$LOCALIZE[24051] ]</label>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>top</aligny>
@@ -121,7 +121,7 @@
                     <height>140</height>
                     <font>Reg22</font>
 					<label>$INFO[Container(6).ListItem.Property(Addon.Summary),, ][CR]$INFO[Container(6).ListItem.Property(Addon.Version),$LOCALIZE[24051] ]</label>
-					<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+					<textcolor>GeneralTextColor</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>top</aligny>
@@ -167,7 +167,7 @@
                         <width>40</width>
                         <height>40</height>
                         <texture>common/checkbox.png</texture>
-                        <colordiffuse>$INFO[Skin.String(ButtonTextColor)]</colordiffuse>
+                        <colordiffuse>ButtonTextColor</colordiffuse>
                         <visible>ListItem.IsSelected</visible>
                     </control>
                 </itemlayout>
@@ -178,7 +178,7 @@
                             <width>1100</width>
                             <height>60</height>
                             <texture border="5">diffuse/panel.png</texture>
-                            <colordiffuse>$INFO[Skin.String(ButtonFocusColor)]</colordiffuse>
+                            <colordiffuse>ButtonFocusColor</colordiffuse>
                         </control>
                         <control type="label">
                             <posx>20</posx>
@@ -198,7 +198,7 @@
                             <width>40</width>
                             <height>40</height>
                             <texture>common/checkbox.png</texture>
-                            <colordiffuse>$INFO[Skin.String(ButtonFocusTextColor)]</colordiffuse>
+                            <colordiffuse>ButtonFocusTextColor</colordiffuse>
                             <visible>ListItem.IsSelected</visible>
                         </control>
                     </control>
@@ -288,7 +288,7 @@
                         <width>40</width>
                         <height>40</height>
                         <texture>common/checkbox.png</texture>
-                        <colordiffuse>$INFO[Skin.String(ButtonTextColor)]</colordiffuse>
+                        <colordiffuse>ButtonTextColor</colordiffuse>
                         <visible>ListItem.IsSelected</visible>
                     </control>
                 </itemlayout>
@@ -299,7 +299,7 @@
                             <width>610</width>
                             <height>120</height>
                             <texture border="5">diffuse/panel.png</texture>
-                            <colordiffuse>$INFO[Skin.String(ButtonFocusColor)]</colordiffuse>
+                            <colordiffuse>ButtonFocusColor</colordiffuse>
                         </control>
                             <control type="image">
                             <posx>10</posx>
@@ -352,7 +352,7 @@
                             <width>40</width>
                             <height>40</height>
                             <texture>common/checkbox.png</texture>
-                            <colordiffuse>$INFO[Skin.String(ButtonFocusTextColor)]</colordiffuse>
+                            <colordiffuse>ButtonFocusTextColor</colordiffuse>
                             <visible>ListItem.IsSelected</visible>
                         </control>
                     </control>

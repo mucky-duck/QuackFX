@@ -63,7 +63,7 @@
 			<width>100%</width>
 			<height>110</height>
 			<texture border="15">diffuse/bgpanel.png</texture>
-			<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+			<colordiffuse>GeneralPanelsColor</colordiffuse>
 		</control>
 		
 		
@@ -76,7 +76,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>Reg42</font>
-			<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+			<textcolor>GeneralTextColor</textcolor>
 			<animation effect="fade" time="250" delay="250">Visible</animation>
         </control>
         <!--Button Grouplist-->
@@ -99,7 +99,7 @@
 					<width>64</width>
 					<height>64</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<colordiffuse>$INFO[Skin.String(GeneralTextColor)]</colordiffuse>
+					<colordiffuse>GeneralTextColor</colordiffuse>
                     <animation end="50" effect="fade" time="0" delay="0" condition="true">Conditional</animation>
 				</control>
 			</itemlayout>
@@ -108,7 +108,7 @@
 					<width>64</width>
 					<height>64</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<colordiffuse>$INFO[Skin.String(HomeViewDetailsFocusColor)]</colordiffuse>
+					<colordiffuse>HomeViewDetailsFocusColor</colordiffuse>
 				</control>
 			</focusedlayout>
 			<content>

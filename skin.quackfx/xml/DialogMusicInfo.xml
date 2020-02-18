@@ -27,7 +27,7 @@
         <height>100%</height>
         <texture border="15">diffuse/bgpanel.png</texture>
 
-        <colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+        <colordiffuse>GeneralPanelsColor</colordiffuse>
       </control>
       <!-- close dialog -->
       <control type="group">
@@ -45,7 +45,7 @@
         <posy>10</posy>
         <width>1200</width>
         <font>Bold45</font>
-        <textcolor>$INFO[Skin.String(GeneralHighlightTextColor)]</textcolor>
+        <textcolor>GeneralHighlightTextColor</textcolor>
         <align>left</align>
         <height>100</height>
         <label>658</label>
@@ -57,7 +57,7 @@
         <posy>10</posy>
         <width>1200</width>
         <font>Bold45</font>
-        <textcolor>$INFO[Skin.String(GeneralHighlightTextColor)]</textcolor>
+        <textcolor>GeneralHighlightTextColor</textcolor>
         <align>left</align>
         <height>100</height>
         <label>24016</label>
@@ -69,7 +69,7 @@
         <posy>10</posy>
         <width>1200</width>
         <font>Bold45</font>
-        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+        <textcolor>GeneralTextColor</textcolor>
         <align>left</align>
         <height>100</height>
         <label>24017</label>
@@ -139,7 +139,7 @@
           <label>$LOCALIZE[515]:</label>
           <label2>$INFO[ListItem.Genre]</label2>
           <enable>false</enable>
-          <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
+          <disabledcolor>GeneralTextColor</disabledcolor>
         </control>
         <control type="button">
           <description>Year</description>
@@ -152,7 +152,7 @@
           <label>$LOCALIZE[562]:</label>
           <label2>$INFO[ListItem.Year]</label2>
           <enable>false</enable>
-          <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
+          <disabledcolor>GeneralTextColor</disabledcolor>
         </control>
         <control type="button">
           <description>Album</description>
@@ -165,7 +165,7 @@
           <label>$LOCALIZE[558]:</label>
           <label2>$INFO[ListItem.Album]</label2>
           <enable>false</enable>
-          <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
+          <disabledcolor>GeneralTextColor</disabledcolor>
         </control>
         <control type="grouplist">
           <!-- Rating -->
@@ -186,7 +186,7 @@
             <width>200</width>
             <height>60</height>
             <aspectratio aligny="center" align="center">keep</aspectratio>
-            <colordiffuse>$INFO[Skin.String(GeneralTextColor)]</colordiffuse>
+            <colordiffuse>GeneralTextColor</colordiffuse>
             <texture fallback="leftrating/rating0.png">$VAR[musicrating_stars]</texture>
           </control>
         </control>

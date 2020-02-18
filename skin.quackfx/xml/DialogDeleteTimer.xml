@@ -27,7 +27,7 @@
                 <height>100%</height>
 				<texture border="15">diffuse/bgpanel.png</texture>
 				
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
             </control>
             <!-- close dialog -->
             <control type="group">
@@ -44,7 +44,7 @@
                 <posy>10</posy>
                 <width>1200</width>
 				<font>Bold45</font>
-				<textcolor>$INFO[Skin.String(GeneralHighlightTextColor)]</textcolor>
+				<textcolor>GeneralHighlightTextColor</textcolor>
                 <label>$ADDON[pvr.tvh.autorec 31027]</label>
                 <height>100</height>
                 <align>left</align>

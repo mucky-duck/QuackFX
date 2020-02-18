@@ -27,7 +27,7 @@
                 <width>1340</width>
                 <height>100%</height>
 				<texture border="15">diffuse/bgpanel.png</texture>
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
             </control>
             <!-- close dialog -->
             <control type="group">
@@ -45,7 +45,7 @@
                 <posy>10</posy>
                 <width>1200</width>
 				<font>Bold45</font>
-                <textcolor>$INFO[Skin.String(GeneralHighlightTextColor)]</textcolor>
+                <textcolor>GeneralHighlightTextColor</textcolor>
 				<shadowcolor>black</shadowcolor>
                 <align>left</align>
 				<height>100</height>
@@ -96,7 +96,7 @@
                     <label>$LOCALIZE[146]</label>
                     <label2>$INFO[ListItem.AddonType]</label2>
                     <enable>false</enable>
-					<disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
+					<disabledcolor>GeneralTextColor</disabledcolor>
                 </control>
                 <control type="button">
                     <!--Autor-->
@@ -109,7 +109,7 @@
                     <label>$LOCALIZE[21863]:</label>
                     <label2>$INFO[ListItem.AddonCreator]</label2>
                     <enable>false</enable>
-					<disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
+					<disabledcolor>GeneralTextColor</disabledcolor>
                 </control>
                 <control type="button">
                     <!--Version-->
@@ -122,7 +122,7 @@
                     <label>$LOCALIZE[24051]</label>
                     <label2>$INFO[ListItem.AddonVersion]</label2>
                     <enable>false</enable>
-					<disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
+					<disabledcolor>GeneralTextColor</disabledcolor>
                 </control>
                 <control type="fadelabel">
                     <!--Disclaimer-->
@@ -186,7 +186,7 @@
                     <control type="image">
                         <!--focus image-->
                         <texture diffuse="home/home_matte2.png">colors/color_white.png</texture>
-                        <colordiffuse>$INFO[Skin.String(GeneralHighlightTextColor)]</colordiffuse>
+                        <colordiffuse>GeneralHighlightTextColor</colordiffuse>
                     </control>
                     <control type="image">
                         <bordersize>8</bordersize>

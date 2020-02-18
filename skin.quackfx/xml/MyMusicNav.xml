@@ -54,7 +54,7 @@
                     <align>left</align>
                     <textoffsetx>50</textoffsetx>
                     <font>Bold40</font>
-                    <textcolor>$INFO[Skin.String(GeneralHighlightTextColor)]</textcolor>
+                    <textcolor>GeneralHighlightTextColor</textcolor>
                     <label>$LOCALIZE[33061]:</label>
 					<visible>skin.hastheme(classic)</visible>
                 </control>
@@ -127,7 +127,7 @@
 					<include>SideBladeMenuButton</include>
 					<label>653</label>
 					<altlabel>13353</altlabel>
-					<alttexturefocus border="5" colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">colors/color_white.png</alttexturefocus>
+					<alttexturefocus border="5" colordiffuse="ButtonFocusColor">colors/color_white.png</alttexturefocus>
 					<alttexturenofocus/>
 					<usealttexture>library.isscanningmusic</usealttexture>
 				</control>

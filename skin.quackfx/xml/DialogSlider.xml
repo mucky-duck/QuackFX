@@ -15,7 +15,7 @@
                     <height>148</height>
                     <texture border="5">diffuse/panel.png</texture>
 					
-					<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+					<colordiffuse>GeneralPanelsColor</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
                          <!-- close dialog -->
@@ -36,7 +36,7 @@
                     <label/>
                     <align>left</align>
                     <font>Reg30</font>
-                    <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                    <textcolor>GeneralTextColor</textcolor>
                     <scroll>false</scroll>
                 </control>
                 <control type="label" id="12">
@@ -48,7 +48,7 @@
                     <height>40</height>
                     <align>left</align>
                     <font>Reg30</font>
-                    <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                    <textcolor>GeneralTextColor</textcolor>
                     <scroll>false</scroll>
                 </control>
                 <control type="slider" id="11">

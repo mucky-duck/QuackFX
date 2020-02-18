@@ -12,7 +12,7 @@
 			<height>40</height>
 			<align>left</align>
 			<label>$INFO[ListItem.Label]</label>
-			<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+			<textcolor>ViewDetailsListItemTextColor</textcolor>
 			<font>Reg36</font>
 		</control>
 		<!--Details-->
@@ -23,7 +23,7 @@
 			<height>60</height>
 			<align>left</align>
 			<label>$VAR[ListDetails]</label>
-			<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+			<textcolor>ViewDetailsListItemTextColor</textcolor>
             <visible>!String.IsEqual(ListItem.Label,..)</visible>
 			<font>Light28</font>
 		</control>
@@ -53,8 +53,8 @@
 			<width>80</width>
 			<align>center</align>
 			<label>$INFO[ListItem.Rating]</label>
-			<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-			<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+			<textcolor>ViewDetailsTextColor</textcolor>
+			<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 			<font>Light28</font>
 			<visible>![[Skin.HasSetting(WatchedIndicator.Watched) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)] | [Skin.HasSetting(WatchedIndicator.Sets) + String.Contains(ListItem.Path,videodb://movies/sets/)] | [Skin.HasSetting(WatchedIndicator.Progress) + ListItem.IsResumable] | [Skin.HasSetting(WatchedIndicator.Episodes) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] | ListItem.IsPlaying | ListItem.IsRecording | Skin.HasSetting(WatchedIndicator.UnWatched)]</visible>
 		</control>
@@ -66,8 +66,8 @@
 			<width>80</width>
 			<align>center</align>
 			<label>[B]$VAR[HDIndicator][/B]</label>
-			<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-			<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+			<textcolor>ViewDetailsTextColor</textcolor>
+			<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 			<font>Light28</font>
 			<visible>![[Skin.HasSetting(WatchedIndicator.Watched) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)] | [Skin.HasSetting(WatchedIndicator.Sets) + String.Contains(ListItem.Path,videodb://movies/sets/)] | [Skin.HasSetting(WatchedIndicator.Progress) + ListItem.IsResumable] | [Skin.HasSetting(WatchedIndicator.Episodes) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] | ListItem.IsPlaying | ListItem.IsRecording | Skin.HasSetting(WatchedIndicator.UnWatched)]</visible>
 		</control>
@@ -88,7 +88,7 @@
 			<height>40</height>
 			<align>left</align>
 			<label>$INFO[ListItem.Label]</label>
-			<textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+			<textcolor>ViewDetailsListItemTextFocusColor</textcolor>
 			<font>Reg36</font>
 			<scroll>true</scroll>
 		</control>
@@ -100,7 +100,7 @@
 			<height>60</height>
 			<align>left</align>
 			<label>$VAR[ListDetails]</label>
-			<textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+			<textcolor>ViewDetailsListItemTextFocusColor</textcolor>
 			<font>Light28</font>
 			<scroll>true</scroll>
 		</control>
@@ -130,7 +130,7 @@
 			<width>80</width>
 			<align>center</align>
 			<label>$INFO[ListItem.Rating]</label>
-			<textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+			<textcolor>ViewDetailsListItemTextFocusColor</textcolor>
 			<font>Light28</font>
 			<visible>![[Skin.HasSetting(WatchedIndicator.Watched) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)] | [Skin.HasSetting(WatchedIndicator.Sets) + String.Contains(ListItem.Path,videodb://movies/sets/)] | [Skin.HasSetting(WatchedIndicator.Progress) + ListItem.IsResumable] | [Skin.HasSetting(WatchedIndicator.Episodes) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] | ListItem.IsPlaying | ListItem.IsRecording | Skin.HasSetting(WatchedIndicator.UnWatched)]</visible>
 		</control>
@@ -142,7 +142,7 @@
 			<width>80</width>
 			<align>center</align>
 			<label>[B]$VAR[HDIndicator][/B]</label>
-			<textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+			<textcolor>ViewDetailsListItemTextFocusColor</textcolor>
 			<font>Light28</font>
 			<visible>![[Skin.HasSetting(WatchedIndicator.Watched) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)] | [Skin.HasSetting(WatchedIndicator.Sets) + String.Contains(ListItem.Path,videodb://movies/sets/)] | [Skin.HasSetting(WatchedIndicator.Progress) + ListItem.IsResumable] | [Skin.HasSetting(WatchedIndicator.Episodes) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] | ListItem.IsPlaying | ListItem.IsRecording | Skin.HasSetting(WatchedIndicator.UnWatched)]</visible>
 		</control>
@@ -157,7 +157,7 @@
 			<align>left</align>
 			<width>80%</width>
 			<label>[B]$INFO[ListItem.Label][/B]</label>
-			<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+			<textcolor>ViewDetailsListItemTextColor</textcolor>
 			<font>Light30</font>
 		</control>		
 		
@@ -167,7 +167,7 @@
 			<width>140</width>
 			<align>right</align>
 			<label>$INFO[ListItem.Duration,, min.]</label>
-			<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+			<textcolor>ViewDetailsListItemTextColor</textcolor>
 			<font>Light28</font>
             <visible>![[Skin.HasSetting(WatchedIndicator.Watched) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)] | [Skin.HasSetting(WatchedIndicator.Sets) + String.Contains(ListItem.Path,videodb://movies/sets/)] | [Skin.HasSetting(WatchedIndicator.Progress) + ListItem.IsResumable] | [Skin.HasSetting(WatchedIndicator.Episodes) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] | ListItem.IsPlaying | ListItem.IsRecording]</visible>
 		</control>
@@ -178,7 +178,7 @@
 			<width>110</width>
 			<align>center</align>
 			<label>$INFO[ListItem.Year]</label>
-			<textcolor>$INFO[Skin.String(ViewDetailsListItemTextColor)]</textcolor>
+			<textcolor>ViewDetailsListItemTextColor</textcolor>
 			<font>Light28</font>
 		</control>
 		
@@ -211,7 +211,7 @@
 			<align>left</align>
 			<width>65%</width>
 			<label>[B]$INFO[ListItem.Label][/B]</label>
-			<textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+			<textcolor>ViewDetailsListItemTextFocusColor</textcolor>
 			<font>Light30</font>
 			<scroll>true</scroll>
 		</control>
@@ -221,7 +221,7 @@
 			<width>140</width>
 			<align>right</align>
 			<label>$INFO[ListItem.Duration,, min.]</label>
-			<textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+			<textcolor>ViewDetailsListItemTextFocusColor</textcolor>
 			<font>Light28</font>
             <visible>![[Skin.HasSetting(WatchedIndicator.Watched) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)] | [Skin.HasSetting(WatchedIndicator.Sets) + String.Contains(ListItem.Path,videodb://movies/sets/)] | [Skin.HasSetting(WatchedIndicator.Progress) + ListItem.IsResumable] | [Skin.HasSetting(WatchedIndicator.Episodes) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] | ListItem.IsPlaying | ListItem.IsRecording]</visible>
 		</control>
@@ -232,7 +232,7 @@
 			<width>110</width>
 			<align>center</align>
 			<label>$INFO[ListItem.Year]</label>
-			<textcolor>$INFO[Skin.String(ViewDetailsListItemTextFocusColor)]</textcolor>
+			<textcolor>ViewDetailsListItemTextFocusColor</textcolor>
 			<font>Light28</font>
 		</control>
 		

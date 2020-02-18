@@ -42,7 +42,7 @@
                 <aligny>center</aligny>
 				<align>center</align>
                 <font>Bold120</font>
-                <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                <textcolor>GeneralTextColor</textcolor>
                 <label>$VAR[PlayerActionLabelLarge]</label>
                 <visible>Skin.HasSetting(OSDLargeSeekingLabel) + ![VideoPlayer.Content(livetv) + Player.Caching]</visible>
                 <visible>![Player.Paused + Skin.HasSetting(EnableOSDInfo)]</visible>

@@ -15,7 +15,7 @@
                 <height>600</height>
                 <texture border="15">diffuse/bgpanel.png</texture>
 				
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
             </control>
 			<control type="image">
                 <!--Panel-->
@@ -24,7 +24,7 @@
 				<bordersize>10</bordersize>
                 <texture border="15">diffuse/bgpanel.png</texture>
 				
-				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+				<colordiffuse>GeneralPanelsColor</colordiffuse>
             </control>
             <control type="label" id="1">
                 <description>header label</description>
@@ -51,7 +51,7 @@
                         <posy>0</posy>
                         <height>60</height>
                         <width>600</width>
-                        <texture colordiffuse="$INFO[Skin.String(ButtonColor)]" border="5">diffuse/panel_trans.png</texture>
+                        <texture colordiffuse="ButtonColor" border="5">diffuse/panel_trans.png</texture>
                     </control>
                     <control type="label">
                         <posx>50</posx>
@@ -75,13 +75,13 @@
                         <posy>0</posy>
                         <height>60</height>
                         <width>600</width>
-                        <texture diffuse="diffuse/panel.png" border="5" colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">colors/color_white.png</texture>
+                        <texture diffuse="diffuse/panel.png" border="5" colordiffuse="ButtonFocusColor">colors/color_white.png</texture>
                     </control>
                     <control type="label">
                         <posx>50</posx>
                         <width>600</width>
                         <height>60</height>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
@@ -89,7 +89,7 @@
                         <width>600</width>
                         <height>60</height>
                         <align>right</align>
-                        <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
+                        <textcolor>GeneralTextColor</textcolor>
                         <info>ListItem.Label2</info>
                     </control>
                 </focusedlayout>

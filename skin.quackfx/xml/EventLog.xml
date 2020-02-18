@@ -25,14 +25,14 @@
                 <posx>50</posx>
                 <width>1820</width>
                 <texture border="15">diffuse/bgpanel.png</texture>
-                <colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+                <colordiffuse>GeneralPanelsColor</colordiffuse>
             </control>
             
             <control type="image">
                 <posx>50</posx>
                 <width>520</width>
                 <texture border="15">diffuse/bgpanel.png</texture>
-                <colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+                <colordiffuse>GeneralPanelsColor</colordiffuse>
             </control>
             
             <control type="list" id="570">
@@ -54,7 +54,7 @@
                         <height>80</height>
                         <width>100%</width>
                         <texture border="5">diffuse/panel.png</texture>
-                        <colordiffuse>$INFO[Skin.String(ButtonColor)]</colordiffuse>
+                        <colordiffuse>ButtonColor</colordiffuse>
                     </control>
                     <control type="image">
                         <left>2</left>
@@ -71,7 +71,7 @@
                         <width>870</width>
                         <height>30</height>
                         <font>Reg24</font>
-                        <textcolor>$INFO[Skin.String(ButtonTextColor)]</textcolor>
+                        <textcolor>ButtonTextColor</textcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>[B]$INFO[ListItem.Label][/B]</label>
@@ -82,7 +82,7 @@
                         <width>870</width>
                         <height>48</height>
                         <font>Reg22</font>
-                        <textcolor>$INFO[Skin.String(ButtonTextColor)]</textcolor>
+                        <textcolor>ButtonTextColor</textcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.Property(Event.Description)]</label>
                     </control>
@@ -92,7 +92,7 @@
                         <width>970</width>
                         <height>30</height>
                         <font>Reg22</font>
-                        <textcolor>$INFO[Skin.String(ButtonTextColor)]</textcolor>
+                        <textcolor>ButtonTextColor</textcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
@@ -105,7 +105,7 @@
                         <height>80</height>
                         <width>100%</width>
                         <texture border="5">diffuse/panel.png</texture>
-                        <colordiffuse>$INFO[Skin.String(ButtonFocusColor)]</colordiffuse>
+                        <colordiffuse>ButtonFocusColor</colordiffuse>
                         <animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(570)">conditional</animation>
                     </control>
                     <control type="image">
@@ -123,7 +123,7 @@
                         <width>870</width>
                         <height>30</height>
                         <font>Reg24</font>
-                        <textcolor>$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
+                        <textcolor>ButtonFocusTextColor</textcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>[B]$INFO[ListItem.Label][/B]</label>
@@ -134,7 +134,7 @@
                         <width>870</width>
                         <height>48</height>
                         <font>Reg22</font>
-                        <textcolor>$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
+                        <textcolor>ButtonFocusTextColor</textcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.Property(Event.Description)]</label>
                     </control>
@@ -144,7 +144,7 @@
                         <width>970</width>
                         <height>30</height>
                         <font>Reg22</font>
-                        <textcolor>$INFO[Skin.String(ButtonFocusTextColor)]</textcolor>
+                        <textcolor>ButtonFocusTextColor</textcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>

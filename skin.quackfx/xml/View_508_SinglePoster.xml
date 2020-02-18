@@ -29,15 +29,15 @@
 					<height>33</height>
 					<width>1100</width>
 					<font>Bold30</font>
-					<textcolor>$INFO[Skin.String(ViewDetailsHighlightTextColor)]</textcolor><shadowcolor>$INFO[Skin.String(ViewDetailsHighlightTextShadowColor)]</shadowcolor>
+					<textcolor>ViewDetailsHighlightTextColor</textcolor><shadowcolor>ViewDetailsHighlightTextShadowColor</shadowcolor>
 					<label>[UPPERCASE]$VAR[mediatitle][/UPPERCASE]</label>
 				</control>
 					<control type="label">
 					  <height>40</height>
 					  <width>1100</width>
 					  <font>Reg31</font>
-					  <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-					  <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+					  <textcolor>ViewDetailsTextColor</textcolor>
+					  <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 					  <label>$VAR[Details]</label>
 				</control>
 			   
@@ -47,8 +47,8 @@
 					<width>1520</width>
 					<height>130</height>
 					<label>$VAR[Plots]</label>
-					<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-					<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+					<textcolor>ViewDetailsTextColor</textcolor>
+					<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 					<align>justify</align>
 					<font>Light28</font>
 					<visible>!Skin.HasSetting(View508_ShowCDart)</visible>
@@ -59,8 +59,8 @@
 					<width>1420</width>
 					<height>130</height>
 					<label>$VAR[Plots]</label>
-					<textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-					<shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+					<textcolor>ViewDetailsTextColor</textcolor>
+					<shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
 					<align>justify</align>
 					<font>Light28</font>
 					<visible>Skin.HasSetting(View508_ShowCDart)</visible>

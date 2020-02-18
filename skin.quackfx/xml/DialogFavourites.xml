@@ -16,7 +16,7 @@
                     <width>1190</width>
                     <height>690</height>
                     <texture border="15">diffuse/bgpanel.png</texture>
-					<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+					<colordiffuse>GeneralPanelsColor</colordiffuse>
                 </control>
 				<control type="image">
                     <posx>367</posx>
@@ -25,7 +25,7 @@
                     <height>690</height>
                     <texture border="15">diffuse/bgpanel.png</texture>
 					<bordersize>10</bordersize>
-					<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+					<colordiffuse>GeneralPanelsColor</colordiffuse>
                 </control>
                 <control type="image">
                     <posx>421</posx>
@@ -161,7 +161,7 @@
                         <control type="image">
                             <width>644</width>
                             <height>60</height>
-                            <texture border="5">diffuse/panel.png</texture><colordiffuse>$INFO[Skin.String(ButtonFocusColor)]</colordiffuse>
+                            <texture border="5">diffuse/panel.png</texture><colordiffuse>ButtonFocusColor</colordiffuse>
                         </control>
                         <control type="label">
                             <posx>80</posx>

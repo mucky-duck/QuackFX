@@ -21,7 +21,7 @@
                     <height>130</height>
                     <bordersize>20</bordersize>
                     <texture diffuse="diffuse/poster.png">colors/color_white.png</texture>
-                    <colordiffuse>$INFO[Skin.String(TagOverlaysPanelColor)]</colordiffuse>
+                    <colordiffuse>TagOverlaysPanelColor</colordiffuse>
                 </control>
                 <control type="textbox">
                     <left>30</left>
@@ -33,7 +33,7 @@
                     <label>$VAR[ThumbListDetails]</label>
                     <font>Reg28</font>
                     <autoscroll delay="0" time="2000" repeat="2000">false</autoscroll>
-                    <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+                    <textcolor>TagOverlaysTextColor</textcolor>
                     <visible>!String.IsEqual(Container.ListItem.Label,ListItem.Label)</visible>
                 </control>
                 <control type="textbox">
@@ -46,7 +46,7 @@
                     <label>$VAR[ThumbListDetails]</label>
                     <font>Reg28</font>
                     <autoscroll delay="0" time="2000" repeat="2000">true</autoscroll>
-                    <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+                    <textcolor>TagOverlaysTextColor</textcolor>
                     <visible>String.IsEqual(Container.ListItem.Label,ListItem.Label)</visible>
                 </control>
             </control>

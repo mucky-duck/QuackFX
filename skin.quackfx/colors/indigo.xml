@@ -1,16 +1,9 @@
 <!--QuackFX-->
 <colors>
 
-	<!-- Defaults -->
-	<color name="MainMenuPanelColor">00FFFFFF</color> <!-- none -->
-	<color name="MainMenuFocusButtonColor">FF760000</color> <!-- dark red -->
-	<color name="MainMenuSecondaryFocusButtonColor">00FFFFFF</color> <!-- none -->
-	<color name="MainMenuTextColor">FFFFFEFF</color> <!-- white -->
-	<color name="MainMenuFocusTextColor">FF000000</color> <!-- black -->
-	
-	<color name="HomeViewDetailsFocusColor">FF760000</color> <!-- dark red -->
-	<color name="HomeViewDetailsBorderFocusColor">FF760000</color> <!-- dark red -->
-	<color name="HomeWidgetsBorderColor">00FFFFFF</color> <!-- none -->
+	<!-- Indigo -->
+	<color name="HomeViewDetailsFocusColor">FF9457eb</color> <!-- indigo -->
+	<color name="HomeViewDetailsBorderFocusColor">FF9457eb</color> <!-- indigo -->
 	
 	<color name="HeaderPanelColor">00FFFFFF</color> <!-- none -->
 	<color name="HeaderTextColor">FFFFFEFF</color> <!-- white -->
@@ -18,7 +11,7 @@
 	
 	<color name="GeneralPanelsColor">FF0D0D0D</color> <!-- black/gray -->
 	<color name="GeneralTextColor">FFFFFEFF</color> <!-- white -->
-	<color name="GeneralHighlightTextColor">FF760000</color> <!-- dark red -->
+	<color name="GeneralHighlightTextColor">FF9457eb</color> <!-- indigo -->
 	
 	<color name="SideBladePanelColor">CC000000</color> <!-- black 80% -->
 	<color name="SideBladeTextColor">FFFFFEFF</color> <!-- white -->
@@ -28,12 +21,18 @@
 	<color name="FooterTextShadowColor">00FFFFFF</color> <!-- none -->
 	
 	<color name="ButtonColor">FF000000</color> <!-- black -->
-	<color name="ButtonFocusColor">FF760000</color> <!-- dark red -->
+	<color name="ButtonFocusColor">FF9457eb</color> <!-- indigo -->
 	<color name="ButtonTextColor">FFFFFEFF</color> <!-- white -->
 	<color name="ButtonFocusTextColor">FF000000</color> <!-- black -->
 		
+	<color name="MainMenuPanelColor">00FFFFFF</color> <!-- none -->
+	<color name="MainMenuFocusButtonColor">FF9457eb</color> <!-- indigo -->
+	<color name="MainMenuSecondaryFocusButtonColor">00FFFFFF</color> <!-- none -->
+	<color name="MainMenuTextColor">FFFFFEFF</color> <!-- white -->
+	<color name="MainMenuFocusTextColor">FF000000</color> <!-- black -->
+	
 	<color name="ActiveSpinControlColor">ff39ff14</color> <!-- neon green -->
-	<color name="SpinnerTextureColor">FF760000</color> <!-- dark red -->
+	<color name="SpinnerTextureColor">FF9457eb</color> <!-- indigo -->
 	
 	<color name="NetflixPrimaryTextColor">FF686868</color> <!-- mid grey -->
 	<color name="NetflixSecondaryTextColor">FFC0C2C2</color> <!-- grey -->
@@ -46,48 +45,48 @@
 	<color name="ViewDetailsPanelColor">CC000000</color> <!-- black 80% -->
 	<color name="ViewDetailsTextShadowColor">FF000000</color> <!-- black -->
 	<color name="ViewDetailsTextColor">FFFFFEFF</color> <!-- white -->
-	<color name="ViewDetailsHighlightTextColor">FF760000</color> <!-- dark red -->
+	<color name="ViewDetailsHighlightTextColor">FF9457eb</color> <!-- indigo -->
 	<color name="ViewDetailsHighlightTextShadowColor">FF000000</color> <!-- black -->
 	<color name="ViewDetailsListItemTextColor">FFFFFEFF</color> <!-- white -->
 	<color name="ViewDetailsListItemTextFocusColor">FF000000</color> <!-- black -->
-	<color name="ViewDetailsFocusColor">FF760000</color> <!-- dark red -->
-	<color name="ViewDetailsBorderFocusColor">FF760000</color> <!-- dark red -->
+	<color name="ViewDetailsFocusColor">FF9457eb</color> <!-- indigo -->
+	<color name="ViewDetailsBorderFocusColor">FF9457eb</color> <!-- indigo -->
 	
 	<color name="OSDPanelColor">CC000000</color> <!-- black 80% -->
 	<color name="OSDPrimaryTextColor">FFFFFEFF</color> <!-- white -->
 	<color name="OSDPrimaryTextShadowColor">00FFFFFF</color> <!-- none -->
-	<color name="OSDSecondaryTextColor">FF760000</color> <!-- dark red -->
+	<color name="OSDSecondaryTextColor">FF9457eb</color> <!-- indigo -->
 	<color name="OSDSecondaryTextShadowColor">00FFFFFF</color> <!-- none -->
-	<color name="OSDProgressBarColor">FF760000</color> <!-- dark red -->
+	<color name="OSDProgressBarColor">FF9457eb</color> <!-- indigo -->
 	<color name="OSDProgressBarBackgroundColor">00FFFFFF</color> <!-- none -->
 	<color name="OSDProgressBarCacheColor">FFFFFEFF</color> <!-- white -->
 	<color name="OSDProgressBarBorderColor">FF555652</color> <!-- inverted silver metalic -->
-	<color name="OSDButtonsFocusColor">FF760000</color> <!-- dark red -->
+	<color name="OSDButtonsFocusColor">FF9457eb</color> <!-- indigo -->
 	<color name="OSDButtonsColor">AAFFFFFF</color> <!-- aawhite -->
-	<color name="OSDBufferingSpinnerColor">FF760000</color> <!-- dark red -->
+	<color name="OSDBufferingSpinnerColor">FF9457eb</color> <!-- indigo -->
 	<color name="OSDWeatherTempTextColor">FFFFFEFF</color> <!-- white -->
 	<color name="OSDWeatherTempTextShadowColor">FF000000</color> <!-- black -->
 	<color name="OSDWeatherConditionsTextColor">FFFFFEFF</color> <!-- white -->
 	<color name="OSDWeatherConditionsTextShadowColor">FF000000</color> <!-- black -->
 	
 	<color name="ScrollbarBackgroundColor">AA000000</color> <!-- blackaa -->
-	<color name="ScrollbarUnfocusedColor">AA760000</color> <!-- dark redaa -->
-	<color name="ScrollbarFocusedColor">FF760000</color> <!-- dark red -->
+	<color name="ScrollbarUnfocusedColor">AA9457eb</color> <!-- indigoaa -->
+	<color name="ScrollbarFocusedColor">FF9457eb</color> <!-- indigo -->
 	
-	<color name="WatchedIndicatorWatchedColor">CC760000</color> <!-- dark redcc -->
+	<color name="WatchedIndicatorWatchedColor">CC9457eb</color> <!-- indigocc -->
 	<color name="WatchedIndicatorWatchedTextColor">FFFFFEFF</color> <!-- white -->
-	<color name="WatchedIndicatorUnWatchedColor">CC760000</color> <!-- dark redcc -->
+	<color name="WatchedIndicatorUnWatchedColor">CC9457eb</color> <!-- indigocc -->
 	<color name="WatchedIndicatorUnWatchedTextColor">FFFFFEFF</color> <!-- white -->
-	<color name="WatchedIndicatorProgressColor">CC760000</color> <!-- dark redcc -->
+	<color name="WatchedIndicatorProgressColor">CC9457eb</color> <!-- indigocc -->
 	<color name="WatchedIndicatorProgressTextColor">FFFFFEFF</color> <!-- white -->
-	<color name="WatchedIndicatorSetsColor">CC760000</color> <!-- dark redcc -->
+	<color name="WatchedIndicatorSetsColor">CC9457eb</color> <!-- indigocc -->
 	<color name="WatchedIndicatorSetsTextColor">FFFFFEFF</color> <!-- white -->
-	<color name="WatchedIndicatorEpisodesColor">CC760000</color> <!-- dark redcc -->
+	<color name="WatchedIndicatorEpisodesColor">CC9457eb</color> <!-- indigocc -->
 	<color name="WatchedIndicatorEpisodesTextColor">FFFFFEFF</color> <!-- white -->
 	<color name="WatchedIndicatorPlayingColor">FF0d0d0d</color> <!-- black/grey -->
 	<color name="WatchedIndicatorPlayingTextColor">FFFFFEFF</color> <!-- white -->
 	
-	<color name="CaseOverlaysColor">DDFF0000</color> <!-- redd -->
+	<color name="CaseOverlaysColor">DD9457eb</color> <!-- indigodd -->
 	<color name="CaseOverlaysTextColor">DDFFFFFF</color> <!-- ddwhite -->
 	<color name="TagOverlaysPanelColor">DD000000</color> <!-- blackdd -->
 	<color name="TagOverlaysTextColor">FFFFFEFF</color> <!-- white -->
@@ -99,7 +98,7 @@
 	<color name="LyricsFocusTextShadowColor">00FFFFFF</color> <!-- none -->
 	
 	<color name="PVRGuideItemColorUnfocus">FF000000</color> <!-- black -->
-	<color name="PVRGuideItemColorFocus">FF760000</color> <!-- dark red -->
+	<color name="PVRGuideItemColorFocus">FF9457eb</color> <!-- indigo -->
 	<color name="PVRGuideItemTextColorUnfocus">FFFFFEFF</color> <!-- white -->
 	<color name="PVRGuideItemTextColorFocus">FF000000</color> <!-- black -->
 	
