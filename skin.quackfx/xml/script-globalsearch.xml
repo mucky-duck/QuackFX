@@ -102,7 +102,7 @@
 					<label>32299</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>font14</font>
+					<font>globalsearch2</font>
 					<texturefocus/>
 					<texturenofocus/>
 					<onup>SetFocus(9000,99,absolute)</onup>
@@ -235,7 +235,7 @@
 						<top>270</top>
 						<width>192</width>
 						<height>70</height>
-						<font>font10</font>
+						<font>globalsearch</font>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
@@ -289,7 +289,7 @@
 						<top>275</top>
 						<width>360</width>
 						<height>29</height>
-						<font>font10</font>
+						<font>globalsearch</font>
 						<align>center</align>
 						<aligny>center</aligny>
 						<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
@@ -301,7 +301,7 @@
 						<top>275</top>
 						<width>360</width>
 						<height>29</height>
-						<font>font10</font>
+						<font>globalsearch</font>
 						<align>center</align>
 						<aligny>center</aligny>
 						<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
@@ -313,7 +313,7 @@
 						<top>304</top>
 						<width>360</width>
 						<height>29</height>
-						<font>font10</font>
+						<font>globalsearch</font>
 						<align>center</align>
 						<aligny>center</aligny>
 						<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
@@ -368,7 +368,7 @@
 						<top>235</top>
 						<width>270</width>
 						<height>70</height>
-						<font>font10</font>
+						<font>globalsearch</font>
 						<align>center</align>
 						<aligny>center</aligny>
 						<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
@@ -380,7 +380,7 @@
 						<top>250</top>
 						<width>270</width>
 						<height>29</height>
-						<font>font10</font>
+						<font>globalsearch</font>
 						<align>center</align>
 						<aligny>center</aligny>
 						<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
@@ -392,7 +392,7 @@
 						<top>250</top>
 						<width>270</width>
 						<height>29</height>
-						<font>font10</font>
+						<font>globalsearch</font>
 						<align>center</align>
 						<aligny>center</aligny>
 						<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
@@ -404,7 +404,7 @@
 						<top>276</top>
 						<width>280</width>
 						<height>29</height>
-						<font>font10</font>
+						<font>globalsearch</font>
 						<align>center</align>
 						<aligny>center</aligny>
 						<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
@@ -460,7 +460,7 @@
 							<top>270</top>
 							<width>192</width>
 							<height>70</height>
-							<font>font10</font>
+							<font>globalsearch</font>
 							<align>center</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -635,7 +635,7 @@
 							<top>275</top>
 							<width>360</width>
 							<height>29</height>
-							<font>font10</font>
+							<font>globalsearch</font>
 							<align>center</align>
 							<aligny>center</aligny>
 							<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
@@ -647,7 +647,7 @@
 							<top>275</top>
 							<width>360</width>
 							<height>29</height>
-							<font>font10</font>
+							<font>globalsearch</font>
 							<align>center</align>
 							<aligny>center</aligny>
 							<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
@@ -659,7 +659,7 @@
 							<top>304</top>
 							<width>360</width>
 							<height>29</height>
-							<font>font10</font>
+							<font>globalsearch</font>
 							<align>center</align>
 							<aligny>center</aligny>
 							<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
@@ -828,7 +828,7 @@
 							<top>235</top>
 							<width>270</width>
 							<height>70</height>
-							<font>font10</font>
+							<font>globalsearch</font>
 							<align>center</align>
 							<aligny>center</aligny>
 							<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
@@ -840,7 +840,7 @@
 							<top>250</top>
 							<width>270</width>
 							<height>29</height>
-							<font>font10</font>
+							<font>globalsearch</font>
 							<align>center</align>
 							<aligny>center</aligny>
 							<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
@@ -852,7 +852,7 @@
 							<top>250</top>
 							<width>270</width>
 							<height>29</height>
-							<font>font10</font>
+							<font>globalsearch</font>
 							<align>center</align>
 							<aligny>center</aligny>
 							<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
@@ -864,7 +864,7 @@
 							<top>276</top>
 							<width>280</width>
 							<height>29</height>
-							<font>font10</font>
+							<font>globalsearch</font>
 							<align>center</align>
 							<aligny>center</aligny>
 							<selectedcolor>NetflixSecondaryTextColor</selectedcolor>
@@ -1249,7 +1249,7 @@
 				<height>1080</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font_MainMenu</font>
+				<font>globalsearch3</font>
 				<label>$LOCALIZE[284]</label>
 			</control>
 		</control>

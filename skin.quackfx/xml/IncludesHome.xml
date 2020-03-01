@@ -67,16 +67,6 @@
                     <width>160</width>
                     <texture colordiffuse="NetflixDetailsFlagColor">colors/color_white.png</texture>
                 </control>
-                <control type="label">
-                    <left>5</left>
-                    <height>55</height>
-                    <width>25</width>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>Reg36</font>
-                    <textcolor>white</textcolor>
-                    <label>[B]|[/B]</label>
-                </control>
                 <control type="label" id="5633398">
                     <left>30</left>
                     <height>55</height>
@@ -176,20 +166,20 @@
                         <description>Play</description>
                         <width>220</width>
                         <height>100%</height>
-                        <label>[CAPITALIZE][B]$LOCALIZE[208][/B][/CAPITALIZE]</label>
+                        <label>$LOCALIZE[208]</label>
                         <align>center</align>
-                        <textcolor>ViewDetailsTextColor</textcolor>
-                        <focusedcolor>black</focusedcolor>
-                        <texturefocus colordiffuse="d9ffffff" border="5">diffuse/panel.png</texturefocus>
-                        <texturenofocus colordiffuse="NetflixDetailsFlagColor" border="5">diffuse/panel.png</texturenofocus>
-                        <textureradioonfocus colordiffuse="black">play.png</textureradioonfocus>
-                        <textureradioofffocus colordiffuse="black">play.png</textureradioofffocus>
+                        <textcolor>ButtonTextColor</textcolor>
+                        <focusedcolor>ButtonFocusTextColor</focusedcolor>
+                        <texturefocus colordiffuse="ButtonFocusColor" border="5">diffuse/panel.png</texturefocus>
+                        <texturenofocus colordiffuse="ButtonColor" border="5">diffuse/panel.png</texturenofocus>
+                        <textureradioonfocus colordiffuse="ButtonColor">play.png</textureradioonfocus>
+                        <textureradioofffocus colordiffuse="ButtonColor">play.png</textureradioofffocus>
                         <textureradioonnofocus colordiffuse="ViewDetailsTextColor">play.png</textureradioonnofocus>
                         <textureradiooffnofocus colordiffuse="ViewDetailsTextColor">play.png</textureradiooffnofocus>
                         <radioposx>45</radioposx>
                         <radiowidth>25</radiowidth>
                         <radioheight>35</radioheight>
-                        <font>Reg28</font>
+                        <font>Button</font>
                         <onclick>PlayMedia($ESCINFO[Container(1508).ListItem.FileNameAndPath])</onclick>
                     </control>
                     <control type="button" id="52">
@@ -198,13 +188,12 @@
                         <width>250</width>
                         <height>100%</height>
                         <align>center</align>
-                        <!-- localize [info_id=29915] -->
-                        <label>[CAPITALIZE][B]more info[/B][/CAPITALIZE]</label>
-                        <textcolor>ViewDetailsTextColor</textcolor>
-                        <focusedcolor>black</focusedcolor>
-                        <texturefocus colordiffuse="d9ffffff" border="5">diffuse/panel.png</texturefocus>
-                        <texturenofocus colordiffuse="NetflixDetailsFlagColor" border="5">diffuse/panel.png</texturenofocus>
-                        <font>Reg28</font>
+                        <label>$LOCALIZE[29915]</label>
+                        <textcolor>ButtonTextColor</textcolor>
+                        <focusedcolor>ButtonFocusTextColor</focusedcolor>
+                        <texturefocus colordiffuse="ButtonFocusColor" border="5">diffuse/panel.png</texturefocus>
+                        <texturenofocus colordiffuse="ButtonColor" border="5">diffuse/panel.png</texturenofocus>
+                        <font>Button</font>
                         <onclick>SetProperty(ShowSpotlightInfo,Show,Home)</onclick>
                         <onclick>SetFocus(1508)</onclick>
                     </control>
@@ -248,8 +237,8 @@
                     <top>0</top>
                     <texture background="true" diffuse="overlay/Right_Corner.png">$INFO[Control.GetLabel(99004)]</texture>
                     <fadetime>550</fadetime>
-                    <width>1315</width>
-                    <height>750</height>
+                    <width>1280</width>
+                    <height>780</height>
                     <aspectratio>scale</aspectratio>
                     <aspectratio scalediffuse="true" aligny="top">scale</aspectratio>
                     <animation effect="fade" end="0" time="600">Hidden</animation>
@@ -260,8 +249,8 @@
                 <control type="grouplist">
                     <animation time="300" effect="fade" start="100" end="20" reversible="true" easing="inout" condition="[ControlGroup(9001).HasFocus() + window.isactive(home)] | ControlGroup(300).HasFocus() | String.IsEqual(Window(Home).Property(ShowViewSubMenu),show) | Control.HasFocus(300)">Conditional</animation>
                     <width>650</width>
-                    <posx>30</posx>
-                    <posy>10</posy>
+                    <posx>15</posx>
+                    <posy>0</posy>
                     <height>680</height>
                     <orientation>vertical</orientation>
                     <usecontrolcoords>true</usecontrolcoords>
@@ -287,11 +276,11 @@
                         <top>55</top>
                         <height max="230">auto</height>
                         <width max="650">auto</width>
-                        <font>Reg48</font>
-                        <align>left</align>
+                        <font>TitleText</font>
+                        <align>center</align>
                         <aligny>center</aligny>
                         <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
-                        <textcolor>ViewDetailsTextColor</textcolor>
+                        <textcolor>ViewDetailsHighlightTextColor</textcolor>
                         <label>$VAR[HomeMenuWidgetInfoLabel]</label>
 						<animation effect="fade" time="200">Visible</animation>
                         <!-- adjust for spotlight -->
@@ -312,7 +301,7 @@
                         <visible>!String.IsEqual(Window(Home).Property(ListItem.dbtype),episode) + !String.IsEmpty(Control.GetLabel(823))</visible>
                         <height>30</height>
                         <width>650</width>
-                        <font>Reg28</font>
+                        <font>SubLabel</font>
                         <align>left</align>
                         <aligny>center</aligny>
                         <textcolor>ViewDetailsTextColor</textcolor>
@@ -330,22 +319,11 @@
                         <height>125</height>
                         <width>650</width>
                         <include>Default_Fade</include>
-                        <!-- next episode label -->
-                        <control type="label">
-                            <visible>!Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
-                            <height>30</height>
-                            <width>650</width>
-                            <font>Reg30</font>
-                            <align>left</align>
-                            <aligny>center</aligny>
-                            <textcolor>ViewDetailsTextColor</textcolor>
-                            <label>[CAPITALIZE]$LOCALIZE[31212][/CAPITALIZE]</label>
-                        </control>
                         <!-- season x episode x & title -->
                         <control type="label">
                             <height>85</height>
                             <width>650</width>
-                            <font>Reg40</font>
+                            <font>EpisodeInfo</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>ViewDetailsTextColor</textcolor>
@@ -364,7 +342,7 @@
                                 <width>150</width>
                                 <height>8</height>
                                 <align>left</align>
-                                <texturebg colordiffuse="cc515151" border="2">colors/color_white.png</texturebg>
+                                <texturebg colordiffuse="OSDProgressBarBorderColor" border="2">colors/color_white.png</texturebg>
                                 <lefttexture/>
                                 <midtexture colordiffuse="OSDProgressBarColor" border="2">colors/color_white.png</midtexture>
                                 <righttexture/>
@@ -391,7 +369,7 @@
                         <textcolor>$VAR[NetflixPlotTextColor]</textcolor>
                         <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                         <align>justify</align>
-                        <font>Reg28</font>
+                        <font>Plot</font>
                         <label>$VAR[HomeMenuWidgetInfoPlot]</label>
                         <!-- spotlight adjustments -->
                         <animation effect="slide" start="0" end="0,230" time="0" condition="ControlGroup(505).HasFocus() + Control.IsVisible(29475)">Conditional</animation>
@@ -421,7 +399,7 @@
                             <textcolor>NetflixSecondaryTextColor</textcolor>
                             <align>left</align>
                             <aligny>center</aligny>
-                            <font>Reg24</font>
+                            <font>MoreDetails</font>
                         </control>
                     </control>
                 </control>
@@ -430,7 +408,7 @@
                 <control type="group">
                     <visible>!Skin.HasSetting(NoFooterBarOnHome)</visible>
                     <right>30</right>
-                    <top>560</top>
+                    <top>575</top>
                     <height>50</height>
                     <width>1000</width>
                     <include condition="Skin.HasSetting(EnableWhiteRatingInHome)">AltRatingWhiteHome</include>
@@ -531,8 +509,8 @@
                     <height>60</height>
                     <aligny>top</aligny>
                     <width>420</width>
-                    <label>[B]$LOCALIZE[31185][/B]</label>
-                    <font>Reg24</font>
+                    <label>$LOCALIZE[31185]</label>
+                    <font>MoreDetails</font>
                     <textcolor>ViewDetailsTextColor</textcolor>
                     <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
                 </control>
@@ -743,12 +721,12 @@
                     <height>60</height>
                     <control type="button" id="40002">
                         <!-- localize & hardcoded color -->
-                        <label>[B]$INFO[System.ProfileName][/B][CR][COLOR ffc0c0c0]Switch Profiles[/COLOR]</label>
+                        <label>$INFO[System.ProfileName][CR][COLOR ffc0c0c0]Switch Profiles[/COLOR]</label>
                         <textoffsetx>115</textoffsetx>
                         <align>left</align>
                         <width>384</width>
                         <height>60</height>
-                        <font>Reg20</font>
+                        <font>Profile</font>
                         <ondown>300</ondown>
                         <onback>ClearProperty(ShowViewSubMenu, Home)</onback>
                         <onback>77777</onback>
@@ -815,7 +793,7 @@
                         <height>100%</height>
                         <align>left</align>
                         <left>135</left>
-                        <font>Light28</font>
+                        <font>MenuItem</font>
                         <textcolor>MainMenuTextColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                         <animation effect="slide" end="-50" time="0" delay="0" condition="Skin.HasSetting(DisableIconsMainMenu)">Conditional</animation>
@@ -847,9 +825,9 @@
                         <align>left</align>
                         <left>135</left>
                         <aligny>center</aligny>
-                        <font>Light28</font>
+                        <font>MenuItem</font>
                         <textcolor>MainMenuFocusTextColor</textcolor>
-                        <label>[B]$INFO[ListItem.Label][/B]</label>
+                        <label>$INFO[ListItem.Label]</label>
                         <animation effect="slide" end="-50" time="0" delay="0" condition="Skin.HasSetting(DisableIconsMainMenu)">Conditional</animation>
                     </control>
                     
@@ -862,10 +840,10 @@
                         <visible>!Skin.HasSetting(DisableIconsMainMenu)</visible>
                         <left>50</left>
                         <height>100%</height>
-                        <top>20</top>
+                        <top>10</top>
                         <control type="image">
-                            <width>35</width>
-                            <height>35</height>
+                            <width>55</width>
+                            <height>55</height>
                             <texture background="true" fallback="$INFO[ListItem.Icon]">$INFO[ListItem.ActualIcon]</texture>
                             <colordiffuse>MainMenuTextColor</colordiffuse>
                             <animation end="70" effect="fade" time="0" delay="0" condition="true">Conditional</animation>
@@ -877,7 +855,7 @@
                         <height>100%</height>
                         <align>left</align>
                         <left>135</left>
-                        <font>Light28</font>
+                        <font>MenuItem</font>
                         <textcolor>MainMenuTextColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                         <animation effect="slide" end="-50" time="0" delay="0" condition="Skin.HasSetting(DisableIconsMainMenu)">Conditional</animation>
@@ -979,7 +957,7 @@
                         <posx>10</posx>
                         <width>290</width>
                         <align>left</align>
-                        <font>Reg26</font>
+                        <font>Submenu</font>
                         <height>50</height>
                         <textcolor>MainMenuTextColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
@@ -1000,10 +978,10 @@
                         <posx>10</posx>
                         <width>290</width>
                         <align>left</align>
-                        <font>Reg26</font>
+                        <font>Submenu</font>
                         <height>50</height>
                         <textcolor>MainMenuFocusTextColor</textcolor>
-                        <label>[B]$INFO[ListItem.Label][/B]</label>
+                        <label>$INFO[ListItem.Label]</label>
                         <scroll>true</scroll>
                     </control>
                     <control type="button">
@@ -1058,12 +1036,12 @@
                 <visible>String.IsEmpty(Container($PARAM[widgetid]).ListItem.Property(similartitle))</visible>
                 <height>96%</height>
                 <width>99%</width>
-                <font>Reg28</font>
+                <font>SubLabel</font>
                 <include condition="Skin.HasSetting(WidgetAlignRight)">widget_header_rightalign</include>
                 <include condition="!Skin.HasSetting(WidgetAlignRight)">widget_header_leftalign</include>
                 <textcolor>ViewDetailsTextColor</textcolor>
                 <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
-                <label>[B]$INFO[Skin.String($PARAM[skinsetting].label)][/B]</label>
+                <label>$INFO[Skin.String($PARAM[skinsetting].label)]</label>
                 <animation effect="slide" end="50" time="0" condition="Container($PARAM[widgetid]).IsUpdating + !Skin.HasSetting(WidgetAlignRight)">Conditional</animation>
                 <animation effect="slide" end="-50" time="0" condition="Container($PARAM[widgetid]).IsUpdating + Skin.HasSetting(WidgetAlignRight)">Conditional</animation>
             </control>
@@ -1071,12 +1049,12 @@
                 <visible>!String.IsEmpty(Container($PARAM[widgetid]).ListItem.Property(similartitle))</visible>
                 <height>96%</height>
                 <width>99%</width>
-                <font>Reg28</font>
+                <font>SubLabel</font>
                 <include condition="Skin.HasSetting(WidgetAlignRight)">widget_header_rightalign</include>
                 <include condition="!Skin.HasSetting(WidgetAlignRight)">widget_header_leftalign</include>
                 <textcolor>ViewDetailsTextColor</textcolor>
                 <shadowcolor>ViewDetailsTextShadowColor</shadowcolor>
-                <label>[B]$LOCALIZE[31543] $INFO[Container($PARAM[widgetid]).ListItem.Property(similartitle)][/B]</label>
+                <label>$LOCALIZE[31543] $INFO[Container($PARAM[widgetid]).ListItem.Property(similartitle)]</label>
                 <animation effect="slide" end="50" time="0" condition="Container($PARAM[widgetid]).IsUpdating + !Skin.HasSetting(WidgetAlignRight)">Conditional</animation>
                 <animation effect="slide" end="-50" time="0" condition="Container($PARAM[widgetid]).IsUpdating + Skin.HasSetting(WidgetAlignRight)">Conditional</animation>
             </control>

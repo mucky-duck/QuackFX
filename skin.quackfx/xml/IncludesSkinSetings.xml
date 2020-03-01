@@ -2086,7 +2086,7 @@
         <width>100%</width>
         <align>left</align>
         <height>50</height>
-        <font>arial26</font> <!-- always use arial for the skinsettings because we use some special characters -->
+        <font>SkinSettings</font> <!-- always use arial for the skinsettings because we use some special characters -->
         <textoffsetx>40</textoffsetx>
         <textwidth>950</textwidth>
     </include>

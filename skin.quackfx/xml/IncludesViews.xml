@@ -1520,7 +1520,7 @@
         <include name="WatchedIndicatorLayout" content="WatchedIndicatorLayout">
             <param name="width" value="80" />
             <param name="height" value="80" />
-            <param name="font" value="indicator_normal" />
+            <param name="font" value="IncludesViews2" />
             <param name="overlay" value="normal" />
             <param name="overlay_texture" value="diffuse/icon_overlay.png" />
         </include>
@@ -1530,7 +1530,7 @@
         <include name="WatchedIndicatorLayout" content="WatchedIndicatorLayout">
             <param name="width" value="60" />
             <param name="height" value="60" />
-            <param name="font" value="indicator_small" />
+            <param name="font" value="IncludesViews" />
             <param name="overlay" value="normal" />
             <param name="overlay_texture" value="diffuse/icon_overlay.png" />
         </include>
