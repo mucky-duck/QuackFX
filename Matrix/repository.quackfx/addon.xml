@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="repository.quackfx" name="QuackFX Repo" version="3" provider-name="Mucky Duck">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
 	<extension point="xbmc.addon.repository" name="QuackFX Repo">
 		<info compressed="false">https://raw.githubusercontent.com/mucky-duck/QuackFX/master/Matrix/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/mucky-duck/QuackFX/master/Matrix/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/mucky-duck/QuackFX/master/Matrix/zips/</datadir>
+		<checksum>https://raw.githubusercontent.com/mucky-duck/QuackFX/master/Matrix/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/mucky-duck/QuackFX/master/Matrix/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Repository for the QuackFX Matrix Skin.</summary>
