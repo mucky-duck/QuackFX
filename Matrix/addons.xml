@@ -151,6 +151,49 @@
 	</extension>
 </addon>
 
+<addon id="script.module.cherrypy"
+       name="CherryPy Kodi module"
+       version="12.0.2"
+       provider-name="CherryPy Team, marcelveldt and others">
+    <requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.six" version="1.14"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary>CherryPy webserver packaged as Kodi module</summary>
+        <description>CherryPy is a pythonic, object-oriented web framework
+            CherryPy allows developers to build web applications in much the same way they would build any other object-oriented Python program. This results in smaller source code developed in less time.
+            CherryPy is now more than ten years old and it is has proven to be very fast and stable. It is being used in production by many sites, from the simplest to the most demanding.
+        </description>
+        <license>BSD</license>
+        <source>https://github.com/marcelveldt/script.module.cherrypy</source>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.module.kodi65" name="Kodi65 Library" version="1.2.1+matrix.3" provider-name="Philipp Temminghoff (phil65)">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.youtube.dl" version="21.204.0+matrix.1"/>
+		<import addon="script.module.pil" version="5.1.0"/>
+		<import addon="script.module.autocompletion" version="2.0.2"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Helper module</summary>
+		<description lang="en">Helper module for all kind of stuff</description>
+		<platform>all</platform>
+		<license>GPL-2.1</license>
+		<source>https://github.com/phil65/script.module.kodi65</source>
+		<news>Python3 ver Adjust to latest core changes, bugfixes, API extensions by scott967</news>
+	</extension>
+	<assets>
+		<icon>resources/icon.png</icon>
+	</assets>
+</addon>
+
 <addon id="script.module.metadatautils"
        name="Metadata and Artwork module"
        version="1.0.38"
