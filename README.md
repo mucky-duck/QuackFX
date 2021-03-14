@@ -1,6 +1,8 @@
 # skin.quackfx
 
-QuackFX is a skin/theme for KODI 
+QuackFX is a skin/theme for KODI
+
+KODI File Manager Source: https://mucky-duck.github.io/QuackFX - automatic!
 
 The Leia version is based on the Titan Skin 
 and was my first attempt at editing the xml files.  
@@ -22,8 +24,8 @@ BIG THANKS to @Jurialmunkey for his work on the
 original code for the Aura skin & addons.
 https://github.com/jurialmunkey/skin.aura
 
-Also Thanks to @skyfsza & @SerpentDrago for their 
-work on the AuraMod and updating the skin to KODI 19 Matrix.
+Also Thanks to @skyfsza & @SerpentDrago and anyone 
+else that helped create the AuraMod.
 https://github.com/skyfsza/skin.auramod version 18 Leia
 https://github.com/SerpentDrago/skin.auramod version 19 Matrix
 
