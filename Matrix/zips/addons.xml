@@ -90,6 +90,18 @@ provider-name="jurialmunkey">
     </extension>
 </addon>
 
+	<addon id="resource.uisounds.quackfx" version="1.0.0" name="QuackFX UI Sounds" provider-name="Mucky Duck">
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="kodi.resource.uisounds"/>
+		<extension point="kodi.addon.metadata">
+		<summary lang="en">QuackFX UI sounds</summary>
+		<description lang="en">QuackFX UI sounds</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="script.module.cherrypy"
        name="CherryPy Kodi module"
        version="12.0.2"
