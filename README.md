@@ -1,8 +1,8 @@
 # skin.quackfx
 
-### QuackFX is a skin/theme for KODI.
-
 ## KODI File Manager Source: https://mucky-duck.github.io/QuackFX
+
+### QuackFX is a skin/theme for KODI.
 
 **The Leia version is based on the Titan Skin 
 and was my first attempt at editing the xml files. 
