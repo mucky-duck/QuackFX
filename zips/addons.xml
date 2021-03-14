@@ -14,7 +14,7 @@
 		</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summaryv lang="en">QuackFX Repository</summary>
+        <summary lang="en">QuackFX Repository</summary>
         <description lang="en">Repository for the QuackFX Skin.</description>
         <disclaimer lang="en"></disclaimer>
         <platform>all</platform>
