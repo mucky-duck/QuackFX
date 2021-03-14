@@ -1,6 +1,6 @@
 # skin.quackfx
 
-** QuackFX is a skin/theme for KODI **
+**QuackFX is a skin/theme for KODI**
 
 ### KODI File Manager Source: https://mucky-duck.github.io/QuackFX
 
