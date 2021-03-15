@@ -916,9 +916,9 @@
 			<property name="defaultID">13012</property>
 			<visible>[System.ShowExitButton] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.Quit()</onclick>
-			<property name="path">XBMC.Quit()</property>
-			<property name="list">XBMC.Quit()</property>
+			<onclick>Quit()</onclick>
+			<property name="path">Quit()</property>
+			<property name="list">Quit()</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -934,9 +934,9 @@
 			<property name="defaultID">13016</property>
 			<visible>[System.CanPowerDown] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.Powerdown()</onclick>
-			<property name="path">XBMC.Powerdown()</property>
-			<property name="list">XBMC.Powerdown()</property>
+			<onclick>Powerdown()</onclick>
+			<property name="path">Powerdown()</property>
+			<property name="list">Powerdown()</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -952,9 +952,9 @@
 			<property name="defaultID">13011</property>
 			<visible>[System.CanSuspend] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.Suspend()</onclick>
-			<property name="path">XBMC.Suspend()</property>
-			<property name="list">XBMC.Suspend()</property>
+			<onclick>Suspend()</onclick>
+			<property name="path">Suspend()</property>
+			<property name="list">Suspend()</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -970,9 +970,9 @@
 			<property name="defaultID">13010</property>
 			<visible>[System.CanHibernate] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.Hibernate()</onclick>
-			<property name="path">XBMC.Hibernate()</property>
-			<property name="list">XBMC.Hibernate()</property>
+			<onclick>Hibernate()</onclick>
+			<property name="path">Hibernate()</property>
+			<property name="list">Hibernate()</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -988,9 +988,9 @@
 			<property name="defaultID">13013</property>
 			<visible>[System.CanReboot] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.Reset()</onclick>
-			<property name="path">XBMC.Reset()</property>
-			<property name="list">XBMC.Reset()</property>
+			<onclick>Reset()</onclick>
+			<property name="path">Reset()</property>
+			<property name="list">Reset()</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -1025,9 +1025,9 @@
 			<property name="defaultID">20046</property>
 			<visible>[System.HasLocks] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>xbmc.mastermode</onclick>
-			<property name="path">xbmc.mastermode</property>
-			<property name="list">xbmc.mastermode</property>
+			<onclick>mastermode</onclick>
+			<property name="path">mastermode</property>
+			<property name="list">mastermode</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -1043,9 +1043,9 @@
 			<property name="defaultID">13017</property>
 			<visible>[System.HasShutdown +!System.IsInhibit] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.InhibitIdleShutdown(true)</onclick>
-			<property name="path">XBMC.InhibitIdleShutdown(true)</property>
-			<property name="list">XBMC.InhibitIdleShutdown(true)</property>
+			<onclick>InhibitIdleShutdown(true)</onclick>
+			<property name="path">InhibitIdleShutdown(true)</property>
+			<property name="list">InhibitIdleShutdown(true)</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -1061,9 +1061,9 @@
 			<property name="defaultID">13018</property>
 			<visible>[System.HasShutdown + System.IsInhibit] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.InhibitIdleShutdown(false)</onclick>
-			<property name="path">XBMC.InhibitIdleShutdown(false)</property>
-			<property name="list">XBMC.InhibitIdleShutdown(false)</property>
+			<onclick>InhibitIdleShutdown(false)</onclick>
+			<property name="path">InhibitIdleShutdown(false)</property>
+			<property name="list">InhibitIdleShutdown(false)</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -1079,9 +1079,9 @@
 			<property name="defaultID">20150</property>
 			<visible>[!System.HasAlarm(shutdowntimer)] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
-			<property name="path">XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
-			<property name="list">XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
+			<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
+			<property name="path">AlarmClock(shutdowntimer,Shutdown())</property>
+			<property name="list">AlarmClock(shutdowntimer,Shutdown())</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -1097,9 +1097,9 @@
 			<property name="defaultID">20151</property>
 			<visible>[System.HasAlarm(shutdowntimer)] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.CancelAlarm(shutdowntimer)</onclick>
-			<property name="path">XBMC.CancelAlarm(shutdowntimer)</property>
-			<property name="list">XBMC.CancelAlarm(shutdowntimer)</property>
+			<onclick>CancelAlarm(shutdowntimer)</onclick>
+			<property name="path">CancelAlarm(shutdowntimer)</property>
+			<property name="list">CancelAlarm(shutdowntimer)</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4396,9 +4396,9 @@
 			<property name="defaultID">13012</property>
 			<visible>System.ShowExitButton</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.Quit()</onclick>
-			<property name="path">XBMC.Quit()</property>
-			<property name="list">XBMC.Quit()</property>
+			<onclick>Quit()</onclick>
+			<property name="path">Quit()</property>
+			<property name="list">Quit()</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4414,9 +4414,9 @@
 			<property name="defaultID">13016</property>
 			<visible>System.CanPowerDown</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.Powerdown()</onclick>
-			<property name="path">XBMC.Powerdown()</property>
-			<property name="list">XBMC.Powerdown()</property>
+			<onclick>Powerdown()</onclick>
+			<property name="path">Powerdown()</property>
+			<property name="list">Powerdown()</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4432,9 +4432,9 @@
 			<property name="defaultID">13011</property>
 			<visible>System.CanSuspend</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.Suspend()</onclick>
-			<property name="path">XBMC.Suspend()</property>
-			<property name="list">XBMC.Suspend()</property>
+			<onclick>Suspend()</onclick>
+			<property name="path">Suspend()</property>
+			<property name="list">Suspend()</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4450,9 +4450,9 @@
 			<property name="defaultID">13010</property>
 			<visible>System.CanHibernate</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.Hibernate()</onclick>
-			<property name="path">XBMC.Hibernate()</property>
-			<property name="list">XBMC.Hibernate()</property>
+			<onclick>Hibernate()</onclick>
+			<property name="path">Hibernate()</property>
+			<property name="list">Hibernate()</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4468,9 +4468,9 @@
 			<property name="defaultID">13013</property>
 			<visible>System.CanReboot</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.Reset()</onclick>
-			<property name="path">XBMC.Reset()</property>
-			<property name="list">XBMC.Reset()</property>
+			<onclick>Reset()</onclick>
+			<property name="path">Reset()</property>
+			<property name="list">Reset()</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4505,9 +4505,9 @@
 			<property name="defaultID">20046</property>
 			<visible>System.HasLocks</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>xbmc.mastermode</onclick>
-			<property name="path">xbmc.mastermode</property>
-			<property name="list">xbmc.mastermode</property>
+			<onclick>mastermode</onclick>
+			<property name="path">mastermode</property>
+			<property name="list">mastermode</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4523,9 +4523,9 @@
 			<property name="defaultID">13017</property>
 			<visible>System.HasShutdown +!System.IsInhibit</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.InhibitIdleShutdown(true)</onclick>
-			<property name="path">XBMC.InhibitIdleShutdown(true)</property>
-			<property name="list">XBMC.InhibitIdleShutdown(true)</property>
+			<onclick>InhibitIdleShutdown(true)</onclick>
+			<property name="path">InhibitIdleShutdown(true)</property>
+			<property name="list">InhibitIdleShutdown(true)</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4541,9 +4541,9 @@
 			<property name="defaultID">13018</property>
 			<visible>System.HasShutdown + System.IsInhibit</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.InhibitIdleShutdown(false)</onclick>
-			<property name="path">XBMC.InhibitIdleShutdown(false)</property>
-			<property name="list">XBMC.InhibitIdleShutdown(false)</property>
+			<onclick>InhibitIdleShutdown(false)</onclick>
+			<property name="path">InhibitIdleShutdown(false)</property>
+			<property name="list">InhibitIdleShutdown(false)</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4559,9 +4559,9 @@
 			<property name="defaultID">20150</property>
 			<visible>!System.HasAlarm(shutdowntimer)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
-			<property name="path">XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
-			<property name="list">XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
+			<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
+			<property name="path">AlarmClock(shutdowntimer,Shutdown())</property>
+			<property name="list">AlarmClock(shutdowntimer,Shutdown())</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4577,9 +4577,9 @@
 			<property name="defaultID">20151</property>
 			<visible>System.HasAlarm(shutdowntimer)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.CancelAlarm(shutdowntimer)</onclick>
-			<property name="path">XBMC.CancelAlarm(shutdowntimer)</property>
-			<property name="list">XBMC.CancelAlarm(shutdowntimer)</property>
+			<onclick>CancelAlarm(shutdowntimer)</onclick>
+			<property name="path">CancelAlarm(shutdowntimer)</property>
+			<property name="list">CancelAlarm(shutdowntimer)</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4631,9 +4631,9 @@
 			<property name="defaultID">13012</property>
 			<visible>[System.ShowExitButton] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.Quit()</onclick>
-			<property name="path">XBMC.Quit()</property>
-			<property name="list">XBMC.Quit()</property>
+			<onclick>Quit()</onclick>
+			<property name="path">Quit()</property>
+			<property name="list">Quit()</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4649,9 +4649,9 @@
 			<property name="defaultID">13016</property>
 			<visible>[System.CanPowerDown] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.Powerdown()</onclick>
-			<property name="path">XBMC.Powerdown()</property>
-			<property name="list">XBMC.Powerdown()</property>
+			<onclick>Powerdown()</onclick>
+			<property name="path">Powerdown()</property>
+			<property name="list">Powerdown()</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4667,9 +4667,9 @@
 			<property name="defaultID">13011</property>
 			<visible>[System.CanSuspend] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.Suspend()</onclick>
-			<property name="path">XBMC.Suspend()</property>
-			<property name="list">XBMC.Suspend()</property>
+			<onclick>Suspend()</onclick>
+			<property name="path">Suspend()</property>
+			<property name="list">Suspend()</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4685,9 +4685,9 @@
 			<property name="defaultID">13010</property>
 			<visible>[System.CanHibernate] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.Hibernate()</onclick>
-			<property name="path">XBMC.Hibernate()</property>
-			<property name="list">XBMC.Hibernate()</property>
+			<onclick>Hibernate()</onclick>
+			<property name="path">Hibernate()</property>
+			<property name="list">Hibernate()</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4703,9 +4703,9 @@
 			<property name="defaultID">13013</property>
 			<visible>[System.CanReboot] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.Reset()</onclick>
-			<property name="path">XBMC.Reset()</property>
-			<property name="list">XBMC.Reset()</property>
+			<onclick>Reset()</onclick>
+			<property name="path">Reset()</property>
+			<property name="list">Reset()</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4740,9 +4740,9 @@
 			<property name="defaultID">20046</property>
 			<visible>[System.HasLocks] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>xbmc.mastermode</onclick>
-			<property name="path">xbmc.mastermode</property>
-			<property name="list">xbmc.mastermode</property>
+			<onclick>mastermode</onclick>
+			<property name="path">mastermode</property>
+			<property name="list">mastermode</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4758,9 +4758,9 @@
 			<property name="defaultID">13017</property>
 			<visible>[System.HasShutdown +!System.IsInhibit] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.InhibitIdleShutdown(true)</onclick>
-			<property name="path">XBMC.InhibitIdleShutdown(true)</property>
-			<property name="list">XBMC.InhibitIdleShutdown(true)</property>
+			<onclick>InhibitIdleShutdown(true)</onclick>
+			<property name="path">InhibitIdleShutdown(true)</property>
+			<property name="list">InhibitIdleShutdown(true)</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4776,9 +4776,9 @@
 			<property name="defaultID">13018</property>
 			<visible>[System.HasShutdown + System.IsInhibit] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.InhibitIdleShutdown(false)</onclick>
-			<property name="path">XBMC.InhibitIdleShutdown(false)</property>
-			<property name="list">XBMC.InhibitIdleShutdown(false)</property>
+			<onclick>InhibitIdleShutdown(false)</onclick>
+			<property name="path">InhibitIdleShutdown(false)</property>
+			<property name="list">InhibitIdleShutdown(false)</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4794,9 +4794,9 @@
 			<property name="defaultID">20150</property>
 			<visible>[!System.HasAlarm(shutdowntimer)] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
-			<property name="path">XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
-			<property name="list">XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</property>
+			<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
+			<property name="path">AlarmClock(shutdowntimer,Shutdown())</property>
+			<property name="list">AlarmClock(shutdowntimer,Shutdown())</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
@@ -4812,9 +4812,9 @@
 			<property name="defaultID">20151</property>
 			<visible>[System.HasAlarm(shutdowntimer)] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
-			<onclick>XBMC.CancelAlarm(shutdowntimer)</onclick>
-			<property name="path">XBMC.CancelAlarm(shutdowntimer)</property>
-			<property name="list">XBMC.CancelAlarm(shutdowntimer)</property>
+			<onclick>CancelAlarm(shutdowntimer)</onclick>
+			<property name="path">CancelAlarm(shutdowntimer)</property>
+			<property name="list">CancelAlarm(shutdowntimer)</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>

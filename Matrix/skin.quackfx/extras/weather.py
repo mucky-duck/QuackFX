@@ -5,7 +5,7 @@ import requests
 import shutil
 import time
 
-settings_path = xbmc.translatePath('special://home/userdata/addon_data/skin.quackfx/settings.xml')
+settings_path = translatePath('special://home/userdata/addon_data/skin.quackfx/settings.xml')
 image_store_path = os.path.join(os.path.dirname(__file__), 'weather/weather-%s.gif' % time.strftime("%Y%m%d-%H%M%S"))
 image_store_dir = os.path.dirname(image_store_path)
 
