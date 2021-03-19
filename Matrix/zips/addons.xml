@@ -461,7 +461,7 @@ Version 1.0.37
 	</extension>
 </addon>
 
-<addon id="skin.quackfx" version="19.0.1" name="QuackFX" provider-name="Mucky Duck">
+<addon id="skin.quackfx" version="19.0.2" name="QuackFX" provider-name="Mucky Duck">
     <requires>
         <import addon="xbmc.gui" version="5.15.0"/>
         <import addon="script.skin.helper.service" version="1.1.24"/>

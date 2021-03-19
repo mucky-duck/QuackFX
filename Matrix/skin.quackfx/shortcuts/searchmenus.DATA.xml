@@ -16,20 +16,6 @@
   </shortcut>
   <shortcut>
     <defaultID />
-    <label>Seren Movies</label>
-    <label2>Custom item</label2>
-    <icon>DefaultShortcut.png</icon>
-    <action>ActivateWindow(Videos,"plugin://plugin.video.seren/?action=moviesSearchResults&amp;actionArgs=",return)</action>
-  </shortcut>
-  <shortcut>
-    <defaultID />
-    <label>Seren TV Shows</label>
-    <label2>Custom item</label2>
-    <icon>DefaultShortcut.png</icon>
-    <action>ActivateWindow(Videos,"plugin://plugin.video.seren/?action=showsSearchResults&amp;actionArgs=",return)</action>
-  </shortcut>
-  <shortcut>
-    <defaultID />
     <label>Library Movies</label>
     <label2>Custom item</label2>
     <icon>DefaultShortcut.png</icon>
