@@ -95,42 +95,13 @@
     </variable>
 
     <variable name="seasons_content_videoinfo">
-         <value condition="String.IsEqual(ListItem.DBType,episode) + String.Contains(ListItem.FolderPath,plugin.video.seren)">plugin://plugin.video.seren/?action=showSeasons&amp;actionArgs=%7b%22item_type%22%3a%20%22show%22%2c%20%22trakt_id%22%3a%20$INFO[ListItem.Property(tvshow.trakt_id)]%7d</value>
-	 <value condition="String.IsEqual(ListItem.DBType,tvshow) + String.Contains(ListItem.FolderPath,plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper/?info=seasons&amp;type=tv&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]</value>
-	<value condition="String.IsEqual(ListItem.DBType,tvshow)">$INFO[ListItem.FolderPath]</value>
+        <value condition="String.IsEqual(ListItem.DBType,tvshow) + String.Contains(ListItem.FolderPath,plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper/?info=seasons&amp;type=tv&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]</value>
+		<value condition="String.IsEqual(ListItem.DBType,tvshow)">$INFO[ListItem.FolderPath]</value>
     </variable>
 
     <variable name="nextup_content_videoinfo">
          <value condition="String.IsEqual(ListItem.DBType,tvshow) + String.IsEmpty(ListItem.DBID)">plugin://plugin.video.themoviedb.helper/?info=trakt_upnext&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)]&amp;type=tv&amp;fanarttv=false</value>
          <value condition="String.IsEqual(ListItem.DBType,episode) + String.IsEmpty(ListItem.DBID)">plugin://plugin.video.themoviedb.helper/?info=trakt_upnext&amp;tmdb_id=$INFO[ListItem.Property(tvshow.tmdb_id)]&amp;type=tv</value>
-    </variable>
-
-    <variable name="similar_movie_content">
-        <value condition="!String.IsEmpty(Skin.String(similar_movies_traktid))">plugin://plugin.video.seren/?action=moviesRelated&actionArgs=$INFO[Skin.String(similar_movies_traktid)]</value>
-    </variable>
-    <variable name="similar_movie2_content">
-        <value condition="!String.IsEmpty(Skin.String(similar_movies2_traktid))">plugin://plugin.video.seren/?action=moviesRelated&actionArgs=$INFO[Skin.String(similar_movies2_traktid)]</value>
-    </variable>
-    <variable name="similar_tv_content">
-        <value condition="!String.IsEmpty(Skin.String(similar_tv_traktid))">plugin://plugin.video.seren/?action=showsRelated&actionArgs=$INFO[Skin.String(similar_tv_traktid)]</value>
-    </variable>
-    <variable name="similar_tv2_content">
-        <value condition="!String.IsEmpty(Skin.String(similar_tv2_traktid))">plugin://plugin.video.seren/?action=showsRelated&actionArgs=$INFO[Skin.String(similar_tv2_traktid)]</value>
-    </variable>
-
-    <variable name="similarserentv2">
-        <value>$INFO[Skin.String(similar_tv2_label)]</value>
-    </variable>
-
-    <variable name="similarserentv">
-        <value>$INFO[Skin.String(similar_tv_label)]</value>
-    </variable>
-    <variable name="similarserenmovie">
-        <value>$INFO[Skin.String(similar_movies_label)]</value>
-    </variable>
-
-    <variable name="similarserenmovie2">
-        <value>$INFO[Skin.String(similar_movies2_label)]</value>
     </variable>
 
     <variable name="spotlight_sortby">

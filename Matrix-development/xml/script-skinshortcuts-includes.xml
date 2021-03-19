@@ -914,7 +914,7 @@
 			<thumb />
 			<property name="labelID">13012</property>
 			<property name="defaultID">13012</property>
-			<visible>[System.ShowExitButton] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.ShowExitButton] + [System.ShowExitButton]] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>Quit()</onclick>
 			<property name="path">Quit()</property>
@@ -932,7 +932,7 @@
 			<thumb />
 			<property name="labelID">13016</property>
 			<property name="defaultID">13016</property>
-			<visible>[System.CanPowerDown] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.CanPowerDown] + [System.CanPowerDown]] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>Powerdown()</onclick>
 			<property name="path">Powerdown()</property>
@@ -950,7 +950,7 @@
 			<thumb />
 			<property name="labelID">13011</property>
 			<property name="defaultID">13011</property>
-			<visible>[System.CanSuspend] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.CanSuspend] + [System.CanSuspend]] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>Suspend()</onclick>
 			<property name="path">Suspend()</property>
@@ -968,7 +968,7 @@
 			<thumb />
 			<property name="labelID">13010</property>
 			<property name="defaultID">13010</property>
-			<visible>[System.CanHibernate] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.CanHibernate] + [System.CanHibernate]] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>Hibernate()</onclick>
 			<property name="path">Hibernate()</property>
@@ -986,7 +986,7 @@
 			<thumb />
 			<property name="labelID">13013</property>
 			<property name="defaultID">13013</property>
-			<visible>[System.CanReboot] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.CanReboot] + [System.CanReboot]] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>Reset()</onclick>
 			<property name="path">Reset()</property>
@@ -1023,7 +1023,7 @@
 			<thumb />
 			<property name="labelID">20046</property>
 			<property name="defaultID">20046</property>
-			<visible>[System.HasLocks] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.HasLocks] + [System.HasLocks]] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>mastermode</onclick>
 			<property name="path">mastermode</property>
@@ -1041,7 +1041,7 @@
 			<thumb />
 			<property name="labelID">13017</property>
 			<property name="defaultID">13017</property>
-			<visible>[System.HasShutdown +!System.IsInhibit] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.HasShutdown +!System.IsInhibit] + [System.HasShutdown +!System.IsInhibit]] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>InhibitIdleShutdown(true)</onclick>
 			<property name="path">InhibitIdleShutdown(true)</property>
@@ -1059,7 +1059,7 @@
 			<thumb />
 			<property name="labelID">13018</property>
 			<property name="defaultID">13018</property>
-			<visible>[System.HasShutdown + System.IsInhibit] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.HasShutdown + System.IsInhibit] + [System.HasShutdown + System.IsInhibit]] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>InhibitIdleShutdown(false)</onclick>
 			<property name="path">InhibitIdleShutdown(false)</property>
@@ -1077,7 +1077,7 @@
 			<thumb />
 			<property name="labelID">20150</property>
 			<property name="defaultID">20150</property>
-			<visible>[!System.HasAlarm(shutdowntimer)] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
+			<visible>[[!System.HasAlarm(shutdowntimer) + [System.CanPowerDown | System.CanSuspend | System.CanHibernate]] + [!System.HasAlarm(shutdowntimer)]] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
 			<property name="path">AlarmClock(shutdowntimer,Shutdown())</property>
@@ -1095,7 +1095,7 @@
 			<thumb />
 			<property name="labelID">20151</property>
 			<property name="defaultID">20151</property>
-			<visible>[System.HasAlarm(shutdowntimer)] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.HasAlarm(shutdowntimer)] + [System.HasAlarm(shutdowntimer)]] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>CancelAlarm(shutdowntimer)</onclick>
 			<property name="path">CancelAlarm(shutdowntimer)</property>
@@ -2057,38 +2057,6 @@
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<property name="mainmenuid">24</property>
-			<label>Seren Movies</label>
-			<label2>Custom item</label2>
-			<icon>special://skin/extras/icons/addtile.png</icon>
-			<thumb />
-			<property name="labelID">serenmovies</property>
-			<property name="defaultID" />
-			<onclick>ActivateWindow(Videos,"plugin://plugin.video.seren/?action=moviesSearchResults&amp;actionArgs=",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.seren/?action=moviesSearchResults&amp;actionArgs=",return)</property>
-			<property name="list">plugin://plugin.video.seren/?action=moviesSearchResults&amp;actionArgs=</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),searchmenus)</visible>
-			<property name="group">searchmenus</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">24</property>
-			<label>Seren TV Shows</label>
-			<label2>Custom item</label2>
-			<icon>special://skin/extras/icons/addtile.png</icon>
-			<thumb />
-			<property name="labelID">serentvshows</property>
-			<property name="defaultID" />
-			<onclick>ActivateWindow(Videos,"plugin://plugin.video.seren/?action=showsSearchResults&amp;actionArgs=",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.seren/?action=showsSearchResults&amp;actionArgs=",return)</property>
-			<property name="list">plugin://plugin.video.seren/?action=showsSearchResults&amp;actionArgs=</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),searchmenus)</visible>
-			<property name="group">searchmenus</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">24</property>
 			<label>Library Movies</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/addtile.png</icon>
@@ -2102,8 +2070,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Tv Shows</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -2118,8 +2086,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Episodes</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -2134,8 +2102,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="8">
-			<property name="id">$NUMBER[8]</property>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Genres</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -2150,8 +2118,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Year</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -2166,8 +2134,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Studio</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -2182,8 +2150,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Country</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -2198,8 +2166,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Actor</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -2214,8 +2182,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">24</property>
 			<label>Director</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -2230,8 +2198,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="14">
-			<property name="id">$NUMBER[14]</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
 			<property name="mainmenuid">24</property>
 			<label>Albums</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -2246,8 +2214,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="15">
-			<property name="id">$NUMBER[15]</property>
+		<item id="13">
+			<property name="id">$NUMBER[13]</property>
 			<property name="mainmenuid">24</property>
 			<label>Artists</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -2262,8 +2230,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="16">
-			<property name="id">$NUMBER[16]</property>
+		<item id="14">
+			<property name="id">$NUMBER[14]</property>
 			<property name="mainmenuid">24</property>
 			<label>Music Videos</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -2278,8 +2246,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="17">
-			<property name="id">$NUMBER[17]</property>
+		<item id="15">
+			<property name="id">$NUMBER[15]</property>
 			<property name="mainmenuid">24</property>
 			<label>Music Video Artists</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -2294,8 +2262,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="18">
-			<property name="id">$NUMBER[18]</property>
+		<item id="16">
+			<property name="id">$NUMBER[16]</property>
 			<property name="mainmenuid">24</property>
 			<label>Add-ons</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -2310,8 +2278,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="19">
-			<property name="id">$NUMBER[19]</property>
+		<item id="17">
+			<property name="id">$NUMBER[17]</property>
 			<property name="mainmenuid">24</property>
 			<label>Youtube</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -2326,8 +2294,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="20">
-			<property name="id">$NUMBER[20]</property>
+		<item id="18">
+			<property name="id">$NUMBER[18]</property>
 			<property name="mainmenuid">24</property>
 			<label>WonderfulSubs</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -4394,7 +4362,7 @@
 			<thumb />
 			<property name="labelID">13012</property>
 			<property name="defaultID">13012</property>
-			<visible>System.ShowExitButton</visible>
+			<visible>[System.ShowExitButton] + [System.ShowExitButton]</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>Quit()</onclick>
 			<property name="path">Quit()</property>
@@ -4412,7 +4380,7 @@
 			<thumb />
 			<property name="labelID">13016</property>
 			<property name="defaultID">13016</property>
-			<visible>System.CanPowerDown</visible>
+			<visible>[System.CanPowerDown] + [System.CanPowerDown]</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>Powerdown()</onclick>
 			<property name="path">Powerdown()</property>
@@ -4430,7 +4398,7 @@
 			<thumb />
 			<property name="labelID">13011</property>
 			<property name="defaultID">13011</property>
-			<visible>System.CanSuspend</visible>
+			<visible>[System.CanSuspend] + [System.CanSuspend]</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>Suspend()</onclick>
 			<property name="path">Suspend()</property>
@@ -4448,7 +4416,7 @@
 			<thumb />
 			<property name="labelID">13010</property>
 			<property name="defaultID">13010</property>
-			<visible>System.CanHibernate</visible>
+			<visible>[System.CanHibernate] + [System.CanHibernate]</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>Hibernate()</onclick>
 			<property name="path">Hibernate()</property>
@@ -4466,7 +4434,7 @@
 			<thumb />
 			<property name="labelID">13013</property>
 			<property name="defaultID">13013</property>
-			<visible>System.CanReboot</visible>
+			<visible>[System.CanReboot] + [System.CanReboot]</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>Reset()</onclick>
 			<property name="path">Reset()</property>
@@ -4503,7 +4471,7 @@
 			<thumb />
 			<property name="labelID">20046</property>
 			<property name="defaultID">20046</property>
-			<visible>System.HasLocks</visible>
+			<visible>[System.HasLocks] + [System.HasLocks]</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>mastermode</onclick>
 			<property name="path">mastermode</property>
@@ -4521,7 +4489,7 @@
 			<thumb />
 			<property name="labelID">13017</property>
 			<property name="defaultID">13017</property>
-			<visible>System.HasShutdown +!System.IsInhibit</visible>
+			<visible>[System.HasShutdown +!System.IsInhibit] + [System.HasShutdown +!System.IsInhibit]</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>InhibitIdleShutdown(true)</onclick>
 			<property name="path">InhibitIdleShutdown(true)</property>
@@ -4539,7 +4507,7 @@
 			<thumb />
 			<property name="labelID">13018</property>
 			<property name="defaultID">13018</property>
-			<visible>System.HasShutdown + System.IsInhibit</visible>
+			<visible>[System.HasShutdown + System.IsInhibit] + [System.HasShutdown + System.IsInhibit]</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>InhibitIdleShutdown(false)</onclick>
 			<property name="path">InhibitIdleShutdown(false)</property>
@@ -4557,7 +4525,7 @@
 			<thumb />
 			<property name="labelID">20150</property>
 			<property name="defaultID">20150</property>
-			<visible>!System.HasAlarm(shutdowntimer)</visible>
+			<visible>[!System.HasAlarm(shutdowntimer) + [System.CanPowerDown | System.CanSuspend | System.CanHibernate]] + [!System.HasAlarm(shutdowntimer)]</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
 			<property name="path">AlarmClock(shutdowntimer,Shutdown())</property>
@@ -4575,7 +4543,7 @@
 			<thumb />
 			<property name="labelID">20151</property>
 			<property name="defaultID">20151</property>
-			<visible>System.HasAlarm(shutdowntimer)</visible>
+			<visible>[System.HasAlarm(shutdowntimer)] + [System.HasAlarm(shutdowntimer)]</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>CancelAlarm(shutdowntimer)</onclick>
 			<property name="path">CancelAlarm(shutdowntimer)</property>
@@ -4629,7 +4597,7 @@
 			<thumb />
 			<property name="labelID">13012</property>
 			<property name="defaultID">13012</property>
-			<visible>[System.ShowExitButton] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.ShowExitButton] + [System.ShowExitButton]] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>Quit()</onclick>
 			<property name="path">Quit()</property>
@@ -4647,7 +4615,7 @@
 			<thumb />
 			<property name="labelID">13016</property>
 			<property name="defaultID">13016</property>
-			<visible>[System.CanPowerDown] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.CanPowerDown] + [System.CanPowerDown]] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>Powerdown()</onclick>
 			<property name="path">Powerdown()</property>
@@ -4665,7 +4633,7 @@
 			<thumb />
 			<property name="labelID">13011</property>
 			<property name="defaultID">13011</property>
-			<visible>[System.CanSuspend] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.CanSuspend] + [System.CanSuspend]] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>Suspend()</onclick>
 			<property name="path">Suspend()</property>
@@ -4683,7 +4651,7 @@
 			<thumb />
 			<property name="labelID">13010</property>
 			<property name="defaultID">13010</property>
-			<visible>[System.CanHibernate] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.CanHibernate] + [System.CanHibernate]] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>Hibernate()</onclick>
 			<property name="path">Hibernate()</property>
@@ -4701,7 +4669,7 @@
 			<thumb />
 			<property name="labelID">13013</property>
 			<property name="defaultID">13013</property>
-			<visible>[System.CanReboot] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.CanReboot] + [System.CanReboot]] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>Reset()</onclick>
 			<property name="path">Reset()</property>
@@ -4738,7 +4706,7 @@
 			<thumb />
 			<property name="labelID">20046</property>
 			<property name="defaultID">20046</property>
-			<visible>[System.HasLocks] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.HasLocks] + [System.HasLocks]] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>mastermode</onclick>
 			<property name="path">mastermode</property>
@@ -4756,7 +4724,7 @@
 			<thumb />
 			<property name="labelID">13017</property>
 			<property name="defaultID">13017</property>
-			<visible>[System.HasShutdown +!System.IsInhibit] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.HasShutdown +!System.IsInhibit] + [System.HasShutdown +!System.IsInhibit]] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>InhibitIdleShutdown(true)</onclick>
 			<property name="path">InhibitIdleShutdown(true)</property>
@@ -4774,7 +4742,7 @@
 			<thumb />
 			<property name="labelID">13018</property>
 			<property name="defaultID">13018</property>
-			<visible>[System.HasShutdown + System.IsInhibit] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.HasShutdown + System.IsInhibit] + [System.HasShutdown + System.IsInhibit]] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>InhibitIdleShutdown(false)</onclick>
 			<property name="path">InhibitIdleShutdown(false)</property>
@@ -4792,7 +4760,7 @@
 			<thumb />
 			<property name="labelID">20150</property>
 			<property name="defaultID">20150</property>
-			<visible>[!System.HasAlarm(shutdowntimer)] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
+			<visible>[[!System.HasAlarm(shutdowntimer) + [System.CanPowerDown | System.CanSuspend | System.CanHibernate]] + [!System.HasAlarm(shutdowntimer)]] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
 			<property name="path">AlarmClock(shutdowntimer,Shutdown())</property>
@@ -4810,7 +4778,7 @@
 			<thumb />
 			<property name="labelID">20151</property>
 			<property name="defaultID">20151</property>
-			<visible>[System.HasAlarm(shutdowntimer)] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
+			<visible>[[System.HasAlarm(shutdowntimer)] + [System.HasAlarm(shutdowntimer)]] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
 			<onclick>CancelAlarm(shutdowntimer)</onclick>
 			<property name="path">CancelAlarm(shutdowntimer)</property>
@@ -9052,38 +9020,6 @@
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<property name="mainmenuid">24</property>
-			<label>Seren Movies</label>
-			<label2>Custom item</label2>
-			<icon>special://skin/extras/icons/addtile.png</icon>
-			<thumb />
-			<property name="labelID">serenmovies</property>
-			<property name="defaultID" />
-			<onclick>ActivateWindow(Videos,"plugin://plugin.video.seren/?action=moviesSearchResults&amp;actionArgs=",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.seren/?action=moviesSearchResults&amp;actionArgs=",return)</property>
-			<property name="list">plugin://plugin.video.seren/?action=moviesSearchResults&amp;actionArgs=</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">searchmenus</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">24</property>
-			<label>Seren TV Shows</label>
-			<label2>Custom item</label2>
-			<icon>special://skin/extras/icons/addtile.png</icon>
-			<thumb />
-			<property name="labelID">serentvshows</property>
-			<property name="defaultID" />
-			<onclick>ActivateWindow(Videos,"plugin://plugin.video.seren/?action=showsSearchResults&amp;actionArgs=",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.seren/?action=showsSearchResults&amp;actionArgs=",return)</property>
-			<property name="list">plugin://plugin.video.seren/?action=showsSearchResults&amp;actionArgs=</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">searchmenus</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">24</property>
 			<label>Library Movies</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/addtile.png</icon>
@@ -9097,8 +9033,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Tv Shows</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9113,8 +9049,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Episodes</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9129,8 +9065,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="8">
-			<property name="id">$NUMBER[8]</property>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Genres</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9145,8 +9081,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Year</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9161,8 +9097,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Studio</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9177,8 +9113,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Country</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9193,8 +9129,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Actor</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9209,8 +9145,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">24</property>
 			<label>Director</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9225,8 +9161,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="14">
-			<property name="id">$NUMBER[14]</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
 			<property name="mainmenuid">24</property>
 			<label>Albums</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9241,8 +9177,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="15">
-			<property name="id">$NUMBER[15]</property>
+		<item id="13">
+			<property name="id">$NUMBER[13]</property>
 			<property name="mainmenuid">24</property>
 			<label>Artists</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9257,8 +9193,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="16">
-			<property name="id">$NUMBER[16]</property>
+		<item id="14">
+			<property name="id">$NUMBER[14]</property>
 			<property name="mainmenuid">24</property>
 			<label>Music Videos</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9273,8 +9209,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="17">
-			<property name="id">$NUMBER[17]</property>
+		<item id="15">
+			<property name="id">$NUMBER[15]</property>
 			<property name="mainmenuid">24</property>
 			<label>Music Video Artists</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9289,8 +9225,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="18">
-			<property name="id">$NUMBER[18]</property>
+		<item id="16">
+			<property name="id">$NUMBER[16]</property>
 			<property name="mainmenuid">24</property>
 			<label>Add-ons</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9305,8 +9241,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="19">
-			<property name="id">$NUMBER[19]</property>
+		<item id="17">
+			<property name="id">$NUMBER[17]</property>
 			<property name="mainmenuid">24</property>
 			<label>Youtube</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9321,8 +9257,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="20">
-			<property name="id">$NUMBER[20]</property>
+		<item id="18">
+			<property name="id">$NUMBER[18]</property>
 			<property name="mainmenuid">24</property>
 			<label>WonderfulSubs</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9374,38 +9310,6 @@
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<property name="mainmenuid">24</property>
-			<label>Seren Movies</label>
-			<label2>Custom item</label2>
-			<icon>special://skin/extras/icons/addtile.png</icon>
-			<thumb />
-			<property name="labelID">serenmovies</property>
-			<property name="defaultID" />
-			<onclick>ActivateWindow(Videos,"plugin://plugin.video.seren/?action=moviesSearchResults&amp;actionArgs=",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.seren/?action=moviesSearchResults&amp;actionArgs=",return)</property>
-			<property name="list">plugin://plugin.video.seren/?action=moviesSearchResults&amp;actionArgs=</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),searchmenus)</visible>
-			<property name="group">searchmenus</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">24</property>
-			<label>Seren TV Shows</label>
-			<label2>Custom item</label2>
-			<icon>special://skin/extras/icons/addtile.png</icon>
-			<thumb />
-			<property name="labelID">serentvshows</property>
-			<property name="defaultID" />
-			<onclick>ActivateWindow(Videos,"plugin://plugin.video.seren/?action=showsSearchResults&amp;actionArgs=",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.seren/?action=showsSearchResults&amp;actionArgs=",return)</property>
-			<property name="list">plugin://plugin.video.seren/?action=showsSearchResults&amp;actionArgs=</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),searchmenus)</visible>
-			<property name="group">searchmenus</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">24</property>
 			<label>Library Movies</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/addtile.png</icon>
@@ -9419,8 +9323,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Tv Shows</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9435,8 +9339,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Episodes</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9451,8 +9355,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="8">
-			<property name="id">$NUMBER[8]</property>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Genres</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9467,8 +9371,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Year</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9483,8 +9387,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Studio</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9499,8 +9403,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Country</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9515,8 +9419,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">24</property>
 			<label>Library Actor</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9531,8 +9435,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">24</property>
 			<label>Director</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9547,8 +9451,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="14">
-			<property name="id">$NUMBER[14]</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
 			<property name="mainmenuid">24</property>
 			<label>Albums</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9563,8 +9467,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="15">
-			<property name="id">$NUMBER[15]</property>
+		<item id="13">
+			<property name="id">$NUMBER[13]</property>
 			<property name="mainmenuid">24</property>
 			<label>Artists</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9579,8 +9483,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="16">
-			<property name="id">$NUMBER[16]</property>
+		<item id="14">
+			<property name="id">$NUMBER[14]</property>
 			<property name="mainmenuid">24</property>
 			<label>Music Videos</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9595,8 +9499,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="17">
-			<property name="id">$NUMBER[17]</property>
+		<item id="15">
+			<property name="id">$NUMBER[15]</property>
 			<property name="mainmenuid">24</property>
 			<label>Music Video Artists</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9611,8 +9515,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="18">
-			<property name="id">$NUMBER[18]</property>
+		<item id="16">
+			<property name="id">$NUMBER[16]</property>
 			<property name="mainmenuid">24</property>
 			<label>Add-ons</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9627,8 +9531,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="19">
-			<property name="id">$NUMBER[19]</property>
+		<item id="17">
+			<property name="id">$NUMBER[17]</property>
 			<property name="mainmenuid">24</property>
 			<label>Youtube</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9643,8 +9547,8 @@
 			<property name="group">searchmenus</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="20">
-			<property name="id">$NUMBER[20]</property>
+		<item id="18">
+			<property name="id">$NUMBER[18]</property>
 			<property name="mainmenuid">24</property>
 			<label>WonderfulSubs</label>
 			<label2>$LOCALIZE[571]</label2>
@@ -9731,68 +9635,6 @@
 			<param name="target" value="videos" />
 			<param name="sortby" value="" />
 			<param name="sortorder" value="" />
-			<param name="content" value="plugin://plugin.video.seren/?action=moviesSearchResults&amp;actionArgs=&amp;nextpage=True" />
-			<param name="widgetContent" value="plugin://plugin.video.seren/?action=moviesSearchResults&amp;actionArgs=" />
-			<param name="path" value="plugin://plugin.video.seren/?action=moviesSearchResults&amp;actionArgs=" />
-			<param name="path2" value="" />
-			<param name="widgetAspect" value="Poster" />
-			<param name="aspect" value="Poster" />
-			<param name="postercondition" value="true" />
-			<param name="landscapecondition" value="false" />
-			<param name="landscapewidecondition" value="false" />
-			<param name="landscapewidepostercondition" value="true" />
-			<param name="landscapenetflixcondition" value="false" />
-			<param name="landscapedetailscondition" value="false" />
-			<param name="posterdetailscondition" value="true" />
-			<param name="widgetlivecondition" value="false" />
-			<param name="categorycondition" value="false" />
-			<param name="squarelabelcondition" value="false" />
-			<param name="squarecondition" value="false" />
-			<param name="genrecondition" value="false" />
-			<param name="controltype" value="fixedlist" />
-			<param name="Showcase" value="false" />
-			<param name="Showcasehide" value="false" />
-			<param name="movement" value="5" />
-			<param name="label" value="Seren Movies" />
-			<param name="search" value="true" />
-			<param name="visible" value="Window.IsVisible(1138)" />
-		</include>
-		<include content="Widget">
-			<param name="id" value="5044" />
-			<param name="target" value="videos" />
-			<param name="sortby" value="" />
-			<param name="sortorder" value="" />
-			<param name="content" value="plugin://plugin.video.seren/?action=showsSearchResults&amp;actionArgs=&amp;nextpage=True" />
-			<param name="widgetContent" value="plugin://plugin.video.seren/?action=showsSearchResults&amp;actionArgs=" />
-			<param name="path" value="plugin://plugin.video.seren/?action=showsSearchResults&amp;actionArgs=" />
-			<param name="path2" value="" />
-			<param name="widgetAspect" value="Poster" />
-			<param name="aspect" value="Poster" />
-			<param name="postercondition" value="true" />
-			<param name="landscapecondition" value="false" />
-			<param name="landscapewidecondition" value="false" />
-			<param name="landscapewidepostercondition" value="true" />
-			<param name="landscapenetflixcondition" value="false" />
-			<param name="landscapedetailscondition" value="false" />
-			<param name="posterdetailscondition" value="true" />
-			<param name="widgetlivecondition" value="false" />
-			<param name="categorycondition" value="false" />
-			<param name="squarelabelcondition" value="false" />
-			<param name="squarecondition" value="false" />
-			<param name="genrecondition" value="false" />
-			<param name="controltype" value="fixedlist" />
-			<param name="Showcase" value="false" />
-			<param name="Showcasehide" value="false" />
-			<param name="movement" value="5" />
-			<param name="label" value="Seren TV Shows" />
-			<param name="search" value="true" />
-			<param name="visible" value="Window.IsVisible(1138)" />
-		</include>
-		<include content="Widget">
-			<param name="id" value="5045" />
-			<param name="target" value="videos" />
-			<param name="sortby" value="" />
-			<param name="sortorder" value="" />
 			<param name="content" value="videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22title%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22&amp;nextpage=True" />
 			<param name="widgetContent" value="videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22title%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22" />
 			<param name="path" value="videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22title%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22" />
@@ -9820,7 +9662,7 @@
 			<param name="visible" value="Window.IsVisible(1138)" />
 		</include>
 		<include content="Widget">
-			<param name="id" value="5046" />
+			<param name="id" value="5044" />
 			<param name="target" value="videos" />
 			<param name="sortby" value="" />
 			<param name="sortorder" value="" />
@@ -9851,7 +9693,7 @@
 			<param name="visible" value="Window.IsVisible(1138)" />
 		</include>
 		<include content="Widget">
-			<param name="id" value="5047" />
+			<param name="id" value="5045" />
 			<param name="target" value="videos" />
 			<param name="sortby" value="" />
 			<param name="sortorder" value="" />
@@ -9882,7 +9724,7 @@
 			<param name="visible" value="Window.IsVisible(1138)" />
 		</include>
 		<include content="Widget">
-			<param name="id" value="5048" />
+			<param name="id" value="5046" />
 			<param name="target" value="videos" />
 			<param name="sortby" value="" />
 			<param name="sortorder" value="" />
@@ -9913,7 +9755,7 @@
 			<param name="visible" value="Window.IsVisible(1138)" />
 		</include>
 		<include content="Widget">
-			<param name="id" value="5049" />
+			<param name="id" value="5047" />
 			<param name="target" value="videos" />
 			<param name="sortby" value="" />
 			<param name="sortorder" value="" />
@@ -9944,7 +9786,7 @@
 			<param name="visible" value="Window.IsVisible(1138)" />
 		</include>
 		<include content="Widget">
-			<param name="id" value="5050" />
+			<param name="id" value="5048" />
 			<param name="target" value="videos" />
 			<param name="sortby" value="" />
 			<param name="sortorder" value="" />
@@ -9975,7 +9817,7 @@
 			<param name="visible" value="Window.IsVisible(1138)" />
 		</include>
 		<include content="Widget">
-			<param name="id" value="5051" />
+			<param name="id" value="5049" />
 			<param name="target" value="videos" />
 			<param name="sortby" value="" />
 			<param name="sortorder" value="" />
@@ -10006,7 +9848,7 @@
 			<param name="visible" value="Window.IsVisible(1138)" />
 		</include>
 		<include content="Widget">
-			<param name="id" value="5052" />
+			<param name="id" value="5050" />
 			<param name="target" value="videos" />
 			<param name="sortby" value="" />
 			<param name="sortorder" value="" />
@@ -10037,7 +9879,7 @@
 			<param name="visible" value="Window.IsVisible(1138)" />
 		</include>
 		<include content="Widget">
-			<param name="id" value="5053" />
+			<param name="id" value="5051" />
 			<param name="target" value="videos" />
 			<param name="sortby" value="" />
 			<param name="sortorder" value="" />
@@ -10068,7 +9910,7 @@
 			<param name="visible" value="Window.IsVisible(1138)" />
 		</include>
 		<include content="Widget">
-			<param name="id" value="5054" />
+			<param name="id" value="5052" />
 			<param name="target" value="videos" />
 			<param name="sortby" value="" />
 			<param name="sortorder" value="" />
@@ -10099,7 +9941,7 @@
 			<param name="visible" value="Window.IsVisible(1138)" />
 		</include>
 		<include content="Widget">
-			<param name="id" value="5055" />
+			<param name="id" value="5053" />
 			<param name="target" value="videos" />
 			<param name="sortby" value="" />
 			<param name="sortorder" value="" />
@@ -10130,7 +9972,7 @@
 			<param name="visible" value="Window.IsVisible(1138)" />
 		</include>
 		<include content="Widget">
-			<param name="id" value="5056" />
+			<param name="id" value="5054" />
 			<param name="target" value="videos" />
 			<param name="sortby" value="" />
 			<param name="sortorder" value="" />
@@ -10161,7 +10003,7 @@
 			<param name="visible" value="Window.IsVisible(1138)" />
 		</include>
 		<include content="Widget">
-			<param name="id" value="5057" />
+			<param name="id" value="5055" />
 			<param name="target" value="videos" />
 			<param name="sortby" value="" />
 			<param name="sortorder" value="" />
@@ -10192,7 +10034,7 @@
 			<param name="visible" value="Window.IsVisible(1138)" />
 		</include>
 		<include content="Widget">
-			<param name="id" value="5058" />
+			<param name="id" value="5056" />
 			<param name="target" value="videos" />
 			<param name="sortby" value="" />
 			<param name="sortorder" value="" />
@@ -10223,7 +10065,7 @@
 			<param name="visible" value="Window.IsVisible(1138)" />
 		</include>
 		<include content="Widget">
-			<param name="id" value="5059" />
+			<param name="id" value="5057" />
 			<param name="target" value="videos" />
 			<param name="sortby" value="" />
 			<param name="sortorder" value="" />
@@ -10254,7 +10096,7 @@
 			<param name="visible" value="Window.IsVisible(1138)" />
 		</include>
 		<include content="Widget">
-			<param name="id" value="5060" />
+			<param name="id" value="5058" />
 			<param name="target" value="videos" />
 			<param name="sortby" value="" />
 			<param name="sortorder" value="" />
