@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- BINGIE -->
+<!-- QuackFX -->
 <window id="1156" type="dialog">
 	<visible>!String.IsEmpty(Window(home).Property(CustomSearch))</visible>
 	<onload>ClearProperty(CustomSearch,home)</onload>

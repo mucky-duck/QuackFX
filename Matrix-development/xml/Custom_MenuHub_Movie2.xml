@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="window" id="2112">
-  <onload condition="!String.IsEqual(Window(Home).Property(BaseWindow),InfoDialog)">SetFocus(505)</onload>
-  <onunload>ClearProperty(SkinHelper.WidgetContainer,Home)</onunload>
-  <controls>
-
-
-<!--
+	<onload condition="!String.IsEqual(Window(Home).Property(BaseWindow),InfoDialog)">SetFocus(505)</onload>
+	<onunload>ClearProperty(SkinHelper.WidgetContainer,Home)</onunload>
+	<controls>
+		<!--
       <include>Animation_Right</include>
       <include>object_menuhub_includes</include>
       <include condition="Skin.HasSetting(DisableSubMenuVert)">Home_MovieHubMenu_Layout</include>
@@ -93,9 +91,8 @@
       <include>skinshortcuts-template-x1102</include>
     </control>
 -->
-  <include condition="!Skin.HasSetting(EnableQuackFXMy1)" content="menuhub_window">
-    <param name="skinshortcut" value="x1102" />
-  </include>
-
-  </controls>
+		<include condition="!Skin.HasSetting(EnableQuackFXMy1)" content="menuhub_window">
+			<param name="skinshortcut" value="x1102"/>
+		</include>
+	</controls>
 </window>

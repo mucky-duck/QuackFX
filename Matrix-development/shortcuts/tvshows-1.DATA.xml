@@ -5,6 +5,6 @@
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>image://DefaultFolder.png/</thumb>
-		<action></action>
+		<action/>
 	</shortcut>
 </shortcuts>

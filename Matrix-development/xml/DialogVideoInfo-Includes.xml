@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Foundation -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- QuackFX -->
 <includes>
 	<include name="DialogVideoInfo_QuackFX">
 		<control type="list" id="300">

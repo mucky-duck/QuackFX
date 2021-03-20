@@ -423,8 +423,8 @@
 			<control type="label">
 				<visible>String.IsEqual(Container(110).Currentitem,6) | String.EndsWith(Container(110).Currentitem,21) | String.EndsWith(Container(110).Currentitem,36) | String.EndsWith(Container(110).Currentitem,51) | String.EndsWith(Container(110).Currentitem,66) | String.EndsWith(Container(110).Currentitem,81) | String.EndsWith(Container(110).Currentitem,96)</visible>
 				<animation type="Visible" reversible="false">
-					<effect type="slide" end="0,400" time="1000" tween="bounce" easing="out" />
-					<effect type="rotate" start="440" center="auto" end="360" time="1000" tween="cubic" easing="out" />
+					<effect type="slide" end="0,400" time="1000" tween="bounce" easing="out"/>
+					<effect type="rotate" start="440" center="auto" end="360" time="1000" tween="cubic" easing="out"/>
 				</animation>
 				<width>auto</width>
 				<height>100</height>
@@ -437,8 +437,8 @@
 			</control>
 			<control type="label">
 				<animation type="Visible" reversible="false">
-					<effect type="slide" delay="150" end="0,400" time="1000" tween="bounce" easing="out" />
-					<effect type="rotate" delay="150" start="440" center="auto" end="360" time="1000" tween="cubic" easing="out" />
+					<effect type="slide" delay="150" end="0,400" time="1000" tween="bounce" easing="out"/>
+					<effect type="rotate" delay="150" start="440" center="auto" end="360" time="1000" tween="cubic" easing="out"/>
 				</animation>
 				<visible>String.IsEqual(Container(110).Currentitem,6) | String.EndsWith(Container(110).Currentitem,21) | String.EndsWith(Container(110).Currentitem,36) | String.EndsWith(Container(110).Currentitem,51) | String.EndsWith(Container(110).Currentitem,66) | String.EndsWith(Container(110).Currentitem,81) | String.EndsWith(Container(110).Currentitem,96)</visible>
 				<width>auto</width>
@@ -453,8 +453,8 @@
 			<control type="label">
 				<visible>String.IsEqual(Container(110).Currentitem,6) | String.EndsWith(Container(110).Currentitem,21) | String.EndsWith(Container(110).Currentitem,36) | String.EndsWith(Container(110).Currentitem,51) | String.EndsWith(Container(110).Currentitem,66) | String.EndsWith(Container(110).Currentitem,81) | String.EndsWith(Container(110).Currentitem,96)</visible>
 				<animation type="Visible" reversible="false">
-					<effect type="slide" delay="300" end="0,400" time="1000" tween="bounce" easing="out" />
-					<effect type="rotate" delay="300" start="440" center="auto" end="360" time="1000" tween="cubic" easing="out" />
+					<effect type="slide" delay="300" end="0,400" time="1000" tween="bounce" easing="out"/>
+					<effect type="rotate" delay="300" start="440" center="auto" end="360" time="1000" tween="cubic" easing="out"/>
 				</animation>
 				<width>auto</width>
 				<height>100</height>
@@ -1124,7 +1124,7 @@
 			<control type="label">
 				<visible>String.EndsWith(Container(110).Currentitem,13) | String.EndsWith(Container(110).Currentitem,28) | String.EndsWith(Container(110).Currentitem,43) | String.EndsWith(Container(110).Currentitem,58) | String.EndsWith(Container(110).Currentitem,73) | String.EndsWith(Container(110).Currentitem,88) | String.EndsWith(Container(110).Currentitem,03)</visible>
 				<animation type="Visible" reversible="false">
-					<effect type="zoom" center="auto" start="25" end="100" time="300"/>				
+					<effect type="zoom" center="auto" start="25" end="100" time="300"/>
 					<effect type="rotate" center="auto" start="360" end="0" time="300" tween="sine" easing="out"/>
 				</animation>
 				<width>auto</width>
@@ -1139,7 +1139,7 @@
 			<control type="label">
 				<visible>String.EndsWith(Container(110).Currentitem,13) | String.EndsWith(Container(110).Currentitem,28) | String.EndsWith(Container(110).Currentitem,43) | String.EndsWith(Container(110).Currentitem,58) | String.EndsWith(Container(110).Currentitem,73) | String.EndsWith(Container(110).Currentitem,88) | String.EndsWith(Container(110).Currentitem,03)</visible>
 				<animation type="Visible" reversible="false">
-					<effect type="zoom" center="auto" start="25" end="100" time="500"/>		
+					<effect type="zoom" center="auto" start="25" end="100" time="500"/>
 					<effect type="rotate" center="auto" start="450" end="0" time="500" tween="sine" easing="out"/>
 				</animation>
 				<width>auto</width>
@@ -1154,7 +1154,7 @@
 			<control type="label">
 				<visible>String.EndsWith(Container(110).Currentitem,13) | String.EndsWith(Container(110).Currentitem,28) | String.EndsWith(Container(110).Currentitem,43) | String.EndsWith(Container(110).Currentitem,58) | String.EndsWith(Container(110).Currentitem,73) | String.EndsWith(Container(110).Currentitem,88) | String.EndsWith(Container(110).Currentitem,03)</visible>
 				<animation type="Visible" reversible="false">
-					<effect type="zoom" center="auto" start="25" end="100" time="600"/>			
+					<effect type="zoom" center="auto" start="25" end="100" time="600"/>
 					<effect type="rotate" center="auto" start="540" end="0" time="700" tween="sine" easing="out"/>
 				</animation>
 				<width>auto</width>
@@ -1345,7 +1345,7 @@
 					<height>600</height>
 					<visible>String.EndsWith(Container(110).Currentitem,15) | String.EndsWith(Container(110).Currentitem,30) | String.EndsWith(Container(110).Currentitem,45) | String.EndsWith(Container(110).Currentitem,60) | String.EndsWith(Container(110).Currentitem,75) | String.EndsWith(Container(110).Currentitem,90) | String.EndsWith(Container(110).Currentitem,05)</visible>
 					<animation type="Visible" reversible="false">
-						<effect type="slide" delay="650" start="0,-400" end="0,0" time="1200" tween="bounce" easing="out" />
+						<effect type="slide" delay="650" start="0,-400" end="0,0" time="1200" tween="bounce" easing="out"/>
 					</animation>
 					<label>$INFO[Container(110).ListItem.Property(part4)]</label>
 					<font>lyr15b</font>

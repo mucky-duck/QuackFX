@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="Object_Info">
 		<param name="hdsd_flag" default="false"/>
@@ -86,14 +86,12 @@
 						<visible>!Control.IsVisible(500)</visible>
 					</control>
 				</control>
-
 				<control type="group">
 					<height>40</height>
 					<top>-20</top>
 					<include>netflix_infoline</include>
 					<visible>!Skin.HasSetting(DisableNetflixView)</visible>
 				</control>
-
 				<control type="group">
 					<height>80</height>
 					<left>0</left>
@@ -739,7 +737,6 @@
 					</include>
 				</control>
 			</control>
-
 			<control type="wraplist" id="$PARAM[id]">
 				<onfocus>SetProperty(SpotFocus,true,Home)</onfocus>
 				<animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditional</animation>
@@ -808,14 +805,12 @@
 									<height>100%</height>
 									<texture colordiffuse="20000000" border="10" flipy="true">diffuse/landscape.png</texture>
 								</control>
-
 								<control type="image">
 									<width>100%</width>
 									<height>100%</height>
 									<texture colordiffuse="10FFFFFF" border="10" flipy="true">diffuse/landscape.png</texture>
 									<visible>Skin.HasSetting(DisableQuackFXHomeLayout) + !Skin.HasSetting(DisableNetflixSubmenuBG)</visible>
 								</control>
-
 								<control type="group">
 									<height min="60" max="251">auto</height>
 									<animation effect="fade" time="0">VisibleChange</animation>
@@ -1182,7 +1177,6 @@
 			</control>
 		</control>
 	</include>
-
 	<include name="Spotlight_QuackFXWidget_info">
 		<param name="id" default=""/>
 		<param name="content" default=""/>
@@ -1218,7 +1212,6 @@
 			</control>
 		</definition>
 	</include>
-
 	<include name="Spotlight_QuackFXWidget">
 		<param name="id" default=""/>
 		<param name="content" default=""/>
@@ -1702,7 +1695,6 @@
 	  <visible>!Player.HasVideo + $EXP[DBTvideosImage]</visible>
 	</control>
 -->
-
 				<control type="image">
 					<animation effect="slide" end="50,-10" condition="Skin.HasSetting(DisableNetflixHomeSidemenu)">Conditional</animation>
 					<animation effect="slide" end="20,0" condition="Skin.HasSetting(DisableNetflixHomeSidemenuHide)">Conditional</animation>
@@ -1981,7 +1973,6 @@
 			</control>
 		</control>
 	</include>
-
 	<include name="addon_view_infospotlight">
 		<param name="id" default=""/>
 		<definition>
@@ -2050,7 +2041,6 @@
 						<autoscroll>true</autoscroll>
 						<scroll>true</scroll>
 					</control>
-
 					<control type="grouplist">
 						<height>60</height>
 						<orientation>horizontal</orientation>
@@ -2283,7 +2273,6 @@
 					<param name="width" value="1440"/>
 					<param name="visible" value="!Skin.HasSetting(DisableNetflixView) + !Skin.HasSetting(DisableNetflixShowcaseOverlay) + !Player.HasVideo + [Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(509) | Window.IsVisible(DialogVideoInfo.xml)]"/>
 				</include>
-
 				<!-- Add Ratings below Fanart -->
 				<control type="group">
 					<visible>!Skin.HasSetting(DisableNetflixView) + !Window.IsVisible(DialogVideoInfo.xml) + !String.IsEqual(ListItem.Label,Next)</visible>
@@ -2309,7 +2298,6 @@
 					</include>
 				</control>
 			</control>
-
 			<!-- Left Info Showcase -->
 			<control type="grouplist">
 				<top>-45</top>
@@ -2320,7 +2308,6 @@
 				<usecontrolcoords>true</usecontrolcoords>
 				<itemgap>0</itemgap>
 				<height>650</height>
-
 				<!-- Clearlogo -->
 				<include content="Netflix_Clearlogo">
 					<param name="id" value="5150"/>
@@ -2363,7 +2350,6 @@
 					<autoscroll>true</autoscroll>
 					<scroll>true</scroll>
 				</control>
-
 				<control type="grouplist">
 					<top>0</top>
 					<height>60</height>
@@ -2387,7 +2373,6 @@
 					<font>font_small</font>
 					<autoscroll delay="5000" time="1500" repeat="5000">true</autoscroll>
 				</control>
-
 				<control type="textbox">
 					<visible>$EXP[DBTvideos] + Skin.HasSetting(DisableNetflixShowcaseOverlay)</visible>
 					<label fallback="19055">$VAR[Label_OverlayPlot]</label>
@@ -2931,8 +2916,6 @@
 			</control>
 		</definition>
 	</include>
-	
-
 	<!-- cr to Titan Bingie mode-->
 	<include name="Object_CircleWidget">
 		<top>40</top>
@@ -2970,7 +2953,6 @@
 			</control>
 		</focusedlayout>
 	</include>
-
 	<include name="Circle_CastWidget">
 		<param name="colordiffuse" default="white"/>
 		<param name="autoscroll" default="true"/>
@@ -2983,7 +2965,6 @@
 				<aspectratio>stretch</aspectratio>
 				<bordersize>$PARAM[bordersize_bg]</bordersize>
 			</control>
-
 			<control type="group">
 				<control type="textbox">
 					<autoscroll delay="2000" time="1500" repeat="1500">$PARAM[autoscroll]</autoscroll>
@@ -3002,9 +2983,6 @@
 			</control>
 		</definition>
 	</include>
-
-
-
 	<include name="Object_VideoInfo_CastList_Content_NextUp">
 		<content limit="3" sortby="playcount" sortorder="ascending">videodb://inprogresstvshows/$INFO[ListItem.DBID]/-2/?tvshowid=$INFO[ListItem.DBID]</content>
 	</include>
@@ -3506,13 +3484,10 @@
 					</control>
 					<control type="group">
 						<visible>$PARAM[container]ListItem.IsParentFolder | String.StartsWith($PARAM[container]ListItem.Icon,Default)</visible>
-			
 						<control type="image">
 							<aspectratio aligny="center" scalediffuse="false">center</aspectratio>
 							<texture background="true" colordiffuse="PosterFront" fallback="DefaultAddonNone.png" diffuse="diffuse/bigposter.png">$INFO[$PARAM[container]ListItem.Icon]</texture>
 							<visible>[!Container.Content(genres) + !Container.Content(studios) + !Container.Content(countries) + !Container.Content(years) + !Container.Content(directors)] | ListItem.IsParentFolder</visible>
-			  
-
 						</control>
 						<control type="image">
 							<bordersize>80</bordersize>
@@ -4017,7 +3992,6 @@
 					<visible>!Skin.HasSetting(Ratings.TVDB)</visible>
 					<visible>$PARAM[tvdb]</visible>
 				</control>
-
 				<control type="image">
 					<top>0</top>
 					<left>-10</left>
@@ -5188,7 +5162,6 @@
 			<visible>Skin.HasSetting(DisableNetflixHomeAlt) + Window.IsVisible(Home)</visible>
 		</control>
 	</include>
-
 	<!-- @PXCL dev -->
 	<include name="Logo">
 		<control type="group">
@@ -5326,8 +5299,6 @@
 			</control>
 		</control>
 	</include>
-
-
 	<include name="netflix_infoline_container">
 		<param name="id" default="$PARAM[id]"/>
 		<definition>
@@ -5434,7 +5405,6 @@
 									<label>$INFO[Container($PARAM[id]).ListItem.Property(TotalSeasons)] Season</label>
 									<visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow) + String.IsEqual(Container($PARAM[id]).ListItem.Property(TotalSeasons),1)</visible>
 								</control>
-
 								<control type="label">
 									<top>28</top>
 									<textcolor>white</textcolor>
@@ -5459,8 +5429,6 @@
 			</control>
 		</definition>
 	</include>
-
-
 	<include name="netflix_infoline">
 		<control type="group">
 			<visible>[$EXP[DBTvideos] + !Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222) + !Control.HasFocus(660) + !String.IsEqual(Container($PARAM[id]).ListItem.Container($PARAM[id]).Label,See More...) + !String.IsEqual(Container($PARAM[id]).ListItem.Container($PARAM[id]).Label,Next)] | [String.Contains(Container($PARAM[id]).ListItem.FolderPath,plugin.video.youtube)] | Window.IsVisible(DialogVideoInfo.xml)</visible>
@@ -6109,7 +6077,6 @@
 	<include name="Widgets_Items_menu_Small_Height">
 		<height>210</height>
 	</include>
-
 	<include name="Widgets_Label">
 		<definition>
 			<control type="grouplist">
@@ -6211,8 +6178,6 @@
 	<include name="Widget_Label_height_hub1">
 		<top>widget_top</top>
 	</include>
-
-
 	<include name="Widget_Label_quackfx">
 		<param name="postercondition" default="false"/>
 		<param name="landscapedetailscondition" default="false"/>
@@ -6424,7 +6389,6 @@
 			</control>
 		</definition>
 	</include>
-
 	<include name="QuackFX_Widget_Background">
 		<control type="group" id="4$PARAM[id]">
 			<control type="image">
@@ -6443,7 +6407,6 @@
 			</control>
 		</control>
 	</include>
-
 	<include name="Widget_QuackFXHub_width_landscapepanel">
 		<width>1450</width>
 	</include>
@@ -6553,7 +6516,6 @@
 					<visible>[Container($PARAM[id]).IsUpdating + !Integer.IsGreater(Container($PARAM[id]).NumItems,0)] | [Window.IsVisible(1138) + Container($PARAM[id]).IsUpdating]</visible>
 				</control>
 			</control>
-
 			<control type="$PARAM[controltype]" id="$PARAM[id]">
 				<include content="left" condition="![$PARAM[landscapewidecondition] + $PARAM[landscapewidebg]]">
 					<param name="left" value="-55"/>
@@ -6604,7 +6566,6 @@
 				<onback condition="ControlGroup(5055).HasFocus">505</onback>
 				<onback condition="!Container($PARAM[id]).HasPrevious + [Window.IsVisible(2111) | Window.IsVisible(2113) | Window.IsVisible(2115) | Window.IsVisible(2116) | Window.IsVisible(2117)]">ActivateWindow(Home)</onback>
 				<onclick condition="!Skin.HasSetting(EnableShowInfo) + [[String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(ShowInfo.Episodes)] | [String.IsEqual(ListItem.DBType,tvshow) + !Skin.HasSetting(ShowInfo.TV)] | [String.IsEqual(ListItem.DBType,movie) + !Skin.HasSetting(ShowInfo.Movies)]]">Action(Info)</onclick>
-
 				<visible>$PARAM[visible] + [Integer.IsGreater(Container($PARAM[id]).NumItems,0) | Container($PARAM[id]).IsUpdating | String.IsEmpty(Window(Home).Property(WidgetLoading))]</visible>
 				<include content="Widget_Items" condition="!$PARAM[submenu]">
 					<param name="id" value="$PARAM[id]"/>
@@ -6652,7 +6613,6 @@
 			</control>
 		</definition>
 	</include>
-
 	<include name="quackfxhub_widget_height">
 		<param name="submenu" default="false"/>
 		<param name="postercondition" default="false"/>
@@ -6707,7 +6667,6 @@
 			<include condition="Skin.HasSetting(QuackFXHubSpacingSmall) + $PARAM[submenucondition] + !Skin.HasSetting(SubmenuLabel)">QuackFXWidget_Items_SubmenuWidget_Big_Height_small</include>
 		</definition>
 	</include>
-
 	<include name="Widget_Netflixhub">
 		<param name="submenu" default="false"/>
 		<param name="genres" default="false"/>
@@ -7221,11 +7180,9 @@
 			</control>
 		</definition>
 	</include>
-
 	<include name="menuhub_quackfx">
 		<param name="skinshortcut" default=""/>
 		<definition>
-
 			<include>Global_Background</include>
 			<control type="group">
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(QuackFXHubSpacingSmall)">Conditional</animation>
@@ -7245,7 +7202,6 @@
 					<label>[B]QuackFXHub[/B]</label>
 				</control>
 			</control>
-
 			<control type="grouplist" id="505">
 				<include>Animation_Right</include>
 				<animation effect="slide" end="270,0" time="500" condition="Control.HasFocus(400)">Conditional</animation>
@@ -7265,7 +7221,6 @@
 			</control>
 		</definition>
 	</include>
-
 	<include name="menuhub_window">
 		<param name="skinshortcut" default=""/>
 		<definition>
@@ -7807,7 +7762,8 @@
 	<include name="fadelabel_spotlight_list_tv">
 		<control type="fadelabel" id="34449">
 			<description>Randomizer for plugin-free multiple fanart</description>
-			<top>-1000</top><!-- Don't need to see it, but can't change its visibility. Put it off screen -->
+			<top>-1000</top>
+			<!-- Don't need to see it, but can't change its visibility. Put it off screen -->
 			<width>1</width>
 			<height>1</height>
 			<label>$INFO[Skin.String(spotlighttv1.path)]</label>
@@ -7817,7 +7773,8 @@
 			<!-- ... repeat for each numbered fanart -->
 			<!-- tvshow.fanart are filled with the series fanart when navigating season and episode lists -->
 			<randomize>false</randomize>
-			<pauseatend>160000</pauseatend><!-- Time to show each image, in milliseconds -->
+			<pauseatend>160000</pauseatend>
+			<!-- Time to show each image, in milliseconds -->
 			<!-- No scrolling so only the pauseatend above (plus a short fade-in) affects length of time each
 				image is shown -->
 			<scroll>false</scroll>
@@ -7830,7 +7787,8 @@
 	<include name="fadelabel_spotlight_list_movies">
 		<control type="fadelabel" id="34450">
 			<description>Randomizer for plugin-free multiple fanart</description>
-			<top>-1000</top><!-- Don't need to see it, but can't change its visibility. Put it off screen -->
+			<top>-1000</top>
+			<!-- Don't need to see it, but can't change its visibility. Put it off screen -->
 			<width>1</width>
 			<height>1</height>
 			<label>$INFO[Skin.String(spotlightmovies1.path)]</label>
@@ -7840,7 +7798,8 @@
 			<!-- ... repeat for each numbered fanart -->
 			<!-- tvshow.fanart are filled with the series fanart when navigating season and episode lists -->
 			<randomize>false</randomize>
-			<pauseatend>160000</pauseatend><!-- Time to show each image, in milliseconds -->
+			<pauseatend>160000</pauseatend>
+			<!-- Time to show each image, in milliseconds -->
 			<!-- No scrolling so only the pauseatend above (plus a short fade-in) affects length of time each
 				image is shown -->
 			<scroll>false</scroll>
@@ -7850,11 +7809,11 @@
 			<resetonlabelchange>true</resetonlabelchange>
 		</control>
 	</include>
-
 	<include name="similar_movies_list">
 		<control type="list" id="12341">
 			<content sortby="random">$INFO[Skin.String(similarmovies.path)]</content>
-			<autoscroll time="120000">true</autoscroll><!-- Time to show each image, in milliseconds -->
+			<autoscroll time="120000">true</autoscroll>
+			<!-- Time to show each image, in milliseconds -->
 			<itemlayout/>
 			<focusedlayout/>
 		</control>
@@ -7862,12 +7821,12 @@
 	<include name="similar_tv_list">
 		<control type="list" id="12342">
 			<content sortby="random" limit="15">$INFO[Skin.String(similartv.path)]</content>
-			<autoscroll time="120000">true</autoscroll><!-- Time to show each image, in milliseconds -->
+			<autoscroll time="120000">true</autoscroll>
+			<!-- Time to show each image, in milliseconds -->
 			<itemlayout/>
 			<focusedlayout/>
 		</control>
 	</include>
-  
 	<include name="episode_list">
 		<param name="id" default=""/>
 		<param name="visible" default=""/>
@@ -8121,7 +8080,6 @@
 			</control>
 		</definition>
 	</include>
-
 	<include name="Object_IconicButton_Left">
 		<control type="group">
 			<visible>$PARAM[visible]</visible>
@@ -8137,7 +8095,6 @@
 			</control>
 		</control>
 	</include>
-
 	<include name="Object_IconicButton_Right">
 		<control type="group">
 			<visible>$PARAM[visible]</visible>
@@ -8146,7 +8103,6 @@
 			</control>
 		</control>
 	</include>
-
 	<include name="Object_IconicButton">
 		<param name="visible" default="true"/>
 		<param name="controltype" default="button"/>
@@ -8204,7 +8160,6 @@
 			</control>
 		</definition>
 	</include>
-
 	<include name="Info_ImageViewer">
 		<param name="listid" default="5005"/>
 		<param name="buttonid" default="9506"/>
@@ -8228,7 +8183,6 @@
 			</control>
 		</definition>
 	</include>
-
 	<include name="Netflix_Fixed_Focus">
 		<param name="ids" default=""/>
 		<param name="top" default=""/>
@@ -8249,8 +8203,6 @@
 		<param name="submenucondition" default="false"/>
 		<param name="visible" default=""/>
 		<definition>
-
-
 			<control type="group" id="$PARAM[ids]">
 				<top>-700</top>
 				<visible>$PARAM[visible] + $PARAM[landscapewidecondition]</visible>
@@ -8260,12 +8212,6 @@
 					<texture colordiffuse="FFFFFFFF" border="20">home_focus.png</texture>
 				</control>
 			</control>
-
-
-
-
-
-
 			<!--
 			 <control type="group" id="$PARAM[id]">
 				<left>$PARAM[left]</left>
@@ -8280,7 +8226,6 @@
 -->
 		</definition>
 	</include>
-
 	<include name="global_search">
 		<include>Global_Background</include>
 		<include>Topbar</include>
@@ -8295,7 +8240,6 @@
 			<itemlayout width="10"/>
 			<focusedlayout width="10"/>
 		</control>
-
 		<control type="group">
 			<include>View_Group</include>
 			<include>Animation_Right</include>
@@ -8486,17 +8430,17 @@
 				<param name="visible" value="Control.IsVisible(50)"/>
 			</include>
 		</control>
-
-		<control type="label" id="991"><include>Defs_Hidden_Button</include></control>
+		<control type="label" id="991">
+			<include>Defs_Hidden_Button</include>
+		</control>
 		<control type="button" id="990">
 			<onright>9000</onright>
 			<onleft>noop</onleft>
 			<ondown>50</ondown>
 			<include>Defs_Hidden_Button</include>
 		</control>
-		<control type="label" id="999"><include>Defs_Hidden_Button</include></control>
+		<control type="label" id="999">
+			<include>Defs_Hidden_Button</include>
+		</control>
 	</include>
-
-
-
 </includes>

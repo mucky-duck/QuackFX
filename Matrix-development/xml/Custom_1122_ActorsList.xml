@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1122">
 	<defaultcontrol always="true">1</defaultcontrol>
 	<controls>
@@ -19,7 +19,7 @@
 				<height>410</height>
 				<right>30</right>
 				<visible>Container(11).IsUpdating + !Integer.IsGreater(Container(11).NumItems,0)</visible>
-<!--
+				<!--
 				<control type="image">
 					<top>180</top>
 					<centerleft>50%</centerleft>
@@ -38,9 +38,9 @@
 					<animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
 				</control>
 -->
-                    <include content="Defs_BusySpinner">
-                        <param name="label" value="$LOCALIZE[31138]..." />
-                    </include>
+				<include content="Defs_BusySpinner">
+					<param name="label" value="$LOCALIZE[31138]..."/>
+				</include>
 			</control>
 			<control type="button" id="800">
 				<left>-10000</left>
