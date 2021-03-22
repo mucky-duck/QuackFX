@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <colors>
+	<color name="FocusButton">FF760000</color><!-- dark red -->
+	<color name="MainText">FFFFFEFF</color><!-- white -->
+	<color name="InfoText">FFC0C2C2</color> <!-- grey -->
+	<color name="HeaderText">FFFFFEFF</color><!-- white -->
+	<color name="HighlightText">FF760000</color><!-- dark red -->
 	<!-- Main -->
 	<color name="main_bg_100">ff181818</color>
 	<color name="main_bg_70">b3181818</color>
@@ -104,7 +109,7 @@
 	<color name="darkgrey">FF3e3e3e</color>
 	<color name="darkgrey2">FF666769</color>
 	<!--White-->
-	<color name="white">FFfffeff</color>
+	<color name="white">FFFFFEFF</color>
 	<color name="77white">77FFFFFF</color>
 	<color name="aawhite">AAFFFFFF</color>
 	<color name="bbwhite">BBFFFFFF</color>
