@@ -11,17 +11,17 @@
 	<shortcut>
 		<defaultID>moviequackfxhub</defaultID>
 		<label>Movie QuackFX Hub </label>
-		<label2 />
+		<label2/>
 		<icon>special://skin/extras/icons/film.png</icon>
-		<thumb />
+		<thumb/>
 		<action>ActivateWindow(3920,return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID>movienetflixhub</defaultID>
 		<label>Movie Netflix Hub</label>
-		<label2 />
+		<label2/>
 		<icon>special://skin/extras/icons/film.png</icon>
-		<thumb />
+		<thumb/>
 		<action>ActivateWindow(3820,return)</action>
 	</shortcut>
 </shortcuts>

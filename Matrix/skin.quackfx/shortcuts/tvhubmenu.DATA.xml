@@ -13,15 +13,15 @@
 		<label>TV QuackFX Hub</label>
 		<label2>Custom item</label2>
 		<icon>special://skin/extras/icons/tv.png</icon>
-		<thumb />
+		<thumb/>
 		<action>ReplaceWindow(3910,return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID>tvnetflixhub</defaultID>
 		<label>TV Netflix Hub</label>
-		<label2 />
+		<label2/>
 		<icon>special://skin/extras/icons/tv.png</icon>
-		<thumb />
+		<thumb/>
 		<action>ActivateWindow(3810,return)</action>
 	</shortcut>
 </shortcuts>

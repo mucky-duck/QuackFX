@@ -5,7 +5,7 @@
 		<label>32087</label>
 		<label2>Common menu item</label2>
 		<icon>special://skin/extras/icons/radio.png</icon>
-		<thumb />
+		<thumb/>
 		<action>ActivateWindow(RadioGuide)</action>
 	</shortcut>
 	<shortcut>

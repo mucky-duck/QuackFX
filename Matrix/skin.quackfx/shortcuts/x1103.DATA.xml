@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <shortcuts>
 	<shortcut>
-		<defaultID />
+		<defaultID/>
 		<label>Search...</label>
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
@@ -9,7 +9,7 @@
 		<action>ActivateWindow(1138,return)</action>
 	</shortcut>
 	<shortcut>
-		<defaultID />
+		<defaultID/>
 		<label>Genres</label>
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
@@ -19,65 +19,65 @@
 	<shortcut>
 		<defaultID>mediahub</defaultID>
 		<label>Media Hub</label>
-		<label2 />
+		<label2/>
 		<icon>special://skin/extras/icons/tv.png</icon>
 		<thumb>special://skin/extras/icons/emby.png</thumb>
 		<action>ActivateWindow(3730,return)</action>
 	</shortcut>
 	<shortcut>
-		<defaultID />
+		<defaultID/>
 		<label>IMDB: Top Rated TV Shows</label>
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/extras/lists/icons/imdb-color.png</thumb>
-                <action></action>
+		<action/>
 	</shortcut>
 	<shortcut>
-		<defaultID />
+		<defaultID/>
 		<label>Rolling Stone's 100 Greatest TV Shows of All Time</label>
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/extras/lists/icons/rollingstone.png</thumb>
-                <action></action>
+		<action/>
 	</shortcut>
 	<shortcut>
-		<defaultID />
+		<defaultID/>
 		<label>Most Popular</label>
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/media/exuary/trakt.png</thumb>
-                <action></action>
+		<action/>
 	</shortcut>
 	<shortcut>
-		<defaultID />
+		<defaultID/>
 		<label>TV Shows 2018 ➛ Scripted (USA)</label>
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/extras/lists/icons/ustv.png</thumb>
-                <action></action>
+		<action/>
 	</shortcut>
 	<shortcut>
-		<defaultID />
+		<defaultID/>
 		<label>TV Shows 2018 ➛ Scripted (UK)</label>
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/extras/lists/icons/uktv.png</thumb>
-                <action></action>
+		<action/>
 	</shortcut>
 	<shortcut>
 		<defaultID>tvnetflixhub</defaultID>
 		<label>TV Netflix Hub</label>
-		<label2 />
+		<label2/>
 		<icon>special://skin/extras/icons/tv.png</icon>
-		<thumb />
+		<thumb/>
 		<action>ActivateWindow(3810,return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID>tvquackfxhub</defaultID>
 		<label>TV QuackFX Hub</label>
-		<label2 />
+		<label2/>
 		<icon>special://skin/extras/icons/tv.png</icon>
-		<thumb />
+		<thumb/>
 		<action>ActivateWindow(3910,return)</action>
 	</shortcut>
 </shortcuts>

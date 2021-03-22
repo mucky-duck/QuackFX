@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Foundation -->
+<!-- QuackFX -->
 <window id="146">
 	<defaultcontrol always="true">300</defaultcontrol>
 	<onload>AlarmClock(defaultcontrol,SetFocus(300),00:00,silent)</onload>

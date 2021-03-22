@@ -2303,3 +2303,8 @@ msgctxt "#31481"
 msgid "Netflix Landscape Showcase"
 msgstr ""
 
+#: /xml/LoginScreen.xml
+msgctxt "#31482"
+msgid "Select your user profile[CR]to login and continue"
+msgstr ""
+

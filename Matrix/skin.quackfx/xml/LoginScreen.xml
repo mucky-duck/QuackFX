@@ -1,87 +1,102 @@
 <window>
-    <defaultcontrol always="true">52</defaultcontrol>
-
-    <backgroundcolor>0</backgroundcolor>
-    <onload condition="String.IsEmpty(Window(home).Property(SkinInitStarted)) + !String.IsEmpty(Skin.String(StartupPlaylist))">PlayMedia($ESCINFO[Skin.String(StartupPlaylist)])</onload>
-    <onload>SetProperty(SkinInitStarted,1,home)</onload>
-    <controls>
-        <control type="group">
-            <visible>!Player.HasVideo</visible>
-            <visible>!String.IsEmpty(Window(home).Property(SkinInitStarted))</visible>
-            <include>Global_Background</include>
-            
-            <control type="list" id="52">
-                <visible>!Window.IsVisible(ProfileSettings.xml)</visible>
-                <left>635</left>
-                <top>360</top>
-                <width>650</width>
-                <height>360</height>
-                <onleft>9400</onleft>
-                <onright>9400</onright>
-                <onup>52</onup>
-                <ondown>52</ondown>
-                <pagecontrol>61</pagecontrol>
-                <scrolltime tween="cubic" easing="out">500</scrolltime>
-                <itemlayout height="120">
-                    <control type="label">
-                        <left>150</left>
-                        <top>22</top>
-                        <width>490</width>
-                        <height>40</height>
-                        <textcolor>main_fg_70</textcolor>
-                        <font>font_small_bold</font>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                    <control type="label">
-                        <left>150</left>
-                        <top>61</top>
-                        <width>490</width>
-                        <height>40</height>
-                        <textcolor>main_fg_30</textcolor>
-                        <label>$INFO[ListItem.Label2]</label>
-                    </control>
-                </itemlayout>
-                <focusedlayout height="120">
-                    <control type="group">
-                        <animation effect="slide" start="0,120" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(52).OnPrevious">Focus</animation>
-                        <animation effect="slide" start="0,-120" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(52).OnNext">Focus</animation>
-                        <visible>Control.HasFocus(52)</visible>
-                        <left>8</left>
-                        <centertop>50%</centertop>
-                        <width>111</width>
-                        <height>111</height>
+	<defaultcontrol always="true">52</defaultcontrol>
+	<backgroundcolor>0</backgroundcolor>
+	<onload condition="String.IsEmpty(Window(home).Property(SkinInitStarted)) + !String.IsEmpty(Skin.String(StartupPlaylist))">PlayMedia($ESCINFO[Skin.String(StartupPlaylist)])</onload>
+	<onload>SetProperty(SkinInitStarted,1,home)</onload>
+	<controls>
+		<control type="group">
+			<visible>!Player.HasVideo</visible>
+			<visible>!String.IsEmpty(Window(home).Property(SkinInitStarted))</visible>
+			<include>Global_Background</include>
+			<control type="label">
+				<top>-650</top>
+				<align>center</align>
+				<font>netflix_heading</font>
+				<textcolor>HeaderText</textcolor>
+				<label>$LOCALIZE[31482]</label>
+			</control>
+			<control type="list" id="52">
+				<orientation>horizontal</orientation>
+				<posx>530</posx>
+				<posy>400</posy>
+				<width>1400</width>
+				<height>500</height>
+				<onleft>52</onleft>
+				<onright>52</onright>
+				<ondown>53</ondown>
+				<pagecontrol/>
+				<scrolltime tween="cubic" easing="out">500</scrolltime>
+				<movement>1</movement>
+				<itemlayout height="370" width="350">
+					<control type="image">
+						<posx>8</posx>
+						<posy>8</posy>
+						<width>490</width>
+						<height>300</height>
+						<aspectratio>keep</aspectratio>
+						<texture diffuse="diffuse/dialogselect.png" fallback="defaultprofile.png" colordiffuse="dfFFFFFF">$INFO[Listitem.Icon]</texture>
+					</control>
+					<control type="label">
+						<align>center</align>
+						<aligny>center</aligny>
+						<posy>320</posy>
+						<width>490</width>
+						<height>50</height>
+						<textcolor>main_fg_70</textcolor>
+						<font>font_small_bold</font>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="370" width="350">
+					<control type="group">
+						<animation effect="fade" start="100" end="30" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(52)">Conditional</animation>
                         <control type="image">
-                            <aspectratio scalediffuse="false">scale</aspectratio>
-                            <texture colordiffuse="main_fg_30">diffuse/dialogselect.png</texture>
-                        </control>
-                        <control type="image">
-                            <aspectratio scalediffuse="false">scale</aspectratio>
-                            <texture diffuse="diffuse/dialogselect.png" fallback="DefaultArtist.png" colordiffuse="dfFFFFFF">$INFO[Listitem.Icon]</texture>
-                        </control>
-                    </control>
-
-                    <control type="group">
-                        <control type="label">
-                            <left>150</left>
-                            <top>22</top>
+							<posx>8</posx>
+							<posy>8</posy>
+							<width>490</width>
+							<height>316</height>
+							<aspectratio>keep</aspectratio>
+							<texture diffuse="diffuse/dialogselect.png" fallback="defaultprofile.png" colordiffuse="dfFFFFFF">$INFO[Listitem.Icon]</texture>
+						</control>
+						<control type="label">
+							<align>center</align>
+                            <aligny>center</aligny>
+							<posy>320</posy>
                             <width>490</width>
-                            <height>40</height>
-                            <font>font_small_bold</font>
-                            <textcolor>Selected</textcolor>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                        <control type="label">
-                            <left>150</left>
-                            <top>61</top>
+                            <height>50</height>
+							<font>font_small_bold</font>
+							<textcolor>HighlightText</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<align>center</align>
+                            <aligny>center</aligny>
+							<posy>360</posy>
                             <width>490</width>
-                            <height>40</height>
-                            <textcolor>Selected</textcolor>
-                            <animation effect="fade" start="100" end="75" condition="true">Conditional</animation>
-                            <label>$INFO[ListItem.Label2]</label>
-                        </control>
-                    </control>
-                </focusedlayout>
-            </control>
-        </control>
-    </controls>
+                            <height>50</height>
+							<textcolor>InfoText</textcolor>
+							<animation effect="fade" start="100" end="75" condition="true">Conditional</animation>
+							<label>$INFO[ListItem.Label2]</label>
+						</control>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="button" id="53">
+				<description>power button</description>
+				<posx>925</posx>
+				<bottom>30</bottom>
+				<width>75</width>
+				<height>75</height>
+				<onup>52</onup>
+				<ondown>52</ondown>
+				<onright>52</onright>
+				<onleft>52</onleft>
+				<texturefocus colordiffuse="FocusButton">common/shutdown.png</texturefocus>
+				<texturenofocus colordiffuse="white">common/shutdown.png</texturenofocus>
+				<onclick condition="System.CanPowerDown">ActivateWindow(shutdownmenu)</onclick>
+				<onclick condition="!System.CanPowerDown">Quit()</onclick>
+				<visible>System.ShowExitButton</visible>
+			</control>
+		</control>
+	</controls>
 </window>
