@@ -8,7 +8,7 @@
 		<control type="image">
 			<width>100%</width>
 			<height>100%</height>
-			<texture background="true">special://skin/fanart.jpg</texture>
+			<texture background="true">special://skin/resources/fanart.jpg</texture>
 		</control>
 		<!--
     <control type="label">

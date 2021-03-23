@@ -9,7 +9,7 @@
 	<controls>
 		<control type="image" description="Background">
 			<include>Dimensions_Fullscreen</include>
-			<texture fallback="special://skin/fanart.jpg">$INFO[Skin.String(StartupSplash)]</texture>
+			<texture fallback="special://skin/resources/fanart.jpg">$INFO[Skin.String(StartupSplash)]</texture>
 			<visible>String.IsEmpty(Skin.String(StartupPlaylist))</visible>
 		</control>
 		<control type="group">

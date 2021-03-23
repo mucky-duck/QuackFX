@@ -12,7 +12,7 @@
 			<timeperimage>10000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>600</fadetime>
-			<imagepath background="true" fallback="special://skin/fanart.jpg">$INFO[Window.Property(Fanart)]</imagepath>
+			<imagepath background="true" fallback="special://skin/resources/fanart.jpg">$INFO[Window.Property(Fanart)]</imagepath>
 		</control>
 		<control type="group">
 			<include content="Dialog_Standard_Group">
@@ -43,7 +43,7 @@
 				<top>100</top>
 				<height>596</height>
 				<control type="image">
-					<texture background="true" colordiffuse="ff333333" fallback="special://skin/fanart.jpg">$INFO[Window.Property(Fanart)]</texture>
+					<texture background="true" colordiffuse="ff333333" fallback="special://skin/resources/fanart.jpg">$INFO[Window.Property(Fanart)]</texture>
 				</control>
 				<include>Defs_BusySpinner</include>
 			</control>

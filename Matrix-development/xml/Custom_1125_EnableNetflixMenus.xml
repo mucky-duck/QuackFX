@@ -23,7 +23,7 @@
 				<height>600</height>
 				<control type="image">
 					<aspectratio scalediffuse="false">keep</aspectratio>
-					<texture background="true" fallback="special://skin/fanart.jpg" diffuse="diffuse/1117.png">$INFO[Window.Property(Image_Preview)]</texture>
+					<texture background="true" fallback="special://skin/resources/fanart.jpg" diffuse="diffuse/1117.png">$INFO[Window.Property(Image_Preview)]</texture>
 				</control>
 				<control type="image">
 					<aspectratio scalediffuse="false">center</aspectratio>
